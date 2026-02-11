@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Costs, Friction, and Hidden Charges — Truth Index Encyclopedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(to bottom, #fdfcf8 0%, #e8e4d8 100%);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 60px 40px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: #6b5d4f;
+        }
+        
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-family: 'Crimson Text', serif;
+            font-size: 20px;
+            color: #8b7355;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .visual-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        .caption {
+            font-size: 15px;
+            color: #6b5d4f;
+            font-style: italic;
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .intro-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 18px;
+        }
+        
+        .separator {
+            width: 200px;
+            height: 2px;
+            background: #8b7355;
+            margin: 50px auto;
+            opacity: 0.5;
+        }
+        
+        .case-studies-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+        }
+        
+        .case-studies-box h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 24px;
+            color: #6b5d4f;
+            margin-bottom: 15px;
+        }
+        
+        .case-studies-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .case-studies-box li {
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        
+        .case-studies-box a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        
+        .case-studies-box a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+        
+        .references {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #d4cdb8;
+        }
+        
+        .references h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 28px;
+            color: #6b5d4f;
+            margin-bottom: 25px;
+        }
+        
+        .reference-item {
+            margin-bottom: 18px;
+            padding-left: 30px;
+            text-indent: -30px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+        }
+        
+        .reference-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="javascript:history.back()" class="back-button">← Back to Index</a>
+        
+        <h1>Transaction Costs, Friction, and Hidden Charges</h1>
+        <p class="subtitle">Section 5, Chapter 4 — Financial Mechanisms</p>
+        
+        <div class="visual-container">
+            <svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect width="800" height="560" fill="#fdfcf8"/>
+                
+                <!-- Headline price (large, visible) -->
+                <g transform="translate(150, 100)">
+                    <rect x="0" y="0" width="180" height="80" fill="#8b7355" stroke="#6b5d4f" stroke-width="3" rx="6"/>
+                    <text x="90" y="50" font-family="Libre Baskerville, serif" font-size="36" fill="#fdfcf8" text-anchor="middle" font-weight="bold">$99</text>
+                    <text x="90" y="105" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-style="italic">Headline Price</text>
+                    <text x="90" y="122" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-style="italic">(High salience)</text>
+                </g>
+                
+                <!-- Plus symbol -->
+                <text x="370" y="145" font-family="Libre Baskerville, serif" font-size="32" fill="#8b7355" text-anchor="middle">+</text>
+                
+                <!-- Hidden costs (small, fragmented) -->
+                <g transform="translate(470, 80)">
+                    <!-- Multiple small cost boxes -->
+                    <rect x="0" y="0" width="80" height="28" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="3"/>
+                    <text x="40" y="18" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Fee: $5</text>
+                    
+                    <rect x="0" y="35" width="80" height="28" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="3"/>
+                    <text x="40" y="53" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Tax: $8</text>
+                    
+                    <rect x="0" y="70" width="80" height="28" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="3"/>
+                    <text x="40" y="88" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Ship: $12</text>
+                    
+                    <rect x="0" y="105" width="80" height="28" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="3"/>
+                    <text x="40" y="123" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Proc: $3</text>
+                    
+                    <text x="40" y="150" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">Hidden Costs</text>
+                    <text x="40" y="165" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">(Low salience)</text>
+                </g>
+                
+                <!-- Equals arrow -->
+                <path d="M 150 260 L 650 260" stroke="#8b7355" stroke-width="3" marker-end="url(#arrowhead)"/>
+                <text x="400" y="250" font-family="Crimson Text, serif" font-size="13" fill="#6b5d4f" text-anchor="middle" font-style="italic">Actual Total Cost</text>
+                
+                <!-- Total cost (revealed late) -->
+                <g transform="translate(310, 280)">
+                    <rect x="0" y="0" width="180" height="80" fill="#e8e4d8" stroke="#8b7355" stroke-width="3" rx="6"/>
+                    <text x="90" y="50" font-family="Libre Baskerville, serif" font-size="36" fill="#6b5d4f" text-anchor="middle" font-weight="bold">$127</text>
+                    <text x="90" y="105" font-family="Crimson Text, serif" font-size="14" fill="#8b7355" text-anchor="middle" font-style="italic">Total (Revealed Late)</text>
+                </g>
+                
+                <!-- Friction stages illustration (bottom) -->
+                <g transform="translate(100, 410)">
+                    <rect x="0" y="0" width="100" height="60" fill="#f8f6f0" stroke="#d4cdb8" stroke-width="2" rx="4"/>
+                    <text x="50" y="25" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">Stage 1</text>
+                    <text x="50" y="42" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Low</text>
+                    <text x="50" y="56" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">friction</text>
+                </g>
+                
+                <line x1="210" y1="440" x2="240" y2="440" stroke="#d4cdb8" stroke-width="2" marker-end="url(#arrowhead-small)"/>
+                
+                <g transform="translate(250, 410)">
+                    <rect x="0" y="0" width="100" height="60" fill="#f8f6f0" stroke="#d4cdb8" stroke-width="2" rx="4"/>
+                    <text x="50" y="25" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">Stage 2</text>
+                    <text x="50" y="42" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Med</text>
+                    <text x="50" y="56" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">friction</text>
+                </g>
+                
+                <line x1="360" y1="440" x2="390" y2="440" stroke="#d4cdb8" stroke-width="2" marker-end="url(#arrowhead-small)"/>
+                
+                <g transform="translate(400, 410)">
+                    <rect x="0" y="0" width="100" height="60" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="4"/>
+                    <text x="50" y="25" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">Stage 3</text>
+                    <text x="50" y="42" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">High</text>
+                    <text x="50" y="56" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">friction</text>
+                </g>
+                
+                <line x1="510" y1="440" x2="540" y2="440" stroke="#d4cdb8" stroke-width="2" marker-end="url(#arrowhead-small)"/>
+                
+                <g transform="translate(550, 410)">
+                    <circle cx="50" cy="30" r="30" fill="none" stroke="#8b7355" stroke-width="3"/>
+                    <line x1="30" y1="30" x2="70" y2="30" stroke="#8b7355" stroke-width="3"/>
+                    <text x="50" y="65" font-family="Crimson Text, serif" font-size="11" fill="#8b7355" text-anchor="middle" font-style="italic">Abandonment</text>
+                </g>
+                
+                <!-- Arrow marker definitions -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#8b7355"/>
+                    </marker>
+                    <marker id="arrowhead-small" markerWidth="8" markerHeight="8" refX="7" refY="2.5" orient="auto">
+                        <polygon points="0 0, 8 2.5, 0 5" fill="#d4cdb8"/>
+                    </marker>
+                </defs>
+                
+                <!-- Bottom labels -->
+                <text x="400" y="520" font-family="Libre Baskerville, serif" font-size="16" fill="#8b7355" text-anchor="middle" font-style="italic">Transaction Cost and Friction Architecture</text>
+                <text x="400" y="545" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle">Headline prices separated from total costs through fragmentation and sequencing</text>
+            </svg>
+            <p class="caption">Visual representation of transaction cost mechanisms, illustrating how headline prices separate from total costs through fragmentation, salience asymmetries, and procedural friction that accumulates across decision stages.</p>
+        </div>
+        
+        <div class="intro-box">
+            Transaction costs, procedural friction, and hidden charges describe mechanisms through which the total economic burden of exchange diverges from headline prices, creating conditions where perceived value differs from actual expenditure. Transaction costs encompass explicit fees, implicit charges, and opportunity costs associated with completing exchanges, operating as modifications to nominal prices that may remain obscure until commitment stages. Friction describes resistance within exchange processes—procedural steps, information requirements, cognitive demands—that imposes costs beyond monetary outlays by consuming time, attention, and effort. The separation between visible headline prices and total costs operates through fragmentation, sequencing, and salience manipulation, creating conditions where individuals underestimate actual expenditure and where accumulation of small frictions generates material impact on completion rates and perceived value.
+        </div>
+        
+        <p>Explicit versus implicit transaction costs distinguishes between openly stated charges and obscured expenses that emerge during or after commitment. Explicit costs include fees, taxes, shipping charges, or processing costs presented as separable line items, making these expenses identifiable even when disclosure timing varies (Bakos, 1997). Implicit costs operate through mechanisms less readily quantified: bid-ask spreads that represent execution costs without explicit fees; time costs reflecting delays or waiting periods that consume value through opportunity cost; search costs encompassing effort required to locate, compare, and evaluate alternatives (Dahlman, 1979). The distinction matters because explicit costs receive greater attention and weight in decision-making relative to implicit burdens that require calculation or estimation to recognise (Gabaix & Laibson, 2006). Exchange environments can shift costs between explicit and implicit categories, transforming visible charges into embedded expenses that reduce perceived total burden while maintaining or increasing actual economic impact (Ellison, 2005).</p>
+
+        <p>Procedural friction within exchange processes describes resistance created by steps, requirements, or complexity that must be navigated to complete transactions. Registration requirements demand information provision, account creation, or identity verification before exchange can proceed, introducing delays and cognitive load that function as non-monetary costs (Ratchford, 1982). Multi-stage approval processes separate decision from execution, requiring progression through sequential gates that test commitment at each transition point (Thaler & Sunstein, 2008). Form complexity creates friction through length, technical language, or ambiguous requirements that demand sustained attention and increase error probability, raising psychological costs of completion (Brown, Hossain, & Morgan, 2010). These procedural elements operate as barriers that filter participation; individuals facing high friction may abandon transactions even when nominal prices appear acceptable, with abandonment rates rising as cumulative friction increases across process stages (Soman, 2001). The structural consequence is that friction functions as implicit pricing, imposing costs through effort rather than expenditure while shaping completion rates independent of monetary considerations.</p>
+
+        <p>Separation between headline price and total cost emerges through partitioning, sequencing, and salience asymmetries that obscure full economic burden. Price partitioning separates total costs into base price plus additional fees, with base prices receiving disproportionate attention relative to surcharges that may be substantial but presented as supplementary (Morwitz, Greenleaf, & Johnson, 1998). Sequential revelation presents costs across temporal stages, with initial prices establishing anchors before additional charges emerge later in decision processes, creating commitment bias where individuals proceed despite higher-than-expected totals (Courty & Pagliero, 2012). Salience manipulation makes certain costs visually prominent while rendering others small, peripheral, or obscured through formatting, creating attention asymmetries where visible elements dominate evaluation despite equal or lesser economic significance compared to hidden charges (Chetty, Looney, & Kroft, 2009). These separation mechanisms exploit bounded attention and anchoring effects; individuals focus on salient headline figures while inadequately integrating obscured costs into total valuation, systematically underestimating actual expenditure (Hossain & Morgan, 2006).</p>
+
+        <p>Timing and visibility of costs during decision sequences shapes how expenses influence choice. Early cost visibility enables incorporation into initial valuation, while deferred revelation delays integration until commitment stages when sunk costs and escalation effects reduce abandonment probability (Soman & Cheema, 2011). Upfront costs feel more burdensome than identical amounts deferred to later stages, reflecting temporal discounting and mental accounting patterns that weight immediate expenses more heavily than future outlays (Gourville, 1998). Checkout-stage revelation of additional fees exploits completion bias; after investing time and effort in product selection, individuals exhibit increased willingness to accept unexpected charges rather than abandon progress (Greenleaf et al., 2016). The structural implication is that cost timing functions as strategic variable shaping perceived burden; identical total costs generate divergent behavioural responses depending on when and how expenses are revealed across decision architecture (Lambrecht & Skiera, 2006).</p>
+
+        <p>Accumulation of small frictions into material impact operates through aggregation effects where individually minor barriers compound into substantial impediments. Each procedural step, information requirement, or delay introduces incremental friction that appears trivial in isolation but accumulates across sequences to create meaningful resistance (Iyengar & Lepper, 2000). Cognitive load compounds as decision complexity increases; additional options, features, or considerations incrementally exhaust processing capacity until deliberation quality deteriorates or abandonment occurs (Scheibehenne, Greifeneder, & Todd, 2010). Search costs multiply across comparison stages; evaluating additional alternatives imposes marginal costs that accumulate until expected benefit from further search falls below incremental expense, establishing stopping points that may precede optimal outcomes (Stigler, 1961). These accumulation patterns demonstrate that friction operates not merely through individual barriers but through cumulative burden that shapes completion rates, decision quality, and perceived value of exchange processes (Shah & Oppenheimer, 2008).</p>
+
+        <p>Salience effects of visible versus deferred costs create asymmetries in attention and weighting that systematically bias valuation. Visible costs presented prominently during initial evaluation receive full consideration and anchor subsequent judgment, while deferred or obscured expenses integrate inadequately into decision-making even when quantitatively significant (Bordalo, Gennaioli, & Shleifer, 2013). Visual formatting influences salience through size, color, positioning, or surrounding context, with larger fonts, bold emphasis, or isolated presentation increasing attention relative to small print, footnotes, or embedded text (Bertrand et al., 2010). Temporal salience varies with proximity; costs occurring immediately feel more real and burdensome than equivalent future expenses that remain abstract despite certain occurrence (Frederick, Loewenstein, & O'Donoghue, 2002). The psychological mechanism involves selective attention combined with processing limitations; individuals cannot fully evaluate all cost components simultaneously, defaulting to heuristics that overweight salient elements while underweighting obscured charges (DellaVigna, 2009).</p>
+
+        <p>Cost fragmentation and diffusion across stages operates by distributing total expenses into components revealed or incurred at different decision points. Itemised billing presents charges as separable elements rather than unified totals, with fragmentation creating perception that total burden is lower than aggregate amount would suggest when presented as single sum (Gourville, 1998). Temporal diffusion spreads costs across time periods, with subscription models, instalment plans, or recurring fees transforming large discrete expenses into smaller periodic charges that feel less burdensome despite equivalent or greater total outlay (Prelec & Loewenstein, 1998). Categorical fragmentation assigns costs to different mental accounts, with charges labelled as fees, taxes, shipping, or processing occupying separate cognitive categories that resist integration into total expenditure assessment (Thaler, 1985). These fragmentation patterns exploit mental accounting and aggregation limitations; individuals struggle to maintain running totals across dispersed cost elements, resulting in systematic underestimation of cumulative financial impact (Soman & Gourville, 2001).</p>
+
+        <p>Cognitive load introduced by procedural steps shapes decision quality and completion rates through attention demands and processing exhaustion. Complex forms requiring detailed information provision impose cognitive burden that depletes processing capacity available for substantive evaluation (Bertrand & Morse, 2011). Multi-attribute comparisons across numerous dimensions exceed working memory limits, forcing simplified heuristics that may overlook relevant considerations or focus disproportionately on easily comparable features (Payne, Bettman, & Johnson, 1993). Sequencing effects create cognitive momentum where early commitment generates pressure to complete processes despite emerging information suggesting abandonment would be rational, with sunk attention costs functioning analogously to monetary sunk costs (Garland, 1990). The structural consequence is that cognitive friction operates as decision architecture feature that shapes outcomes through attention management rather than through information content, creating conditions where process design rather than substantive attributes determines completion and choice patterns (Johnson et al., 2012).</p>
+
+        <p>Friction as modifier of completion and abandonment rates demonstrates how procedural resistance shapes transaction outcomes independent of pricing. High-friction processes exhibit elevated abandonment where individuals initiate but fail to complete exchanges, with drop-off rates rising as cumulative resistance increases (Goldfarb & Tucker, 2011). Friction asymmetries between initiation and exit create lock-in effects; processes with low entry friction but high exit resistance generate participation that might not occur with symmetric barriers, while reverse asymmetries enable experimentation with commitment protection (Beggs & Klemperer, 1992). Temporal friction through delays or waiting periods tests patience and commitment, filtering participants based on urgency or opportunity cost of time, with longer delays producing greater attrition (DellaVigna & Malmendier, 2004). These friction effects operate through revealed preferences; observed completion rates under different friction levels provide information about underlying preference distributions and commitment strength that pricing alone cannot reveal (Salant, 2011).</p>
+
+        <p>Masking of total cost through complexity or sequencing creates conditions where actual expenditure remains obscure despite availability of component information. Complexity masking embeds costs within technical specifications, legal language, or conditional clauses that require expertise to interpret, making total burden inaccessible to typical comprehension levels (Bar-Gill, 2012). Bundling obscures individual component costs by presenting packages where separating value contributions requires reverse engineering that exceeds usual analytical effort (Chakravarti et al., 2002). Dynamic pricing introduces uncertainty about final costs through variable rates, surge pricing, or condition-dependent charges that cannot be determined precisely at decision time, creating ambiguity that obscures true economic impact (Chen & Sheldon, 2016). These masking mechanisms exploit information asymmetries and processing limitations; even when disclosure is technically complete, presentation format or complexity can render total costs effectively hidden from typical evaluation processes (Greenleaf et al., 2016).</p>
+
+        <p>The interaction between transaction costs and anchoring mechanisms examined in prior chapters reveals how initial prices bias interpretation of subsequently revealed charges. Headline prices function as anchors that establish reference points for total expenditure, with additional fees evaluated as adjustments rather than integrated into unified cost assessment (Tversky & Kahneman, 1974). Insufficient adjustment from headline anchors causes individuals to underweight supplementary charges even when explicitly disclosed, resulting in total cost estimates biased toward initial prices despite complete information availability (Epley & Gilovich, 2006). Reference price effects make additional fees feel more burdensome when framed as additions to low headline prices versus reductions from high initial quotes, demonstrating context-dependency of cost perception despite identical final totals (Urbany, Bearden, & Weilbaker, 1988). This interaction creates conditions where pricing architecture—the distribution of total costs between headline prices and supplementary charges—shapes perceived burden independent of aggregate expenditure.</p>
+
+        <p>Friction intersects with temporal pressure documented in earlier sections through deadline effects and urgency cues that interact with procedural resistance. Time constraints amplify friction impact by reducing available processing capacity for navigating complex procedures, increasing error rates and abandonment probability under identical resistance levels (Dhar & Nowlis, 1999). Limited-time offers combined with high-friction processes create conflicting pressures where urgency motivates quick completion while procedural demands require sustained attention, producing stress that degrades decision quality (Inman, Peter, & Raghubir, 1997). Expiration deadlines for promotional pricing or limited availability create pressure to proceed despite friction that would prompt abandonment under relaxed timing, with urgency overriding resistance that normally filters participation (Aggarwal & Vaidyanathan, 2003). These temporal-friction interactions demonstrate that process design and timing manipulation function jointly to shape completion rates and decision patterns.</p>
+
+        <p>Transaction costs combine with authority signals when credentialed sources recommend specific exchange mechanisms or endorse fee structures. Expert endorsement of complex pricing arrangements can legitimise charges that might otherwise prompt questioning, with authority transferring credibility to cost structures that obscure total burden (Cialdini, 2009). Professional fee schedules and industry standard rates function as authoritative benchmarks that validate transaction costs, making charges appear appropriate when aligned with institutional norms regardless of whether fees reflect actual value delivery (Larrick & Soll, 2006). This intersection creates conditions where authority masks friction; credible source recommendations reduce scrutiny of procedural complexity or hidden charges, enabling cost structures that might face resistance absent authoritative validation to persist unchallenged (Kahneman, 2011).</p>
+
+        <p>Narrative framing interacts with transaction costs through explanatory stories that justify fees or contextualise friction as necessary rather than burdensome. Service quality narratives position high transaction costs as reflecting superior execution, careful processing, or enhanced value delivery, reframing expenses as features rather than burdens (Kahneman & Tversky, 1984). Complexity justifications suggest that procedural friction protects participants through verification, security, or regulatory compliance, making resistance appear as safeguard rather than obstacle (Thaler & Sunstein, 2008). Scarcity stories frame friction as filter ensuring genuine commitment or protecting limited resources from frivolous demand, legitimising barriers through exclusivity narratives (Cialdini, 2009). These narrative-cost interactions demonstrate that framing shapes how identical transaction expenses are perceived, with compelling stories transforming costs from obstacles into acceptable or desirable features of exchange processes.</p>
+
+        <div class="separator"></div>
+
+        <p>Transaction costs operate as explicit fees and implicit burdens that separate headline prices from total expenditure, while procedural friction creates resistance through steps, requirements, and complexity that imposes costs beyond monetary outlays. Fragmentation distributes expenses across components and stages, with salience asymmetries ensuring visible charges dominate evaluation while hidden costs integrate inadequately into total assessment. Timing and sequencing shape perceived burden through early versus deferred revelation, exploiting commitment bias and sunk cost effects to maintain participation despite higher-than-expected totals. Accumulation of small frictions compounds into material impact on completion rates, with cognitive load and procedural resistance functioning as decision architecture features that shape outcomes through attention management. These mechanisms collectively demonstrate that pricing operates through interfaces that distribute costs across visibility, timing, and procedural dimensions, creating conditions where perceived value diverges systematically from actual economic burden and where transaction architecture rather than nominal prices determines exchange outcomes.</p>
+
+        <div class="case-studies-box">
+            <h2>Supporting Case Studies</h2>
+            <p><em>Note: Case studies demonstrating transaction cost and friction mechanisms will be developed as examples are documented and analysed.</em></p>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <div class="reference-item">
+                Aggarwal, P., & Vaidyanathan, R. (2003). Use it or lose it: Purchase acceleration effects of time-limited promotions. <em>Journal of Consumer Behaviour, 2</em>(4), 393–403. <a href="https://doi.org/10.1002/cb.116" target="_blank">https://doi.org/10.1002/cb.116</a>
+            </div>
+            
+            <div class="reference-item">
+                Bakos, Y. (1997). Reducing buyer search costs: Implications for electronic marketplaces. <em>Management Science, 43</em>(12), 1676–1692. <a href="https://doi.org/10.1287/mnsc.43.12.1676" target="_blank">https://doi.org/10.1287/mnsc.43.12.1676</a>
+            </div>
+            
+            <div class="reference-item">
+                Bar-Gill, O. (2012). <em>Seduction by contract: Law, economics, and psychology in consumer markets</em>. Oxford University Press.
+            </div>
+            
+            <div class="reference-item">
+                Beggs, A., & Klemperer, P. (1992). Multi-period competition with switching costs. <em>Econometrica, 60</em>(3), 651–666. <a href="https://doi.org/10.2307/2951587" target="_blank">https://doi.org/10.2307/2951587</a>
+            </div>
+            
+            <div class="reference-item">
+                Bertrand, M., Karlan, D., Mullainathan, S., Shafir, E., & Zinman, J. (2010). What's advertising content worth? Evidence from a consumer credit marketing field experiment. <em>Quarterly Journal of Economics, 125</em>(1), 263–306. <a href="https://doi.org/10.1162/qjec.2010.125.1.263" target="_blank">https://doi.org/10.1162/qjec.2010.125.1.263</a>
+            </div>
+            
+            <div class="reference-item">
+                Bertrand, M., & Morse, A. (2011). Information disclosure, cognitive biases, and payday borrowing. <em>Journal of Finance, 66</em>(6), 1865–1893. <a href="https://doi.org/10.1111/j.1540-6261.2011.01698.x" target="_blank">https://doi.org/10.1111/j.1540-6261.2011.01698.x</a>
+            </div>
+            
+            <div class="reference-item">
+                Bordalo, P., Gennaioli, N., & Shleifer, A. (2013). Salience and consumer choice. <em>Journal of Political Economy, 121</em>(5), 803–843. <a href="https://doi.org/10.1086/673885" target="_blank">https://doi.org/10.1086/673885</a>
+            </div>
+            
+            <div class="reference-item">
+                Brown, J., Hossain, T., & Morgan, J. (2010). Shrouded attributes and information suppression: Evidence from the field. <em>Quarterly Journal of Economics, 125</em>(2), 859–876. <a href="https://doi.org/10.1162/qjec.2010.125.2.859" target="_blank">https://doi.org/10.1162/qjec.2010.125.2.859</a>
+            </div>
+            
+            <div class="reference-item">
+                Chakravarti, D., Krish, R., Paul, P., & Srivastava, J. (2002). Partitioned presentation of multicomponent bundle prices: Evaluation, choice and underlying processing effects. <em>Journal of Consumer Psychology, 12</em>(3), 215–229. <a href="https://doi.org/10.1207/S15327663JCP1203_04" target="_blank">https://doi.org/10.1207/S15327663JCP1203_04</a>
+            </div>
+            
+            <div class="reference-item">
+                Chen, Y., & Sheldon, M. (2016). Dynamic pricing in a labor market: Surge pricing and flexible work on the Uber platform. <em>EC '16: Proceedings of the 2016 ACM Conference on Economics and Computation</em>, 455. <a href="https://doi.org/10.1145/2940716.2940798" target="_blank">https://doi.org/10.1145/2940716.2940798</a>
+            </div>
+            
+            <div class="reference-item">
+                Chetty, R., Looney, A., & Kroft, K. (2009). Salience and taxation: Theory and evidence. <em>American Economic Review, 99</em>(4), 1145–1177. <a href="https://doi.org/10.1257/aer.99.4.1145" target="_blank">https://doi.org/10.1257/aer.99.4.1145</a>
+            </div>
+            
+            <div class="reference-item">
+                Cialdini, R. B. (2009). <em>Influence: Science and practice</em> (5th ed.). Pearson Education.
+            </div>
+            
+            <div class="reference-item">
+                Courty, P., & Pagliero, M. (2012). The impact of price discrimination on revenue: Evidence from the concert industry. <em>Review of Economics and Statistics, 94</em>(1), 359–369. <a href="https://doi.org/10.1162/REST_a_00179" target="_blank">https://doi.org/10.1162/REST_a_00179</a>
+            </div>
+            
+            <div class="reference-item">
+                Dahlman, C. J. (1979). The problem of externality. <em>Journal of Law and Economics, 22</em>(1), 141–162. <a href="https://doi.org/10.1086/466936" target="_blank">https://doi.org/10.1086/466936</a>
+            </div>
+            
+            <div class="reference-item">
+                DellaVigna, S. (2009). Psychology and economics: Evidence from the field. <em>Journal of Economic Literature, 47</em>(2), 315–372. <a href="https://doi.org/10.1257/jel.47.2.315" target="_blank">https://doi.org/10.1257/jel.47.2.315</a>
+            </div>
+            
+            <div class="reference-item">
+                DellaVigna, S., & Malmendier, U. (2004). Contract design and self-control: Theory and evidence. <em>Quarterly Journal of Economics, 119</em>(2), 353–402. <a href="https://doi.org/10.1162/0033553041382111" target="_blank">https://doi.org/10.1162/0033553041382111</a>
+            </div>
+            
+            <div class="reference-item">
+                Dhar, R., & Nowlis, S. M. (1999). The effect of time pressure on consumer choice deferral. <em>Journal of Consumer Research, 25</em>(4), 369–384. <a href="https://doi.org/10.1086/209545" target="_blank">https://doi.org/10.1086/209545</a>
+            </div>
+            
+            <div class="reference-item">
+                Ellison, G. (2005). A model of add-on pricing. <em>Quarterly Journal of Economics, 120</em>(2), 585–637. <a href="https://doi.org/10.1093/qje/120.2.585" target="_blank">https://doi.org/10.1093/qje/120.2.585</a>
+            </div>
+            
+            <div class="reference-item">
+                Epley, N., & Gilovich, T. (2006). The anchoring-and-adjustment heuristic: Why the adjustments are insufficient. <em>Psychological Science, 17</em>(4), 311–318. <a href="https://doi.org/10.1111/j.1467-9280.2006.01704.x" target="_blank">https://doi.org/10.1111/j.1467-9280.2006.01704.x</a>
+            </div>
+            
+            <div class="reference-item">
+                Frederick, S., Loewenstein, G., & O'Donoghue, T. (2002). Time discounting and time preference: A critical review. <em>Journal of Economic Literature, 40</em>(2), 351–401. <a href="https://doi.org/10.1257/jel.40.2.351" target="_blank">https://doi.org/10.1257/jel.40.2.351</a>
+            </div>
+            
+            <div class="reference-item">
+                Gabaix, X., & Laibson, D. (2006). Shrouded attributes, consumer myopia, and information suppression in competitive markets. <em>Quarterly Journal of Economics, 121</em>(2), 505–540. <a href="https://doi.org/10.1162/qjec.2006.121.2.505" target="_blank">https://doi.org/10.1162/qjec.2006.121.2.505</a>
+            </div>
+            
+            <div class="reference-item">
+                Garland, H. (1990). Throwing good money after bad: The effect of sunk costs on the decision to escal commitment to an ongoing project. <em>Journal of Applied Psychology, 75</em>(6), 728–731. <a href="https://doi.org/10.1037/0021-9010.75.6.728" target="_blank">https://doi.org/10.1037/0021-9010.75.6.728</a>
+            </div>
+            
+            <div class="reference-item">
+                Goldfarb, A., & Tucker, C. (2011). Privacy regulation and online advertising. <em>Management Science, 57</em>(1), 57–71. <a href="https://doi.org/10.1287/mnsc.1100.1246" target="_blank">https://doi.org/10.1287/mnsc.1100.1246</a>
+            </div>
+            
+            <div class="reference-item">
+                Gourville, J. T. (1998). Pennies-a-day: The effect of temporal reframing on transaction evaluation. <em>Journal of Consumer Research, 24</em>(4), 395–408. <a href="https://doi.org/10.1086/209517" target="_blank">https://doi.org/10.1086/209517</a>
+            </div>
+            
+            <div class="reference-item">
+                Greenleaf, E. A., Johnson, E. J., Morwitz, V. G., & Shalev, E. (2016). The price does not include additional taxes, fees, and surcharges: A review of research on partitioned pricing. <em>Journal of Consumer Psychology, 26</em>(1), 105–124. <a href="https://doi.org/10.1016/j.jcps.2015.04.006" target="_blank">https://doi.org/10.1016/j.jcps.2015.04.006</a>
+            </div>
+            
+            <div class="reference-item">
+                Hossain, T., & Morgan, J. (2006). ...Plus shipping and handling: Revenue (non) equivalence in field experiments on eBay. <em>Advances in Economic Analysis & Policy, 6</em>(2), Article 3. <a href="https://doi.org/10.2202/1538-0637.1429" target="_blank">https://doi.org/10.2202/1538-0637.1429</a>
+            </div>
+            
+            <div class="reference-item">
+                Inman, J. J., Peter, A. C., & Raghubir, P. (1997). Framing the deal: The role of restrictions in accentuating deal value. <em>Journal of Consumer Research, 24</em>(1), 68–79. <a href="https://doi.org/10.1086/209494" target="_blank">https://doi.org/10.1086/209494</a>
+            </div>
+            
+            <div class="reference-item">
+                Iyengar, S. S., & Lepper, M. R. (2000). When choice is demotivating: Can one desire too much of a good thing? <em>Journal of Personality and Social Psychology, 79</em>(6), 995–1006. <a href="https://doi.org/10.1037/0022-3514.79.6.995" target="_blank">https://doi.org/10.1037/0022-3514.79.6.995</a>
+            </div>
+            
+            <div class="reference-item">
+                Johnson, E. J., Shu, S. B., Dellaert, B. G. C., Fox, C., Goldstein, D. G., Häubl, G., Larrick, R. P., Payne, J. W., Peters, E., Schkade, D., Wansink, B., & Weber, E. U. (2012). Beyond nudges: Tools of a choice architecture. <em>Marketing Letters, 23</em>(2), 487–504. <a href="https://doi.org/10.1007/s11002-012-9186-1" target="_blank">https://doi.org/10.1007/s11002-012-9186-1</a>
+            </div>
+            
+            <div class="reference-item">
+                Kahneman, D. (2011). <em>Thinking, fast and slow</em>. Farrar, Straus and Giroux.
+            </div>
+            
+            <div class="reference-item">
+                Kahneman, D., & Tversky, A. (1984). Choices, values, and frames. <em>American Psychologist, 39</em>(4), 341–350. <a href="https://doi.org/10.1037/0003-066X.39.4.341" target="_blank">https://doi.org/10.1037/0003-066X.39.4.341</a>
+            </div>
+            
+            <div class="reference-item">
+                Lambrecht, A., & Skiera, B. (2006). Paying too much and being happy about it: Existence, causes, and consequences of tariff-choice biases. <em>Journal of Marketing Research, 43</em>(2), 212–223. <a href="https://doi.org/10.1509/jmkr.43.2.212" target="_blank">https://doi.org/10.1509/jmkr.43.2.212</a>
+            </div>
+            
+            <div class="reference-item">
+                Larrick, R. P., & Soll, J. B. (2006). Intuitions about combining opinions: Misappreciation of the averaging principle. <em>Management Science, 52</em>(1), 111–127. <a href="https://doi.org/10.1287/mnsc.1050.0459" target="_blank">https://doi.org/10.1287/mnsc.1050.0459</a>
+            </div>
+            
+            <div class="reference-item">
+                Morwitz, V. G., Greenleaf, E. A., & Johnson, E. J. (1998). Divide and prosper: Consumers' reactions to partitioned prices. <em>Journal of Marketing Research, 35</em>(4), 453–463. <a href="https://doi.org/10.1177/002224379803500404" target="_blank">https://doi.org/10.1177/002224379803500404</a>
+            </div>
+            
+            <div class="reference-item">
+                Payne, J. W., Bettman, J. R., & Johnson, E. J. (1993). <em>The adaptive decision maker</em>. Cambridge University Press.
+            </div>
+            
+            <div class="reference-item">
+                Prelec, D., & Loewenstein, G. (1998). The red and the black: Mental accounting of savings and debt. <em>Marketing Science, 17</em>(1), 4–28. <a href="https://doi.org/10.1287/mksc.17.1.4" target="_blank">https://doi.org/10.1287/mksc.17.1.4</a>
+            </div>
+            
+            <div class="reference-item">
+                Ratchford, B. T. (1982). Cost-benefit models for explaining consumer choice and information seeking behavior. <em>Management Science, 28</em>(2), 197–212. <a href="https://doi.org/10.1287/mnsc.28.2.197" target="_blank">https://doi.org/10.1287/mnsc.28.2.197</a>
+            </div>
+            
+            <div class="reference-item">
+                Salant, Y. (2011). Procedural analysis of choice rules with applications to bounded rationality. <em>American Economic Review, 101</em>(2), 724–748. <a href="https://doi.org/10.1257/aer.101.2.724" target="_blank">https://doi.org/10.1257/aer.101.2.724</a>
+            </div>
+            
+            <div class="reference-item">
+                Scheibehenne, B., Greifeneder, R., & Todd, P. M. (2010). Can there ever be too many options? A meta-analytic review of choice overload. <em>Journal of Consumer Research, 37</em>(3), 409–425. <a href="https://doi.org/10.1086/651235" target="_blank">https://doi.org/10.1086/651235</a>
+            </div>
+            
+            <div class="reference-item">
+                Shah, A. K., & Oppenheimer, D. M. (2008). Heuristics made easy: An effort-reduction framework. <em>Psychological Bulletin, 134</em>(2), 207–222. <a href="https://doi.org/10.1037/0033-2909.134.2.207" target="_blank">https://doi.org/10.1037/0033-2909.134.2.207</a>
+            </div>
+            
+            <div class="reference-item">
+                Soman, D. (2001). Effects of payment mechanism on spending behavior: The role of rehearsal and immediacy of payments. <em>Journal of Consumer Research, 27</em>(4), 460–474. <a href="https://doi.org/10.1086/319621" target="_blank">https://doi.org/10.1086/319621</a>
+            </div>
+            
+            <div class="reference-item">
+                Soman, D., & Cheema, A. (2011). Earmarking and partitioning: Increasing saving by low-income households. <em>Journal of Marketing Research, 48</em>(SPL), S14–S22. <a href="https://doi.org/10.1509/jmkr.48.SPL.S14" target="_blank">https://doi.org/10.1509/jmkr.48.SPL.S14</a>
+            </div>
+            
+            <div class="reference-item">
+                Soman, D., & Gourville, J. T. (2001). Transaction decoupling: How price bundling affects the decision to consume. <em>Journal of Marketing Research, 38</em>(1), 30–44. <a href="https://doi.org/10.1509/jmkr.38.1.30.18828" target="_blank">https://doi.org/10.1509/jmkr.38.1.30.18828</a>
+            </div>
+            
+            <div class="reference-item">
+                Stigler, G. J. (1961). The economics of information. <em>Journal of Political Economy, 69</em>(3), 213–225. <a href="https://doi.org/10.1086/258464" target="_blank">https://doi.org/10.1086/258464</a>
+            </div>
+            
+            <div class="reference-item">
+                Thaler, R. (1985). Mental accounting and consumer choice. <em>Marketing Science, 4</em>(3), 199–214. <a href="https://doi.org/10.1287/mksc.4.3.199" target="_blank">https://doi.org/10.1287/mksc.4.3.199</a>
+            </div>
+            
+            <div class="reference-item">
+                Thaler, R. H., & Sunstein, C. R. (2008). <em>Nudge: Improving decisions about health, wealth, and happiness</em>. Yale University Press.
+            </div>
+            
+            <div class="reference-item">
+                Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. <em>Science, 185</em>(4157), 1124–1131. <a href="https://doi.org/10.1126/science.185.4157.1124" target="_blank">https://doi.org/10.1126/science.185.4157.1124</a>
+            </div>
+            
+            <div class="reference-item">
+                Urbany, J. E., Bearden, W. O., & Weilbaker, D. C. (1988). The effect of plausible and exaggerated reference prices on consumer perceptions and price search. <em>Journal of Consumer Research, 15</em>(1), 95–110. <a href="https://doi.org/10.1086/209145" target="_blank">https://doi.org/10.1086/209145</a>
+            </div>
+        </div>
+        
+        <a href="javascript:history.back()" class="back-button">← Back to Index</a>
+    </div>
+</body>
+</html>

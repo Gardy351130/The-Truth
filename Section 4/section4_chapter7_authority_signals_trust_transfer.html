@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authority Signals and Trust Transfer — Truth Index Encyclopedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(to bottom, #fdfcf8 0%, #e8e4d8 100%);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 60px 40px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: #6b5d4f;
+        }
+        
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-family: 'Crimson Text', serif;
+            font-size: 20px;
+            color: #8b7355;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .visual-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        .caption {
+            font-size: 15px;
+            color: #6b5d4f;
+            font-style: italic;
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .intro-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 18px;
+        }
+        
+        .separator {
+            width: 200px;
+            height: 2px;
+            background: #8b7355;
+            margin: 50px auto;
+            opacity: 0.5;
+        }
+        
+        .case-studies-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+        }
+        
+        .case-studies-box h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 24px;
+            color: #6b5d4f;
+            margin-bottom: 15px;
+        }
+        
+        .case-studies-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .case-studies-box li {
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        
+        .case-studies-box a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        
+        .case-studies-box a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+        
+        .references {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #d4cdb8;
+        }
+        
+        .references h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 28px;
+            color: #6b5d4f;
+            margin-bottom: 25px;
+        }
+        
+        .reference-item {
+            margin-bottom: 18px;
+            padding-left: 30px;
+            text-indent: -30px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+        }
+        
+        .reference-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="javascript:history.back()" class="back-button">← Back to Index</a>
+        
+        <h1>Authority Signals and Trust Transfer</h1>
+        <p class="subtitle">Section 4, Chapter 7 — Attention, Communication & Trust Interfaces</p>
+        
+        <div class="visual-container">
+            <svg viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect width="800" height="550" fill="#fdfcf8"/>
+                
+                <!-- Central authority icon (badge/seal) -->
+                <circle cx="400" cy="180" r="80" fill="none" stroke="#8b7355" stroke-width="3"/>
+                <circle cx="400" cy="180" r="65" fill="none" stroke="#8b7355" stroke-width="2"/>
+                <text x="400" y="190" font-family="Libre Baskerville, serif" font-size="24" fill="#6b5d4f" text-anchor="middle" font-weight="bold">CREDENTIAL</text>
+                
+                <!-- Radiating trust transfer lines -->
+                <line x1="400" y1="260" x2="200" y2="400" stroke="#8b7355" stroke-width="2" stroke-dasharray="5,5" opacity="0.6"/>
+                <line x1="400" y1="260" x2="400" y2="420" stroke="#8b7355" stroke-width="2" stroke-dasharray="5,5" opacity="0.6"/>
+                <line x1="400" y1="260" x2="600" y2="400" stroke="#8b7355" stroke-width="2" stroke-dasharray="5,5" opacity="0.6"/>
+                
+                <!-- Trust recipients (claims/contexts) -->
+                <rect x="140" y="380" width="120" height="60" fill="#e8e4d8" stroke="#6b5d4f" stroke-width="2" rx="4"/>
+                <text x="200" y="405" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Adjacent</text>
+                <text x="200" y="425" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Claim A</text>
+                
+                <rect x="340" y="400" width="120" height="60" fill="#e8e4d8" stroke="#6b5d4f" stroke-width="2" rx="4"/>
+                <text x="400" y="425" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Adjacent</text>
+                <text x="400" y="445" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Claim B</text>
+                
+                <rect x="540" y="380" width="120" height="60" fill="#e8e4d8" stroke="#6b5d4f" stroke-width="2" rx="4"/>
+                <text x="600" y="405" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Adjacent</text>
+                <text x="600" y="425" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Context C</text>
+                
+                <!-- Signal stack indicators -->
+                <g transform="translate(100, 50)">
+                    <rect x="0" y="0" width="140" height="30" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="2"/>
+                    <text x="70" y="20" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle">Credential Signal</text>
+                </g>
+                
+                <g transform="translate(100, 85)">
+                    <rect x="0" y="0" width="140" height="30" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="2"/>
+                    <text x="70" y="20" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle">Role Signal</text>
+                </g>
+                
+                <g transform="translate(560, 50)">
+                    <rect x="0" y="0" width="140" height="30" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="2"/>
+                    <text x="70" y="20" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle">Proxy Signal</text>
+                </g>
+                
+                <g transform="translate(560, 85)">
+                    <rect x="0" y="0" width="140" height="30" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="2"/>
+                    <text x="70" y="20" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle">Context Signal</text>
+                </g>
+                
+                <!-- Flow arrows showing trust inheritance -->
+                <path d="M 400 280 Q 300 340 200 380" fill="none" stroke="#6b5d4f" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M 400 300 L 400 400" fill="none" stroke="#6b5d4f" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M 400 280 Q 500 340 600 380" fill="none" stroke="#6b5d4f" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Arrow marker definition -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#6b5d4f"/>
+                    </marker>
+                </defs>
+                
+                <!-- Bottom label -->
+                <text x="400" y="510" font-family="Libre Baskerville, serif" font-size="16" fill="#8b7355" text-anchor="middle" font-style="italic">Trust Transfer Architecture</text>
+                <text x="400" y="535" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle">Authority signals enabling credibility inheritance without direct verification</text>
+            </svg>
+            <p class="caption">Diagrammatic representation of authority signal operation and trust transfer pathways across claims and contexts within communication interfaces.</p>
+        </div>
+        
+        <div class="intro-box">
+            Authority signals function as cognitive shortcuts in environments characterised by information density, time constraints, and limited capacity for direct verification. These signals operate through recognisable indicators that enable rapid inference of credibility without evaluation of underlying validity. Trust established through one authority signal can transfer to adjacent claims, contexts, or interfaces, creating conditions where credibility persists independent of verification processes. This chapter examines how authority signals operate structurally, the mechanisms enabling trust transfer across domains, and the interaction between authority, repetition, familiarity, and interface design.
+        </div>
+        
+        <p>Authority signals emerge from the structural constraints of attention and evaluation capacity. When individuals encounter information exceeding available processing resources, evaluation shifts from direct assessment of validity to inference from surrounding signals (Chaiken, 1980; Petty & Cacioppo, 1986). Authority indicators—credentials, institutional affiliations, role designations, professional titles, presentation cues, or contextual positioning—function as heuristic substitutes for substantive evaluation, enabling rapid credibility judgments under conditions of limited attention (Pornpitakpan, 2004; Wilson & Sherrell, 1993). These signals operate not through explicit persuasion but through inference mechanisms that associate certain markers with trustworthiness, expertise, or legitimacy (Sundar, 2008). The reliance on authority signals increases as cognitive load rises and evaluation capacity declines (Chaiken & Maheswaran, 1994).</p>
+
+        <p>Authority signals take multiple forms across communication environments. Credential signals include academic degrees, professional certifications, institutional affiliations, or publication histories presented as markers of expertise (Metzger, Flanagin, & Medders, 2010). Role signals derive from positional authority within organisational or professional hierarchies, where titles such as director, analyst, or consultant imply competence within specific domains (French & Raven, 1959). Proxy signals aggregate indirect indicators—publication in recognised outlets, citation counts, follower metrics, endorsement totals—that substitute numerical or social proof for direct evidence of validity (Borah & Xiao, 2018; Lerman, 2007). Presentation cues operate through visual and formatting elements—polished design, institutional logos, formal language registers, professional photography—that signal investment, legitimacy, or affiliation with credible entities (Fogg et al., 2003; Robins & Holmes, 2008). Context signals emerge from environmental positioning, where association with established platforms, publications, or events transfers credibility through adjacency rather than direct validation (Wathen & Burkell, 2002).</p>
+
+        <p>Trust transfer describes the process through which credibility established at one point extends to adjacent claims, domains, or interactions without independent verification. When an authority signal validates one element within a communication environment, individuals often infer that adjacent or subsequent elements share similar credibility (Hu & Sundar, 2010). An expert credential attached to one claim can transfer authority to unrelated statements positioned nearby, creating conditions where validation is assumed rather than independently assessed (Hovland & Weiss, 1951). This transfer operates through cognitive efficiency mechanisms; once credibility is established through initial signals, subsequent information processing operates under reduced scrutiny, relying on the assumption that authority extends across the entire communication environment (Metzger, 2007). Trust transfer is particularly pronounced when signals appear early in information sequences, establishing interpretive anchors that shape evaluation of later content (Sundar, Knobloch-Westerwick, & Hastall, 2007).</p>
+
+        <p>The boundaries of trust transfer are often ambiguous, enabling credibility to extend beyond the validated domain. An individual credentialed in medicine may present claims regarding policy, economics, or technology, with perceived authority transferring from validated expertise to unrelated fields (Kelman, 1958). Institutional affiliation with a credible entity in one domain can transfer credibility to unrelated activities conducted under the same organisational banner (Lowrey, 2008). A publication outlet known for rigorous standards in investigative reporting may host opinion content, sponsored material, or user-generated submissions, with perceived credibility transferring from editorial content to adjacent formats despite different validation processes (Carr & Hayes, 2014). The structural ambiguity surrounding expertise boundaries, institutional scope, and content categorisation enables trust to migrate across domains without explicit claim of equivalence (Eastin, 2001).</p>
+
+        <p>Authority signals can operate in stacked or layered configurations, where multiple indicators reinforce perceived credibility through accumulation rather than independent validation. A communication environment might combine credential signals, role designations, institutional logos, and presentation cues simultaneously, creating compound authority that appears more robust than any single indicator (Patzer, 1983). This stacking functions through additive inference; each additional signal incrementally increases perceived trustworthiness, even when signals are redundant or provide no independent evidence of validity (Sundar, 2008). Role compression occurs when multiple authority dimensions collapse into single composite signals—an individual presented as "leading expert" combines credential, role, and evaluative judgment into a unified marker that obscures the independent assessment of each component (Fragale & Heath, 2004). Signal stacking exploits the cognitive tendency to aggregate cues rather than evaluate each independently, creating conditions where perceived authority exceeds the evidentiary support provided by individual signals (Petty, Cacioppo, & Goldman, 1981).</p>
+
+        <p>Repetition and familiarity interact with authority signals to stabilise credibility over time. Authority signals gain strength through repeated exposure, as familiarity itself generates perceptions of trustworthiness independent of validity (Zajonc, 1968). An individual, organisation, or outlet appearing frequently across environments becomes recognised, and recognition functions as a proxy for credibility even in the absence of substantive evaluation (Hasher, Goldstein, & Toppino, 1977). Repeated presentation of authority signals creates conditions where credibility feels established through accumulated exposure rather than through assessment of expertise or accuracy (Dechêne et al., 2010). This stabilisation operates bidirectionally; authority signals enhance memorability and recognition, while familiarity reinforces perceived authority, creating reinforcing cycles that strengthen credibility over time without requiring continuous validation (Unkelbach, 2007).</p>
+
+        <p>Contextual inheritance describes how credibility transfers through environmental association without explicit linkage. Information positioned within credible contexts—appearing on established platforms, adjacent to validated content, or framed by institutional branding—inherits perceived authority from surrounding elements (Metzger et al., 2010). An advertisement positioned within editorial content can inherit perceived credibility from the surrounding journalistic environment, despite different production and validation processes (Einstein, 2016). User-generated content appearing on institutionally branded platforms can inherit perceived legitimacy from platform association, even when content lacks editorial oversight (Flanagin & Metzger, 2007). Sponsored or promotional material presented alongside independently validated content can inherit trust from adjacency, creating conditions where environmental positioning substitutes for independent credibility assessment (Wojdynski & Evans, 2016). Contextual inheritance exploits boundary ambiguity; when demarcations between content types are unclear, subtle, or cognitively demanding to identify, individuals default to treating all content within an environment as sharing equivalent credibility (Amazeen & Wojdynski, 2019).</p>
+
+        <p>Interface design structures how authority signals are encountered and interpreted. Early-position authority signals function as interpretive anchors, establishing credibility frameworks that shape evaluation of subsequent content (Tversky & Kahneman, 1974). A credential or institutional affiliation presented at the beginning of a communication sequence primes individuals to interpret later information through the lens of established authority, reducing scrutiny of downstream claims (Eagly & Chaiken, 1993). Sequential presentation enables graduated trust transfer, where initial validation through authority signals creates momentum that carries through subsequent elements without repeated verification (Briñol & Petty, 2009). Interfaces that separate authority signals from validated claims through spatial or temporal distance enable credibility to persist even when the connection between signal and content is indirect or ambiguous (Sundar et al., 2007). Friction differentials apply to authority verification; interfaces that make authority signals highly visible while obscuring validation processes create asymmetries where perceived credibility exceeds opportunities for independent assessment (Metzger, 2007).</p>
+
+        <p>The persistence of authority independent of validity operates through multiple mechanisms. Authority signals, once established, can remain effective even after the underlying basis for credibility is invalidated or withdrawn (Kumkale & Albarracín, 2004). Reputational authority persists through lag effects; recognition and perceived expertise continue to function as credibility indicators even after expertise becomes outdated, institutional affiliations end, or credentials are revoked (Pornpitakpan, 2004). This persistence reflects the structural separation between signal recognition and validity assessment; individuals rely on authority signals as shortcuts precisely because direct validation is costly or impractical, making credibility vulnerable to persistence even when foundational support erodes (Eagly, Wood, & Chaiken, 1978). Authority signals can also operate in self-reinforcing cycles, where perceived credibility generates opportunities for further visibility and platform access, which in turn strengthens authority signals, creating feedback loops that stabilise credibility independent of ongoing validation (Bakshy, Hofman, Mason, & Watts, 2011).</p>
+
+        <p>Authority signals intersect with aggregation and metric systems documented in prior chapters. Quantitative proxies—follower counts, citation indices, engagement metrics, rating averages—function as authority signals that compress complex social and evaluative processes into simplified numerical indicators (Borah & Xiao, 2018). These metrics inherit credibility from institutional contexts that generate them while simultaneously functioning as standalone authority markers (Lerman, 2007). The combination of traditional authority signals and metric-based proxies creates hybrid credibility systems where perceived expertise derives from both conventional credentials and aggregated social or evaluative data (Wohn, 2019). This convergence enables credibility to transfer bidirectionally; traditional credentials enhance metric visibility, while metric achievement generates perceived authority that substitutes for conventional validation (Van Dijck & Poell, 2013).</p>
+
+        <p>Temporal pressure and authority signals interact to shape evaluation processes. Under time constraints, reliance on authority signals increases as individuals prioritise rapid decision-making over substantive assessment (Chaiken & Maheswaran, 1994). Interfaces that combine authority cues with urgency indicators—limited availability, time-bounded offers, imminent deadlines—create conditions where authority signals function as primary evaluation mechanisms, bypassing more deliberative verification processes (Inman, Peter, & Raghubir, 1997). This interaction exploits dual-process cognition; time pressure shifts processing toward heuristic shortcuts, increasing the influence of authority signals relative to substantive evidence (Suri & Monroe, 2003). The structural relationship between temporal constraints and authority reliance enables environments to shape evaluation depth through timing, sequencing, and availability cues that modulate how authority signals influence credibility judgments (Dhar & Nowlis, 1999).</p>
+
+        <p>Authority signals and consent mechanisms intersect in contexts where credibility shapes permission structures. Authority figures or institutions requesting access, data, or compliance benefit from trust established through prior signals, reducing perceived risk associated with granting permissions (Joinson, Reips, Buchanan, & Schofield, 2010). Consent interfaces that include authority markers—institutional logos, professional credentials, security badges—leverage trust transfer to facilitate agreement, creating conditions where permission decisions rely on inferred credibility rather than detailed evaluation of implications (Felt et al., 2012). The combination of authority signals and consent requests exploits the cognitive efficiency of trust; individuals are more likely to grant access when requests originate from sources perceived as credible, even when the scope of access extends beyond the validated domain (Acquisti & Grossklags, 2005).</p>
+
+        <p>The structural properties of authority signals enable credibility to function as an interface-level mechanism that shapes information flow, trust boundaries, and evaluation processes. Authority operates not merely as an attribute of sources but as a systematic feature of communication environments, where signals, contexts, and interface design interact to structure how trust is established, transferred, and maintained across claims and domains. Understanding authority signals as mechanisms rather than attributes clarifies how credibility persists independent of validation, how trust migrates across unrelated content through environmental association, and how interface structures modulate the relationship between authority cues and substantive assessment. These mechanisms operate within the broader context of attention limitations, friction differentials, and aggregation systems, forming interconnected architectures that structure trust within information-dense environments.</p>
+
+        <div class="separator"></div>
+
+        <p>Authority signals function as cognitive shortcuts enabling rapid credibility inference under conditions of limited attention and evaluation capacity. These signals—credentials, roles, proxies, presentation cues, and contextual positioning—substitute for direct verification, creating conditions where trust transfers from validated elements to adjacent claims and contexts without independent assessment. Authority operates through stacking, repetition, familiarity, and interface sequencing, with credibility persisting independent of ongoing validity. The structural relationship between authority signals and trust transfer mechanisms shapes how communication environments establish, maintain, and extend credibility across domains, forming interface-level architectures that mediate access to information while compressing evaluation boundaries.</p>
+
+        <div class="case-studies-box">
+            <h2>Supporting Case Studies</h2>
+            <ul>
+                <li><a href="CS-002_Assessment_Questionnaire.html">CS-002: The Assessment Questionnaire</a> — Professional credential signals establishing authority for subsequent claims</li>
+                <li><a href="CS-008_Testimonial_Saturation_Substituted_Trust.html">CS-008: Testimonial Saturation & Substituted Trust</a> — Publication logos and testimonial volume functioning as authority proxies</li>
+            </ul>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <div class="reference-item">
+                Acquisti, A., & Grossklags, J. (2005). Privacy and rationality in individual decision making. <em>IEEE Security & Privacy, 3</em>(1), 26–33. <a href="https://doi.org/10.1109/MSP.2005.22" target="_blank">https://doi.org/10.1109/MSP.2005.22</a>
+            </div>
+            
+            <div class="reference-item">
+                Amazeen, M. A., & Wojdynski, B. W. (2019). Reducing native advertising deception: Revisiting the antecedents and consequences of persuasion knowledge in digital news contexts. <em>Mass Communication and Society, 22</em>(2), 222–247. <a href="https://doi.org/10.1080/15205436.2018.1530792" target="_blank">https://doi.org/10.1080/15205436.2018.1530792</a>
+            </div>
+            
+            <div class="reference-item">
+                Bakshy, E., Hofman, J. M., Mason, W. A., & Watts, D. J. (2011). Everyone's an influencer: Quantifying influence on Twitter. <em>Proceedings of the Fourth ACM International Conference on Web Search and Data Mining</em>, 65–74. <a href="https://doi.org/10.1145/1935826.1935845" target="_blank">https://doi.org/10.1145/1935826.1935845</a>
+            </div>
+            
+            <div class="reference-item">
+                Borah, P., & Xiao, X. (2018). The importance of 'likes': The interplay of message framing, source, and social endorsement on credibility perceptions of health information on Facebook. <em>Journal of Health Communication, 23</em>(4), 399–411. <a href="https://doi.org/10.1080/10810730.2018.1455770" target="_blank">https://doi.org/10.1080/10810730.2018.1455770</a>
+            </div>
+            
+            <div class="reference-item">
+                Briñol, P., & Petty, R. E. (2009). Source factors in persuasion: A self-validation approach. <em>European Review of Social Psychology, 20</em>(1), 49–96. <a href="https://doi.org/10.1080/10463280802643640" target="_blank">https://doi.org/10.1080/10463280802643640</a>
+            </div>
+            
+            <div class="reference-item">
+                Carr, C. T., & Hayes, R. A. (2014). The effect of disclosure of third-party influence on an opinion leader's credibility and electronic word of mouth in two-step flow. <em>Journal of Interactive Advertising, 14</em>(1), 38–50. <a href="https://doi.org/10.1080/15252019.2014.909296" target="_blank">https://doi.org/10.1080/15252019.2014.909296</a>
+            </div>
+            
+            <div class="reference-item">
+                Chaiken, S. (1980). Heuristic versus systematic information processing and the use of source versus message cues in persuasion. <em>Journal of Personality and Social Psychology, 39</em>(5), 752–766. <a href="https://doi.org/10.1037/0022-3514.39.5.752" target="_blank">https://doi.org/10.1037/0022-3514.39.5.752</a>
+            </div>
+            
+            <div class="reference-item">
+                Chaiken, S., & Maheswaran, D. (1994). Heuristic processing can bias systematic processing: Effects of source credibility, argument ambiguity, and task importance on attitude judgment. <em>Journal of Personality and Social Psychology, 66</em>(3), 460–473. <a href="https://doi.org/10.1037/0022-3514.66.3.460" target="_blank">https://doi.org/10.1037/0022-3514.66.3.460</a>
+            </div>
+            
+            <div class="reference-item">
+                Dechêne, A., Stahl, C., Hansen, J., & Wänke, M. (2010). The truth about the truth: A meta-analytic review of the truth effect. <em>Personality and Social Psychology Review, 14</em>(2), 238–257. <a href="https://doi.org/10.1177/1088868309352251" target="_blank">https://doi.org/10.1177/1088868309352251</a>
+            </div>
+            
+            <div class="reference-item">
+                Dhar, R., & Nowlis, S. M. (1999). The effect of time pressure on consumer choice deferral. <em>Journal of Consumer Research, 25</em>(4), 369–384. <a href="https://doi.org/10.1086/209545" target="_blank">https://doi.org/10.1086/209545</a>
+            </div>
+            
+            <div class="reference-item">
+                Eagly, A. H., & Chaiken, S. (1993). <em>The psychology of attitudes</em>. Harcourt Brace Jovanovich.
+            </div>
+            
+            <div class="reference-item">
+                Eagly, A. H., Wood, W., & Chaiken, S. (1978). Causal inferences about communicators and their effect on opinion change. <em>Journal of Personality and Social Psychology, 36</em>(4), 424–435. <a href="https://doi.org/10.1037/0022-3514.36.4.424" target="_blank">https://doi.org/10.1037/0022-3514.36.4.424</a>
+            </div>
+            
+            <div class="reference-item">
+                Eastin, M. S. (2001). Credibility assessments of online health information: The effects of source expertise and knowledge of content. <em>Journal of Computer-Mediated Communication, 6</em>(4). <a href="https://doi.org/10.1111/j.1083-6101.2001.tb00126.x" target="_blank">https://doi.org/10.1111/j.1083-6101.2001.tb00126.x</a>
+            </div>
+            
+            <div class="reference-item">
+                Einstein, M. (2016). <em>Black ops advertising: Native ads, content marketing, and the covert world of the digital sell</em>. OR Books.
+            </div>
+            
+            <div class="reference-item">
+                Felt, A. P., Ha, E., Egelman, S., Haney, A., Chin, E., & Wagner, D. (2012). Android permissions: User attention, comprehension, and behavior. <em>Proceedings of the Eighth Symposium on Usable Privacy and Security</em>, Article 3. <a href="https://doi.org/10.1145/2335356.2335360" target="_blank">https://doi.org/10.1145/2335356.2335360</a>
+            </div>
+            
+            <div class="reference-item">
+                Flanagin, A. J., & Metzger, M. J. (2007). The role of site features, user attributes, and information verification behaviors on the perceived credibility of web-based information. <em>New Media & Society, 9</em>(2), 319–342. <a href="https://doi.org/10.1177/1461444807075015" target="_blank">https://doi.org/10.1177/1461444807075015</a>
+            </div>
+            
+            <div class="reference-item">
+                Fogg, B. J., Marshall, J., Laraki, O., Osipovich, A., Varma, C., Fang, N., Paul, J., Rangnekar, A., Shon, J., Swani, P., & Treinen, M. (2003). What makes Web sites credible? A report on a large quantitative study. <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em>, 61–68. <a href="https://doi.org/10.1145/642611.642622" target="_blank">https://doi.org/10.1145/642611.642622</a>
+            </div>
+            
+            <div class="reference-item">
+                Fragale, A. R., & Heath, C. (2004). Evolving informational credentials: The (mis)attribution of believable facts to credible sources. <em>Personality and Social Psychology Bulletin, 30</em>(2), 225–236. <a href="https://doi.org/10.1177/0146167203259933" target="_blank">https://doi.org/10.1177/0146167203259933</a>
+            </div>
+            
+            <div class="reference-item">
+                French, J. R. P., & Raven, B. (1959). The bases of social power. In D. Cartwright (Ed.), <em>Studies in social power</em> (pp. 150–167). University of Michigan Press.
+            </div>
+            
+            <div class="reference-item">
+                Hasher, L., Goldstein, D., & Toppino, T. (1977). Frequency and the conference of referential validity. <em>Journal of Verbal Learning and Verbal Behavior, 16</em>(1), 107–112. <a href="https://doi.org/10.1016/S0022-5371(77)80012-1" target="_blank">https://doi.org/10.1016/S0022-5371(77)80012-1</a>
+            </div>
+            
+            <div class="reference-item">
+                Hovland, C. I., & Weiss, W. (1951). The influence of source credibility on communication effectiveness. <em>Public Opinion Quarterly, 15</em>(4), 635–650. <a href="https://doi.org/10.1086/266350" target="_blank">https://doi.org/10.1086/266350</a>
+            </div>
+            
+            <div class="reference-item">
+                Hu, Y., & Sundar, S. S. (2010). Effects of online health sources on credibility and behavioral intentions. <em>Communication Research, 37</em>(1), 105–132. <a href="https://doi.org/10.1177/0093650209351512" target="_blank">https://doi.org/10.1177/0093650209351512</a>
+            </div>
+            
+            <div class="reference-item">
+                Inman, J. J., Peter, A. C., & Raghubir, P. (1997). Framing the deal: The role of restrictions in accentuating deal value. <em>Journal of Consumer Research, 24</em>(1), 68–79. <a href="https://doi.org/10.1086/209494" target="_blank">https://doi.org/10.1086/209494</a>
+            </div>
+            
+            <div class="reference-item">
+                Joinson, A. N., Reips, U.-D., Buchanan, T., & Schofield, C. B. P. (2010). Privacy, trust, and self-disclosure online. <em>Human–Computer Interaction, 25</em>(1), 1–24. <a href="https://doi.org/10.1080/07370020903586662" target="_blank">https://doi.org/10.1080/07370020903586662</a>
+            </div>
+            
+            <div class="reference-item">
+                Kelman, H. C. (1958). Compliance, identification, and internalization: Three processes of attitude change. <em>Journal of Conflict Resolution, 2</em>(1), 51–60. <a href="https://doi.org/10.1177/002200275800200106" target="_blank">https://doi.org/10.1177/002200275800200106</a>
+            </div>
+            
+            <div class="reference-item">
+                Kumkale, G. T., & Albarracín, D. (2004). The sleeper effect in persuasion: A meta-analytic review. <em>Psychological Bulletin, 130</em>(1), 143–172. <a href="https://doi.org/10.1037/0033-2909.130.1.143" target="_blank">https://doi.org/10.1037/0033-2909.130.1.143</a>
+            </div>
+            
+            <div class="reference-item">
+                Lerman, K. (2007). Social information processing in news aggregation. <em>IEEE Internet Computing, 11</em>(6), 16–28. <a href="https://doi.org/10.1109/MIC.2007.136" target="_blank">https://doi.org/10.1109/MIC.2007.136</a>
+            </div>
+            
+            <div class="reference-item">
+                Lowrey, W. (2008). Credibility online: The web's impact on sourcing norms. In M. Eadie (Ed.), <em>21st century communication: A reference handbook</em> (pp. 456–463). SAGE Publications.
+            </div>
+            
+            <div class="reference-item">
+                Metzger, M. J. (2007). Making sense of credibility on the Web: Models for evaluating online information and recommendations for future research. <em>Journal of the American Society for Information Science and Technology, 58</em>(13), 2078–2091. <a href="https://doi.org/10.1002/asi.20672" target="_blank">https://doi.org/10.1002/asi.20672</a>
+            </div>
+            
+            <div class="reference-item">
+                Metzger, M. J., Flanagin, A. J., & Medders, R. B. (2010). Social and heuristic approaches to credibility evaluation online. <em>Journal of Communication, 60</em>(3), 413–439. <a href="https://doi.org/10.1111/j.1460-2466.2010.01488.x" target="_blank">https://doi.org/10.1111/j.1460-2466.2010.01488.x</a>
+            </div>
+            
+            <div class="reference-item">
+                Patzer, G. L. (1983). Source credibility as a function of communicator physical attractiveness. <em>Journal of Business Research, 11</em>(2), 229–241. <a href="https://doi.org/10.1016/0148-2963(83)90030-9" target="_blank">https://doi.org/10.1016/0148-2963(83)90030-9</a>
+            </div>
+            
+            <div class="reference-item">
+                Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. <em>Advances in Experimental Social Psychology, 19</em>, 123–205. <a href="https://doi.org/10.1016/S0065-2601(08)60214-2" target="_blank">https://doi.org/10.1016/S0065-2601(08)60214-2</a>
+            </div>
+            
+            <div class="reference-item">
+                Petty, R. E., Cacioppo, J. T., & Goldman, R. (1981). Personal involvement as a determinant of argument-based persuasion. <em>Journal of Personality and Social Psychology, 41</em>(5), 847–855. <a href="https://doi.org/10.1037/0022-3514.41.5.847" target="_blank">https://doi.org/10.1037/0022-3514.41.5.847</a>
+            </div>
+            
+            <div class="reference-item">
+                Pornpitakpan, C. (2004). The persuasiveness of source credibility: A critical review of five decades' evidence. <em>Journal of Applied Social Psychology, 34</em>(2), 243–281. <a href="https://doi.org/10.1111/j.1559-1816.2004.tb02547.x" target="_blank">https://doi.org/10.1111/j.1559-1816.2004.tb02547.x</a>
+            </div>
+            
+            <div class="reference-item">
+                Robins, D., & Holmes, J. (2008). Aesthetics and credibility in web site design. <em>Information Processing & Management, 44</em>(1), 386–399. <a href="https://doi.org/10.1016/j.ipm.2007.02.003" target="_blank">https://doi.org/10.1016/j.ipm.2007.02.003</a>
+            </div>
+            
+            <div class="reference-item">
+                Sundar, S. S. (2008). The MAIN model: A heuristic approach to understanding technology effects on credibility. In M. J. Metzger & A. J. Flanagin (Eds.), <em>Digital media, youth, and credibility</em> (pp. 73–100). MIT Press.
+            </div>
+            
+            <div class="reference-item">
+                Sundar, S. S., Knobloch-Westerwick, S., & Hastall, M. R. (2007). News cues: Information scent and cognitive heuristics. <em>Journal of the American Society for Information Science and Technology, 58</em>(3), 366–378. <a href="https://doi.org/10.1002/asi.20511" target="_blank">https://doi.org/10.1002/asi.20511</a>
+            </div>
+            
+            <div class="reference-item">
+                Suri, R., & Monroe, K. B. (2003). The effects of time constraints on consumers' judgments of prices and products. <em>Journal of Consumer Research, 30</em>(1), 92–104. <a href="https://doi.org/10.1086/374696" target="_blank">https://doi.org/10.1086/374696</a>
+            </div>
+            
+            <div class="reference-item">
+                Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. <em>Science, 185</em>(4157), 1124–1131. <a href="https://doi.org/10.1126/science.185.4157.1124" target="_blank">https://doi.org/10.1126/science.185.4157.1124</a>
+            </div>
+            
+            <div class="reference-item">
+                Unkelbach, C. (2007). Reversing the truth effect: Learning the interpretation of processing fluency in judgments of truth. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition, 33</em>(1), 219–230. <a href="https://doi.org/10.1037/0278-7393.33.1.219" target="_blank">https://doi.org/10.1037/0278-7393.33.1.219</a>
+            </div>
+            
+            <div class="reference-item">
+                Van Dijck, J., & Poell, T. (2013). Understanding social media logic. <em>Media and Communication, 1</em>(1), 2–14. <a href="https://doi.org/10.17645/mac.v1i1.70" target="_blank">https://doi.org/10.17645/mac.v1i1.70</a>
+            </div>
+            
+            <div class="reference-item">
+                Wathen, C. N., & Burkell, J. (2002). Believe it or not: Factors influencing credibility on the Web. <em>Journal of the American Society for Information Science and Technology, 53</em>(2), 134–144. <a href="https://doi.org/10.1002/asi.10016" target="_blank">https://doi.org/10.1002/asi.10016</a>
+            </div>
+            
+            <div class="reference-item">
+                Wilson, E. J., & Sherrell, D. L. (1993). Source effects in communication and persuasion research: A meta-analysis of effect size. <em>Journal of the Academy of Marketing Science, 21</em>(2), 101–112. <a href="https://doi.org/10.1007/BF02894421" target="_blank">https://doi.org/10.1007/BF02894421</a>
+            </div>
+            
+            <div class="reference-item">
+                Wojdynski, B. W., & Evans, N. J. (2016). Going native: Effects of disclosure position and language on the recognition and evaluation of online native advertising. <em>Journal of Advertising, 45</em>(2), 157–168. <a href="https://doi.org/10.1080/00913367.2015.1115380" target="_blank">https://doi.org/10.1080/00913367.2015.1115380</a>
+            </div>
+            
+            <div class="reference-item">
+                Wohn, D. Y. (2019). Volunteer moderators in Twitch micro communities: How they get involved, the roles they play, and the emotional labor they experience. <em>Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</em>, Paper 160. <a href="https://doi.org/10.1145/3290605.3300390" target="_blank">https://doi.org/10.1145/3290605.3300390</a>
+            </div>
+            
+            <div class="reference-item">
+                Zajonc, R. B. (1968). Attitudinal effects of mere exposure. <em>Journal of Personality and Social Psychology, 9</em>(2, Pt. 2), 1–27. <a href="https://doi.org/10.1037/h0025848" target="_blank">https://doi.org/10.1037/h0025848</a>
+            </div>
+        </div>
+        
+        <a href="javascript:history.back()" class="back-button">← Back to Index</a>
+    </div>
+</body>
+</html>

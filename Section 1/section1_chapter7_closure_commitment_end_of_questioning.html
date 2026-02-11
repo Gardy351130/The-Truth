@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 1, Chapter 7: Closure, Commitment, and the End of Questioning - Truth Index Encyclopedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Georgia', serif;
+            background: linear-gradient(to bottom, #f4f1e8, #e8e4d8);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fdfcf8;
+            padding: 60px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.1), 0 0 2px rgba(0,0,0,0.05) inset;
+            border: 1px solid #d4c4a8;
+        }
+
+        .encyclopedia-header {
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #6b5d4f;
+        }
+
+        .breadcrumb {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 13px;
+            color: #8b7355;
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #2c2416;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: #6b5d4f;
+            margin-bottom: 50px;
+            line-height: 1.5;
+        }
+
+        .visual-demonstration {
+            margin: 50px 0 60px 0;
+            text-align: center;
+        }
+
+        .visual-demonstration h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #2c2416;
+        }
+
+        .image-box {
+            background-color: #f8f6f0;
+            padding: 40px;
+            border: 2px solid #d4c4a8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #6b5d4f;
+            font-size: 15px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .intro-box {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 24px;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            color: #2c2416;
+            border-bottom: 2px solid #d4c4a8;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 19px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c2416;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 17px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .separator {
+            margin: 50px auto;
+            width: 200px;
+            height: 3px;
+            background: double #8b7355;
+            border: none;
+            border-top: 3px double #8b7355;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 3px double #8b7355;
+        }
+
+        .references h2 {
+            border-bottom: none;
+            margin-bottom: 25px;
+        }
+
+        .reference-item {
+            margin-bottom: 18px;
+            padding-left: 30px;
+            text-indent: -30px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+        }
+
+        .reference-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 16px;
+            background-color: #f8f6f0;
+            border: 1px solid #d4c4a8;
+            color: #6b5d4f;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Libre Baskerville', serif;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #8b7355;
+            color: #fdfcf8;
+            border-color: #8b7355;
+        }
+
+        /* Supporting Case Studies Section */
+        .case-studies-section {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+        }
+
+        .case-studies-section h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            color: #2c2416;
+            margin-bottom: 15px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .case-studies-section p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .case-studies-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .case-studies-section li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .case-studies-section a {
+            color: #1a5490;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .case-studies-section a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .image-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="encyclopedia-header">Truth Index Encyclopedia</div>
+        <div class="breadcrumb">Section 1: Foundations of Interpretation › Chapter 7</div>
+        
+        <h1>Closure, Commitment, and the End of Questioning</h1>
+        <p class="subtitle">How interpretations become fixed and questioning terminates</p>
+
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="visual-demonstration">
+            <h3>Visual Demonstration: The Narrowing of Interpretation</h3>
+            <div class="image-box">
+                <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+                    <!-- Title -->
+                    <text x="400" y="30" text-anchor="middle" font-family="'Libre Baskerville', serif" font-size="18" fill="#2c2416" font-weight="bold">Interpretive Closure Process</text>
+                    
+                    <!-- Initial State - Multiple Possibilities -->
+                    <text x="400" y="65" text-anchor="middle" font-family="'Crimson Text', serif" font-size="14" fill="#6b5d4f" font-style="italic">Initial Ambiguous Information</text>
+                    
+                    <!-- Multiple interpretation paths at top -->
+                    <circle cx="250" cy="100" r="35" fill="#e8e4d8" stroke="#8b7355" stroke-width="2"/>
+                    <text x="250" y="107" text-anchor="middle" font-family="'Crimson Text', serif" font-size="12" fill="#2c2416">Possibility A</text>
+                    
+                    <circle cx="400" cy="100" r="35" fill="#e8e4d8" stroke="#8b7355" stroke-width="2"/>
+                    <text x="400" y="107" text-anchor="middle" font-family="'Crimson Text', serif" font-size="12" fill="#2c2416">Possibility B</text>
+                    
+                    <circle cx="550" cy="100" r="35" fill="#e8e4d8" stroke="#8b7355" stroke-width="2"/>
+                    <text x="550" y="107" text-anchor="middle" font-family="'Crimson Text', serif" font-size="12" fill="#2c2416">Possibility C</text>
+                    
+                    <!-- Funnel/narrowing shape -->
+                    <path d="M 200 150 L 400 350 L 600 150 Z" fill="none" stroke="#d4c4a8" stroke-width="2" stroke-dasharray="5,3"/>
+                    
+                    <!-- Progressive narrowing markers -->
+                    <line x1="220" y1="180" x2="580" y2="180" stroke="#8b7355" stroke-width="1" opacity="0.6"/>
+                    <text x="610" y="185" font-family="'Crimson Text', serif" font-size="11" fill="#6b5d4f">Exposure</text>
+                    
+                    <line x1="260" y1="230" x2="540" y2="230" stroke="#8b7355" stroke-width="1" opacity="0.6"/>
+                    <text x="610" y="235" font-family="'Crimson Text', serif" font-size="11" fill="#6b5d4f">Familiarity</text>
+                    
+                    <line x1="300" y1="280" x2="500" y2="280" stroke="#8b7355" stroke-width="1" opacity="0.6"/>
+                    <text x="610" y="285" font-family="'Crimson Text', serif" font-size="11" fill="#6b5d4f">Confidence</text>
+                    
+                    <line x1="340" y1="330" x2="460" y2="330" stroke="#8b7355" stroke-width="1.5" opacity="0.8"/>
+                    <text x="610" y="335" font-family="'Crimson Text', serif" font-size="11" fill="#8b7355" font-weight="bold">Commitment</text>
+                    
+                    <!-- Closure point -->
+                    <circle cx="400" cy="365" r="50" fill="#8b7355" stroke="#2c2416" stroke-width="3"/>
+                    <text x="400" y="362" text-anchor="middle" font-family="'Crimson Text', serif" font-size="13" fill="#fdfcf8" font-weight="bold">CLOSURE</text>
+                    <text x="400" y="380" text-anchor="middle" font-family="'Crimson Text', serif" font-size="11" fill="#fdfcf8">Questioning</text>
+                    <text x="400" y="393" text-anchor="middle" font-family="'Crimson Text', serif" font-size="11" fill="#fdfcf8">Ends</text>
+                    
+                    <!-- Lock symbol -->
+                    <rect x="385" y="425" width="30" height="25" rx="3" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="400" cy="420" r="8" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="400" cy="437" r="3" fill="#8b7355"/>
+                    
+                    <text x="400" y="470" text-anchor="middle" font-family="'Crimson Text', serif" font-size="12" fill="#2c2416" font-style="italic">Settled Interpretation</text>
+                    <text x="400" y="488" text-anchor="middle" font-family="'Crimson Text', serif" font-size="11" fill="#6b5d4f">(resistant to revision)</text>
+                    
+                    <!-- Side annotations -->
+                    <text x="120" y="220" font-family="'Crimson Text', serif" font-size="12" fill="#6b5d4f" font-style="italic">Open</text>
+                    <text x="120" y="237" font-family="'Crimson Text', serif" font-size="12" fill="#6b5d4f" font-style="italic">inquiry</text>
+                    
+                    <text x="120" y="340" font-family="'Crimson Text', serif" font-size="12" fill="#8b7355" font-style="italic">Closed</text>
+                    <text x="120" y="357" font-family="'Crimson Text', serif" font-size="12" fill="#8b7355" font-style="italic">inquiry</text>
+                    
+                    <!-- Arrow showing no new evidence -->
+                    <defs>
+                        <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#d4c4a8"/>
+                        </marker>
+                    </defs>
+                    <path d="M 650 150 L 650 350" stroke="#d4c4a8" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+                    <text x="680" y="250" font-family="'Crimson Text', serif" font-size="11" fill="#6b5d4f" font-style="italic">No increase</text>
+                    <text x="680" y="265" font-family="'Crimson Text', serif" font-size="11" fill="#6b5d4f" font-style="italic">in evidence</text>
+                </svg>
+            </div>
+            <p class="caption">Interpretive closure reduces uncertainty by ending questioning, not by increasing accuracy. Multiple possible interpretations narrow to a single settled conclusion through psychological processes of exposure, familiarity, and commitment—independent of evidential resolution. Once closure is achieved, the interpretation becomes resistant to revision and further inquiry terminates.</p>
+        </div>
+
+        <div class="intro-box">
+            Human interpretation does not proceed indefinitely. At some point, questioning stops, alternatives are rejected, and a single interpretation becomes fixed. This chapter examines the psychological mechanisms through which interpretive closure occurs—how ambiguity resolves into certainty, how provisional judgments transform into settled beliefs, and how the process of interpretation terminates. Closure operates as a psychological endpoint that provides relief from uncertainty, but this endpoint emerges through internal psychological needs rather than through complete evidential resolution. The comfort of closure does not require—and often precedes—actual understanding.
+        </div>
+
+        <h2>Need for Cognitive Closure</h2>
+
+        <p>The need for cognitive closure represents a motivated preference for definite answers over ambiguity and uncertainty (Kruglanski & Webster, 1996). This need varies across individuals and situations, but it consistently predicts when and how people terminate information processing. Individuals high in need for closure form judgments more quickly, rely on initial information more heavily, and resist revising established conclusions (Webster & Kruglanski, 1994).</p>
+
+        <p>This need manifests as discomfort with unresolved questions. Ambiguous situations generate psychological tension that closure relieves (Roets & Van Hiel, 2011). The relief provided by reaching a conclusion reinforces the tendency to seek closure in future ambiguous situations. Over time, this creates a dispositional preference for interpretive certainty over interpretive accuracy.</p>
+
+        <p>Situational factors amplify closure needs. Time pressure, fatigue, and cognitive load all increase the urgency to reach settled interpretations (Kruglanski & Freund, 1983). Under these conditions, people sacrifice thorough evaluation for the psychological benefit of having an answer. The interpretation that provides fastest closure becomes preferred regardless of its evidential support. Need for closure transforms interpretation from a truth-seeking process into an uncertainty-reduction process.</p>
+
+        <h2>Commitment Escalation</h2>
+
+        <p>Once an interpretation is formed, commitment to that interpretation intensifies through self-reinforcing mechanisms. Initial tentative judgments become firmer with each affirmation, whether internal or public (Cialdini & Trost, 1998). The act of stating a belief increases commitment to it, independent of the reasons underlying the original belief formation (Bem, 1972).</p>
+
+        <p>Public commitment amplifies this effect. When individuals state interpretations to others, social consistency pressures create additional barriers to revision (Kiesler, 1971). Changing a publicly stated position requires acknowledging error, which threatens social image and self-perception. The psychological cost of revision increases proportionally with the publicity and frequency of prior commitment expressions.</p>
+
+        <p>Commitment escalation also occurs through behavioral consistency. Actions taken based on an interpretation create investment in that interpretation's validity (Staw, 1976). Resources expended, decisions made, and relationships formed on the basis of a particular belief all generate retrospective justification for maintaining that belief. The sunk cost of prior commitment makes belief revision psychologically expensive, even when new evidence contradicts the original interpretation.</p>
+
+        <h2>Belief Perseverance</h2>
+
+        <p>Beliefs persist even after the evidence supporting them has been discredited. Anderson, Lepper, and Ross (1980) demonstrated this pattern experimentally: participants who formed beliefs about their abilities based on false feedback maintained those beliefs even after being explicitly told the feedback was fabricated. The original evidence disappeared, but the interpretation remained.</p>
+
+        <p>This perseverance occurs because beliefs, once formed, generate their own supporting structures. People develop explanations for why their beliefs make sense, and these explanations become independent supports that outlast the original evidence (Ross, Lepper, & Hubbard, 1975). Even when the foundation is removed, the explanatory scaffolding maintains the belief.</p>
+
+        <p>Contradictory evidence often strengthens rather than weakens established beliefs through a process Lord, Ross, and Lepper (1979) termed biased assimilation. When presented with mixed evidence on a contested topic, individuals evaluate confirming evidence as strong and valid while scrutinizing disconfirming evidence for flaws and limitations. The same ambiguous dataset reinforces opposing beliefs in different people, each filtering information through their pre-existing interpretive framework.</p>
+
+        <h2>Interpretation as Identity</h2>
+
+        <p>Interpretations become incorporated into self-concept. Beliefs about how the world works, what events mean, and which explanations are valid become part of personal identity rather than provisional hypotheses subject to revision (Kunda, 1990). When this incorporation occurs, challenges to interpretations are experienced as challenges to the self.</p>
+
+        <p>Identity-protective cognition explains resistance to evidence contradicting valued beliefs. Kahan, Peters, Wittlin, Slovic, Ouellette, Braman, and Mandel (2012) found that individuals with greater quantitative reasoning skills showed more polarized responses to politically charged scientific data, not less. Superior reasoning ability was deployed to defend identity-consistent interpretations rather than to evaluate evidence objectively. The goal shifted from accuracy to identity protection.</p>
+
+        <p>This identity integration makes belief revision emotionally costly. Abandoning a long-held interpretation requires not just acknowledging error but reconceptualizing aspects of the self (Nyhan & Reifler, 2010). The psychological barrier to such reconceptualization exceeds the barrier to simply processing contradictory information. Identity preservation takes precedence over interpretive accuracy.</p>
+
+        <h2>Questioning as Threat</h2>
+
+        <p>Reopening settled interpretations triggers defensive responses. Once closure is achieved, further inquiry is experienced as disruptive rather than clarifying (Kruglanski, 2004). Questions that challenge established interpretations generate cognitive dissonance—the uncomfortable state arising when held beliefs conflict with new information (Festinger, 1957).</p>
+
+        <p>Dissonance reduction strategies prioritize maintaining existing interpretations over revising them. When confronted with contradictory evidence, people employ selective attention, motivated reasoning, and source derogation to preserve established beliefs (Festinger, 1957; Kunda, 1990). The source of contradictory information is questioned, alternative explanations are generated, and the significance of disconfirming evidence is minimized. These strategies reduce the discomfort of contradiction without requiring belief revision.</p>
+
+        <p>Social contexts amplify defensive responses. Group-shared interpretations receive collective defense, with members reinforcing each other's resistance to alternative perspectives (Janis, 1982). Challenge from out-group members strengthens in-group commitment to contested interpretations, transforming potential opportunities for belief revision into occasions for group solidarity and defensive argumentation (Nyhan, Reifler, Richey, & Freed, 2014).</p>
+
+        <p>The psychological experience of questioning mirrors the experience of threat. Uncertainty activation in the brain shows overlap with threat detection systems (Hirsh, Mar, & Peterson, 2012). Reopening settled questions activates stress responses similar to those triggered by physical danger. This physiological reaction creates motivation to terminate questioning and restore the comfort of settled interpretation, independent of whether the settled interpretation is accurate.</p>
+
+        <hr class="separator">
+
+        <p>The mechanisms documented in this chapter reveal interpretation as a process that terminates not through evidential completion but through psychological closure. Ambiguity narrows to certainty through exposure and familiarity. Confidence solidifies into commitment. Beliefs persevere beyond their evidential foundations. Interpretations integrate into identity. Questioning becomes threatening rather than clarifying. These mechanisms explain why human interpretation ends—not because questions are answered, but because the psychological need for closure is satisfied. Section 1 has traced the architecture of interpretation from initial perception through final closure. Section 2 examines how these foundational patterns manifest in constructed information environments where closure is engineered rather than emergent.</p>
+
+        <!-- Supporting Case Studies -->
+        <div class="case-studies-section">
+            <h2>Supporting Case Studies</h2>
+            <p>The following documented cases provide real-world examples of closure and commitment mechanisms in operation:</p>
+            <ul>
+                <li><a href="CS-001_Endless_Scroll_Funnel.html">CS-001: The Endless Scroll Funnel</a> — Demonstrates how time investment creates commitment that resists abandonment despite lack of concrete information</li>
+                <li><a href="CS-002_Assessment_Questionnaire.html">CS-002: The Assessment Questionnaire</a> — Shows how answering questions creates commitment to receiving results, with completion acting as a closure point that terminates critical evaluation</li>
+            </ul>
+        </div>
+
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <div class="reference-item">
+                Anderson, C. A., Lepper, M. R., & Ross, L. (1980). Perseverance of social theories: The role of explanation in the persistence of discredited information. <em>Journal of Personality and Social Psychology, 39</em>(6), 1037-1049. <a href="https://doi.org/10.1037/0022-3514.39.6.1037" target="_blank">https://doi.org/10.1037/0022-3514.39.6.1037</a>
+            </div>
+
+            <div class="reference-item">
+                Bem, D. J. (1972). Self-perception theory. In L. Berkowitz (Ed.), <em>Advances in experimental social psychology</em> (Vol. 6, pp. 1-62). Academic Press.
+            </div>
+
+            <div class="reference-item">
+                Cialdini, R. B., & Trost, M. R. (1998). Social influence: Social norms, conformity and compliance. In D. T. Gilbert, S. T. Fiske, & G. Lindzey (Eds.), <em>The handbook of social psychology</em> (4th ed., Vol. 2, pp. 151-192). McGraw-Hill.
+            </div>
+
+            <div class="reference-item">
+                Festinger, L. (1957). <em>A theory of cognitive dissonance</em>. Stanford University Press.
+            </div>
+
+            <div class="reference-item">
+                Hirsh, J. B., Mar, R. A., & Peterson, J. B. (2012). Psychological entropy: A framework for understanding uncertainty-related anxiety. <em>Psychological Review, 119</em>(2), 304-320. <a href="https://doi.org/10.1037/a0026767" target="_blank">https://doi.org/10.1037/a0026767</a>
+            </div>
+
+            <div class="reference-item">
+                Janis, I. L. (1982). <em>Groupthink: Psychological studies of policy decisions and fiascoes</em> (2nd ed.). Houghton Mifflin.
+            </div>
+
+            <div class="reference-item">
+                Kahan, D. M., Peters, E., Wittlin, M., Slovic, P., Ouellette, L. L., Braman, D., & Mandel, G. (2012). The polarizing impact of science literacy and numeracy on perceived climate change risks. <em>Nature Climate Change, 2</em>(10), 732-735. <a href="https://doi.org/10.1038/nclimate1547" target="_blank">https://doi.org/10.1038/nclimate1547</a>
+            </div>
+
+            <div class="reference-item">
+                Kiesler, C. A. (1971). <em>The psychology of commitment: Experiments linking behavior to belief</em>. Academic Press.
+            </div>
+
+            <div class="reference-item">
+                Kruglanski, A. W. (2004). <em>The psychology of closed mindedness</em>. Psychology Press.
+            </div>
+
+            <div class="reference-item">
+                Kruglanski, A. W., & Freund, T. (1983). The freezing and unfreezing of lay-inferences: Effects on impressional primacy, ethnic stereotyping, and numerical anchoring. <em>Journal of Experimental Social Psychology, 19</em>(5), 448-468. <a href="https://doi.org/10.1016/0022-1031(83)90022-7" target="_blank">https://doi.org/10.1016/0022-1031(83)90022-7</a>
+            </div>
+
+            <div class="reference-item">
+                Kruglanski, A. W., & Webster, D. M. (1996). Motivated closing of the mind: "Seizing" and "freezing." <em>Psychological Review, 103</em>(2), 263-283. <a href="https://doi.org/10.1037/0033-295X.103.2.263" target="_blank">https://doi.org/10.1037/0033-295X.103.2.263</a>
+            </div>
+
+            <div class="reference-item">
+                Kunda, Z. (1990). The case for motivated reasoning. <em>Psychological Bulletin, 108</em>(3), 480-498. <a href="https://doi.org/10.1037/0033-2909.108.3.480" target="_blank">https://doi.org/10.1037/0033-2909.108.3.480</a>
+            </div>
+
+            <div class="reference-item">
+                Lord, C. G., Ross, L., & Lepper, M. R. (1979). Biased assimilation and attitude polarization: The effects of prior theories on subsequently considered evidence. <em>Journal of Personality and Social Psychology, 37</em>(11), 2098-2109. <a href="https://doi.org/10.1037/0022-3514.37.11.2098" target="_blank">https://doi.org/10.1037/0022-3514.37.11.2098</a>
+            </div>
+
+            <div class="reference-item">
+                Nyhan, B., & Reifler, J. (2010). When corrections fail: The persistence of political misperceptions. <em>Political Behavior, 32</em>(2), 303-330. <a href="https://doi.org/10.1007/s11109-010-9112-2" target="_blank">https://doi.org/10.1007/s11109-010-9112-2</a>
+            </div>
+
+            <div class="reference-item">
+                Nyhan, B., Reifler, J., Richey, S., & Freed, G. L. (2014). Effective messages in vaccine promotion: A randomized trial. <em>Pediatrics, 133</em>(4), e835-e842. <a href="https://doi.org/10.1542/peds.2013-2365" target="_blank">https://doi.org/10.1542/peds.2013-2365</a>
+            </div>
+
+            <div class="reference-item">
+                Roets, A., & Van Hiel, A. (2011). Item selection and validation of a brief, 15-item version of the Need for Closure Scale. <em>Personality and Individual Differences, 50</em>(1), 90-94. <a href="https://doi.org/10.1016/j.paid.2010.09.004" target="_blank">https://doi.org/10.1016/j.paid.2010.09.004</a>
+            </div>
+
+            <div class="reference-item">
+                Ross, L., Lepper, M. R., & Hubbard, M. (1975). Perseverance in self-perception and social perception: Biased attributional processes in the debriefing paradigm. <em>Journal of Personality and Social Psychology, 32</em>(5), 880-892. <a href="https://doi.org/10.1037/0022-3514.32.5.880" target="_blank">https://doi.org/10.1037/0022-3514.32.5.880</a>
+            </div>
+
+            <div class="reference-item">
+                Staw, B. M. (1976). Knee-deep in the big muddy: A study of escalating commitment to a chosen course of action. <em>Organizational Behavior and Human Performance, 16</em>(1), 27-44. <a href="https://doi.org/10.1016/0030-5073(76)90005-2" target="_blank">https://doi.org/10.1016/0030-5073(76)90005-2</a>
+            </div>
+
+            <div class="reference-item">
+                Webster, D. M., & Kruglanski, A. W. (1994). Individual differences in need for cognitive closure. <em>Journal of Personality and Social Psychology, 67</em>(6), 1049-1062. <a href="https://doi.org/10.1037/0022-3514.67.6.1049" target="_blank">https://doi.org/10.1037/0022-3514.67.6.1049</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

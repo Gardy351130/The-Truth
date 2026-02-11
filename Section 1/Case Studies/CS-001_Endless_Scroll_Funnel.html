@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS-001: The Endless Scroll Funnel | GrumpysTruth Case Studies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #2a2a2a;
+            padding: 50px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        /* Header */
+        .header {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #404040;
+        }
+        
+        .case-id {
+            font-family: 'Courier Prime', monospace;
+            font-size: 14px;
+            color: #ff6b35;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #b0b0b0;
+            font-style: italic;
+        }
+        
+        /* Section Headers */
+        .section-header {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ff6b35;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #404040;
+        }
+        
+        /* Content */
+        p {
+            margin-bottom: 20px;
+            font-size: 17px;
+            color: #d0d0d0;
+        }
+        
+        .context-box {
+            background: #1f1f1f;
+            border-left: 3px solid #ff6b35;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .context-box p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #c0c0c0;
+        }
+        
+        .context-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Lists */
+        ol, ul {
+            margin: 20px 0 20px 30px;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            color: #d0d0d0;
+            font-size: 17px;
+        }
+        
+        .assumption-list {
+            background: #1f1f1f;
+            padding: 25px 25px 10px 55px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        /* Callout boxes */
+        .callout {
+            background: #2d1f1a;
+            border-left: 4px solid #ff6b35;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .callout-title {
+            font-weight: 700;
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .callout p {
+            color: #e0e0e0;
+            font-size: 16px;
+        }
+        
+        /* Reality check box */
+        .reality-check {
+            background: #1a2d1a;
+            border: 2px solid #4a9d4a;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .reality-check-title {
+            font-weight: 700;
+            color: #6dd16d;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        /* Cross-references */
+        .cross-refs {
+            background: #1f1f2a;
+            padding: 25px;
+            margin: 40px 0;
+            border-radius: 4px;
+            border: 1px solid #404050;
+        }
+        
+        .cross-refs-title {
+            font-weight: 700;
+            color: #8b9eff;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .cross-refs ul {
+            margin: 10px 0 0 20px;
+        }
+        
+        .cross-refs li {
+            color: #b0b5ff;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .cross-refs a {
+            color: #4a9eff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cross-refs a:hover {
+            text-decoration: underline;
+            color: #6bb6ff;
+        }
+
+        /* Navigation */
+        .navigation {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #404040;
+        }
+
+        .navigation a {
+            color: #ff6b35;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: 'Courier Prime', monospace;
+            letter-spacing: 1px;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Status bar */
+        .status-bar {
+            background: #1a1a2e;
+            padding: 15px 20px;
+            margin-top: 50px;
+            border-radius: 4px;
+            font-family: 'Courier Prime', monospace;
+            font-size: 14px;
+            color: #6dd16d;
+            border: 1px dashed #4a9d4a;
+        }
+        
+        /* Emphasis */
+        strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+        
+        em {
+            color: #ff9966;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="case-id">CASE STUDY CS-001</div>
+            <h1 class="title">The Endless Scroll Funnel</h1>
+            <div class="subtitle">How long pages make people feel invested before showing them anything real</div>
+        </div>
+
+        <!-- Context -->
+        <h2 class="section-header">What Happened</h2>
+        
+        <p>I clicked a paid ad on a major social media platform. It looked like it was offering tools or resources for something I was interested in. Standard stuff.</p>
+        
+        <p>What I got was a page so long I had to scroll <strong>eight full screens</strong> before I hit the footer.</p>
+        
+        <div class="context-box">
+            <p><strong>Where:</strong> Landing page from paid social media ad</p>
+            <p><strong>When:</strong> First visit, no prior relationship with this company</p>
+            <p><strong>Environment:</strong> Standard browser, desktop view</p>
+        </div>
+
+        <!-- The Structure -->
+        <h2 class="section-header">How It Works</h2>
+        
+        <p>The page structure follows a specific pattern. As you scroll, these elements appear in sequence:</p>
+        
+        <ol>
+            <li><strong>Large visual elements.</strong> Images, charts, and diagrams occupy significant screen space. These elements contain minimal specific information about deliverables or outcomes.</li>
+            
+            <li><strong>Emotional problem framing.</strong> Questions use second-person address: "Are you tired of...?" "What if you could...?" "Imagine finally..." These sections emphasize problems and feelings rather than specific solutions or features.</li>
+            
+            <li><strong>Repeated abstract terminology.</strong> Words like "tools," "systems," "resources," and "framework" appear multiple times. Definitions, examples, or previews of these items are not provided in the upper or middle sections.</li>
+            
+            <li><strong>Absence of previews or samples.</strong> No screenshots, examples, or itemized lists of what is included appear before the footer section.</li>
+            
+            <li><strong>Legal and disclaimer language at bottom.</strong> Platform disclaimers, earnings warnings, privacy policies, and terms of service appear only in the footer section, after 8+ screens of scroll depth.</li>
+        </ol>
+
+        <!-- The Hook -->
+        <h2 class="section-header">What the Structure Relies On</h2>
+        
+        <p>This structure functions by relying on specific assumptions. The following beliefs enable the mechanism:</p>
+        
+        <div class="assumption-list">
+            <ul>
+                <li><strong>"Long = Legitimate"</strong><br>Extended page length is interpreted as indicating substantial content or credibility.</li>
+                
+                <li><strong>"Investment implies value"</strong><br>Time and attention already spent is interpreted as progress toward a worthwhile outcome.</li>
+                
+                <li><strong>"Legal presence indicates vetting"</strong><br>Presence of privacy policies and terms of service is interpreted as evidence of review or oversight rather than legal protection for the publisher.</li>
+                
+                <li><strong>"Platform proximity implies approval"</strong><br>Appearance within a major platform's advertising system is interpreted as platform endorsement or verification of claims.</li>
+                
+                <li><strong>"Delayed clarity is standard"</strong><br>Absence of specific information in early sections is interpreted as normal practice, with expectation that details will appear with continued engagement.</li>
+            </ul>
+        </div>
+
+        <!-- Structural Mechanism -->
+        <div class="callout">
+            <div class="callout-title">Key Structural Feature:</div>
+            <p>The page contains no falsifiable claims. Promises remain in the realm of <em>implication</em> rather than assertion. Value is <em>suggested</em>. Results are <em>referenced</em>. Tools are <em>mentioned</em>.</p>
+            <p>No specific deliverable is defined. This means there is no concrete claim to verify and no specific promise to evaluate against outcomes.</p>
+        </div>
+
+        <!-- Who's Responsible -->
+        <h2 class="section-header">Who's Responsible for What</h2>
+        
+        <p>Here's where it gets interesting. Look at how responsibility gets divided:</p>
+        
+        <p><strong>What the publisher is responsible for:</strong></p>
+        <ul>
+            <li>Having a privacy policy (doesn't have to protect you, just has to exist)</li>
+            <li>Having terms of service (doesn't have to be fair, just has to be there)</li>
+            <li>Including earnings disclaimers (just says results vary, not that the thing works)</li>
+        </ul>
+        
+        <p><strong>What you're responsible for:</strong></p>
+        <ul>
+            <li>Everything else</li>
+        </ul>
+        
+        <p>According to the language in the footer, outcomes are attributed to user-dependent factors: effort, implementation, circumstances. The claims and implications made earlier in the page are not referenced in these outcome statements.</p>
+
+        <!-- What Actually Happens -->
+        <div class="reality-check">
+            <div class="reality-check-title">What Actually Happens</div>
+            <p><strong>Users spend significant time and attention</strong> before seeing anything verifiable.</p>
+            <p><strong>Claims remain in the realm of implication,</strong> not assertion — which means they can't be proven false.</p>
+            <p><strong>Risk gets pushed entirely onto the user,</strong> independent of what was suggested earlier in the page.</p>
+            <p><strong>The page achieves its goal</strong> (engagement, email capture, sale) regardless of whether it ever delivers informational clarity.</p>
+        </div>
+
+        <!-- Why It Works -->
+        <h2 class="section-header">Observed Mechanism</h2>
+        
+        <p>The structure produces high engagement with low informational resolution.</p>
+        
+        <p>User investment (time, attention, scroll depth) increases before encountering specific, verifiable information. By the time disclaimers and outcome language appear, multiple engagement points have already occurred: email capture, purchase decision, or significant time investment.</p>
+        
+        <p>The absence of falsifiable claims means there is no defined standard against which to measure delivery or outcomes.</p>
+
+        <!-- Cross-References -->
+        <div class="cross-refs">
+            <div class="cross-refs-title">Encyclopedia Cross-References</div>
+            <p style="color: #b0b5ff; font-size: 15px; margin-bottom: 15px;">This case study supports the following sections of the Truth Index Encyclopedia:</p>
+            <ul>
+                <li><a href="section1_chapter2_subsection2-1_assumptions.html">Section 1, Chapter 2 — Assumptions People Hold</a> (Effort implies value, length implies legitimacy)</li>
+                <li><a href="section1_chapter3_cognitive_biases.html">Section 1, Chapter 3 — Cognitive Biases in Interpretation</a> (Sunk cost fallacy in scroll depth and time investment)</li>
+            </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <a href="case_studies_index.html">← Back to Case Studies Index</a>
+        </div>
+
+        <!-- Status -->
+        <div class="status-bar">
+            STATUS: Case documented January 2026 | Pattern observed in paid advertising funnels | Currently active across multiple verticals | Used as structural reference for effort-value assumption research
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regime Shifts & Environmental Change - Truth Index Encyclopedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #fdfcf8;
+            color: #2c2416;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: linear-gradient(to bottom, #f4f1e8, #e8e4d8);
+            box-shadow: 0 0 60px rgba(0,0,0,0.15);
+            min-height: 100vh;
+        }
+
+        .encyclopedia-header {
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .breadcrumb {
+            text-align: center;
+            font-size: 14px;
+            color: #8b7355;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c2416;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: #6b5d4f;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 40px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #6b5d4f;
+        }
+
+        .visual-demonstration {
+            margin: 50px 0;
+        }
+
+        .visual-demonstration h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #2c2416;
+            font-style: italic;
+        }
+
+        .image-box {
+            background-color: #f8f6f0;
+            border: 2px solid #d4c4a8;
+            padding: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .image-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #6b5d4f;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        .intro-box {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        .intro-box p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .intro-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 26px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: #2c2416;
+            border-bottom: 2px solid #d4c4a8;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c2416;
+            font-style: italic;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .separator {
+            border: none;
+            border-top: 2px solid #d4c4a8;
+            margin: 50px 0;
+        }
+
+        .case-studies-section {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        .case-studies-section h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .case-studies-section a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .case-studies-section a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .case-studies-section p {
+            margin-bottom: 15px;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #d4c4a8;
+        }
+
+        .references h2 {
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        .references p {
+            text-align: left;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            text-indent: -30px;
+        }
+
+        .references a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .references a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="encyclopedia-header">Truth Index Encyclopedia</div>
+        <div class="breadcrumb">Section 3: Markets, Systems & Environment › Chapter 7</div>
+        
+        <h1>Regime Shifts & Environmental Change</h1>
+        <p class="subtitle">Structural change, discontinuities, and breakdown of prior rules</p>
+        
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="visual-demonstration">
+            <h3>Visual Demonstration</h3>
+            <div class="image-box">
+                <svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background -->
+                    <rect width="800" height="580" fill="#f8f6f0"/>
+                    
+                    <!-- Title -->
+                    <text x="400" y="35" font-family="serif" font-size="18" fill="#2c2416" text-anchor="middle" font-weight="bold">
+                        The Regime Shift Pattern
+                    </text>
+                    
+                    <!-- Horizontal timeline -->
+                    <line x1="100" y1="300" x2="700" y2="300" stroke="#d4c4a8" stroke-width="2"/>
+                    
+                    <!-- Time markers -->
+                    <text x="150" y="325" font-family="serif" font-size="12" fill="#6b5d4f" text-anchor="middle">Regime A</text>
+                    <text x="450" y="325" font-family="serif" font-size="12" fill="#6b5d4f" text-anchor="middle">Transition</text>
+                    <text x="650" y="325" font-family="serif" font-size="12" fill="#6b5d4f" text-anchor="middle">Regime B</text>
+                    
+                    <!-- Old regime (stability zone) -->
+                    <rect x="100" y="150" width="250" height="130" fill="#8b7355" fill-opacity="0.1" stroke="#8b7355" stroke-width="2"/>
+                    <text x="225" y="125" font-family="serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="bold">Stable Environment</text>
+                    <text x="225" y="180" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Reliable signals</text>
+                    <text x="225" y="200" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Predictable patterns</text>
+                    <text x="225" y="220" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Accumulated expertise</text>
+                    <text x="225" y="240" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Valid assumptions</text>
+                    <text x="225" y="260" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Functioning strategies</text>
+                    
+                    <!-- Discontinuity zone -->
+                    <path d="M 350 150 L 550 150 L 550 430 L 350 280 Z" 
+                          fill="#6b5d4f" fill-opacity="0.15" stroke="#6b5d4f" stroke-width="2" stroke-dasharray="4,4"/>
+                    
+                    <text x="450" y="125" font-family="serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="bold">Discontinuous Change</text>
+                    
+                    <!-- Breakdown indicators inside transition zone -->
+                    <text x="420" y="200" font-family="serif" font-size="11" fill="#2c2416">Signal collapse</text>
+                    <line x1="410" y1="195" x2="490" y2="195" stroke="#6b5d4f" stroke-width="1.5"/>
+                    
+                    <text x="420" y="235" font-family="serif" font-size="11" fill="#2c2416">Rule breakdown</text>
+                    <line x1="410" y1="230" x2="500" y2="230" stroke="#6b5d4f" stroke-width="1.5"/>
+                    
+                    <text x="420" y="270" font-family="serif" font-size="11" fill="#2c2416">Competence obsolescence</text>
+                    <line x1="410" y1="265" x2="530" y2="265" stroke="#6b5d4f" stroke-width="1.5"/>
+                    
+                    <text x="420" y="305" font-family="serif" font-size="11" fill="#2c2416">Power redistribution</text>
+                    <line x1="410" y1="300" x2="510" y2="300" stroke="#6b5d4f" stroke-width="1.5"/>
+                    
+                    <text x="420" y="340" font-family="serif" font-size="11" fill="#2c2416">Advantage inversion</text>
+                    <line x1="410" y1="335" x2="500" y2="335" stroke="#6b5d4f" stroke-width="1.5"/>
+                    
+                    <text x="420" y="375" font-family="serif" font-size="11" fill="#2c2416">Assumption failure</text>
+                    <line x1="410" y1="370" x2="500" y2="370" stroke="#6b5d4f" stroke-width="1.5"/>
+                    
+                    <text x="420" y="410" font-family="serif" font-size="11" fill="#2c2416">Lagged recognition</text>
+                    <line x1="410" y1="405" x2="510" y2="405" stroke="#6b5d4f" stroke-width="1.5"/>
+                    
+                    <!-- New regime (instability zone) -->
+                    <rect x="550" y="200" width="150" height="230" fill="#8b7355" fill-opacity="0.2" stroke="#8b7355" stroke-width="2" stroke-dasharray="6,3"/>
+                    <text x="625" y="125" font-family="serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="bold">New Environment</text>
+                    <text x="625" y="230" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Different rules</text>
+                    <text x="625" y="255" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Novel patterns</text>
+                    <text x="625" y="280" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Obsolete expertise</text>
+                    <text x="625" y="305" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Invalid assumptions</text>
+                    <text x="625" y="330" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Broken strategies</text>
+                    <text x="625" y="355" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Uncertain stability</text>
+                    <text x="625" y="380" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Reordered power</text>
+                    <text x="625" y="405" font-family="serif" font-size="11" fill="#2c2416" text-anchor="middle">Emergent advantage</text>
+                    
+                    <!-- Participant lag arrow -->
+                    <path d="M 250 350 Q 400 480 570 400" 
+                          fill="none" stroke="#6b5d4f" stroke-width="2" stroke-dasharray="5,5"/>
+                    <polygon points="570,400 565,405 575,405" fill="#6b5d4f"/>
+                    <text x="400" y="500" font-family="serif" font-size="11" fill="#6b5d4f" text-anchor="middle" font-style="italic">participant response lag</text>
+                    
+                    <!-- False stability indicator -->
+                    <circle cx="320" cy="215" r="8" fill="none" stroke="#2c2416" stroke-width="1.5"/>
+                    <text x="320" y="195" font-family="serif" font-size="10" fill="#2c2416" text-anchor="middle" font-style="italic">appears</text>
+                    <text x="320" y="207" font-family="serif" font-size="10" fill="#2c2416" text-anchor="middle" font-style="italic">stable</text>
+                    
+                    <!-- Bottom legend box -->
+                    <rect x="50" y="470" width="700" height="95" fill="#fdfcf8" stroke="#d4c4a8" stroke-width="1"/>
+                    
+                    <text x="400" y="492" font-family="serif" font-size="13" fill="#2c2416" text-anchor="middle" font-weight="bold">
+                        Characteristic Features of Regime Shifts
+                    </text>
+                    
+                    <text x="70" y="517" font-family="serif" font-size="11" fill="#2c2416">
+                        • Discontinuous rather than gradual: Changes occur rapidly, not through incremental evolution
+                    </text>
+                    <text x="70" y="535" font-family="serif" font-size="11" fill="#2c2416">
+                        • Prior stability masks proximity: Systems appear most stable immediately before transition
+                    </text>
+                    <text x="70" y="553" font-family="serif" font-size="11" fill="#2c2416">
+                        • Competence persists without relevance: Existing skills function but no longer produce outcomes
+                    </text>
+                </svg>
+            </div>
+            <p class="caption">
+                The regime shift pattern illustrates how markets and systems change discontinuously rather than gradually. During stable periods, signals remain reliable, patterns predictable, and accumulated expertise valid. Transition zones exhibit simultaneous breakdown across multiple dimensions—signal collapse, rule invalidation, competence obsolescence, power redistribution. Participants experience lag between environmental change and response capacity, often misinterpreting structural shifts as temporary anomalies. The new environment operates under different rules that invalidate prior assumptions, making past success irrelevant to future outcomes. Systems frequently appear most stable immediately before regime change, masking proximity to discontinuous transition.
+            </p>
+        </div>
+
+        <div class="intro-box">
+            <p>Markets and systems do not change through smooth evolution. They shift discontinuously when underlying structures break down, when assumptions invalidate suddenly, when established patterns cease to function. Regime shifts represent environmental change that exceeds adaptation speed, making prior competence irrelevant and established advantage obsolete. These transitions operate as system-level phenomena rather than failures of judgment or skill, reshaping rules faster than participants can respond.</p>
+            
+            <p>This chapter documents how stable environments collapse into instability, how reliable signals become noise, and how accumulated expertise loses predictive value through structural rather than gradual change. The focus remains on mechanisms of discontinuity—technology disruption, policy transformation, cultural reorientation, scale effects—that invalidate prior assumptions and redistribute power independent of participant capability. Understanding regime shifts as system properties rather than controllable risks reveals why preparation proves insufficient when environments transform faster than recognition occurs.</p>
+        </div>
+
+        <h2>Regime Shifts as Structural Change</h2>
+
+        <p>Regime shifts represent fundamental changes in system structure, rules, and dynamics rather than variations within stable parameters (Scheffer et al., 2001). These transitions occur when systems cross critical thresholds, moving discontinuously from one equilibrium state to another through mechanisms that resist reversal (Folke et al., 2004). Unlike gradual evolution or cyclical fluctuation, regime shifts invalidate prior assumptions about how systems function, what strategies succeed, and which signals provide reliable information (Biggs et al., 2009).</p>
+
+        <p>Complex adaptive systems exhibit multiple stable states separated by tipping points, where small changes trigger large-scale reorganization once critical thresholds are exceeded (Scheffer & Carpenter, 2003; Lenton et al., 2008). These transitions display hysteresis—the path back to previous states requires different conditions than the path forward—making regime shifts effectively irreversible without major intervention (Scheffer et al., 2009). Gradual environmental changes accumulate invisibly until systems suddenly flip to alternative configurations, catching participants unprepared despite proximity signals (Carpenter & Brock, 2006).</p>
+
+        <p>Technological regime shifts occur when new technologies fundamentally alter production methods, cost structures, or competitive dynamics rather than incrementally improving existing approaches (Dosi, 1982; Perez, 2002). These shifts create discontinuities where established competencies become core rigidities and where dominant firms face disadvantages from prior investments in obsolete technologies (Leonard-Barton, 1992; Christensen & Bower, 1996). The transition from mechanical to electronic computing, from analog to digital media, and from wired to wireless communication each represented regime changes that invalidated accumulated expertise and redistributed market leadership.</p>
+
+        <p>Institutional regime shifts transform regulatory frameworks, property rights, or governance structures in ways that redefine permissible actions and reshape competitive landscapes (North, 1990; Greif & Laitin, 2004). Legal changes, policy reversals, or enforcement pattern shifts can eliminate viable business models overnight, create new entry barriers, or expose previously protected positions to competition (Teubner, 1987). These institutional transitions often occur with minimal warning, as political or regulatory processes operate on different timescales than market adaptation (Streeck & Thelen, 2005).</p>
+
+        <p>Cultural regime shifts alter preferences, norms, or meanings in ways that change demand patterns, legitimacy criteria, or acceptable behavior (DiMaggio & Powell, 1983; Scott, 2008). What audiences value, what signals credibility, what behaviors face sanction—all can transform rapidly through cascading social processes that exceed prediction or control (Gladwell, 2000). Organizations optimized for previous cultural configurations face obsolescence not through competitive failure but through environmental irrelevance (Suchman, 1995).</p>
+
+        <h2>Breakdown of Prior Assumptions and Rules</h2>
+
+        <p>Regime shifts invalidate foundational assumptions about system behavior, making previously reliable heuristics and decision rules suddenly counterproductive (March, 1991; Levinthal & March, 1993). Assumptions that held for decades—about cost structures, demand elasticity, competitive responses, regulatory stability—can break simultaneously when underlying conditions change, leaving participants operating with obsolete mental models (Daft & Weick, 1984; Gavetti & Levinthal, 2000).</p>
+
+        <p>Established success formulas become failure recipes when environmental conditions shift, as strategies optimized for one regime prove maladaptive in another (Miller, 1994; Audia et al., 2000). Firms that thrived through vertical integration face disadvantage when modular production dominates; organizations built for stability struggle when environments require flexibility; strategies designed for scarcity fail under abundance (Ghemawat & Ricart i Costa, 1993). The competencies that generated advantage become constraints that prevent adaptation.</p>
+
+        <p>Competitive rules change when regime shifts alter what creates advantage, what attracts customers, or what determines success (D'Aveni, 1994). Price competition gives way to platform wars; product quality becomes secondary to network effects; distribution access matters less than algorithmic visibility (Eisenmann et al., 2006). Participants skilled at old competition modes find their expertise irrelevant when new rules favor different capabilities entirely (Henderson & Clark, 1990).</p>
+
+        <p>Causality relationships break down during regime transitions, as actions that previously produced predictable outcomes generate unexpected results under new conditions (Weick, 1995). Marketing expenditure that reliably generated awareness produces diminishing returns when attention saturates; quality improvements that attracted customers become table stakes when standards rise; price cuts that gained share trigger price wars when competition intensifies (Sutton, 1991). The feedback loops that guided decisions provide misleading signals when system structure transforms.</p>
+
+        <h2>Discontinuities From Technology, Policy, Culture, and Scale</h2>
+
+        <p>Technological discontinuities emerge when innovations fundamentally alter performance parameters, cost structures, or system architectures rather than incrementally improving existing technologies (Anderson & Tushman, 1990). These disruptions create performance trajectories that initially underperform established technologies on traditional metrics while excelling on dimensions customers did not previously value (Christensen, 1997). By the time incumbents recognize competitive threats, new technologies have improved sufficiently to dominate markets through different value propositions.</p>
+
+        <p>Platform technologies create discontinuities by shifting competition from product features to ecosystem orchestration, network effects, and standard setting (Gawer & Cusumano, 2002). Success requires capabilities—developer management, cross-side subsidization, governance structure design—that differ fundamentally from product manufacturing or service delivery competencies (Boudreau, 2010). Organizations built for product competition struggle to compete on platform dimensions, making leadership transitions abrupt rather than gradual.</p>
+
+        <p>Policy discontinuities occur when regulatory regimes change suddenly through legislative action, court decisions, or enforcement priority shifts (Levy & Spiller, 1994). Deregulation, new liability standards, altered antitrust enforcement, or changed intellectual property rules can invalidate business models, eliminate entry barriers, or create compliance costs that reshape competitive landscapes overnight (Viscusi et al., 2005). These shifts operate independently of market forces, introducing change at speeds exceeding organizational adaptation capacity.</p>
+
+        <p>Cultural discontinuities manifest when social norms, consumer preferences, or legitimacy criteria shift rapidly through social movements, generational change, or cascading awareness (Lounsbury & Glynn, 2001). Practices that were acceptable become scandalous; products that were desirable become unacceptable; organizations that were admired face boycotts (King & Soule, 2007). These cultural regime shifts often surprise incumbents despite retrospective obviousness, as gradual change accelerates suddenly through tipping points in collective belief (Centola et al., 2018).</p>
+
+        <p>Scale discontinuities arise when quantitative growth triggers qualitative change in system behavior, coordination requirements, or competitive dynamics (Arthur, 1996). Small-scale systems operating through informal coordination break down when size requires formal structures; strategies effective at low density fail when markets saturate; advantages from being small disappear when achieving scale becomes necessary for survival (Sutton, 1997). Growth itself becomes the disruption, changing rules faster than participants recognize the transformation.</p>
+
+        <h2>Lag Between Environmental Change and Participant Response</h2>
+
+        <p>Organizations respond to environmental change with significant delay, as recognition lags reality, decision-making requires time, and implementation faces inertia (Tushman & Romanelli, 1985). By the time firms identify regime shifts, formulate responses, and execute changes, environments have often transformed further, making initial responses obsolete before completion (Brown & Eisenhardt, 1997). This temporal mismatch between change speed and adaptation capacity creates persistent disadvantage for incumbents relative to new entrants unburdened by legacy commitments.</p>
+
+        <p>Cognitive lag emerges from reliance on mental models built through experience in prior regimes, making environmental changes difficult to perceive accurately (Tripsas & Gavetti, 2000). Managers interpret new information through existing frameworks, assimilating novel signals into familiar patterns rather than recognizing fundamental discontinuity (Barr et al., 1992). This cognitive inertia causes delayed recognition of regime shifts until accumulated evidence overwhelms prior beliefs, by which time adaptation windows have narrowed substantially (Kaplan, 2008).</p>
+
+        <p>Structural lag results from organizational commitments—assets, contracts, routines, relationships—that cannot be unwound quickly when environments shift (Hannan & Freeman, 1984). Capital invested in specific technologies, employees trained in particular skills, suppliers integrated into production systems, and customers locked into existing offerings all create adaptation constraints that persist despite environmental change (Sull, 1999). Organizations face trade-offs between immediate performance in current conditions and costly preparation for uncertain future regimes.</p>
+
+        <p>Strategic lag occurs when firms delay response despite recognizing environmental change, either through active inertia or uncertainty about appropriate adaptation (Gilbert, 2005). Success creates commitment to existing strategies, making abandonment psychologically and organizationally difficult even when change becomes apparent (Miller & Chen, 1994). Firms watch competitors experiment with new approaches but delay imitation until success becomes undeniable, creating second-mover disadvantages in winner-take-most markets (Lieberman & Montgomery, 1988).</p>
+
+        <p>Institutional lag manifests when regulatory frameworks, industry standards, or professional norms evolve slower than technological or market conditions, creating mismatches between governance structures and operational realities (North, 1990). Laws designed for previous technologies constrain innovation; standards optimized for old systems inhibit new architectures; professional training prepares people for obsolete environments (Gilardi, 2008). These institutional rigidities extend adjustment periods, amplifying disruption costs.</p>
+
+        <h2>Misinterpretation of Regime Shifts as Temporary Anomalies</h2>
+
+        <p>Organizations frequently interpret early signals of regime shifts as temporary perturbations or cyclical variations rather than permanent structural change (Ocasio, 1995). Initial environmental changes appear manageable through existing capabilities, leading firms to maintain strategies optimized for prior conditions while treating deviations as noise (Noda & Bower, 1996). This misinterpretation allows regimes to shift substantially before recognition triggers response, creating adaptation deficits difficult to overcome.</p>
+
+        <p>Normalization of deviance causes participants to redefine anomalous signals as acceptable variation, particularly when immediate consequences remain absent (Vaughan, 1996). Early warning signs—declining performance on new metrics, customer defection to alternatives, market share erosion in specific segments—get rationalized as temporary setbacks rather than indicators of fundamental change (Staw et al., 1981). Organizations escalate commitment to existing strategies despite accumulating contrary evidence, treating regime shifts as problems solvable through intensified effort rather than strategic reorientation.</p>
+
+        <p>Success-induced blindness makes profitable firms particularly prone to misinterpreting regime shifts, as current performance masks environmental transformation (Levinthal & March, 1993). Strong financial results validate existing strategies, making challenges appear temporary and fundamental change unnecessary (Audia et al., 2000). By the time performance deteriorates sufficiently to trigger strategic reconsideration, competitors operating under new assumptions have established insurmountable leads.</p>
+
+        <p>Pattern matching errors lead participants to categorize novel situations as familiar types requiring known responses rather than recognizing unprecedented conditions demanding new approaches (Weick, 1993). Managers draw on experience from previous downturns, competitive threats, or technological transitions, applying lessons that prove irrelevant when current changes differ structurally from past episodes (Gavetti & Rivkin, 2007). This reliance on analogical reasoning from mismatched situations delays recognition of true regime change characteristics.</p>
+
+        <h2>Collapse of Previously Reliable Signals</h2>
+
+        <p>Regime shifts invalidate signals that previously provided reliable information about system states, future conditions, or appropriate actions (Weick & Sutcliffe, 2007). Indicators that guided decisions for years—financial metrics, customer feedback, competitive positioning, market research—lose predictive validity when underlying relationships change (Eisenhardt & Martin, 2000). Participants continue monitoring familiar signals despite their obsolescence, making decisions based on data that no longer reflects relevant conditions.</p>
+
+        <p>Leading indicators become lagging indicators when regime shifts alter causal relationships between observable variables and outcomes (Kaplan & Norton, 1996). Metrics designed to predict future performance in stable regimes provide accurate historical records but misleading forecasts when environments transform (Merchant & Van der Stede, 2007). Organizations optimize for measured dimensions while actual value drivers shift to unmeasured or underweighted factors, creating divergence between apparent and actual performance trajectories.</p>
+
+        <p>Market feedback loses reliability when customer preferences, competitive dynamics, or value propositions change faster than measurement cycles (Christensen & Raynor, 2003). Satisfaction surveys reflect past experiences rather than future intentions; focus groups report preferences shaped by current offerings rather than receptivity to alternatives; sales data confirms past success while failing to reveal emerging threats (Leonard-Barton, 1992). By the time feedback reflects new realities, market positions have often shifted irreversibly.</p>
+
+        <p>Competitive intelligence becomes misleading when regime shifts change what matters for competition (Porter, 1980). Benchmarking against traditional competitors misses threats from adjacent industries; monitoring product features overlooks platform dynamics; tracking market share ignores ecosystem control (Brandenburger & Nalebuff, 1996). Firms optimize against yesterday's competition while actual contests occur on different dimensions entirely, making diligent analysis counterproductive.</p>
+
+        <h2>Reordering of Power, Advantage, and Access</h2>
+
+        <p>Regime shifts redistribute power by changing which resources matter, which positions provide advantage, and which capabilities create leverage (Pfeffer, 1981). Actors who controlled critical resources under previous regimes lose influence when new conditions make different assets valuable; previously marginal participants gain power through control over newly critical resources (Casciaro & Piskorski, 2005). These power redistributions occur through structural change rather than competitive displacement, making previous dominance irrelevant to future outcomes.</p>
+
+        <p>Advantage inversion transforms incumbents' strengths into weaknesses when regime changes make previous assets into liabilities (Henderson, 1999). Large organizations optimized for efficiency struggle with flexibility requirements; extensive distribution networks become burdens when direct channels dominate; deep supplier relationships create lock-in when supply chains need reconfiguration (Leonard-Barton, 1992). New entrants unburdened by legacy commitments exploit advantages incumbents cannot access without dismantling existing structures.</p>
+
+        <p>Access reordering changes who participates in markets, who reaches customers, and who influences outcomes (Zittrain, 2006). Platforms replace wholesalers; algorithms substitute for editors; direct channels bypass intermediaries (Hagiu & Wright, 2015). Actors who controlled access under previous regimes find their gatekeeping power eliminated; new intermediaries emerge controlling different choke points; previously excluded participants gain direct access to resources, audiences, or opportunities (Boudreau & Hagiu, 2009).</p>
+
+        <p>Complementary asset reconfiguration shifts which capabilities matter for value capture (Teece, 1986). When regime changes make new complementary assets critical—different distribution channels, alternative manufacturing processes, novel marketing approaches—incumbents face disadvantages despite superior core technologies (Tripsas, 1997). Firms controlling relevant complementary assets under new regimes extract value regardless of innovation contribution, making asset ownership more important than technical leadership.</p>
+
+        <p>Network position reshuffling alters who benefits from relationships, information flows, and collaborative opportunities when system architectures change (Brass et al., 2004). Central nodes in old networks become peripheral in new structures; bridge positions disappear when networks reconfigure; structural holes close or open as relationship patterns shift (Burt, 2004). Power flows to those occupying advantageous positions in emerging networks independent of capabilities demonstrated in previous configurations.</p>
+
+        <h2>Path Dependence Inhibiting Adaptation</h2>
+
+        <p>Path dependence creates adaptation constraints by locking organizations into trajectories established under prior regimes, making divergence costly or impossible despite environmental change (David, 1985; Arthur, 1994). Early choices—technologies adopted, markets entered, capabilities developed—create commitments that constrain later options through sunk costs, learning investments, and complementary asset accumulation (Sydow et al., 2009). These historical commitments prove difficult to abandon even when circumstances making them optimal no longer exist.</p>
+
+        <p>Technological lock-in occurs when organizations invest deeply in specific technologies, making switches prohibitively expensive despite superior alternatives emerging (Farrell & Saloner, 1985). Installed base effects, employee skill sets, process integration, and compatibility requirements all increase costs of technology transitions (Arthur, 1989). Incumbents continue using obsolete technologies not through ignorance but through rational calculation that switching costs exceed benefits, allowing new entrants with clean slates to adopt superior approaches.</p>
+
+        <p>Capability lock-in emerges when organizations develop deep expertise in specific domains, creating competency traps that inhibit learning in new areas (Levitt & March, 1988). Success with existing capabilities reinforces their use, reducing experimentation with alternatives even when environments change to favor different competencies (March, 1991). Organizations become prisoners of their own expertise, unable to develop new capabilities without sacrificing current performance through learning costs.</p>
+
+        <p>Relationship lock-in creates adaptation constraints through network embeddedness, where established relationships with customers, suppliers, or partners inhibit strategic change (Uzzi, 1997). Long-term contracts, relationship-specific investments, and mutual adaptation all increase costs of switching partners or reconfiguring value chains (Gulati et al., 2000). These relational commitments provide stability during regime continuity but become obstacles during regime shifts requiring network reconfiguration.</p>
+
+        <p>Identity lock-in constrains adaptation when organizational identity—mission, values, self-conception—conflicts with changes required by new environments (Albert & Whetten, 1985). Organizations struggle to abandon identity-defining activities, serve different customer segments, or adopt incompatible business models even when survival requires these changes (Tripsas, 2009). Identity commitments prove more durable than strategic commitments, making adaptation requiring identity transformation particularly difficult.</p>
+
+        <h2>Competence Persisting Without Relevance</h2>
+
+        <p>Regime shifts create situations where accumulated competence remains intact but loses relevance to outcomes, as environmental change redefines what matters for success (Tushman & Anderson, 1986). Organizations continue executing strategies skillfully while those strategies cease producing desired results, creating disconnection between capability and performance (Gilbert, 2005). This competence-relevance gap emerges not from skill deterioration but from environmental transformation that makes previous expertise obsolete.</p>
+
+        <p>Competency traps occur when organizations remain highly skilled at approaches that no longer create value, continuing practices through inertia or sunk cost logic despite changing conditions (Levitt & March, 1988). Firms optimized for manufacturing excellence struggle when product features matter less than ecosystem control; organizations skilled at traditional marketing face disadvantage when algorithmic targeting dominates; experts in physical distribution lose advantage to digital delivery (Christensen & Raynor, 2003). Competence itself becomes irrelevant when selection criteria change.</p>
+
+        <p>Measurement misalignment creates situations where organizations meet performance targets while losing competitive position, as metrics lag environmental change (Meyer & Gupta, 1994). Firms achieve efficiency improvements while customers shift to different value propositions; organizations maximize measured quality on dimensions customers no longer prioritize; targets get met while market relevance declines (Kerr, 1975). Performance management systems designed for previous regimes drive behavior that proves counterproductive under new conditions.</p>
+
+        <p>Excellence at obsolete tasks provides no advantage when regime shifts change competitive requirements (Henderson & Clark, 1990). Being best at things that no longer matter—physical store operations when shopping moves online, desktop software when computing moves to mobile, traditional media when attention shifts to social platforms—leaves organizations skilled but irrelevant (Utterback, 1994). Superior execution of outdated strategies loses to adequate execution of appropriate strategies aligned with current conditions.</p>
+
+        <h2>Systems Appearing Stable Immediately Before Change</h2>
+
+        <p>Systems often display maximum apparent stability immediately before regime shifts, masking proximity to discontinuous change (Scheffer et al., 2009). Performance remains strong, strategies continue succeeding, and signals suggest environmental continuity even as underlying structures approach critical thresholds (Carpenter & Brock, 2006). This false stability creates complacency that inhibits preparation, making regime transitions more disruptive than if instability had been visible (Biggs et al., 2009).</p>
+
+        <p>Critical slowing down occurs in complex systems approaching tipping points, where recovery from perturbations becomes slower even as visible disruption remains absent (Dakos et al., 2008). Systems appear stable because they have not yet crossed critical thresholds, but resilience has degraded to points where small additional changes trigger large-scale reorganization (Scheffer et al., 2012). This hidden fragility means systems transition rapidly from apparent stability to regime shift without intermediate warning states.</p>
+
+        <p>Success conceals vulnerability by providing resources, confidence, and validation that mask environmental changes accumulating outside current competitive arenas (Levinthal & March, 1993). Profitable firms remain focused on optimizing existing businesses while disruptions emerge in adjacent markets, low-end segments, or fundamentally different value networks (Christensen & Bower, 1996). Strong performance reduces perceived urgency for change, making adaptation efforts difficult to justify until crises force action.</p>
+
+        <p>Averaging masks extremes when aggregate metrics remain stable despite increasing variance in underlying distributions (Taleb, 2007). Average customer satisfaction stays constant while loyal customers become more loyal and marginal customers defect; total market size remains stable while growth concentrates in new segments and traditional segments decline; aggregate profitability holds steady while winners pull ahead and losers fall behind (Sutton, 1997). Averages suggest stability that masks divergence signaling regime change.</p>
+
+        <p>Lagging indicators provide positive signals based on past performance while leading indicators of regime change remain invisible or unmonitored (Kaplan & Norton, 1996). Financial results reflect decisions made years prior; market share data confirms past competitive success; customer retention metrics measure existing relationships formed under previous conditions (Merchant & Van der Stede, 2007). Organizations steering by lagging indicators perceive stability while environments transform around them.</p>
+
+        <hr class="separator">
+
+        <p>Regime shifts represent discontinuous environmental change that invalidates prior assumptions, breaks down established rules, and redistributes power independent of participant competence. These structural transitions occur through technological disruption, policy transformation, cultural reorientation, and scale effects that exceed organizational adaptation capacity. Participants experience significant lag between environmental change and effective response, often misinterpreting fundamental shifts as temporary anomalies. Previously reliable signals collapse, competence persists without relevance, and path dependence inhibits adaptation even when change becomes apparent. Systems display maximum stability immediately before regime transitions, masking proximity to discontinuity. Understanding these dynamics as system-level phenomena rather than controllable risks reveals why preparation proves insufficient when environments transform faster than recognition occurs. Regime shifts close Section 3 by demonstrating that market outcomes reflect not only participant skills or strategic choices but also fundamental environmental instabilities that operate beyond individual control.</p>
+
+        <div class="case-studies-section">
+            <h3>Supporting Case Studies</h3>
+            <p><a href="CS-001_Endless_Scroll_Funnel.html">CS-001: The Endless Scroll Funnel</a> — Illustrates algorithmic regime shift where attention allocation mechanisms changed from human curation to automated recommendation, redistributing visibility and making prior content strategies obsolete through structural rather than gradual change.</p>
+            <p><a href="CS-006_Campaign_Saturation_Perceived_Inevitability.html">CS-006: Campaign Saturation & Perceived Inevitability</a> — Documents how scale discontinuities create winner-take-most dynamics where quantitative increases in exposure trigger qualitative changes in perception, demonstrating regime shifts from competitive to concentrated attention markets.</p>
+            <p><a href="CS-007_Timed_Purchase_Popup.html">CS-007: The Timed Purchase Pop-Up</a> — Shows how competitive regime shifts transform effective tactics into saturated patterns, where techniques that initially succeeded become expected then obsolete as environmental conditions change through adoption density.</p>
+        </div>
+
+        <div class="button-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <p>Albert, S., & Whetten, D. A. (1985). Organizational identity. <em>Research in Organizational Behavior, 7</em>, 263-295.</p>
+            
+            <p>Anderson, P., & Tushman, M. L. (1990). Technological discontinuities and dominant designs: A cyclical model of technological change. <em>Administrative Science Quarterly, 35</em>(4), 604-633. <a href="https://doi.org/10.2307/2393511">https://doi.org/10.2307/2393511</a></p>
+            
+            <p>Arthur, W. B. (1989). Competing technologies, increasing returns, and lock-in by historical events. <em>Economic Journal, 99</em>(394), 116-131. <a href="https://doi.org/10.2307/2234208">https://doi.org/10.2307/2234208</a></p>
+            
+            <p>Arthur, W. B. (1994). <em>Increasing returns and path dependence in the economy</em>. University of Michigan Press.</p>
+            
+            <p>Arthur, W. B. (1996). Increasing returns and the new world of business. <em>Harvard Business Review, 74</em>(4), 100-109.</p>
+            
+            <p>Audia, P. G., Locke, E. A., & Smith, K. G. (2000). The paradox of success: An archival and a laboratory study of strategic persistence following radical environmental change. <em>Academy of Management Journal, 43</em>(5), 837-853. <a href="https://doi.org/10.5465/1556413">https://doi.org/10.5465/1556413</a></p>
+            
+            <p>Barr, P. S., Stimpert, J. L., & Huff, A. S. (1992). Cognitive change, strategic action, and organizational renewal. <em>Strategic Management Journal, 13</em>(S1), 15-36. <a href="https://doi.org/10.1002/smj.4250131004">https://doi.org/10.1002/smj.4250131004</a></p>
+            
+            <p>Biggs, R., Carpenter, S. R., & Brock, W. A. (2009). Turning back from the brink: Detecting an impending regime shift in time to avert it. <em>Proceedings of the National Academy of Sciences, 106</em>(3), 826-831. <a href="https://doi.org/10.1073/pnas.0811729106">https://doi.org/10.1073/pnas.0811729106</a></p>
+            
+            <p>Boudreau, K. (2010). Open platform strategies and innovation: Granting access vs. devolving control. <em>Management Science, 56</em>(10), 1849-1872. <a href="https://doi.org/10.1287/mnsc.1100.1215">https://doi.org/10.1287/mnsc.1100.1215</a></p>
+            
+            <p>Boudreau, K. J., & Hagiu, A. (2009). Platform rules: Multi-sided platforms as regulators. In A. Gawer (Ed.), <em>Platforms, markets and innovation</em> (pp. 163-191). Edward Elgar Publishing.</p>
+            
+            <p>Brandenburger, A. M., & Nalebuff, B. J. (1996). <em>Co-opetition</em>. Currency Doubleday.</p>
+            
+            <p>Brass, D. J., Galaskiewicz, J., Greve, H. R., & Tsai, W. (2004). Taking stock of networks and organizations: A multilevel perspective. <em>Academy of Management Journal, 47</em>(6), 795-817. <a href="https://doi.org/10.5465/20159624">https://doi.org/10.5465/20159624</a></p>
+            
+            <p>Brown, S. L., & Eisenhardt, K. M. (1997). The art of continuous change: Linking complexity theory and time-paced evolution in relentlessly shifting organizations. <em>Administrative Science Quarterly, 42</em>(1), 1-34. <a href="https://doi.org/10.2307/2393807">https://doi.org/10.2307/2393807</a></p>
+            
+            <p>Burt, R. S. (2004). Structural holes and good ideas. <em>American Journal of Sociology, 110</em>(2), 349-399. <a href="https://doi.org/10.1086/421787">https://doi.org/10.1086/421787</a></p>
+            
+            <p>Carpenter, S. R., & Brock, W. A. (2006). Rising variance: A leading indicator of ecological transition. <em>Ecology Letters, 9</em>(3), 311-318. <a href="https://doi.org/10.1111/j.1461-0248.2005.00877.x">https://doi.org/10.1111/j.1461-0248.2005.00877.x</a></p>
+            
+            <p>Casciaro, T., & Piskorski, M. J. (2005). Power imbalance, mutual dependence, and constraint absorption: A closer look at resource dependence theory. <em>Administrative Science Quarterly, 50</em>(2), 167-199. <a href="https://doi.org/10.2189/asqu.2005.50.2.167">https://doi.org/10.2189/asqu.2005.50.2.167</a></p>
+            
+            <p>Centola, D., Becker, J., Brackbill, D., & Baronchelli, A. (2018). Experimental evidence for tipping points in social convention. <em>Science, 360</em>(6393), 1116-1119. <a href="https://doi.org/10.1126/science.aas8827">https://doi.org/10.1126/science.aas8827</a></p>
+            
+            <p>Christensen, C. M. (1997). <em>The innovator's dilemma: When new technologies cause great firms to fail</em>. Harvard Business School Press.</p>
+            
+            <p>Christensen, C. M., & Bower, J. L. (1996). Customer power, strategic investment, and the failure of leading firms. <em>Strategic Management Journal, 17</em>(3), 197-218. <a href="https://doi.org/10.1002/(SICI)1097-0266(199603)17:3<197::AID-SMJ804>3.0.CO;2-U">https://doi.org/10.1002/(SICI)1097-0266(199603)17:3<197::AID-SMJ804>3.0.CO;2-U</a></p>
+            
+            <p>Christensen, C. M., & Raynor, M. E. (2003). <em>The innovator's solution: Creating and sustaining successful growth</em>. Harvard Business School Press.</p>
+            
+            <p>Daft, R. L., & Weick, K. E. (1984). Toward a model of organizations as interpretation systems. <em>Academy of Management Review, 9</em>(2), 284-295. <a href="https://doi.org/10.5465/amr.1984.4277657">https://doi.org/10.5465/amr.1984.4277657</a></p>
+            
+            <p>Dakos, V., Scheffer, M., van Nes, E. H., Brovkin, V., Petoukhov, V., & Held, H. (2008). Slowing down as an early warning signal for abrupt climate change. <em>Proceedings of the National Academy of Sciences, 105</em>(38), 14308-14312. <a href="https://doi.org/10.1073/pnas.0802430105">https://doi.org/10.1073/pnas.0802430105</a></p>
+            
+            <p>D'Aveni, R. A. (1994). <em>Hypercompetition: Managing the dynamics of strategic maneuvering</em>. Free Press.</p>
+            
+            <p>David, P. A. (1985). Clio and the economics of QWERTY. <em>American Economic Review, 75</em>(2), 332-337.</p>
+            
+            <p>DiMaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. <em>American Sociological Review, 48</em>(2), 147-160. <a href="https://doi.org/10.2307/2095101">https://doi.org/10.2307/2095101</a></p>
+            
+            <p>Dosi, G. (1982). Technological paradigms and technological trajectories: A suggested interpretation of the determinants and directions of technical change. <em>Research Policy, 11</em>(3), 147-162. <a href="https://doi.org/10.1016/0048-7333(82)90016-6">https://doi.org/10.1016/0048-7333(82)90016-6</a></p>
+            
+            <p>Eisenhardt, K. M., & Martin, J. A. (2000). Dynamic capabilities: What are they? <em>Strategic Management Journal, 21</em>(10-11), 1105-1121. <a href="https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1105::AID-SMJ133>3.0.CO;2-E">https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1105::AID-SMJ133>3.0.CO;2-E</a></p>
+            
+            <p>Eisenmann, T., Parker, G., & Van Alstyne, M. W. (2006). Strategies for two-sided markets. <em>Harvard Business Review, 84</em>(10), 92-101.</p>
+            
+            <p>Farrell, J., & Saloner, G. (1985). Standardization, compatibility, and innovation. <em>RAND Journal of Economics, 16</em>(1), 70-83. <a href="https://doi.org/10.2307/2555589">https://doi.org/10.2307/2555589</a></p>
+            
+            <p>Folke, C., Carpenter, S., Walker, B., Scheffer, M., Elmqvist, T., Gunderson, L., & Holling, C. S. (2004). Regime shifts, resilience, and biodiversity in ecosystem management. <em>Annual Review of Ecology, Evolution, and Systematics, 35</em>, 557-581. <a href="https://doi.org/10.1146/annurev.ecolsys.35.021103.105711">https://doi.org/10.1146/annurev.ecolsys.35.021103.105711</a></p>
+            
+            <p>Gavetti, G., & Levinthal, D. (2000). Looking forward and looking backward: Cognitive and experiential search. <em>Administrative Science Quarterly, 45</em>(1), 113-137. <a href="https://doi.org/10.2307/2666981">https://doi.org/10.2307/2666981</a></p>
+            
+            <p>Gavetti, G., & Rivkin, J. W. (2007). On the origin of strategy: Action and cognition over time. <em>Organization Science, 18</em>(3), 420-439. <a href="https://doi.org/10.1287/orsc.1070.0282">https://doi.org/10.1287/orsc.1070.0282</a></p>
+            
+            <p>Gawer, A., & Cusumano, M. A. (2002). <em>Platform leadership: How Intel, Microsoft, and Cisco drive industry innovation</em>. Harvard Business School Press.</p>
+            
+            <p>Ghemawat, P., & Ricart i Costa, J. E. (1993). The organizational tension between static and dynamic efficiency. <em>Strategic Management Journal, 14</em>(S2), 59-73. <a href="https://doi.org/10.1002/smj.4250141007">https://doi.org/10.1002/smj.4250141007</a></p>
+            
+            <p>Gilbert, C. G. (2005). Unbundling the structure of inertia: Resource versus routine rigidity. <em>Academy of Management Journal, 48</em>(5), 741-763. <a href="https://doi.org/10.5465/amj.2005.18803920">https://doi.org/10.5465/amj.2005.18803920</a></p>
+            
+            <p>Gilardi, F. (2008). <em>Delegation in the regulatory state: Independent regulatory agencies in Western Europe</em>. Edward Elgar Publishing.</p>
+            
+            <p>Gladwell, M. (2000). <em>The tipping point: How little things can make a big difference</em>. Little, Brown and Company.</p>
+            
+            <p>Greif, A., & Laitin, D. D. (2004). A theory of endogenous institutional change. <em>American Political Science Review, 98</em>(4), 633-652. <a href="https://doi.org/10.1017/S0003055404041395">https://doi.org/10.1017/S0003055404041395</a></p>
+            
+            <p>Gulati, R., Nohria, N., & Zaheer, A. (2000). Strategic networks. <em>Strategic Management Journal, 21</em>(3), 203-215. <a href="https://doi.org/10.1002/(SICI)1097-0266(200003)21:3<203::AID-SMJ102>3.0.CO;2-K">https://doi.org/10.1002/(SICI)1097-0266(200003)21:3<203::AID-SMJ102>3.0.CO;2-K</a></p>
+            
+            <p>Hagiu, A., & Wright, J. (2015). Multi-sided platforms. <em>International Journal of Industrial Organization, 43</em>, 162-174. <a href="https://doi.org/10.1016/j.ijindorg.2015.03.003">https://doi.org/10.1016/j.ijindorg.2015.03.003</a></p>
+            
+            <p>Hannan, M. T., & Freeman, J. (1984). Structural inertia and organizational change. <em>American Sociological Review, 49</em>(2), 149-164. <a href="https://doi.org/10.2307/2095567">https://doi.org/10.2307/2095567</a></p>
+            
+            <p>Henderson, R. M. (1999). The innovator's dilemma as a problem of organizational competence. <em>Journal of Product Innovation Management, 16</em>(5), 417-426. <a href="https://doi.org/10.1016/S0737-6782(99)00009-5">https://doi.org/10.1016/S0737-6782(99)00009-5</a></p>
+            
+            <p>Henderson, R. M., & Clark, K. B. (1990). Architectural innovation: The reconfiguration of existing product technologies and the failure of established firms. <em>Administrative Science Quarterly, 35</em>(1), 9-30. <a href="https://doi.org/10.2307/2393549">https://doi.org/10.2307/2393549</a></p>
+            
+            <p>Kaplan, R. S., & Norton, D. P. (1996). <em>The balanced scorecard: Translating strategy into action</em>. Harvard Business School Press.</p>
+            
+            <p>Kaplan, S. (2008). Cognition, capabilities, and incentives: Assessing firm response to the fiber-optic revolution. <em>Academy of Management Journal, 51</em>(4), 672-695. <a href="https://doi.org/10.5465/amj.2008.33665141">https://doi.org/10.5465/amj.2008.33665141</a></p>
+            
+            <p>Kerr, S. (1975). On the folly of rewarding A, while hoping for B. <em>Academy of Management Journal, 18</em>(4), 769-783. <a href="https://doi.org/10.5465/255378">https://doi.org/10.5465/255378</a></p>
+            
+            <p>King, B. G., & Soule, S. A. (2007). Social movements as extra-institutional entrepreneurs: The effect of protests on stock price returns. <em>Administrative Science Quarterly, 52</em>(3), 413-442. <a href="https://doi.org/10.2189/asqu.52.3.413">https://doi.org/10.2189/asqu.52.3.413</a></p>
+            
+            <p>Lenton, T. M., Held, H., Kriegler, E., Hall, J. W., Lucht, W., Rahmstorf, S., & Schellnhuber, H. J. (2008). Tipping elements in the Earth's climate system. <em>Proceedings of the National Academy of Sciences, 105</em>(6), 1786-1793. <a href="https://doi.org/10.1073/pnas.0705414105">https://doi.org/10.1073/pnas.0705414105</a></p>
+            
+            <p>Leonard-Barton, D. (1992). Core capabilities and core rigidities: A paradox in managing new product development. <em>Strategic Management Journal, 13</em>(S1), 111-125. <a href="https://doi.org/10.1002/smj.4250131009">https://doi.org/10.1002/smj.4250131009</a></p>
+            
+            <p>Levinthal, D. A., & March, J. G. (1993). The myopia of learning. <em>Strategic Management Journal, 14</em>(S2), 95-112. <a href="https://doi.org/10.1002/smj.4250141009">https://doi.org/10.1002/smj.4250141009</a></p>
+            
+            <p>Levitt, B., & March, J. G. (1988). Organizational learning. <em>Annual Review of Sociology, 14</em>, 319-340. <a href="https://doi.org/10.1146/annurev.so.14.080188.001535">https://doi.org/10.1146/annurev.so.14.080188.001535</a></p>
+            
+            <p>Levy, B., & Spiller, P. T. (1994). The institutional foundations of regulatory commitment: A comparative analysis of telecommunications regulation. <em>Journal of Law, Economics, & Organization, 10</em>(2), 201-246.</p>
+            
+            <p>Lieberman, M. B., & Montgomery, D. B. (1988). First-mover advantages. <em>Strategic Management Journal, 9</em>(S1), 41-58. <a href="https://doi.org/10.1002/smj.4250090706">https://doi.org/10.1002/smj.4250090706</a></p>
+            
+            <p>Lounsbury, M., & Glynn, M. A. (2001). Cultural entrepreneurship: Stories, legitimacy, and the acquisition of resources. <em>Strategic Management Journal, 22</em>(6-7), 545-564. <a href="https://doi.org/10.1002/smj.188">https://doi.org/10.1002/smj.188</a></p>
+            
+            <p>March, J. G. (1991). Exploration and exploitation in organizational learning. <em>Organization Science, 2</em>(1), 71-87. <a href="https://doi.org/10.1287/orsc.2.1.71">https://doi.org/10.1287/orsc.2.1.71</a></p>
+            
+            <p>Merchant, K. A., & Van der Stede, W. A. (2007). <em>Management control systems: Performance measurement, evaluation and incentives</em> (2nd ed.). Pearson Education.</p>
+            
+            <p>Meyer, M. W., & Gupta, V. (1994). The performance paradox. <em>Research in Organizational Behavior, 16</em>, 309-369.</p>
+            
+            <p>Miller, D. (1994). What happens after success: The perils of excellence. <em>Journal of Management Studies, 31</em>(3), 325-358. <a href="https://doi.org/10.1111/j.1467-6486.1994.tb00770.x">https://doi.org/10.1111/j.1467-6486.1994.tb00770.x</a></p>
+            
+            <p>Miller, D., & Chen, M. J. (1994). Sources and consequences of competitive inertia: A study of the U.S. airline industry. <em>Administrative Science Quarterly, 39</em>(1), 1-23. <a href="https://doi.org/10.2307/2393492">https://doi.org/10.2307/2393492</a></p>
+            
+            <p>Noda, T., & Bower, J. L. (1996). Strategy making as iterated processes of resource allocation. <em>Strategic Management Journal, 17</em>(S1), 159-192. <a href="https://doi.org/10.1002/smj.4250171011">https://doi.org/10.1002/smj.4250171011</a></p>
+            
+            <p>North, D. C. (1990). <em>Institutions, institutional change and economic performance</em>. Cambridge University Press.</p>
+            
+            <p>Ocasio, W. (1995). The enactment of economic adversity: A reconciliation of theories of failure-induced change and threat-rigidity. <em>Research in Organizational Behavior, 17</em>, 287-331.</p>
+            
+            <p>Perez, C. (2002). <em>Technological revolutions and financial capital: The dynamics of bubbles and golden ages</em>. Edward Elgar Publishing.</p>
+            
+            <p>Pfeffer, J. (1981). <em>Power in organizations</em>. Pitman.</p>
+            
+            <p>Porter, M. E. (1980). <em>Competitive strategy: Techniques for analyzing industries and competitors</em>. Free Press.</p>
+            
+            <p>Scheffer, M., Bascompte, J., Brock, W. A., Brovkin, V., Carpenter, S. R., Dakos, V., Held, H., van Nes, E. H., Rietkerk, M., & Sugihara, G. (2009). Early-warning signals for critical transitions. <em>Nature, 461</em>(7260), 53-59. <a href="https://doi.org/10.1038/nature08227">https://doi.org/10.1038/nature08227</a></p>
+            
+            <p>Scheffer, M., & Carpenter, S. R. (2003). Catastrophic regime shifts in ecosystems: Linking theory to observation. <em>Trends in Ecology & Evolution, 18</em>(12), 648-656. <a href="https://doi.org/10.1016/j.tree.2003.09.002">https://doi.org/10.1016/j.tree.2003.09.002</a></p>
+            
+            <p>Scheffer, M., Carpenter, S. R., Lenton, T. M., Bascompte, J., Brock, W., Dakos, V., van de Koppel, J., van de Leemput, I. A., Levin, S. A., van Nes, E. H., Pascual, M., & Vandermeer, J. (2012). Anticipating critical transitions. <em>Science, 338</em>(6105), 344-348. <a href="https://doi.org/10.1126/science.1225244">https://doi.org/10.1126/science.1225244</a></p>
+            
+            <p>Scheffer, M., Carpenter, S., Foley, J. A., Folke, C., & Walker, B. (2001). Catastrophic shifts in ecosystems. <em>Nature, 413</em>(6856), 591-596. <a href="https://doi.org/10.1038/35098000">https://doi.org/10.1038/35098000</a></p>
+            
+            <p>Scott, W. R. (2008). <em>Institutions and organizations: Ideas and interests</em> (3rd ed.). Sage Publications.</p>
+            
+            <p>Staw, B. M., Sandelands, L. E., & Dutton, J. E. (1981). Threat rigidity effects in organizational behavior: A multilevel analysis. <em>Administrative Science Quarterly, 26</em>(4), 501-524. <a href="https://doi.org/10.2307/2392337">https://doi.org/10.2307/2392337</a></p>
+            
+            <p>Streeck, W., & Thelen, K. (Eds.). (2005). <em>Beyond continuity: Institutional change in advanced political economies</em>. Oxford University Press.</p>
+            
+            <p>Suchman, M. C. (1995). Managing legitimacy: Strategic and institutional approaches. <em>Academy of Management Review, 20</em>(3), 571-610. <a href="https://doi.org/10.5465/amr.1995.9508080331">https://doi.org/10.5465/amr.1995.9508080331</a></p>
+            
+            <p>Sull, D. N. (1999). Why good companies go bad. <em>Harvard Business Review, 77</em>(4), 42-52.</p>
+            
+            <p>Sutton, J. (1991). <em>Sunk costs and market structure: Price competition, advertising, and the evolution of concentration</em>. MIT Press.</p>
+            
+            <p>Sutton, J. (1997). Gibrat's legacy. <em>Journal of Economic Literature, 35</em>(1), 40-59.</p>
+            
+            <p>Sydow, J., Schreyögg, G., & Koch, J. (2009). Organizational path dependence: Opening the black box. <em>Academy of Management Review, 34</em>(4), 689-709. <a href="https://doi.org/10.5465/amr.34.4.zok689">https://doi.org/10.5465/amr.34.4.zok689</a></p>
+            
+            <p>Taleb, N. N. (2007). <em>The black swan: The impact of the highly improbable</em>. Random House.</p>
+            
+            <p>Teece, D. J. (1986). Profiting from technological innovation: Implications for integration, collaboration, licensing and public policy. <em>Research Policy, 15</em>(6), 285-305. <a href="https://doi.org/10.1016/0048-7333(86)90027-2">https://doi.org/10.1016/0048-7333(86)90027-2</a></p>
+            
+            <p>Teubner, G. (1987). Juridification of social spheres: A comparative analysis in the areas of labor, corporate, antitrust and social welfare law. In G. Teubner (Ed.), <em>Juridification of social spheres</em> (pp. 3-48). de Gruyter.</p>
+            
+            <p>Tripsas, M. (1997). Unraveling the process of creative destruction: Complementary assets and incumbent survival in the typesetter industry. <em>Strategic Management Journal, 18</em>(S1), 119-142. <a href="https://doi.org/10.1002/(SICI)1097-0266(199707)18:1+<119::AID-SMJ921>3.3.CO;2-0">https://doi.org/10.1002/(SICI)1097-0266(199707)18:1+<119::AID-SMJ921>3.3.CO;2-0</a></p>
+            
+            <p>Tripsas, M. (2009). Technology, identity, and inertia through the lens of "The Digital Photography Company". <em>Organization Science, 20</em>(2), 441-460. <a href="https://doi.org/10.1287/orsc.1080.0419">https://doi.org/10.1287/orsc.1080.0419</a></p>
+            
+            <p>Tripsas, M., & Gavetti, G. (2000). Capabilities, cognition, and inertia: Evidence from digital imaging. <em>Strategic Management Journal, 21</em>(10-11), 1147-1161. <a href="https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1147::AID-SMJ128>3.0.CO;2-R">https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1147::AID-SMJ128>3.0.CO;2-R</a></p>
+            
+            <p>Tushman, M. L., & Anderson, P. (1986). Technological discontinuities and organizational environments. <em>Administrative Science Quarterly, 31</em>(3), 439-465. <a href="https://doi.org/10.2307/2392832">https://doi.org/10.2307/2392832</a></p>
+            
+            <p>Tushman, M. L., & Romanelli, E. (1985). Organizational evolution: A metamorphosis model of convergence and reorientation. <em>Research in Organizational Behavior, 7</em>, 171-222.</p>
+            
+            <p>Utterback, J. M. (1994). <em>Mastering the dynamics of innovation</em>. Harvard Business School Press.</p>
+            
+            <p>Uzzi, B. (1997). Social structure and competition in interfirm networks: The paradox of embeddedness. <em>Administrative Science Quarterly, 42</em>(1), 35-67. <a href="https://doi.org/10.2307/2393808">https://doi.org/10.2307/2393808</a></p>
+            
+            <p>Vaughan, D. (1996). <em>The Challenger launch decision: Risky technology, culture, and deviance at NASA</em>. University of Chicago Press.</p>
+            
+            <p>Viscusi, W. K., Harrington, J. E., & Vernon, J. M. (2005). <em>Economics of regulation and antitrust</em> (4th ed.). MIT Press.</p>
+            
+            <p>Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. <em>Administrative Science Quarterly, 38</em>(4), 628-652. <a href="https://doi.org/10.2307/2393339">https://doi.org/10.2307/2393339</a></p>
+            
+            <p>Weick, K. E. (1995). <em>Sensemaking in organizations</em>. Sage Publications.</p>
+            
+            <p>Weick, K. E., & Sutcliffe, K. M. (2007). <em>Managing the unexpected: Resilient performance in an age of uncertainty</em> (2nd ed.). Jossey-Bass.</p>
+            
+            <p>Zittrain, J. (2006). The generative Internet. <em>Harvard Law Review, 119</em>(7), 1974-2040.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchy, Delegation, and Authority Distribution — Truth Index Encyclopedia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(to bottom, #fdfcf8 0%, #e8e4d8 100%);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 60px 40px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 12px 24px;
+            background: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.95em;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #6b5d4f;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.8em;
+            color: #6b5d4f;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .meta {
+            font-size: 1.1em;
+            color: #8b7355;
+            font-style: italic;
+        }
+
+        .visual-container {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .visual-container svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+        }
+
+        .intro-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 30px;
+            margin: 40px 0;
+            font-size: 1.15em;
+            line-height: 1.9;
+        }
+
+        .content {
+            margin: 40px 0;
+        }
+
+        .content p {
+            margin-bottom: 1.8em;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.8em;
+            color: #6b5d4f;
+            margin: 50px 0 30px 0;
+            font-weight: 700;
+        }
+
+        .separator {
+            width: 200px;
+            height: 2px;
+            background: #8b7355;
+            margin: 50px auto;
+            opacity: 0.5;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #8b7355;
+        }
+
+        .references h2 {
+            margin-top: 0;
+        }
+
+        .reference-item {
+            margin: 20px 0;
+            padding-left: 40px;
+            text-indent: -40px;
+            text-align: left;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .reference-item a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .intro-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Index</a>
+        
+        <header>
+            <h1>Hierarchy, Delegation, and Authority Distribution</h1>
+            <div class="meta">Section 7: Organizational Structures & Governance — Chapter 2</div>
+        </header>
+
+        <div class="visual-container">
+            <svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg">
+                <rect width="800" height="580" fill="#fdfcf8"/>
+                <text x="400" y="35" font-family="Libre Baskerville, serif" font-size="20" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Hierarchical Structure: Authority Flow and Information Distortion</text>
+                
+                <!-- Top authority layer -->
+                <rect x="300" y="70" width="200" height="60" fill="#8b7355" opacity="0.6" stroke="#8b7355" stroke-width="2.5" rx="6"/>
+                <text x="400" y="95" font-family="Crimson Text, serif" font-size="13" fill="#fdfcf8" text-anchor="middle" font-weight="bold">Strategic Authority</text>
+                <text x="400" y="113" font-family="Crimson Text, serif" font-size="11" fill="#fdfcf8" text-anchor="middle">Policy, resource allocation</text>
+                
+                <!-- Middle management layer -->
+                <rect x="150" y="180" width="180" height="55" fill="#8b7355" opacity="0.45" stroke="#8b7355" stroke-width="2" rx="6"/>
+                <text x="240" y="203" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" text-anchor="middle" font-weight="bold">Middle Authority</text>
+                <text x="240" y="220" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Translation, coordination</text>
+                
+                <rect x="470" y="180" width="180" height="55" fill="#8b7355" opacity="0.45" stroke="#8b7355" stroke-width="2" rx="6"/>
+                <text x="560" y="203" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" text-anchor="middle" font-weight="bold">Middle Authority</text>
+                <text x="560" y="220" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Translation, coordination</text>
+                
+                <!-- Operational layer -->
+                <rect x="80" y="290" width="130" height="50" fill="#8b7355" opacity="0.3" stroke="#8b7355" stroke-width="1.5" rx="4"/>
+                <text x="145" y="313" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle" font-weight="bold">Operational</text>
+                <text x="145" y="328" font-family="Crimson Text, serif" font-size="9" fill="#6b5d4f" text-anchor="middle">Execution</text>
+                
+                <rect x="240" y="290" width="130" height="50" fill="#8b7355" opacity="0.3" stroke="#8b7355" stroke-width="1.5" rx="4"/>
+                <text x="305" y="313" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle" font-weight="bold">Operational</text>
+                <text x="305" y="328" font-family="Crimson Text, serif" font-size="9" fill="#6b5d4f" text-anchor="middle">Execution</text>
+                
+                <rect x="430" y="290" width="130" height="50" fill="#8b7355" opacity="0.3" stroke="#8b7355" stroke-width="1.5" rx="4"/>
+                <text x="495" y="313" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle" font-weight="bold">Operational</text>
+                <text x="495" y="328" font-family="Crimson Text, serif" font-size="9" fill="#6b5d4f" text-anchor="middle">Execution</text>
+                
+                <rect x="590" y="290" width="130" height="50" fill="#8b7355" opacity="0.3" stroke="#8b7355" stroke-width="1.5" rx="4"/>
+                <text x="655" y="313" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle" font-weight="bold">Operational</text>
+                <text x="655" y="328" font-family="Crimson Text, serif" font-size="9" fill="#6b5d4f" text-anchor="middle">Execution</text>
+                
+                <!-- Delegation arrows (downward) -->
+                <path d="M 370 130 L 270 175" stroke="#4a7c59" stroke-width="2.5" marker-end="url(#arrowhead-green)"/>
+                <path d="M 430 130 L 530 175" stroke="#4a7c59" stroke-width="2.5" marker-end="url(#arrowhead-green)"/>
+                <text x="315" y="155" font-family="Crimson Text, serif" font-size="10" fill="#4a7c59" transform="rotate(-25 315 155)">Authority</text>
+                
+                <path d="M 200 235 L 150 285" stroke="#4a7c59" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                <path d="M 260 235 L 300 285" stroke="#4a7c59" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                <path d="M 530 235 L 490 285" stroke="#4a7c59" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                <path d="M 590 235 L 650 285" stroke="#4a7c59" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                
+                <!-- Information flow (upward - with distortion) -->
+                <path d="M 165 290 L 220 240" stroke="#c85a54" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead-red)"/>
+                <path d="M 325 290 L 280 240" stroke="#c85a54" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead-red)"/>
+                <path d="M 510 290 L 550 240" stroke="#c85a54" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead-red)"/>
+                <path d="M 670 290 L 600 240" stroke="#c85a54" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead-red)"/>
+                
+                <path d="M 240 180 L 380 135" stroke="#c85a54" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead-red)"/>
+                <path d="M 560 180 L 420 135" stroke="#c85a54" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowhead-red)"/>
+                <text x="280" y="165" font-family="Crimson Text, serif" font-size="9" fill="#c85a54" transform="rotate(30 280 165)">Information (filtered)</text>
+                
+                <!-- Bottleneck indicators -->
+                <rect x="50" y="380" width="200" height="80" fill="#f8f6f0" stroke="#c85a54" stroke-width="2" rx="4"/>
+                <text x="150" y="402" font-family="Crimson Text, serif" font-size="12" fill="#c85a54" text-anchor="middle" font-weight="bold">Bottlenecks:</text>
+                <text x="150" y="420" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Decision delays</text>
+                <text x="150" y="435" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Information loss</text>
+                <text x="150" y="450" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Context collapse</text>
+                
+                <!-- Span of control -->
+                <rect x="300" y="380" width="200" height="80" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="4"/>
+                <text x="400" y="402" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-weight="bold">Span of Control:</text>
+                <text x="400" y="420" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Supervision capacity</text>
+                <text x="400" y="435" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">vs. coordination need</text>
+                <text x="400" y="450" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Trade-off: depth vs. width</text>
+                
+                <!-- Authority-responsibility gap -->
+                <rect x="550" y="380" width="200" height="80" fill="#f8f6f0" stroke="#c85a54" stroke-width="2" rx="4"/>
+                <text x="650" y="402" font-family="Crimson Text, serif" font-size="12" fill="#c85a54" text-anchor="middle" font-weight="bold">A-R Gap:</text>
+                <text x="650" y="420" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Authority delegated</text>
+                <text x="650" y="435" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Responsibility retained</text>
+                <text x="650" y="450" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Accountability ambiguous</text>
+                
+                <!-- Bottom annotation -->
+                <rect x="100" y="490" width="600" height="70" fill="#e8e4d8" stroke="#8b7355" stroke-width="1.5" rx="4"/>
+                <text x="400" y="515" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" text-anchor="middle" font-weight="bold">Hierarchical Trade-offs:</text>
+                <text x="400" y="533" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Centralized control enables coordination but introduces delays, information distortion, and incentive misalignment.</text>
+                <text x="400" y="548" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Each layer filters upward information and translates downward directives, creating systematic transformation of both.</text>
+                
+                <defs>
+                    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#4a7c59"/>
+                    </marker>
+                    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#c85a54"/>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="intro-box">
+            Hierarchy structures authority through vertical layers where higher positions possess decision rights that lower positions lack, creating coordination through command rather than negotiation. Delegation transfers execution responsibilities downward while retaining accountability upward, enabling specialisation and workload distribution but introducing principal-agent problems and information asymmetries. Authority distribution determines which actors control resources, make decisions, and direct others, establishing power gradients that channel coordination through directive pathways. Hierarchical coordination solves scale problems that overwhelm peer coordination—reducing communication demands, establishing clear decision rights, enabling specialisation—but creates new challenges through bottlenecks at authority nodes, information distortion across layers, and misalignment between authority holders and information possessors. The structure trades decentralised flexibility for centralised control, accepting coordination delays and filtering costs in exchange for unified direction and reduced negotiation burden.
+        </div>
+
+        <div class="content">
+            <p>Hierarchy emerges when coordination demands exceed horizontal capacity, creating vertical authority structures where command replaces negotiation as coordination mechanism (<a href="https://doi.org/10.1257/aer.90.4.843" target="_blank">Coase, 1937</a>). The transition occurs when transaction costs of peer coordination—continuous negotiation, dispute resolution, monitoring compliance—exceed administrative costs of hierarchical direction (<a href="https://doi.org/10.1016/0167-2681(91)90051-L" target="_blank">Williamson, 1991</a>). Employment relationships exemplify hierarchical transition: rather than negotiating each task separately through contracts, workers accept subordinate positions granting employers authority to direct activities within specified bounds (<a href="https://doi.org/10.1257/aer.90.4.843" target="_blank">Coase, 1937</a>). The hierarchy reduces coordination costs by consolidating decision rights: instead of each actor negotiating with every other actor—creating quadratic complexity as actors increase—hierarchy channels decisions through authority nodes that coordinate subordinates (<a href="https://doi.org/10.1016/0167-2681(91)90051-L" target="_blank">Williamson, 1991</a>). However, hierarchical efficiency depends on authority holders possessing information and competence sufficient for effective direction, conditions not always satisfied as systems scale or complexity increases.</p>
+
+            <p>Delegation transfers execution authority while retaining ultimate responsibility, enabling workload distribution without abandoning accountability (<a href="https://doi.org/10.2307/2118355" target="_blank">Aghion & Tirole, 1997</a>). The transfer operates through bounded grants: delegators specify scope, constraints, and reporting requirements within which delegates exercise discretion (<a href="https://doi.org/10.1111/j.1467-937X.2004.00284.x" target="_blank">Dessein, 2002</a>). Managerial delegation demonstrates bounded authority: supervisors delegate operational decisions to subordinates while retaining strategic control, resource allocation, and performance evaluation (<a href="https://doi.org/10.2307/2118355" target="_blank">Aghion & Tirole, 1997</a>). The delegation enables parallel action—multiple delegates execute simultaneously—rather than serial bottleneck where all decisions funnel through single authority (<a href="https://doi.org/10.1111/j.1467-937X.2004.00284.x" target="_blank">Dessein, 2002</a>). However, delegation creates principal-agent problems: delegates may pursue personal interests diverging from delegators' objectives, requiring monitoring or incentive alignment that reduces delegation efficiency (<a href="https://doi.org/10.2307/3003457" target="_blank">Jensen & Meckling, 1976</a>).</p>
+
+            <p>Authority concentration at hierarchical apex creates bottleneck as decisions requiring top-level approval queue for processing (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). The bottleneck operates through capacity limits: authority holders can process finite information and make limited decisions per unit time, creating delays when decision demands exceed capacity (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). Organisations requiring executive approval for exceptions experience bottlenecks when exception rates exceed executive attention availability, forcing queuing or creating pressure to reduce exceptions through more permissive delegation (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Simon, 1997</a>). The bottleneck becomes acute during rapid change or crisis when decision volume spikes but authority structure remains fixed, overwhelming centralized capacity (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). Bottleneck mitigation requires either expanding authority capacity—adding decision makers—or delegating authority downward, both of which introduce coordination costs that bottleneck was meant to avoid.</p>
+
+            <p>Span of control defines supervision limits where authority holders cannot effectively oversee too many subordinates simultaneously (<a href="https://doi.org/10.2307/256320" target="_blank">Meier & Bohte, 2000</a>). The limits operate through attention constraints: monitoring, coordinating, and directing subordinates requires time and cognitive capacity that finite humans possess in fixed amounts (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Simon, 1997</a>). Supervision becomes ineffective when subordinate count exceeds supervisor's attention capacity, creating oversight gaps where monitoring fails or coordination breaks down (<a href="https://doi.org/10.2307/256320" target="_blank">Meier & Bohte, 2000</a>). The span constraint determines hierarchical shape: narrow spans create tall hierarchies with many layers, while wide spans create flat hierarchies with few layers, each shape carrying distinct costs—tall hierarchies suffer information distortion across layers while flat hierarchies risk supervision inadequacy (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Pugh et al., 1968</a>). Optimal span depends on task complexity, interdependence, and monitoring difficulty, making no universal solution feasible across contexts.</p>
+
+            <p>Information asymmetry between hierarchical layers creates knowledge gaps where decision authority resides with actors lacking operational information (<a href="https://doi.org/10.2307/3003457" target="_blank">Jensen & Meckling, 1976</a>). The asymmetry operates through separation: operational actors possess detailed local knowledge but lack decision authority, while authority holders make decisions affecting operations they cannot directly observe (<a href="https://doi.org/10.2307/2118355" target="_blank">Aghion & Tirole, 1997</a>). Manufacturing hierarchies demonstrate asymmetry: floor workers know equipment capabilities, material quirks, and process variations that distant managers making production decisions never observe (<a href="https://doi.org/10.1086/261404" target="_blank">Hayek, 1945</a>). The asymmetry creates inefficiency when decisions reflect authority holders' incomplete understanding rather than operational reality, producing directives that prove impractical or counterproductive when executed (<a href="https://doi.org/10.2307/2118355" target="_blank">Aghion & Tirole, 1997</a>). Reducing asymmetry requires information transmission upward or delegation downward, both costly: transmission loses detail and context, while delegation introduces principal-agent problems.</p>
+
+            <p>Information filtering across hierarchical layers distorts upward communication as each level aggregates, summarises, and selectively transmits information to superiors (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). The filtering operates through abstraction: detailed operational data compresses into summary metrics and status reports that higher levels can process (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Simon, 1997</a>). Military reporting chains demonstrate filtering: field observations compress into situation reports, which compress into intelligence summaries, which compress into briefings, each compression removing detail while introducing interpretation (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). The filtering serves necessary function—preventing information overload at higher levels—but introduces systematic distortion where bad news may be softened, ambiguity resolved prematurely, and context eliminated (<a href="https://doi.org/10.2307/2392715" target="_blank">O'Reilly, 1978</a>). Multi-layer hierarchies compound filtering effects: information passing through multiple compression stages may bear little resemblance to original operational reality, creating divergence between strategic understanding and ground truth.</p>
+
+            <p>Directive translation converts strategic directives into operational instructions as commands flow downward through layers (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). The translation operates through interpretation: abstract strategic goals require specification into concrete actions that operational units can execute (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). Corporate strategy directing "increase market share" undergoes translation through middle management into specific marketing campaigns, pricing adjustments, and distribution changes, each translation adding interpretation and potentially introducing drift from original intent (<a href="https://doi.org/10.5465/amr.1978.4305896" target="_blank">Quinn, 1978</a>). The translation creates implementation gaps when operational interpretations diverge from strategic intentions, producing actions that formally comply with directives while substantively contradicting them (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). Translation fidelity depends on shared understanding across layers, alignment of incentives, and sufficient communication richness to convey strategic rationale, conditions often absent in large hierarchies.</p>
+
+            <p>Authority-responsibility separation occurs when actors exercise authority over domains for which they bear no consequence (<a href="https://doi.org/10.2307/3003457" target="_blank">Jensen & Meckling, 1976</a>). The separation operates through structural division: authority to decide resides at levels removed from execution responsibility or outcome accountability (<a href="https://doi.org/10.2307/2393356" target="_blank">Williamson, 1991</a>). Regulatory hierarchies demonstrate separation: regulators possess authority to impose requirements but bear no costs of compliance or competitive disadvantage that regulated entities experience (<a href="https://doi.org/10.1086/467037" target="_blank">Stigler, 1971</a>). The separation creates moral hazard where authority holders lack skin in the game, potentially making decisions they would avoid if personally exposed to consequences (<a href="https://doi.org/10.2307/3003457" target="_blank">Jensen & Meckling, 1976</a>). Reconnecting authority and responsibility requires either relocating decision rights to affected parties—reversing delegation—or creating accountability mechanisms that impose consequences on authority holders, both approaches introducing complexity or political resistance.</p>
+
+            <p>Vertical coordination through hierarchy contrasts with lateral coordination across peers, trading negotiation costs for command costs (<a href="https://doi.org/10.1287/mnsc.1040.0229" target="_blank">Malone & Crowston, 1994</a>). Vertical coordination consolidates decisions at authority nodes, enabling unified direction but creating bottlenecks and information asymmetries (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). Lateral coordination maintains peer relationships, preserving local information use but requiring continuous negotiation and lacking dispute resolution authority (<a href="https://doi.org/10.1287/mnsc.1040.0229" target="_blank">Malone & Crowston, 1994</a>). Matrix structures attempt combining both: employees report vertically to functional managers while coordinating laterally across project teams, creating dual authority that introduces conflict and ambiguity (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Galbraith, 1971</a>). The vertical-lateral balance depends on task interdependence, environmental volatility, and coordination complexity, with neither pure form optimal across all contexts (<a href="https://doi.org/10.1287/mnsc.1040.0229" target="_blank">Malone & Crowston, 1994</a>).</p>
+
+            <p>Centralisation concentrates decision authority at hierarchical apex, creating coordination through unified control (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Pugh et al., 1968</a>). The concentration enables consistency, strategic coherence, and economies of scale in decision-making by eliminating redundant local decisions (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). Central procurement demonstrates centralisation benefits: consolidating purchasing decisions achieves volume discounts and standardisation that distributed purchasing cannot (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). However, centralisation creates responsiveness costs: local variations and rapid changes require central approval, introducing delays and preventing adaptation that decentralised authority would enable (<a href="https://doi.org/10.1086/261404" target="_blank">Hayek, 1945</a>). Centralisation proves efficient when environments remain stable, decisions benefit from coordination, and local variation proves costly, but becomes liability when circumstances demand rapid local adaptation.</p>
+
+            <p>Decentralisation pushes decision authority to lower hierarchical levels or operational units, enabling local responsiveness at cost of coordination (<a href="https://doi.org/10.1111/j.1467-937X.2004.00284.x" target="_blank">Dessein, 2002</a>). The push exploits local information: actors closest to operations possess knowledge unavailable to distant authority, making their decisions potentially superior despite lacking strategic perspective (<a href="https://doi.org/10.1086/261404" target="_blank">Hayek, 1945</a>). Retail decentralisation demonstrates local advantages: store managers who adjust inventory and pricing based on neighbourhood demand patterns often outperform centralised systems imposing uniform strategies (<a href="https://doi.org/10.1111/j.1467-937X.2004.00284.x" target="_blank">Dessein, 2002</a>). However, decentralisation risks coordination failure when local optimisation produces global inefficiency—each unit maximising local performance while system-level outcomes deteriorate (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). Decentralisation succeeds when tasks possess low interdependence, environments vary substantially across locations, and coordination costs exceed local adaptation benefits.</p>
+
+            <p>Principal-agent problems emerge through delegation when agents pursue personal interests diverging from principals' objectives (<a href="https://doi.org/10.2307/3003457" target="_blank">Jensen & Meckling, 1976</a>). The divergence operates through incentive misalignment: agents bear effort costs but capture only fraction of performance gains, creating preference for shirking unless monitoring or incentives prevent it (<a href="https://doi.org/10.2307/3003457" target="_blank">Jensen & Meckling, 1976</a>). Sales hierarchies demonstrate agency problems: salespeople may maximise personal commission through tactics that maximise short-term sales while degrading long-term customer relationships that principals value (<a href="https://doi.org/10.2307/1914083" target="_blank">Holmstrom, 1979</a>). Managing agency problems requires either monitoring—observing agent behaviour—or outcome-based incentives—tying agent compensation to principal-valued results—both imposing costs that reduce delegation benefits (<a href="https://doi.org/10.2307/3003457" target="_blank">Jensen & Meckling, 1976</a>). Monitoring proves expensive and incomplete, while outcome incentives transfer risk to agents who demand compensation for bearing uncertainty, limiting incentive strength that risk-averse agents accept.</p>
+
+            <p>Accountability diffusion occurs when hierarchical layers obscure who bears responsibility for outcomes (<a href="https://doi.org/10.1177/0170840610394316" target="_blank">Bovens, 2007</a>). The diffusion operates through multiple actors contributing to decisions: strategic direction from executives, tactical planning from middle management, operational execution from workers, creating collective outcome that no single actor fully controls (<a href="https://doi.org/10.1177/0170840610394316" target="_blank">Bovens, 2007</a>). Failure attribution becomes contested: executives blame flawed execution, managers blame unrealistic strategy, workers blame insufficient resources, each possessing partial validity (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). The diffusion enables buck-passing where actors deflect responsibility upward or downward, preventing accountability establishment that would enable correction or sanction (<a href="https://doi.org/10.1177/0170840610394316" target="_blank">Bovens, 2007</a>). Establishing accountability requires clear authority-responsibility coupling where decision rights and outcome responsibility reside with same actors, condition hierarchical separation often violates.</p>
+
+            <p>Formalisation introduces rules, procedures, and standardisation that reduce discretion while increasing predictability (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Pugh et al., 1968</a>). The formalisation operates through specification: replacing judgement with protocols that prescribe responses to defined situations (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Pugh et al., 1968</a>). Bureaucratic hierarchies demonstrate formalisation: detailed rules govern procurement, hiring, and resource allocation, constraining authority holder discretion while enabling coordination through consistency (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Weber, 1947</a>). The formalisation reduces coordination costs by eliminating case-by-case decisions but introduces rigidity where rules prevent appropriate responses to novel situations or local conditions (<a href="https://doi.org/10.1287/orsc.13.3.249.2780" target="_blank">Mintzberg, 1979</a>). Formalisation proves efficient when tasks prove routine, environments remain stable, and discretion creates more coordination costs than benefits, but becomes liability when circumstances demand adaptation that rules prevent.</p>
+
+            <p>Hierarchy depth determines vertical distance between apex and operations, creating trade-offs between control span and communication path length (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Pugh et al., 1968</a>). Deep hierarchies with many layers enable narrow supervision spans—each manager oversees few subordinates—but lengthen communication paths and multiply filtering stages (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). Shallow hierarchies with few layers require wide spans—each manager supervises many subordinates—but reduce communication distance and filtering (<a href="https://doi.org/10.1177/0018726795048002005" target="_blank">Pugh et al., 1968</a>). Military hierarchies exemplify depth trade-offs: many command layers enable tight control chains but slow decision cycles as information and orders traverse multiple stages (<a href="https://doi.org/10.1287/mnsc.38.10.1439" target="_blank">Radner, 1993</a>). Optimal depth depends on supervision requirements, decision speed needs, and communication technology: technologies enabling broader communication reduce depth necessity by expanding feasible span.</p>
+
+            <p>Bureaucratic inertia emerges as hierarchical structures resist change despite environmental shifts demanding adaptation (<a href="https://doi.org/10.1177/0170840610394316" target="_blank">Hannan & Freeman, 1984</a>). The inertia operates through multiple mechanisms: sunk costs in existing structure, coordination complexity of simultaneous change, vested interests in current arrangements, and cognitive lock-in around established procedures (<a href="https://doi.org/10.1177/0170840610394316" target="_blank">Hannan & Freeman, 1984</a>). Large organisations demonstrate inertia: attempts to restructure authority, reallocate responsibilities, or modify procedures encounter resistance from actors whose positions or power depend on current configuration (<a href="https://doi.org/10.1177/0170840610394316" target="_blank">Hannan & Freeman, 1984</a>). The inertia creates lag between environmental change and organisational response, potentially causing obsolescence when adaptation fails to match change pace (<a href="https://doi.org/10.5465/amr.1985.4277352" target="_blank">Tushman & Romanelli, 1985</a>). Overcoming inertia requires either crisis creating change urgency or leadership authority sufficient to impose restructuring despite resistance, both disruptive mechanisms that hierarchy's stability orientation resists.</p>
+
+            <p>Authority legitimacy determines whether subordinates comply with directives based on position-based obligation versus voluntary consent (<a href="https://doi.org/10.1177/0002764294037004005" target="_blank">Tyler, 2006</a>). The legitimacy operates through acceptance: subordinates view hierarchical authority as rightful rather than merely powerful, creating compliance without continuous enforcement (<a href="https://doi.org/10.1177/0002764294037004005" target="_blank">Tyler, 2006</a>). Employment hierarchies demonstrate legitimacy: workers generally accept managerial authority as legitimate within employment scope, complying with directives without requiring coercion or detailed incentives (<a href="https://doi.org/10.1257/aer.90.4.843" target="_blank">Coase, 1937</a>). However, legitimacy proves fragile: authority exercised outside accepted bounds, procedures violating fairness norms, or directives contradicting stated values can trigger legitimacy crises where compliance requires enforcement rather than acceptance (<a href="https://doi.org/10.1177/0002764294037004005" target="_blank">Tyler, 2006</a>). Maintaining legitimacy requires authority exercise within normative boundaries that subordinates accept, creating constraints on hierarchy's formal power that informal norms enforce.</p>
+
+            <div class="separator"></div>
+
+            <p>Hierarchy emerges when peer coordination costs exceed hierarchical administration costs, consolidating decision rights vertically to reduce negotiation burden. Delegation transfers execution authority while retaining ultimate responsibility, enabling parallel action but creating principal-agent problems through incentive misalignment. Authority concentration creates bottlenecks as decision demands exceed processing capacity, while span of control limits effective supervision. Information asymmetry separates knowledge from authority, filtering distorts upward communication, and directive translation introduces implementation gaps. Authority-responsibility separation enables moral hazard, while accountability diffusion obscures outcome attribution. Vertical coordination trades negotiation costs for command costs, with centralisation providing unified control and decentralisation enabling local responsiveness. Formalisation reduces discretion through rules, hierarchy depth creates control-communication trade-offs, and bureaucratic inertia resists adaptation. Authority legitimacy determines whether compliance derives from acceptance or enforcement. Hierarchical structures solve scale coordination challenges but introduce systematic tensions between control and flexibility, speed and oversight, local knowledge and strategic direction.</p>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <div class="reference-item">
+Aghion, P., & Tirole, J. (1997). Formal and real authority in organizations. <em>Journal of Political Economy</em>, <em>105</em>(1), 1–29. <a href="https://doi.org/10.1086/262063" target="_blank">https://doi.org/10.1086/262063</a>
+            </div>
+
+            <div class="reference-item">
+Bovens, M. (2007). Analysing and assessing accountability: A conceptual framework. <em>European Law Journal</em>, <em>13</em>(4), 447–468. <a href="https://doi.org/10.1111/j.1468-0386.2007.00378.x" target="_blank">https://doi.org/10.1111/j.1468-0386.2007.00378.x</a>
+            </div>
+
+            <div class="reference-item">
+Coase, R. H. (1937). The nature of the firm. <em>Economica</em>, <em>4</em>(16), 386–405. <a href="https://doi.org/10.1111/j.1468-0335.1937.tb00002.x" target="_blank">https://doi.org/10.1111/j.1468-0335.1937.tb00002.x</a>
+            </div>
+
+            <div class="reference-item">
+Dessein, W. (2002). Authority and communication in organizations. <em>Review of Economic Studies</em>, <em>69</em>(4), 811–838. <a href="https://doi.org/10.1111/1467-937X.00227" target="_blank">https://doi.org/10.1111/1467-937X.00227</a>
+            </div>
+
+            <div class="reference-item">
+Galbraith, J. R. (1971). Matrix organization designs: How to combine functional and project forms. <em>Business Horizons</em>, <em>14</em>(1), 29–40. <a href="https://doi.org/10.1016/0007-6813(71)90037-1" target="_blank">https://doi.org/10.1016/0007-6813(71)90037-1</a>
+            </div>
+
+            <div class="reference-item">
+Hannan, M. T., & Freeman, J. (1984). Structural inertia and organizational change. <em>American Sociological Review</em>, <em>49</em>(2), 149–164. <a href="https://doi.org/10.2307/2095567" target="_blank">https://doi.org/10.2307/2095567</a>
+            </div>
+
+            <div class="reference-item">
+Hayek, F. A. (1945). The use of knowledge in society. <em>American Economic Review</em>, <em>35</em>(4), 519–530.
+            </div>
+
+            <div class="reference-item">
+Holmstrom, B. (1979). Moral hazard and observability. <em>Bell Journal of Economics</em>, <em>10</em>(1), 74–91. <a href="https://doi.org/10.2307/3003320" target="_blank">https://doi.org/10.2307/3003320</a>
+            </div>
+
+            <div class="reference-item">
+Jensen, M. C., & Meckling, W. H. (1976). Theory of the firm: Managerial behavior, agency costs and ownership structure. <em>Journal of Financial Economics</em>, <em>3</em>(4), 305–360. <a href="https://doi.org/10.1016/0304-405X(76)90026-X" target="_blank">https://doi.org/10.1016/0304-405X(76)90026-X</a>
+            </div>
+
+            <div class="reference-item">
+Malone, T. W., & Crowston, K. (1994). The interdisciplinary study of coordination. <em>ACM Computing Surveys</em>, <em>26</em>(1), 87–119. <a href="https://doi.org/10.1145/174666.174668" target="_blank">https://doi.org/10.1145/174666.174668</a>
+            </div>
+
+            <div class="reference-item">
+Meier, K. J., & Bohte, J. (2000). Ode to Luther Gulick: Span of control and organizational performance. <em>Administration & Society</em>, <em>32</em>(2), 115–137. <a href="https://doi.org/10.1177/00953990022019660" target="_blank">https://doi.org/10.1177/00953990022019660</a>
+            </div>
+
+            <div class="reference-item">
+Mintzberg, H. (1979). <em>The structuring of organizations</em>. Prentice Hall.
+            </div>
+
+            <div class="reference-item">
+O'Reilly, C. A. (1978). The intentional distortion of information in organizational communication: A laboratory and field investigation. <em>Human Relations</em>, <em>31</em>(2), 173–193. <a href="https://doi.org/10.1177/001872677803100205" target="_blank">https://doi.org/10.1177/001872677803100205</a>
+            </div>
+
+            <div class="reference-item">
+Pugh, D. S., Hickson, D. J., Hinings, C. R., & Turner, C. (1968). Dimensions of organization structure. <em>Administrative Science Quarterly</em>, <em>13</em>(1), 65–105. <a href="https://doi.org/10.2307/2391262" target="_blank">https://doi.org/10.2307/2391262</a>
+            </div>
+
+            <div class="reference-item">
+Quinn, J. B. (1978). Strategic change: "Logical incrementalism." <em>Sloan Management Review</em>, <em>20</em>(1), 7–21.
+            </div>
+
+            <div class="reference-item">
+Radner, R. (1993). The organization of decentralized information processing. <em>Econometrica</em>, <em>61</em>(5), 1109–1146. <a href="https://doi.org/10.2307/2951495" target="_blank">https://doi.org/10.2307/2951495</a>
+            </div>
+
+            <div class="reference-item">
+Simon, H. A. (1997). <em>Administrative behavior: A study of decision-making processes in administrative organizations</em> (4th ed.). Free Press.
+            </div>
+
+            <div class="reference-item">
+Stigler, G. J. (1971). The theory of economic regulation. <em>Bell Journal of Economics and Management Science</em>, <em>2</em>(1), 3–21. <a href="https://doi.org/10.2307/3003160" target="_blank">https://doi.org/10.2307/3003160</a>
+            </div>
+
+            <div class="reference-item">
+Tushman, M. L., & Romanelli, E. (1985). Organizational evolution: A metamorphosis model of convergence and reorientation. <em>Research in Organizational Behavior</em>, <em>7</em>, 171–222.
+            </div>
+
+            <div class="reference-item">
+Tyler, T. R. (2006). Psychological perspectives on legitimacy and legitimation. <em>Annual Review of Psychology</em>, <em>57</em>, 375–400. <a href="https://doi.org/10.1146/annurev.psych.57.102904.190038" target="_blank">https://doi.org/10.1146/annurev.psych.57.102904.190038</a>
+            </div>
+
+            <div class="reference-item">
+Weber, M. (1947). <em>The theory of social and economic organization</em> (A. M. Henderson & T. Parsons, Trans.). Free Press.
+            </div>
+
+            <div class="reference-item">
+Williamson, O. E. (1991). Comparative economic organization: The analysis of discrete structural alternatives. <em>Administrative Science Quarterly</em>, <em>36</em>(2), 269–296. <a href="https://doi.org/10.2307/2393356" target="_blank">https://doi.org/10.2307/2393356</a>
+            </div>
+
+        </div>
+
+        <footer>
+            <a href="index.html" class="back-button">← Back to Index</a>
+        </footer>
+    </div>
+</body>
+</html>
