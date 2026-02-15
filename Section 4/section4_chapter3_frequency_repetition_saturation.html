@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency, Repetition, and Saturation Effects - Truth Index Encyclopedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #fdfcf8;
+            color: #2c2416;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: linear-gradient(to bottom, #f4f1e8, #e8e4d8);
+            box-shadow: 0 0 60px rgba(0,0,0,0.15);
+            min-height: 100vh;
+        }
+
+        .encyclopedia-header {
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .breadcrumb {
+            text-align: center;
+            font-size: 14px;
+            color: #8b5d4f;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c2416;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: #6b5d4f;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 40px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #6b5d4f;
+        }
+
+        .visual-demonstration {
+            margin: 50px 0;
+        }
+
+        .visual-demonstration h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #2c2416;
+            font-style: italic;
+        }
+
+        .image-box {
+            background-color: #f8f6f0;
+            border: 2px solid #d4c4a8;
+            padding: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .image-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #6b5d4f;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        .intro-box {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        .intro-box p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .intro-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .separator {
+            border: none;
+            border-top: 2px solid #d4c4a8;
+            margin: 50px 0;
+        }
+
+        .case-studies-section {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        .case-studies-section h3 {
+            margin-top: 0;
+            font-size: 22px;
+            font-family: 'Libre Baskerville', serif;
+            font-style: italic;
+        }
+
+        .case-studies-section a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .case-studies-section a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .case-studies-section p {
+            margin-bottom: 15px;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #d4c4a8;
+        }
+
+        .references h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #2c2416;
+        }
+
+        .references p {
+            text-align: left;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            text-indent: -30px;
+        }
+
+        .references a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .references a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="encyclopedia-header">Truth Index Encyclopedia</div>
+        <div class="breadcrumb">Section 4: Attention, Communication & Trust Interfaces › Chapter 3</div>
+        
+        <h1>Frequency, Repetition, and Saturation Effects</h1>
+        <p class="subtitle">Diminishing returns, redundancy, and structural withdrawal under repeated exposure</p>
+        
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="visual-demonstration">
+            <h3>Visual Demonstration</h3>
+            <div class="image-box">
+                <svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background -->
+                    <rect width="800" height="560" fill="#f8f6f0"/>
+                    
+                    <!-- Title -->
+                    <text x="400" y="35" font-family="serif" font-size="18" fill="#2c2416" text-anchor="middle" font-weight="bold">
+                        Response Curves Under Repeated Exposure
+                    </text>
+                    
+                    <!-- Graph area -->
+                    <rect x="100" y="80" width="600" height="280" fill="#fdfcf8" stroke="#d4c4a8" stroke-width="2"/>
+                    
+                    <!-- Axes -->
+                    <line x1="120" y1="340" x2="680" y2="340" stroke="#6b5d4f" stroke-width="2"/>
+                    <line x1="120" y1="100" x2="120" y2="340" stroke="#6b5d4f" stroke-width="2"/>
+                    
+                    <!-- Y-axis label -->
+                    <text x="50" y="220" font-family="serif" font-size="13" fill="#2c2416" text-anchor="middle" transform="rotate(-90 50 220)">
+                        Response Strength
+                    </text>
+                    
+                    <!-- X-axis label -->
+                    <text x="400" y="375" font-family="serif" font-size="13" fill="#2c2416" text-anchor="middle">
+                        Exposure Frequency →
+                    </text>
+                    
+                    <!-- X-axis markers -->
+                    <line x1="120" y1="340" x2="120" y2="345" stroke="#6b5d4f" stroke-width="1"/>
+                    <text x="120" y="360" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">0</text>
+                    
+                    <line x1="240" y1="340" x2="240" y2="345" stroke="#6b5d4f" stroke-width="1"/>
+                    <text x="240" y="360" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Low</text>
+                    
+                    <line x1="400" y1="340" x2="400" y2="345" stroke="#6b5d4f" stroke-width="1"/>
+                    <text x="400" y="360" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Moderate</text>
+                    
+                    <line x1="560" y1="340" x2="560" y2="345" stroke="#6b5d4f" stroke-width="1"/>
+                    <text x="560" y="360" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">High</text>
+                    
+                    <line x1="680" y1="340" x2="680" y2="345" stroke="#6b5d4f" stroke-width="1"/>
+                    <text x="680" y="360" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Saturation</text>
+                    
+                    <!-- Initial response curve (rises then plateaus then declines) -->
+                    <path d="M 120 340 Q 180 260 240 200 Q 320 150 400 140 Q 480 145 560 180 Q 620 220 680 280" 
+                          fill="none" stroke="#8b7355" stroke-width="3"/>
+                    
+                    <!-- Zone markers -->
+                    <rect x="120" y="85" width="120" height="15" fill="#8b7355" fill-opacity="0.15"/>
+                    <text x="180" y="97" font-family="serif" font-size="10" fill="#2c2416" text-anchor="middle">Initial Effect</text>
+                    
+                    <rect x="280" y="85" width="200" height="15" fill="#8b7355" fill-opacity="0.25"/>
+                    <text x="380" y="97" font-family="serif" font-size="10" fill="#2c2416" text-anchor="middle">Peak Response</text>
+                    
+                    <rect x="500" y="85" width="180" height="15" fill="#8b7355" fill-opacity="0.35"/>
+                    <text x="590" y="97" font-family="serif" font-size="10" fill="#2c2416" text-anchor="middle">Diminishing Returns</text>
+                    
+                    <!-- Annotation points -->
+                    <circle cx="240" cy="200" r="4" fill="#2c2416"/>
+                    <text x="240" y="190" font-family="serif" font-size="9" fill="#2c2416" text-anchor="middle" font-style="italic">Recognition</text>
+                    
+                    <circle cx="400" cy="140" r="4" fill="#2c2416"/>
+                    <text x="400" y="130" font-family="serif" font-size="9" fill="#2c2416" text-anchor="middle" font-style="italic">Maximum</text>
+                    <text x="400" y="120" font-family="serif" font-size="9" fill="#2c2416" text-anchor="middle" font-style="italic">Effectiveness</text>
+                    
+                    <circle cx="560" cy="180" r="4" fill="#2c2416"/>
+                    <text x="560" y="170" font-family="serif" font-size="9" fill="#2c2416" text-anchor="middle" font-style="italic">Redundancy</text>
+                    <text x="560" y="160" font-family="serif" font-size="9" fill="#2c2416" text-anchor="middle" font-style="italic">Threshold</text>
+                    
+                    <circle cx="680" cy="280" r="4" fill="#2c2416"/>
+                    <text x="680" y="270" font-family="serif" font-size="9" fill="#2c2416" text-anchor="middle" font-style="italic">Active</text>
+                    <text x="680" y="260" font-family="serif" font-size="9" fill="#2c2416" text-anchor="middle" font-style="italic">Avoidance</text>
+                    
+                    <!-- Bottom section: Structural responses -->
+                    <text x="400" y="410" font-family="serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="bold">
+                        Structural Responses to Frequency Escalation
+                    </text>
+                    
+                    <rect x="80" y="425" width="640" height="115" fill="#fdfcf8" stroke="#d4c4a8" stroke-width="1"/>
+                    
+                    <!-- Progressive response stages -->
+                    <text x="100" y="448" font-family="serif" font-size="11" fill="#2c2416" font-weight="bold">Stage 1: Initial Contact</text>
+                    <text x="110" y="463" font-family="serif" font-size="10" fill="#6b5d4f">Novel signal receives full attention, processing occurs, information extracted</text>
+                    
+                    <text x="100" y="485" font-family="serif" font-size="11" fill="#2c2416" font-weight="bold">Stage 2: Recognition</text>
+                    <text x="110" y="500" font-family="serif" font-size="10" fill="#6b5d4f">Repeated signal recognized as familiar, processing accelerates, efficiency gains</text>
+                    
+                    <text x="100" y="522" font-family="serif" font-size="11" fill="#2c2416" font-weight="bold">Stage 3: Saturation</text>
+                    <text x="110" y="537" font-family="serif" font-size="10" fill="#6b5d4f">Excessive repetition produces diminishing attention, filtering emerges, withdrawal begins</text>
+                </svg>
+            </div>
+            <p class="caption">
+                Response to repeated exposure follows predictable curves through recognition, peak effectiveness, redundancy, and saturation phases. Initial contact with novel signals produces full attention allocation and information processing. Moderate repetition enables recognition and processing efficiency gains as familiarity increases. Continued frequency escalation reaches peak effectiveness where signal recognition optimizes response without overwhelming processing capacity. Beyond this threshold, additional repetition produces diminishing returns as redundancy reduces informational value per exposure. High-frequency repetition triggers saturation effects where excess exposure creates filtering mechanisms, reduced attention allocation, and eventual withdrawal responses. The transition from productive repetition to counterproductive saturation operates as structural threshold determined by signal density relative to processing capacity, not by content quality or source credibility.
+            </p>
+        </div>
+
+        <div class="intro-box">
+            <p>Frequency and repetition function as structural properties of communication systems, determining exposure rates, contact intervals, and message recurrence patterns at information interfaces. These temporal parameters shape how signals register, persist, or degrade across repeated encounters. Repetition operates through mechanisms distinct from content characteristics—the same information delivered once versus ten times versus continuously produces different systemic effects independent of message quality or relevance.</p>
+            
+            <p>This chapter documents how repeated exposure creates predictable response patterns: initial recognition, efficiency gains, diminishing returns, redundancy effects, and eventual saturation producing withdrawal. The focus remains on frequency as system property rather than strategic variable—how contact rates interact with processing capacity, how repetition creates information decay through familiarity, and how excess frequency triggers structural filtering responses. Understanding these mechanisms reveals why increasing exposure produces nonlinear effects where more frequent contact eventually generates less effective communication independent of optimization efforts.</p>
+        </div>
+
+        <p>Repetition operates as temporal structuring of information delivery, determining how many times identical or similar messages reach receivers within defined periods (Cacioppo & Petty, 1979). This frequency parameter affects signal processing independently of content characteristics, as the same information presented once, repeatedly, or continuously produces different cognitive and behavioral responses (Zajonc, 1968). Communication systems implement repetition through message scheduling, contact intervals, and recurrence patterns that establish exposure rates as architectural features rather than incidental outcomes.</p>
+
+        <p>Initial exposure to novel information produces maximum attention allocation as unfamiliar signals require full processing to extract meaning and assess relevance (Berlyne, 1970). This cognitive engagement with new material consumes substantial processing resources while establishing initial memory traces and comprehension frameworks. Novel information encounters face no competition from prior exposure, allowing complete attention deployment without interference from familiarity or saturation effects (Kahneman, 1973).</p>
+
+        <p>Mere exposure effects demonstrate that repeated contact with stimuli increases familiarity and recognition independent of conscious processing or message comprehension (Zajonc, 1968, 2001). This phenomenon operates through perceptual fluency where repeated encounters enable faster processing and easier recognition, creating preference for familiar over novel stimuli through processing ease rather than content evaluation (Bornstein & D'Agostino, 1992). Mere exposure produces effects at frequencies too low to trigger saturation, establishing recognition and familiarity as intermediate outcomes between novelty and redundancy.</p>
+
+        <p>Recognition thresholds represent minimum repetition frequencies required for signals to register as familiar rather than novel (Jacoby & Dallas, 1981). These thresholds vary with signal complexity, presentation context, and interference from competing messages, but establish baseline repetition requirements for transitioning from unknown to known status. Signals below recognition thresholds remain perpetually novel, requiring full processing at each encounter without efficiency gains from familiarity (Tulving & Schacter, 1990).</p>
+
+        <p>Processing efficiency increases with moderate repetition as familiarity reduces cognitive demands required for signal recognition and comprehension (Begg et al., 1992). Repeated exposure enables schema development and pattern recognition that accelerate information processing while maintaining engagement quality. This efficiency phase represents optimal repetition range where frequency enhances rather than degrades communication effectiveness by reducing processing costs without eliminating informational value (Jacoby et al., 1989).</p>
+
+        <p>Diminishing returns emerge when additional repetition produces progressively smaller incremental effects on recognition, comprehension, or response (Cacioppo & Petty, 1979). Beyond efficiency thresholds, each subsequent exposure adds less value than previous iterations as familiarity approaches ceiling levels and informational novelty declines. This deceleration reflects saturation of processing gains available through repetition, where frequency increases cease generating proportional improvements (Berlyne, 1970).</p>
+
+        <p>Redundancy occurs when repeated messages contain no new information beyond previous exposures, reducing informational value toward zero as familiarity makes content predictable (Shannon, 1948). This information-theoretic property of repetition means identical messages become progressively less informative with each iteration, eventually conveying only confirmation that no change has occurred rather than substantive new content (Cover & Thomas, 2006). Redundancy transforms signals from information sources into noise that consumes processing capacity without delivering knowledge.</p>
+
+        <p>Saturation effects manifest when exposure frequency exceeds processing capacity or informational tolerance, producing attention withdrawal, active filtering, or complete disengagement (Batra & Ray, 1986). Unlike mere redundancy reducing information value, saturation represents processing overload where signal volume overwhelms reception capability independent of content characteristics. Saturated environments trigger protective responses that reduce overall exposure rather than selectively filtering redundant content (Lang, 2000).</p>
+
+        <p>Wear-out phenomena describe performance degradation under extended high-frequency exposure where initially effective messages lose impact through excessive repetition (Pechmann & Stewart, 1988). This deterioration operates independently of content quality, as even compelling messages suffer effectiveness decline when exposure frequency exceeds optimal ranges. Wear-out manifests as reduced attention, decreased processing depth, and eventual active avoidance of previously engaging content (Campbell & Keller, 2003).</p>
+
+        <p>Habituation mechanisms produce decreased response to repeated stimuli as neurological and cognitive systems adapt to constant or frequent signals by reducing processing allocation (Thompson & Spencer, 1966; Rankin et al., 2009). This adaptation serves efficiency functions by conserving resources for novel information while maintaining baseline awareness of familiar signals. Habituation operates automatically rather than strategically, reducing response magnitude regardless of signal importance or relevance once frequency thresholds are exceeded (Groves & Thompson, 1970).</p>
+
+        <p>Interference effects occur when high-frequency repetition of one message reduces reception or retention of other information by consuming limited processing capacity (Anderson & Neely, 1996). This competitive dynamic means excessive repetition imposes costs beyond direct message wear-out by degrading overall information processing through attention monopolization and working memory occupation. Interference creates negative externalities where one signal's frequency reduces capacity available for other communications (Keppel & Underwood, 1962).</p>
+
+        <p>Filtering mechanisms emerge as structural responses to excess frequency, implementing automatic or deliberate reduction in exposure to high-repetition signals (Lang, 2000). These filters operate at multiple levels—perceptual, attentional, and behavioral—to manage information overload by reducing contact with redundant or saturating content. Technical filtering through automated systems and behavioral filtering through avoidance both function to restore balance between signal frequency and processing capacity (Cho & Cheon, 2004).</p>
+
+        <p>Avoidance behaviors manifest when recipients actively reduce exposure to high-frequency sources through channel switching, content blocking, or complete disengagement (Speck & Elliott, 1997). This withdrawal represents systematic response to saturation where frequency itself becomes negative signal triggering rejection independent of message content. Avoidance creates asymmetric relationships where increased contact frequency paradoxically reduces total exposure as recipients implement protective measures against repetition excess (Kelly et al., 2010).</p>
+
+        <p>Reactance responses emerge when excessive repetition creates perception of autonomy threats, producing opposition or rejection as defensive reactions to frequency pressure (Brehm & Brehm, 1981). High-frequency exposure can trigger psychological resistance where the very act of repeated contact generates negative attitudes toward sources or messages regardless of content characteristics. Reactance transforms frequency from communication mechanism into impediment, making additional repetition counterproductive (Clee & Wicklund, 1980).</p>
+
+        <p>Optimal frequency represents theoretical exposure rate maximizing communication effectiveness while minimizing wear-out and saturation risks (Naples, 1979). This parameter varies with message complexity, audience characteristics, competitive context, and temporal distribution patterns, making universal frequency prescriptions impossible. The existence of optimal ranges demonstrates nonlinear frequency effects where both insufficient and excessive repetition reduce effectiveness relative to intermediate levels (Pechmann & Stewart, 1988).</p>
+
+        <p>Spacing effects show that distributed repetition produces superior outcomes compared to massed exposure at equivalent total frequency (Cepeda et al., 2006). Temporal distribution of identical total contacts creates different processing patterns, with spaced repetition enabling memory consolidation and preventing rapid saturation while massed exposure accelerates habituation and wear-out. These temporal structuring effects demonstrate that when repetition occurs matters as much as how often (Dempster, 1988).</p>
+
+        <p>Context variation moderates repetition effects by introducing novelty through presentation differences while maintaining message consistency (Unnava & Burnkrant, 1991). Varied contexts reduce monotony and delay saturation by engaging different processing pathways for identical core content. This variation effect reveals that exact repetition produces faster degradation than semantically consistent but formally varied messages (Schumann et al., 1990).</p>
+
+        <p>Competitive interference intensifies saturation effects in high-density communication environments where multiple high-frequency sources create cumulative overload exceeding what single-source repetition would produce (Kent & Allen, 1994). Market saturation emerges not from any individual frequency but from aggregate exposure across competing signals, making environmental density more determinative of saturation than isolated message frequency. This systems-level saturation operates independently of individual source strategies (Webb & Ray, 1979).</p>
+
+        <p>Temporal decay describes how repetition effects diminish over time absent continued exposure, requiring periodic reinforcement to maintain recognition and familiarity levels (Ebbinghaus, 1885/1964). This decay function means repetition benefits prove temporary rather than permanent, creating ongoing frequency requirements to sustain effects achieved through initial exposure series. The interaction between repetition building effects and time eroding them establishes dynamic equilibrium requiring continuous exposure to maintain steady states (Rubin & Wenzel, 1996).</p>
+
+        <p>Frequency thresholds mark transition points where additional repetition shifts from beneficial to neutral to detrimental effects (Cacioppo & Petty, 1979). These thresholds are not fixed parameters but context-dependent boundaries that vary with signal characteristics, receiver states, and environmental conditions. The existence of thresholds demonstrates discontinuous frequency effects where incremental exposure increases produce qualitatively different outcomes depending on which side of critical boundaries they fall (Berlyne, 1970).</p>
+
+        <hr class="separator">
+
+        <p>Frequency and repetition operate as structural mechanisms in communication systems that produce predictable response patterns independent of content quality or strategic intent. Initial exposure to novel signals generates full attention allocation and information extraction. Moderate repetition creates recognition effects and processing efficiency gains through familiarity. Continued frequency escalation reaches peak effectiveness where recognition optimizes response without overwhelming capacity. Beyond these thresholds, additional repetition produces diminishing returns as redundancy reduces informational value per exposure. High-frequency repetition triggers saturation effects manifesting as habituation, filtering, avoidance, and reactance responses that reduce communication effectiveness despite or because of increased contact. These nonlinear frequency effects demonstrate why more exposure does not produce proportionally greater impact, as excessive repetition eventually generates less effective communication than optimal intermediate frequencies. Understanding repetition as system property rather than optimization variable reveals structural limits where frequency increases beyond thresholds produce counterproductive outcomes independent of message characteristics, source credibility, or implementation quality.</p>
+
+        <div class="case-studies-section">
+            <h3>Supporting Case Studies</h3>
+            <p><a href="Case-Studies/CS-001_Endless_Scroll_Funnel.html">CS-001: The Endless Scroll Funnel</a> — Demonstrates saturation effects through continuous content presentation producing habituation, where high-frequency exposure creates shallow processing patterns and eventual disengagement despite initially engaging material, illustrating how excess repetition degrades attention quality independent of content characteristics.</p>
+            <p><a href="Case-Studies/CS-006_Campaign_Saturation_Perceived_Inevitability.html">CS-006: Campaign Saturation & Perceived Inevitability</a> — Illustrates how high-frequency exposure across multiple channels creates environmental saturation where aggregate contact volume produces perception effects through repetition density, demonstrating competitive interference where cumulative frequency exceeds individual message thresholds.</p>
+        </div>
+
+        <div class="button-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <p>Anderson, M. C., & Neely, J. H. (1996). Interference and inhibition in memory retrieval. In E. L. Bjork & R. A. Bjork (Eds.), <em>Memory</em> (pp. 237-313). Academic Press.</p>
+            
+            <p>Batra, R., & Ray, M. L. (1986). Affective responses mediating acceptance of advertising. <em>Journal of Consumer Research, 13</em>(2), 234-249. <a href="https://doi.org/10.1086/209063">https://doi.org/10.1086/209063</a></p>
+            
+            <p>Begg, I. M., Anas, A., & Farinacci, S. (1992). Dissociation of processes in belief: Source recollection, statement familiarity, and the illusion of truth. <em>Journal of Experimental Psychology: General, 121</em>(4), 446-458. <a href="https://doi.org/10.1037/0096-3445.121.4.446">https://doi.org/10.1037/0096-3445.121.4.446</a></p>
+            
+            <p>Berlyne, D. E. (1970). Novelty, complexity, and hedonic value. <em>Perception & Psychophysics, 8</em>(5), 279-286. <a href="https://doi.org/10.3758/BF03212593">https://doi.org/10.3758/BF03212593</a></p>
+            
+            <p>Bornstein, R. F., & D'Agostino, P. R. (1992). Stimulus recognition and the mere exposure effect. <em>Journal of Personality and Social Psychology, 63</em>(4), 545-552. <a href="https://doi.org/10.1037/0022-3514.63.4.545">https://doi.org/10.1037/0022-3514.63.4.545</a></p>
+            
+            <p>Brehm, S. S., & Brehm, J. W. (1981). <em>Psychological reactance: A theory of freedom and control</em>. Academic Press.</p>
+            
+            <p>Cacioppo, J. T., & Petty, R. E. (1979). Effects of message repetition and position on cognitive response, recall, and persuasion. <em>Journal of Personality and Social Psychology, 37</em>(1), 97-109. <a href="https://doi.org/10.1037/0022-3514.37.1.97">https://doi.org/10.1037/0022-3514.37.1.97</a></p>
+            
+            <p>Campbell, M. C., & Keller, K. L. (2003). Brand familiarity and advertising repetition effects. <em>Journal of Consumer Research, 30</em>(2), 292-304. <a href="https://doi.org/10.1086/376800">https://doi.org/10.1086/376800</a></p>
+            
+            <p>Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. <em>Psychological Bulletin, 132</em>(3), 354-380. <a href="https://doi.org/10.1037/0033-2909.132.3.354">https://doi.org/10.1037/0033-2909.132.3.354</a></p>
+            
+            <p>Cho, C. H., & Cheon, H. J. (2004). Why do people avoid advertising on the internet? <em>Journal of Advertising, 33</em>(4), 89-97. <a href="https://doi.org/10.1080/00913367.2004.10639175">https://doi.org/10.1080/00913367.2004.10639175</a></p>
+            
+            <p>Clee, M. A., & Wicklund, R. A. (1980). Consumer behavior and psychological reactance. <em>Journal of Consumer Research, 6</em>(4), 389-405. <a href="https://doi.org/10.1086/208782">https://doi.org/10.1086/208782</a></p>
+            
+            <p>Cover, T. M., & Thomas, J. A. (2006). <em>Elements of information theory</em> (2nd ed.). Wiley-Interscience.</p>
+            
+            <p>Dempster, F. N. (1988). The spacing effect: A case study in the failure to apply the results of psychological research. <em>American Psychologist, 43</em>(8), 627-634. <a href="https://doi.org/10.1037/0003-066X.43.8.627">https://doi.org/10.1037/0003-066X.43.8.627</a></p>
+            
+            <p>Ebbinghaus, H. (1964). <em>Memory: A contribution to experimental psychology</em> (H. A. Ruger & C. E. Bussenius, Trans.). Dover. (Original work published 1885)</p>
+            
+            <p>Groves, P. M., & Thompson, R. F. (1970). Habituation: A dual-process theory. <em>Psychological Review, 77</em>(5), 419-450. <a href="https://doi.org/10.1037/h0029810">https://doi.org/10.1037/h0029810</a></p>
+            
+            <p>Jacoby, L. L., & Dallas, M. (1981). On the relationship between autobiographical memory and perceptual learning. <em>Journal of Experimental Psychology: General, 110</em>(3), 306-340. <a href="https://doi.org/10.1037/0096-3445.110.3.306">https://doi.org/10.1037/0096-3445.110.3.306</a></p>
+            
+            <p>Jacoby, L. L., Kelley, C., Brown, J., & Jasechko, J. (1989). Becoming famous overnight: Limits on the ability to avoid unconscious influences of the past. <em>Journal of Personality and Social Psychology, 56</em>(3), 326-338. <a href="https://doi.org/10.1037/0022-3514.56.3.326">https://doi.org/10.1037/0022-3514.56.3.326</a></p>
+            
+            <p>Kahneman, D. (1973). <em>Attention and effort</em>. Prentice-Hall.</p>
+            
+            <p>Kelly, L., Kerr, G., & Drennan, J. (2010). Avoidance of advertising in social networking sites: The teenage perspective. <em>Journal of Interactive Advertising, 10</em>(2), 16-27. <a href="https://doi.org/10.1080/15252019.2010.10722167">https://doi.org/10.1080/15252019.2010.10722167</a></p>
+            
+            <p>Kent, R. J., & Allen, C. T. (1994). Competitive interference effects in consumer memory for advertising: The role of brand familiarity. <em>Journal of Marketing, 58</em>(3), 97-105. <a href="https://doi.org/10.1177/002224299405800307">https://doi.org/10.1177/002224299405800307</a></p>
+            
+            <p>Keppel, G., & Underwood, B. J. (1962). Proactive inhibition in short-term retention of single items. <em>Journal of Verbal Learning and Verbal Behavior, 1</em>(3), 153-161. <a href="https://doi.org/10.1016/S0022-5371(62)80023-1">https://doi.org/10.1016/S0022-5371(62)80023-1</a></p>
+            
+            <p>Lang, A. (2000). The limited capacity model of mediated message processing. <em>Journal of Communication, 50</em>(1), 46-70. <a href="https://doi.org/10.1111/j.1460-2466.2000.tb02833.x">https://doi.org/10.1111/j.1460-2466.2000.tb02833.x</a></p>
+            
+            <p>Naples, M. J. (1979). <em>Effective frequency: The relationship between frequency and advertising effectiveness</em>. Association of National Advertisers.</p>
+            
+            <p>Pechmann, C., & Stewart, D. W. (1988). Advertising repetition: A critical review of wearin and wearout. <em>Current Issues and Research in Advertising, 11</em>(1-2), 285-329. <a href="https://doi.org/10.1080/01633392.1988.10504951">https://doi.org/10.1080/01633392.1988.10504951</a></p>
+            
+            <p>Rankin, C. H., Abrams, T., Barry, R. J., Bhatnagar, S., Clayton, D. F., Colombo, J., Coppola, G., Geyer, M. A., Glanzman, D. L., Marsland, S., McSweeney, F. K., Wilson, D. A., Wu, C. F., & Thompson, R. F. (2009). Habituation revisited: An updated and revised description of the behavioral characteristics of habituation. <em>Neurobiology of Learning and Memory, 92</em>(2), 135-138. <a href="https://doi.org/10.1016/j.nlm.2008.09.012">https://doi.org/10.1016/j.nlm.2008.09.012</a></p>
+            
+            <p>Rubin, D. C., & Wenzel, A. E. (1996). One hundred years of forgetting: A quantitative description of retention. <em>Psychological Review, 103</em>(4), 734-760. <a href="https://doi.org/10.1037/0033-295X.103.4.734">https://doi.org/10.1037/0033-295X.103.4.734</a></p>
+            
+            <p>Schumann, D. W., Petty, R. E., & Clemons, D. S. (1990). Predicting the effectiveness of different strategies of advertising variation: A test of the repetition-variation hypotheses. <em>Journal of Consumer Research, 17</em>(2), 192-202. <a href="https://doi.org/10.1086/208547">https://doi.org/10.1086/208547</a></p>
+            
+            <p>Shannon, C. E. (1948). A mathematical theory of communication. <em>Bell System Technical Journal, 27</em>(3), 379-423. <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</a></p>
+            
+            <p>Speck, P. S., & Elliott, M. T. (1997). Predictors of advertising avoidance in print and broadcast media. <em>Journal of Advertising, 26</em>(3), 61-76. <a href="https://doi.org/10.1080/00913367.1997.10673529">https://doi.org/10.1080/00913367.1997.10673529</a></p>
+            
+            <p>Thompson, R. F., & Spencer, W. A. (1966). Habituation: A model phenomenon for the study of neuronal substrates of behavior. <em>Psychological Review, 73</em>(1), 16-43. <a href="https://doi.org/10.1037/h0022681">https://doi.org/10.1037/h0022681</a></p>
+            
+            <p>Tulving, E., & Schacter, D. L. (1990). Priming and human memory systems. <em>Science, 247</em>(4940), 301-306. <a href="https://doi.org/10.1126/science.2296719">https://doi.org/10.1126/science.2296719</a></p>
+            
+            <p>Unnava, H. R., & Burnkrant, R. E. (1991). Effects of repeating varied ad executions on brand name memory. <em>Journal of Marketing Research, 28</em>(4), 406-416. <a href="https://doi.org/10.1177/002224379102800403">https://doi.org/10.1177/002224379102800403</a></p>
+            
+            <p>Webb, P. H., & Ray, M. L. (1979). Effects of TV clutter. <em>Journal of Advertising Research, 19</em>(3), 7-12.</p>
+            
+            <p>Zajonc, R. B. (1968). Attitudinal effects of mere exposure. <em>Journal of Personality and Social Psychology, 9</em>(2, Pt.2), 1-27. <a href="https://doi.org/10.1037/h0025848">https://doi.org/10.1037/h0025848</a></p>
+            
+            <p>Zajonc, R. B. (2001). Mere exposure: A gateway to the subliminal. <em>Current Directions in Psychological Science, 10</em>(6), 224-228. <a href="https://doi.org/10.1111/1467-8721.00154">https://doi.org/10.1111/1467-8721.00154</a></p>
+        </div>
+    </div>
+</body>
+</html>
