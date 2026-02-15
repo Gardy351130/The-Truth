@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediation & Gatekeeping — Truth Index Encyclopedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #fdfcf8;
+            color: #2c2416;
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #f4f1e8, #e8e4d8);
+            padding: 60px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.1);
+            border: 1px solid #d4c4a8;
+        }
+
+        .encyclopedia-header {
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb {
+            text-align: center;
+            font-size: 14px;
+            color: #8b7355;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #2c2416;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: #6b5d4f;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 8px 16px;
+            background-color: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #6b5d4f;
+        }
+
+        .visual-demo {
+            margin: 40px 0 50px 0;
+        }
+
+        .visual-demo h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #2c2416;
+        }
+
+        .image-box {
+            background-color: #f8f6f0;
+            border: 2px solid #d4c4a8;
+            padding: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+        }
+
+        .visual-demo .caption {
+            font-style: italic;
+            font-size: 16px;
+            color: #6b5d4f;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .intro-box {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+            font-size: 18px;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 26px;
+            margin: 50px 0 25px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d4c4a8;
+            color: #2c2416;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .separator {
+            margin: 50px 0;
+            border: none;
+            border-top: 2px solid #d4c4a8;
+            border-bottom: 1px solid #d4c4a8;
+            height: 3px;
+        }
+
+        .case-studies-section {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        .case-studies-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .case-studies-section a {
+            color: #1a5490;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .case-studies-section a:hover {
+            text-decoration: underline;
+        }
+
+        .case-studies-section p {
+            margin-bottom: 15px;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #d4c4a8;
+        }
+
+        .references h2 {
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        .references p {
+            font-size: 16px;
+            margin-bottom: 12px;
+            text-align: left;
+            padding-left: 30px;
+            text-indent: -30px;
+        }
+
+        .references a {
+            color: #1a5490;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="encyclopedia-header">Truth Index Encyclopedia</div>
+        <div class="breadcrumb">Section 3: Markets, Systems & Environment › Chapter 4</div>
+        
+        <h1>Intermediation & Gatekeeping</h1>
+        <p class="subtitle">How intermediaries and gatekeepers shape access, visibility, and outcomes through structural control points independent of underlying value</p>
+        
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="visual-demo">
+            <h3>Visual Demonstration</h3>
+            <div class="image-box">
+                <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+                    <!-- Background -->
+                    <rect width="800" height="500" fill="#fdfcf8"/>
+                    
+                    <!-- Title -->
+                    <text x="400" y="25" font-family="'Libre Baskerville', serif" font-size="16" fill="#2c2416" text-anchor="middle" font-weight="600">Intermediary Control Points in Market Structure</text>
+                    
+                    <!-- Left side: Producers/Suppliers -->
+                    <text x="100" y="60" font-family="'Crimson Text', serif" font-size="13" fill="#2c2416" text-anchor="middle" font-weight="600">Producers</text>
+                    <circle cx="100" cy="120" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="100" cy="180" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="100" cy="240" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="100" cy="300" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="100" cy="360" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="100" cy="420" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    
+                    <text x="100" y="125" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">P1</text>
+                    <text x="100" y="185" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">P2</text>
+                    <text x="100" y="245" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">P3</text>
+                    <text x="100" y="305" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">P4</text>
+                    <text x="100" y="365" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">P5</text>
+                    <text x="100" y="425" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">P6</text>
+                    
+                    <!-- Center: Intermediary/Gatekeeper -->
+                    <rect x="320" y="120" width="160" height="280" fill="#8b7355" opacity="0.3" stroke="#8b7355" stroke-width="3"/>
+                    <text x="400" y="145" font-family="'Crimson Text', serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="600">Intermediary/</text>
+                    <text x="400" y="165" font-family="'Crimson Text', serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="600">Gatekeeper</text>
+                    
+                    <text x="400" y="195" font-family="'Crimson Text', serif" font-size="11" fill="#2c2416" text-anchor="middle" font-style="italic">Controls:</text>
+                    <text x="400" y="213" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Access to audience</text>
+                    <text x="400" y="229" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Visibility & ranking</text>
+                    <text x="400" y="245" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Transaction flow</text>
+                    <text x="400" y="261" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Rule enforcement</text>
+                    <text x="400" y="277" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Information flow</text>
+                    
+                    <text x="400" y="302" font-family="'Crimson Text', serif" font-size="11" fill="#2c2416" text-anchor="middle" font-style="italic">Extracts:</text>
+                    <text x="400" y="320" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Percentage of value</text>
+                    <text x="400" y="336" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Attention/data</text>
+                    <text x="400" y="352" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">• Dependency rents</text>
+                    
+                    <text x="400" y="377" font-family="'Crimson Text', serif" font-size="11" fill="#2c2416" text-anchor="middle" font-style="italic">Opacity:</text>
+                    <text x="400" y="393" font-family="'Crimson Text', serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Opaque rules</text>
+                    
+                    <!-- Arrows from producers to intermediary (many-to-one) -->
+                    <path d="M 120 120 L 320 180" stroke="#8b7355" stroke-width="1.5" opacity="0.4"/>
+                    <path d="M 120 180 L 320 220" stroke="#8b7355" stroke-width="1.5" opacity="0.4"/>
+                    <path d="M 120 240 L 320 260" stroke="#8b7355" stroke-width="1.5" opacity="0.4"/>
+                    <path d="M 120 300 L 320 300" stroke="#8b7355" stroke-width="1.5" opacity="0.4"/>
+                    <path d="M 120 360 L 320 340" stroke="#8b7355" stroke-width="1.5" opacity="0.4"/>
+                    <path d="M 120 420 L 320 380" stroke="#8b7355" stroke-width="1.5" opacity="0.4"/>
+                    
+                    <!-- Filtering/selection (some blocked) -->
+                    <line x1="240" y1="150" x2="280" y2="190" stroke="#d4c4a8" stroke-width="3" opacity="0.6"/>
+                    <line x1="280" y1="150" x2="240" y2="190" stroke="#d4c4a8" stroke-width="3" opacity="0.6"/>
+                    <text x="260" y="210" font-family="'Crimson Text', serif" font-size="9" fill="#6b5d4f" text-anchor="middle" font-style="italic">Access blocked</text>
+                    
+                    <!-- Right side: Consumers/Audience -->
+                    <text x="700" y="60" font-family="'Crimson Text', serif" font-size="13" fill="#2c2416" text-anchor="middle" font-weight="600">Consumers</text>
+                    <circle cx="700" cy="140" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="700" cy="210" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="700" cy="280" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    <circle cx="700" cy="350" r="20" fill="#d4c4a8" opacity="0.7"/>
+                    
+                    <text x="700" y="145" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">C1</text>
+                    <text x="700" y="215" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">C2</text>
+                    <text x="700" y="285" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">C3</text>
+                    <text x="700" y="355" font-family="'Crimson Text', serif" font-size="10" fill="#2c2416" text-anchor="middle">C4</text>
+                    
+                    <!-- Arrows from intermediary to consumers (filtered, ranked) -->
+                    <path d="M 480 200 L 680 140" stroke="#8b7355" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <text x="580" y="165" font-family="'Crimson Text', serif" font-size="9" fill="#6b5d4f" text-anchor="middle" font-style="italic">High visibility</text>
+                    
+                    <path d="M 480 260 L 680 210" stroke="#8b7355" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.7"/>
+                    <text x="580" y="230" font-family="'Crimson Text', serif" font-size="9" fill="#6b5d4f" text-anchor="middle" font-style="italic">Medium visibility</text>
+                    
+                    <path d="M 480 320 L 680 280" stroke="#8b7355" stroke-width="1" marker-end="url(#arrowhead)" opacity="0.4"/>
+                    <text x="580" y="295" font-family="'Crimson Text', serif" font-size="9" fill="#6b5d4f" text-anchor="middle" font-style="italic">Low visibility</text>
+                    
+                    <path d="M 480 370 L 680 350" stroke="#8b7355" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.3"/>
+                    <text x="580" y="365" font-family="'Crimson Text', serif" font-size="9" fill="#6b5d4f" text-anchor="middle" font-style="italic">Suppressed</text>
+                    
+                    <!-- Bottom annotation: structural effects -->
+                    <rect x="150" y="450" width="500" height="40" fill="#f8f6f0" stroke="#8b7355" stroke-width="1" opacity="0.95"/>
+                    <text x="400" y="470" font-family="'Crimson Text', serif" font-size="12" fill="#2c2416" text-anchor="middle" font-weight="600">Structural Effects: Dependency, Power Shift, Value Capture, Displaced Accountability</text>
+                    
+                    <!-- Arrow marker definition -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#8b7355"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+            <p class="caption">Intermediaries occupy structural control points between producers and consumers, filtering access, determining visibility, and mediating transactions. Producers depend on intermediary access to reach audiences while consumers encounter only what intermediaries surface through ranking and filtering mechanisms. The intermediary controls rules governing participation, extracts value through positioning rather than production, and operates with opacity regarding decision criteria and enforcement. Outcomes—which producers succeed, which content reaches audiences, how value distributes—depend on intermediary decisions independent of underlying quality or merit. Power shifts from direct participants to those controlling access points, creating dependency relationships and enabling rent extraction through structural position.</p>
+        </div>
+
+        <div class="intro-box">
+            <p>Intermediaries position themselves between parties who would otherwise transact directly, providing connection, coordination, or access services while capturing value from flows they mediate (Spulber, 1996; Rochet & Tirole, 2006). Gatekeepers control access to resources, audiences, or opportunities, determining who participates and under what conditions (Barzilai-Nahon, 2008). These structural positions create power independent of the value intermediaries add: control over access points generates leverage over both producers seeking audiences and consumers seeking products. Intermediation reshapes markets by introducing dependency, shifting power from direct participants to access controllers, enabling rent extraction, and displacing accountability through layering (Hagiu & Wright, 2015). Understanding intermediation requires examining how structural position creates power and shapes outcomes regardless of intermediary intent or the underlying value of what flows through control points.</p>
+        </div>
+
+        <h2>Intermediaries as Structural Filters</h2>
+
+        <p>Intermediaries function as filters between supply and demand, determining what reaches whom and under what conditions. A platform filters producer content to consumer attention. A distributor filters manufacturer products to retailer shelves. An aggregator filters information sources to audience consumption. This filtering is structural rather than neutral: the intermediary's position between parties creates necessity for filtering because unfiltered access would overwhelm consumers or because direct access is technically or economically infeasible (Brynjolfsson & Smith, 2000). The filter shapes outcomes by determining what passes through and what does not.</p>
+
+        <p>Filtering criteria may reflect quality, relevance, or fit, but also reflect intermediary interests that diverge from participant interests. A platform surfaces content that maximizes engagement rather than user value. A distributor stocks products that maximize margin rather than customer satisfaction. An aggregator prioritizes sources that generate traffic rather than accuracy. The divergence occurs because intermediaries optimize for their own objectives within the constraint of maintaining sufficient value flow to keep both sides participating (Armstrong, 2006). Participants experience filtering outcomes but typically cannot observe filtering criteria or how their offering was evaluated.</p>
+
+        <p>Filtering also creates information asymmetry favoring intermediaries. Intermediaries observe flows from both sides—what producers offer and what consumers demand—while individual participants observe only their own side. This informational advantage enables intermediaries to extract value through superior knowledge of market conditions, participant behavior, and matching opportunities (Caillaud & Jullien, 2003). The filter is not passive infrastructure but an active shaper of market outcomes based on opaque criteria serving intermediary interests.</p>
+
+        <h2>Gatekeeping as Control Over Access, Ranking, and Visibility</h2>
+
+        <p>Gatekeeping represents discretionary control over who accesses resources, audiences, or opportunities. An editor controls which articles reach publication. A platform controls which sellers reach buyers. A venture capitalist controls which startups receive funding. This control creates power independent of the gatekeeper's own productive contribution: the power derives from positional ability to grant or deny access rather than from creating value (Barzilai-Nahon, 2008). Those seeking access must satisfy gatekeeper criteria, align with gatekeeper interests, or compensate gatekeepers for admission.</p>
+
+        <p>Ranking amplifies gatekeeping power by creating differential visibility even among those granted access. Search results rank pages. Marketplaces rank products. Content platforms rank posts. Higher ranks receive disproportionate attention due to limited consumer attention and declining attention as rank decreases (Pan et al., 2007). The ranking algorithm or criteria determines outcomes—which offerings succeed, which fail—independent of objective quality differences. Small ranking differences generate large outcome differences through attention allocation mechanisms, making rank control economically valuable and creating strong incentives for participants to optimize for ranking criteria rather than actual quality.</p>
+
+        <p>Visibility control operates continuously rather than as binary access decisions. A gatekeeper may grant nominal access while providing zero visibility, effectively excluding through obscurity rather than explicit rejection. Conversely, gatekeepers may provide amplification through prominent placement, recommendations, or featured positioning. This continuous visibility control provides finer-grained power than binary access decisions: gatekeepers can calibrate how much opportunity each participant receives, creating gradations of success based on gatekeeper discretion (Gillespie, 2014). Participants optimize for visibility rather than mere access, further concentrating power with those controlling visibility mechanisms.</p>
+
+        <h2>Platform Mediation and Rule-Setting</h2>
+
+        <p>Platforms mediate multi-sided markets by providing infrastructure connecting different participant types while setting rules governing interactions. A marketplace platform connects buyers and sellers while setting rules about payments, disputes, and conduct. A content platform connects creators and audiences while setting rules about acceptable content and monetization. A labor platform connects workers and employers while setting rules about compensation and evaluation (Eisenmann et al., 2006). Rule-setting power creates leverage because participants must comply with platform rules to access platform-mediated opportunities.</p>
+
+        <p>Platform rules shape behavior and outcomes more than individual participant strategies. Algorithmic ranking rules determine content visibility. Payment rules determine value distribution. Moderation rules determine what offerings are permitted. Participants adapt strategies to platform rules rather than to direct market demand, creating situations where platform success requires optimizing for platform metrics rather than customer value (Zittrain, 2006). The platform becomes the effective customer that participants must satisfy, with end users becoming secondary to platform algorithm satisfaction.</p>
+
+        <p>Rule changes by platforms constitute unilateral power exercises affecting all participants simultaneously. A platform can change ranking algorithms, fee structures, or acceptable use policies with immediate effect on participant businesses built around previous rules. Participants typically have no recourse or input into rule changes despite depending on platform access for economic survival (Rahman, 2018). This creates systematic uncertainty where participant investments can be devalued instantly by platform rule changes, yet participants continue depending on platforms because no viable alternatives exist or because switching costs are prohibitive.</p>
+
+        <h2>Dependency Created by Intermediated Access</h2>
+
+        <p>Intermediation creates dependency when direct access becomes unavailable or uneconomical. Once consumers expect to find products through platforms, producers must use platforms to reach consumers. Once audiences concentrate on content platforms, creators must publish on those platforms to reach audiences. The dependency is structural: participants cannot opt out without sacrificing access to opportunities the intermediary controls (Boudreau & Hagiu, 2009). This dependency provides intermediaries with leverage to extract value, impose rules, or change terms because participants have no viable alternative access route.</p>
+
+        <p>Dependency intensifies through network effects and concentration. As more participants join an intermediary, the intermediary becomes more valuable to each participant, attracting more participants and strengthening the intermediary's position. Eventually, a dominant intermediary emerges with sufficient concentration that participants cannot afford to avoid it (Katz & Shapiro, 1985). This dominant position converts what began as convenient intermediation into necessary intermediation where participants must participate on intermediary terms or exit the market entirely. The dependency is no longer chosen but imposed by market structure.</p>
+
+        <p>Lock-in mechanisms compound dependency by making switching costly even when alternatives exist. Platforms create lock-in through proprietary data formats, accumulated reputation, relationship networks, or learned workflows that do not transfer across platforms (Farrell & Klemperer, 2007). A seller's accumulated reviews on one marketplace do not transfer to another. A creator's audience on one platform does not follow to another. These switching costs mean participants remain dependent on current intermediaries even when those intermediaries extract increasing value or degrade service quality, because switching cost exceeds the benefit of migrating to alternatives.</p>
+
+        <h2>Power Shift from Producers to Intermediaries</h2>
+
+        <p>Intermediation shifts power from direct value creators toward access controllers. In direct markets, producers with superior products captured value through customer preference. In intermediated markets, producers with superior relationships with intermediaries or superior optimization for intermediary algorithms capture value regardless of product quality (Hagiu & Wright, 2015). The shift is structural: as intermediaries control access to customers, producer success depends on intermediary favor rather than customer satisfaction. Power flows to those controlling access points.</p>
+
+        <p>This power shift manifests in changing value distribution. Producers capture decreasing shares of transaction value as intermediaries capture increasing shares through fees, commissions, and advertising requirements. A product sold directly might deliver 100% of price to producer; sold through intermediary marketplace the producer might receive 60-80% with remainder captured by intermediary. The intermediary's share reflects not value contributed but power to charge what market position enables (Rochet & Tirole, 2006). As dependency increases and alternatives decrease, intermediary share tends to rise toward the maximum participants will bear before exiting.</p>
+
+        <p>Bargaining power asymmetry accelerates the shift. Individual producers negotiate with platforms from positions of weakness: the platform provides access to many producers and can readily replace any individual producer, while individual producers lack alternative access to platform's audience. This asymmetry means platforms can impose terms favorable to platform interests, requiring producers to accept terms they would reject in more balanced negotiations (Edelman & Geradin, 2015). The power shift is not temporary advantage but structural feature of intermediated markets where access control generates persistent power asymmetry.</p>
+
+        <h2>Rent Extraction and Toll-Taking</h2>
+
+        <p>Rent extraction occurs when intermediaries capture value through structural position rather than through productive contribution. A toll-taker on a bridge captures value from traffic flow without improving transportation. A platform charging fees captures value from transactions it merely facilitates. The extraction is "rent" in economic sense: return to asset ownership rather than to productive activity (Stiglitz, 2016). Intermediaries earn rents by controlling access points and charging for passage rather than by creating value proportional to their capture.</p>
+
+        <p>The magnitude of rent extraction depends on dependency and competition. When alternatives exist, rent extraction is constrained by participants' ability to use alternative intermediaries. When dependency is high and alternatives are absent, rent extraction is constrained only by participants' ability to remain viable after paying intermediary fees. Intermediaries facing limited competition tend to extract rents up to the point where marginal extraction would cause participant exit, maximizing intermediary capture while maintaining sufficient participant participation (Lerner, 1934). The outcome is value distribution favoring intermediaries beyond what their productive contribution would justify.</p>
+
+        <p>Toll-taking creates deadweight loss when extraction reduces overall transaction volume. If intermediary fees make some transactions unprofitable that would be profitable in direct exchange, those transactions do not occur and potential value remains unrealized. The intermediary captures value from transactions that do occur but prevents value creation through transactions that don't (Evans & Schmalensee, 2013). Total system value is lower than it would be with either lower intermediary fees or direct exchange, yet the intermediary persists because its position enables rent extraction regardless of efficiency loss.</p>
+
+        <h2>Rule Opacity and Discretionary Enforcement</h2>
+
+        <p>Rule opacity describes situations where intermediaries do not disclose decision criteria, algorithm details, or enforcement standards. Platforms keep ranking algorithms secret. Gatekeepers do not publish evaluation criteria. Intermediaries provide vague guidelines rather than specific rules. This opacity serves intermediary interests by preventing gaming, maintaining flexibility, and protecting competitive advantages, but creates uncertainty for participants who cannot predict how intermediaries will evaluate their offerings (Pasquale, 2015). Participants must guess at criteria and adapt based on trial and error rather than on clear understanding.</p>
+
+        <p>Opacity enables discretionary enforcement where intermediaries apply rules inconsistently or selectively. Identical behaviors receive different treatment. Some violations are punished while others are ignored. Enforcement severity varies without explanation. Discretionary enforcement can reflect judgment exercised in good faith, but it can also reflect favoritism, arbitrary decision-making, or strategic enforcement serving intermediary interests (Brayne, 2017). Participants cannot distinguish between these possibilities because opacity prevents observing enforcement patterns or challenging decisions based on inconsistency.</p>
+
+        <p>The combination of opacity and discretion creates environments where participants optimize for intermediary favor rather than for rule compliance. If rules are opaque and enforcement discretionary, success requires understanding and satisfying unstated intermediary preferences rather than following stated rules. This transforms intermediated markets from rule-governed systems into relationship-driven or influence-driven systems where access and success depend on intermediary goodwill (Bamberger & Lobel, 2017). The shift disadvantages new entrants, small participants, and those without inside knowledge while advantaging those with established relationships or resources to discover opaque criteria through experimentation.</p>
+
+        <h2>Displacement of Accountability Through Layers</h2>
+
+        <p>Intermediation layers displace accountability by separating decision-making from consequences. Platforms claim they merely provide infrastructure while producers create content, allowing platforms to disclaim responsibility for what appears on their platforms. Aggregators claim they merely present information while sources create information, allowing aggregators to disclaim responsibility for accuracy. Marketplaces claim they merely connect buyers and sellers, allowing marketplaces to disclaim responsibility for product quality (Gillespie, 2010). The layering creates ambiguity about where accountability lies.</p>
+
+        <p>This accountability displacement operates through the platform's intermediary position. The platform is not the content creator, product manufacturer, or information source, yet the platform determines what content appears, which products sell, and what information circulates. The platform shapes outcomes through filtering and ranking while claiming non-responsibility for those outcomes. Neither pure publisher nor pure infrastructure, the platform occupies an ambiguous position that enables it to exercise control without accepting corresponding accountability (Keller, 2018). The displacement serves platform interests by providing power without responsibility.</p>
+
+        <p>Multiple intermediation layers compound accountability displacement. A product sold through an aggregator on a marketplace by a seller sourcing from a manufacturer creates a chain where no single party feels fully accountable for quality, safety, or representation. Each layer points to other layers when problems arise. The manufacturer blames the seller for misrepresentation. The seller blames the marketplace for lack of oversight. The marketplace blames the aggregator for highlighting problematic listings. The aggregator blames the manufacturer for producing poor quality. Accountability diffuses across layers until it effectively disappears, with end consumers unable to identify who should remedy problems (Pasquale & Cashwell, 2018).</p>
+
+        <h2>When Intermediaries Create Value</h2>
+
+        <p>Intermediaries create value when they reduce transaction costs, provide matching services, aggregate fragmented supply or demand, or solve coordination problems that would otherwise prevent transactions. A payment processor enables transactions that would not occur without trusted payment infrastructure. A platform connecting many small producers with many small consumers enables transactions that would be prohibitively expensive to arrange individually. A search engine provides discovery value by matching consumer queries to relevant content (Spulber, 1996). The value creation is genuine when intermediation enables transactions that would not occur or would occur at higher cost without intermediary participation.</p>
+
+        <p>Value creation through intermediation is highest when information costs, search costs, or coordination costs are substantial and when intermediaries can solve these problems more efficiently than direct participants. Markets with high fragmentation, information asymmetry, or coordination requirements benefit more from intermediation than markets where direct exchange is already efficient. The intermediary's contribution justifies its value capture when the transactions it enables or the cost reduction it provides exceeds the fees it charges (Rochet & Tirole, 2003). System-wide value increases when intermediation occurs because total transaction value minus intermediary costs exceeds what would exist without intermediation.</p>
+
+        <p>Value creation can coexist with rent extraction. An intermediary may create substantial value by enabling transactions while simultaneously extracting rents exceeding its productive contribution. The possibility of both value creation and rent extraction existing simultaneously makes it difficult to assess intermediary contribution based solely on intermediary revenue or profitability. High intermediary profits might reflect high value creation or high rent extraction or both (Evans, 2003). Distinguishing between justified compensation for value created and excess extraction through market power requires analyzing whether transaction participants would be better or worse off in counterfactual scenarios with different intermediation arrangements.</p>
+
+        <h2>When Intermediaries Capture Value Without Creation</h2>
+
+        <p>Value capture without creation occurs when intermediaries extract fees from transactions they do not substantially enable or improve. If direct exchange would occur anyway with similar transaction costs, intermediary fees represent pure extraction rather than payment for value added. A platform inserting itself into previously direct relationships and charging fees captures value without creating it. A gatekeeper requiring payment for access to resources that would otherwise be freely accessible captures value without contribution (Stiglitz, 2016). The capture mechanism is structural position rather than productive service.</p>
+
+        <p>Capture without creation intensifies when intermediaries artificially increase dependency or block direct exchange. A platform that restricts direct contact between parties creates dependency on its intermediation. A marketplace that prevents sellers from establishing relationships with buyers forces repeat transactions through intermediated channels. These restrictions do not create value for participants; they create value for intermediaries by making their intermediation mandatory where it would otherwise be optional (Farrell & Klemperer, 2007). The intermediary captures value by degrading alternatives rather than by improving service.</p>
+
+        <p>The distinction between value creation and value capture matters for welfare analysis but proves difficult to observe empirically. Intermediaries claim they create value through services provided. Participants claim intermediaries extract excessive value relative to contribution. Absent comparison to counterfactual scenarios without intermediation—scenarios that cannot be observed once intermediation dominates a market—determining whether intermediary capture represents payment for value created or extraction beyond contribution requires inference rather than direct observation (Armstrong, 2006). The ambiguity permits intermediaries to justify extraction as compensation while participants experience it as extraction without corresponding benefit.</p>
+
+        <hr class="separator">
+
+        <p>Intermediaries and gatekeepers occupy structural positions controlling access, visibility, and flow between market participants. These positions create power independent of value contribution: control over access points generates leverage enabling rule-setting, rent extraction, and value capture. Dependency emerges as direct access becomes unavailable or uneconomical, shifting power from producers to intermediaries regardless of product quality or productive contribution. Opacity regarding rules and discretionary enforcement prevent participants from understanding or predicting intermediary decisions. Accountability displacement through intermediation layers creates ambiguity about responsibility for outcomes. Intermediaries can create value by reducing transaction costs and enabling exchanges that would otherwise not occur, but can also capture value without creation by extracting rents from structural position. Understanding intermediation requires examining how control points reshape markets through filtering, ranking, rule-setting, and value extraction independent of underlying quality or merit of what flows through intermediary-controlled channels.</p>
+
+        <div class="case-studies-section">
+            <h2>Supporting Case Studies</h2>
+            <p><a href="Case-Studies/CS-001_Endless_Scroll_Funnel.html">CS-001: The Endless Scroll Funnel</a> — Illustrates platform intermediation where algorithmic ranking determines content visibility independent of quality, with platform controlling access to audience while creators depend on platform distribution mechanisms for reach.</p>
+            
+            <p><a href="Case-Studies/CS-003_Entry_Path_Framing.html">CS-003: Entry Path Framing</a> — Documents gatekeeper control over initial participant framing and information flow, with entry process structured to shape subsequent behavior through intermediary-controlled sequencing rather than participant choice.</p>
+            
+            <p><a href="Case-Studies/CS-004_Hedge_Fund_Acquisition_Engine.html">CS-004: The Hedge Fund Acquisition Engine</a> — Shows intermediation in capital markets where investment platforms and credibility gatekeepers control investor access to opportunities, with intermediaries capturing value through positioning independent of underlying fund performance.</p>
+        </div>
+
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="references">
+            <h2>References</h2>
+
+            <p>Armstrong, M. (2006). Competition in two-sided markets. <em>RAND Journal of Economics, 37</em>(3), 668-691. <a href="https://doi.org/10.1111/j.1756-2171.2006.tb00037.x" target="_blank">https://doi.org/10.1111/j.1756-2171.2006.tb00037.x</a></p>
+
+            <p>Bamberger, K. A., & Lobel, O. (2017). Platform market power. <em>Berkeley Technology Law Journal, 32</em>(3), 1051-1092. <a href="https://doi.org/10.15779/Z38BR8MF94" target="_blank">https://doi.org/10.15779/Z38BR8MF94</a></p>
+
+            <p>Barzilai-Nahon, K. (2008). Toward a theory of network gatekeeping: A framework for exploring information control. <em>Journal of the American Society for Information Science and Technology, 59</em>(9), 1493-1512. <a href="https://doi.org/10.1002/asi.20857" target="_blank">https://doi.org/10.1002/asi.20857</a></p>
+
+            <p>Boudreau, K. J., & Hagiu, A. (2009). Platform rules: Multi-sided platforms as regulators. In A. Gawer (Ed.), <em>Platforms, markets and innovation</em> (pp. 163-191). Edward Elgar.</p>
+
+            <p>Brayne, S. (2017). Big data surveillance: The case of policing. <em>American Sociological Review, 82</em>(5), 977-1008. <a href="https://doi.org/10.1177/0003122417725865" target="_blank">https://doi.org/10.1177/0003122417725865</a></p>
+
+            <p>Brynjolfsson, E., & Smith, M. D. (2000). Frictionless commerce? A comparison of Internet and conventional retailers. <em>Management Science, 46</em>(4), 563-585. <a href="https://doi.org/10.1287/mnsc.46.4.563.12061" target="_blank">https://doi.org/10.1287/mnsc.46.4.563.12061</a></p>
+
+            <p>Caillaud, B., & Jullien, B. (2003). Chicken & egg: Competition among intermediation service providers. <em>RAND Journal of Economics, 34</em>(2), 309-328. <a href="https://doi.org/10.2307/1593720" target="_blank">https://doi.org/10.2307/1593720</a></p>
+
+            <p>Edelman, B., & Geradin, D. (2015). Efficiencies and regulatory shortcuts: How should we regulate companies like Airbnb and Uber? <em>Stanford Technology Law Review, 19</em>(2), 293-328.</p>
+
+            <p>Eisenmann, T., Parker, G., & Van Alstyne, M. W. (2006). Strategies for two-sided markets. <em>Harvard Business Review, 84</em>(10), 92-101.</p>
+
+            <p>Evans, D. S. (2003). Some empirical aspects of multi-sided platform industries. <em>Review of Network Economics, 2</em>(3), 191-209. <a href="https://doi.org/10.2202/1446-9022.1026" target="_blank">https://doi.org/10.2202/1446-9022.1026</a></p>
+
+            <p>Evans, D. S., & Schmalensee, R. (2013). The antitrust analysis of multi-sided platform businesses. In R. Blair & D. Sokol (Eds.), <em>Oxford handbook on international antitrust economics</em> (pp. 404-447). Oxford University Press.</p>
+
+            <p>Farrell, J., & Klemperer, P. (2007). Coordination and lock-in: Competition with switching costs and network effects. In M. Armstrong & R. Porter (Eds.), <em>Handbook of industrial organization</em> (Vol. 3, pp. 1967-2072). North-Holland.</p>
+
+            <p>Gillespie, T. (2010). The politics of 'platforms'. <em>New Media & Society, 12</em>(3), 347-364. <a href="https://doi.org/10.1177/1461444809342738" target="_blank">https://doi.org/10.1177/1461444809342738</a></p>
+
+            <p>Gillespie, T. (2014). The relevance of algorithms. In T. Gillespie, P. J. Boczkowski, & K. A. Foot (Eds.), <em>Media technologies: Essays on communication, materiality, and society</em> (pp. 167-194). MIT Press.</p>
+
+            <p>Hagiu, A., & Wright, J. (2015). Multi-sided platforms. <em>International Journal of Industrial Organization, 43</em>, 162-174. <a href="https://doi.org/10.1016/j.ijindorg.2015.03.003" target="_blank">https://doi.org/10.1016/j.ijindorg.2015.03.003</a></p>
+
+            <p>Katz, M. L., & Shapiro, C. (1985). Network externalities, competition, and compatibility. <em>American Economic Review, 75</em>(3), 424-440.</p>
+
+            <p>Keller, D. (2018). Internet platforms: Observations on speech, danger, and money. <em>Aegis Series Paper No. 1807</em>. Hoover Institution.</p>
+
+            <p>Lerner, A. P. (1934). The concept of monopoly and the measurement of monopoly power. <em>Review of Economic Studies, 1</em>(3), 157-175. <a href="https://doi.org/10.2307/2967480" target="_blank">https://doi.org/10.2307/2967480</a></p>
+
+            <p>Pan, B., Hembrooke, H., Joachims, T., Lorigo, L., Gay, G., & Granka, L. (2007). In Google we trust: Users' decisions on rank, position, and relevance. <em>Journal of Computer-Mediated Communication, 12</em>(3), 801-823. <a href="https://doi.org/10.1111/j.1083-6101.2007.00351.x" target="_blank">https://doi.org/10.1111/j.1083-6101.2007.00351.x</a></p>
+
+            <p>Pasquale, F. (2015). <em>The black box society: The secret algorithms that control money and information</em>. Harvard University Press.</p>
+
+            <p>Pasquale, F., & Cashwell, G. (2018). Prediction, persuasion, and the jurisprudence of behaviourism. <em>University of Toronto Law Journal, 68</em>(Supplement 1), 63-81. <a href="https://doi.org/10.3138/utlj.2017-0056" target="_blank">https://doi.org/10.3138/utlj.2017-0056</a></p>
+
+            <p>Rahman, K. S. (2018). The shape of things to come: The on-demand economy and the normative stakes of choice of entity. In N. Davidson, M. Finck, & J. Infranca (Eds.), <em>Cambridge handbook on the law of the sharing economy</em> (pp. 137-151). Cambridge University Press.</p>
+
+            <p>Rochet, J. C., & Tirole, J. (2003). Platform competition in two-sided markets. <em>Journal of the European Economic Association, 1</em>(4), 990-1029. <a href="https://doi.org/10.1162/154247603322493212" target="_blank">https://doi.org/10.1162/154247603322493212</a></p>
+
+            <p>Rochet, J. C., & Tirole, J. (2006). Two-sided markets: A progress report. <em>RAND Journal of Economics, 37</em>(3), 645-667. <a href="https://doi.org/10.1111/j.1756-2171.2006.tb00036.x" target="_blank">https://doi.org/10.1111/j.1756-2171.2006.tb00036.x</a></p>
+
+            <p>Spulber, D. F. (1996). Market microstructure and intermediation. <em>Journal of Economic Perspectives, 10</em>(3), 135-152. <a href="https://doi.org/10.1257/jep.10.3.135" target="_blank">https://doi.org/10.1257/jep.10.3.135</a></p>
+
+            <p>Stiglitz, J. E. (2016). New theoretical perspectives on the distribution of income and wealth among individuals. In K. Basu & J. E. Stiglitz (Eds.), <em>Inequality and growth: Patterns and policy</em> (Vol. 1, pp. 1-71). Palgrave Macmillan.</p>
+
+            <p>Zittrain, J. (2006). The generative Internet. <em>Harvard Law Review, 119</em>(7), 1974-2040.</p>
+        </div>
+    </div>
+</body>
+</html>
