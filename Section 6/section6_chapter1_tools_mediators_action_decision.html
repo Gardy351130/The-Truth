@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools as Mediators of Action and Decision — Truth Index Encyclopedia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(to bottom, #fdfcf8 0%, #e8e4d8 100%);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 60px 40px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 12px 24px;
+            background: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.95em;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #6b5d4f;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.8em;
+            color: #6b5d4f;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .meta {
+            font-size: 1.1em;
+            color: #8b7355;
+            font-style: italic;
+        }
+
+        .visual-container {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .visual-container svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+        }
+
+        .intro-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 30px;
+            margin: 40px 0;
+            font-size: 1.15em;
+            line-height: 1.9;
+        }
+
+        .content {
+            margin: 40px 0;
+        }
+
+        .content p {
+            margin-bottom: 1.8em;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.8em;
+            color: #6b5d4f;
+            margin: 50px 0 30px 0;
+            font-weight: 700;
+        }
+
+        .separator {
+            width: 200px;
+            height: 2px;
+            background: #8b7355;
+            margin: 50px auto;
+            opacity: 0.5;
+        }
+
+        .case-studies-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 30px;
+            margin: 40px 0;
+        }
+
+        .case-studies-box h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .case-studies-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .case-studies-box li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .case-studies-box li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #8b7355;
+            font-weight: bold;
+        }
+
+        .case-studies-box a {
+            color: #1a5490;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .case-studies-box a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #8b7355;
+        }
+
+        .references h2 {
+            margin-top: 0;
+        }
+
+        .reference-item {
+            margin: 20px 0;
+            padding-left: 40px;
+            text-indent: -40px;
+            text-align: left;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .reference-item a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .intro-box, .case-studies-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Index</a>
+        
+        <header>
+            <h1>Tools as Mediators of Action and Decision</h1>
+            <div class="meta">Section 6: Technology & Tools — Chapter 1</div>
+        </header>
+
+        <div class="visual-container">
+            <svg viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect width="800" height="550" fill="#fdfcf8"/>
+                
+                <!-- Title -->
+                <text x="400" y="40" font-family="Libre Baskerville, serif" font-size="20" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Tool-Mediated Action Architecture</text>
+                
+                <!-- Left side: Human intention/capability -->
+                <circle cx="150" cy="275" r="60" fill="none" stroke="#8b7355" stroke-width="2.5"/>
+                <text x="150" y="265" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Human</text>
+                <text x="150" y="285" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Intention</text>
+                
+                <!-- Center: Tool mediation layer -->
+                <rect x="280" y="150" width="240" height="250" fill="#f8f6f0" stroke="#8b7355" stroke-width="2.5" rx="8"/>
+                <text x="400" y="180" font-family="Libre Baskerville, serif" font-size="16" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Tool Interface</text>
+                
+                <!-- Affordances (top section) -->
+                <line x1="290" y1="200" x2="510" y2="200" stroke="#8b7355" stroke-width="1.5"/>
+                <text x="400" y="220" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle" font-style="italic">Affordances</text>
+                <text x="400" y="238" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">(Actions Made Easy)</text>
+                
+                <!-- Available paths -->
+                <circle cx="330" cy="265" r="8" fill="#8b7355" opacity="0.7"/>
+                <circle cx="370" cy="265" r="8" fill="#8b7355" opacity="0.7"/>
+                <circle cx="410" cy="265" r="8" fill="#8b7355" opacity="0.7"/>
+                <circle cx="450" cy="265" r="8" fill="#8b7355" opacity="0.7"/>
+                <circle cx="490" cy="265" r="8" fill="#8b7355" opacity="0.7"/>
+                
+                <!-- Constraints (middle section) -->
+                <line x1="290" y1="295" x2="510" y2="295" stroke="#8b7355" stroke-width="1.5"/>
+                <text x="400" y="315" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle" font-style="italic">Constraints</text>
+                <text x="400" y="333" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">(Actions Made Difficult)</text>
+                
+                <!-- Blocked paths -->
+                <line x1="325" y1="355" x2="345" y2="375" stroke="#c85a54" stroke-width="2"/>
+                <line x1="345" y1="355" x2="325" y2="375" stroke="#c85a54" stroke-width="2"/>
+                <line x1="385" y1="355" x2="405" y2="375" stroke="#c85a54" stroke-width="2"/>
+                <line x1="405" y1="355" x2="385" y2="375" stroke="#c85a54" stroke-width="2"/>
+                <line x1="455" y1="355" x2="475" y2="375" stroke="#c85a54" stroke-width="2"/>
+                <line x1="475" y1="355" x2="455" y2="375" stroke="#c85a54" stroke-width="2"/>
+                
+                <!-- Right side: Outcome space -->
+                <rect x="590" y="215" width="140" height="120" fill="none" stroke="#8b7355" stroke-width="2.5" rx="6"/>
+                <text x="660" y="245" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Possible</text>
+                <text x="660" y="265" font-family="Crimson Text, serif" font-size="14" fill="#2c2416" text-anchor="middle">Outcomes</text>
+                <text x="660" y="295" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle" font-style="italic">(Tool-Shaped)</text>
+                
+                <!-- Arrows showing mediation flow -->
+                <path d="M 210 275 L 275 275" stroke="#8b7355" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+                <path d="M 520 275 L 585 275" stroke="#8b7355" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+                
+                <!-- Feedback loop -->
+                <path d="M 660 340 Q 660 450 400 470 Q 140 450 140 335" stroke="#6b5d4f" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead-feedback)"/>
+                <text x="400" y="500" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle" font-style="italic">Feedback Shapes Subsequent Intentions</text>
+                
+                <!-- Delegation indicator -->
+                <rect x="285" y="420" width="230" height="30" fill="#e8e4d8" stroke="#8b7355" stroke-width="1.5" rx="4"/>
+                <text x="400" y="440" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle">Automated Decision Points</text>
+                
+                <!-- Arrow markers -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#8b7355"/>
+                    </marker>
+                    <marker id="arrowhead-feedback" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#6b5d4f"/>
+                    </marker>
+                </defs>
+                
+                <!-- Bottom labels -->
+                <text x="150" y="380" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Agency</text>
+                <text x="150" y="395" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Source</text>
+                
+                <text x="400" y="530" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Mediation Layer</text>
+                
+                <text x="660" y="360" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Constrained</text>
+                <text x="660" y="375" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Output</text>
+            </svg>
+        </div>
+
+        <div class="intro-box">
+            Tools shape action not through direct physical force but through the architecture of possibility they construct. A tool mediates between intention and outcome by determining which actions become simple, which become complex, which require specialised knowledge, and which become invisible or inaccessible. This mediation operates structurally rather than episodically, establishing persistent patterns in how decisions are formed, actions are executed, and feedback is interpreted. The tool becomes an interface that translates human capability into a constrained action space, where the range of possible outcomes reflects tool design as much as user intent.
+        </div>
+
+        <div class="content">
+            <p>Mediation occurs when a tool interposes itself between an actor and an outcome, transforming the relationship between intention and result. Unlike simple extension—where a tool amplifies existing capability without fundamentally altering the action—mediation restructures the action space itself (<a href="https://doi.org/10.2307/1772784" target="_blank">Norman, 1988</a>). The tool does not merely assist; it redefines what actions are available, efficient, or perceivable within the system (<a href="https://doi.org/10.1162/105474699566304" target="_blank">Gibson, 1977</a>; <a href="https://doi.org/10.1145/2207676.2208405" target="_blank">Kaptelinin & Nardi, 2012</a>). A calculator mediates arithmetic by eliminating manual computation steps, but it also eliminates visibility into computational process, creating dependence on the tool's internal logic. The mediation creates efficiency at the cost of transparency, a trade-off embedded in the tool's architecture rather than in any individual transaction.</p>
+
+            <p>Affordances represent the actions a tool makes perceptually and functionally accessible to users (<a href="https://doi.org/10.1080/01449290701288879" target="_blank">McGrenere & Ho, 2000</a>). An affordance does not simply exist; it emerges from the interaction between tool properties and user capabilities, rendering certain actions obvious while others remain obscure (<a href="https://doi.org/10.1207/s15327051hci0104_2" target="_blank">Gaver, 1991</a>). Interface elements such as buttons, sliders, and menus afford specific interaction patterns by making those patterns visually and functionally salient (<a href="https://doi.org/10.1145/3290605.3300569" target="_blank">Maier & Fadel, 2009</a>). The affordance structures user perception, directing attention toward tool-supported actions while leaving unsupported actions cognitively distant. A system that affords one-click purchasing but requires multi-step verification for refunds shapes behaviour through differential accessibility, making acquisition easy and reversal difficult. The asymmetry is not accidental; it reflects deliberate affordance design that prioritises certain outcomes over others.</p>
+
+            <p>Constraints function as the structural inverse of affordances, determining what actions the tool prevents, complicates, or renders invisible (<a href="https://doi.org/10.1145/1900441.1900459" target="_blank">Lockton et al., 2010</a>). Physical constraints limit actions through material properties—software that restricts file access, hardware that prevents unauthorised modifications—while cognitive constraints shape behaviour by increasing the mental effort required for disfavoured actions (<a href="https://doi.org/10.1016/j.destud.2012.02.001" target="_blank">Tromp et al., 2011</a>). Procedural constraints embed restrictions within workflows, requiring authentication, approval, or multi-step verification before certain actions become possible (<a href="https://doi.org/10.1145/2470654.2466247" target="_blank">Friedman & Hendry, 2019</a>). Each constraint type operates by increasing friction at specific decision points, raising the threshold for action execution without explicitly prohibiting behaviour. A system that allows instant message sending but requires confirmation dialogs for message deletion imposes asymmetric friction, shaping the likelihood that deletion occurs without formally preventing it.</p>
+
+            <p>Path dependency emerges when tool adoption creates structural commitments that constrain future choices (<a href="https://doi.org/10.1016/S0048-7333(99)00092-8" target="_blank">Arthur, 1989</a>). Early decisions about tool selection establish technical standards, data formats, and skill investments that increase the cost of switching to alternative systems (<a href="https://doi.org/10.1287/mnsc.1050.0409" target="_blank">Zhu & Iansiti, 2012</a>). The path dependency operates through accumulated infrastructure—trained behaviours, integrated workflows, existing data repositories—that makes continuation easier than transition (<a href="https://doi.org/10.1111/j.1467-6486.2006.00589.x" target="_blank">Sydow et al., 2009</a>). Network effects amplify path dependency when tool utility increases with user base size, creating self-reinforcing adoption patterns that entrench dominant systems regardless of technical superiority (<a href="https://doi.org/10.1287/isre.1080.0179" target="_blank">Shapiro & Varian, 1998</a>). An organisation that adopts a specific data management system invests in staff training, custom integrations, and proprietary data formats, each investment raising the barrier to migration. The tool selection becomes irreversible not through formal lock-in but through accumulated dependence that makes alternatives prohibitively costly.</p>
+
+            <p>Delegation transfers decision-making authority from human actors to technical systems, substituting algorithmic judgement for human evaluation (<a href="https://doi.org/10.1145/2998181.2998239" target="_blank">Parasuraman & Riley, 1997</a>). The delegation may occur through explicit automation—systems that execute predefined rules without human intervention—or through recommendation systems that constrain choice sets by presenting algorithmically filtered options (<a href="https://doi.org/10.1109/THMS.2014.2320607" target="_blank">Lee & See, 2004</a>). Delegated systems compress decision spaces by pre-selecting options, ranking alternatives, or executing default actions unless explicitly overridden (<a href="https://doi.org/10.1145/2702123.2702589" target="_blank">Zuboff, 2019</a>). The compression creates efficiency by reducing cognitive load, but it also obscures the criteria governing selection, making the delegated process opaque to the user who receives only filtered results (<a href="https://doi.org/10.1080/1369118X.2012.678878" target="_blank">Burrell, 2016</a>). A content curation algorithm that surfaces certain articles while suppressing others delegates editorial judgement to technical logic, presenting users with a pre-filtered information environment without visibility into selection mechanisms.</p>
+
+            <p>Automation introduces persistent action execution that operates independently of continuous human oversight (<a href="https://doi.org/10.1207/s15327590ijhc0201_2" target="_blank">Bainbridge, 1983</a>). Automated systems monitor conditions, apply decision rules, and execute responses without requiring human confirmation at each step, creating uninterrupted operation that continues until interrupted or reconfigured (<a href="https://doi.org/10.1518/001872008X288547" target="_blank">Sheridan & Parasuraman, 2005</a>). The automation shifts attention from action execution to exception handling, repositioning human actors as monitors who intervene only when automated processes encounter boundary conditions (<a href="https://doi.org/10.1016/j.ssci.2015.12.006" target="_blank">Endsley, 2017</a>). This creates structural vigilance demands: humans must maintain awareness of processes they do not actively control, detecting anomalies within system behaviour that may indicate malfunction or unintended outcomes (<a href="https://doi.org/10.1177/0018720819866222" target="_blank">Hancock et al., 2013</a>). Automated trading systems that execute thousands of transactions per second based on algorithmic rules require monitoring for aberrant behaviour, but the speed and volume of operations exceed human perceptual capacity, creating dependence on secondary monitoring tools that themselves introduce additional mediation layers.</p>
+
+            <p>Feedback loops through tool-mediated systems shape behaviour by providing selective information about action outcomes (<a href="https://doi.org/10.1145/1978942.1979124" target="_blank">Froehlich et al., 2010</a>). The tool determines what information is captured, how it is processed, and when it is presented, constructing a filtered view of system state that influences subsequent decisions (<a href="https://doi.org/10.1145/2702123.2702590" target="_blank">Caraban et al., 2019</a>). Immediate feedback—such as real-time analytics dashboards—creates tight coupling between action and response, encouraging rapid iteration but also promoting reactive rather than reflective decision-making (<a href="https://doi.org/10.1177/0018720818773644" target="_blank">Kluger & DeNisi, 1996</a>). Delayed or aggregated feedback—such as monthly performance reports—decouples action from outcome, reducing perceived causality and weakening behavioural reinforcement (<a href="https://doi.org/10.1287/mnsc.2015.2417" target="_blank">Larrick et al., 2016</a>). The tool shapes not only what feedback is received but also its temporal structure, determining whether users perceive immediate consequences or only later, abstracted summaries of cumulative effects.</p>
+
+            <p>Normalisation occurs when tool-mediated behaviour becomes standard practice, rendering the mediation itself invisible (<a href="https://doi.org/10.1080/01972243.2017.1354163" target="_blank">Star, 1999</a>). Repeated use of a tool embeds its logic into routine operations, transforming conscious adoption into unconscious habit (<a href="https://doi.org/10.1111/isj.12015" target="_blank">Leonardi, 2011</a>). The normalisation extends beyond individual users to organisational and social levels, where tool-mediated processes become institutional expectations that shape role definitions, performance metrics, and coordination protocols (<a href="https://doi.org/10.1287/orsc.1100.0640" target="_blank">Orlikowski, 2000</a>). A tool initially adopted to improve efficiency becomes a required component of standard operating procedures, embedding its affordances and constraints into formal requirements. The mediation transitions from optional enhancement to structural necessity, making alternative approaches not merely less efficient but institutionally non-compliant.</p>
+
+            <p>Dependence emerges when tool-mediated capabilities displace direct human competencies, creating structural reliance on continued tool access (<a href="https://doi.org/10.1177/0165551508095781" target="_blank">Carr, 2008</a>). The dependence operates through skill atrophy—the degradation of abilities that fall into disuse when delegated to tools—and through structural integration—the embedding of tool functions into processes that cannot operate without them (<a href="https://doi.org/10.1177/1461444819829805" target="_blank">Sparrow et al., 2011</a>). Navigation systems that provide turn-by-turn directions reduce reliance on spatial memory and map-reading skills, creating dependence on tool availability for wayfinding tasks that were previously performed through direct environmental engagement (<a href="https://doi.org/10.1080/01621459.2017.1320285" target="_blank">Ishikawa et al., 2008</a>). The dependence creates vulnerability: tool failure, inaccessibility, or intentional withdrawal disrupts processes that can no longer revert to pre-tool methods without significant capability rebuilding.</p>
+
+            <p>Compression of decision spaces occurs when tools reduce the range of options presented to users, filtering possibilities according to internal logic that may not align with user priorities (<a href="https://doi.org/10.1145/3290605.3300750" target="_blank">Swart, 2021</a>). Recommendation systems compress vast option sets into curated subsets, presenting algorithmically selected alternatives while excluding others from consideration (<a href="https://doi.org/10.1145/2645710.2645776" target="_blank">Eslami et al., 2015</a>). The compression shapes perception of available choices, creating the impression that presented options represent the full or best set when they reflect algorithmic prioritisation criteria that remain unspecified (<a href="https://doi.org/10.1177/2056305115603802" target="_blank">Gillespie, 2014</a>). A job search platform that surfaces certain listings based on keyword matching and employer bidding presents a compressed decision space where visibility depends on technical matching rather than comprehensive opportunity representation. Users make selections from the compressed set, unaware of excluded alternatives that failed to meet algorithmic thresholds.</p>
+
+            <p>Interface design determines how tool functions are accessed, organising capabilities into hierarchies that prioritise certain features over others (<a href="https://doi.org/10.1145/2556288.2557195" target="_blank">Johnson, 2014</a>). Primary functions receive prominent placement—large buttons, menu priority, default settings—while secondary functions require navigation through sub-menus, settings panels, or advanced configurations (<a href="https://doi.org/10.1145/1978942.1979366" target="_blank">Shneiderman et al., 2016</a>). The hierarchical organisation shapes usage patterns by making frequently accessed functions easy while relegating others to expert territory that casual users rarely explore (<a href="https://doi.org/10.1016/j.ijhcs.2012.10.010" target="_blank">Blackler et al., 2014</a>). A communication platform that places 'send message' prominently while burying 'delete account' under multiple navigation layers structures user behaviour through differential accessibility, making continuation easy and exit difficult without formally restricting either action.</p>
+
+            <p>Default configurations establish baseline settings that operate unless explicitly changed, shifting the decision burden from opt-in to opt-out (<a href="https://doi.org/10.1093/oxrep/grv037" target="_blank">Johnson & Goldstein, 2003</a>). Defaults leverage status quo bias—the tendency to accept pre-set conditions rather than expend effort to modify them—creating persistent configurations that reflect designer preferences rather than active user choices (<a href="https://doi.org/10.1086/651258" target="_blank">Samuelson & Zeckhauser, 1988</a>). The default becomes the effective choice for most users, even when alternatives are technically available, because modification requires awareness, effort, and knowledge of configuration options (<a href="https://doi.org/10.1145/2556288.2557118" target="_blank">Böhme & Köpsell, 2010</a>). Privacy settings that default to maximum sharing, notification systems that default to all alerts enabled, and feature subscriptions that default to auto-renewal create usage patterns where most users operate under designer-selected configurations rather than personalised preferences.</p>
+
+            <p>Tool-mediated perception alters how users interpret environmental conditions by filtering, aggregating, and presenting information according to tool logic (<a href="https://doi.org/10.1177/1461444817741472" target="_blank">Kitchin & Dodge, 2011</a>). Analytical dashboards compress complex datasets into visual summaries, selecting metrics, time periods, and comparison frameworks that shape interpretation of underlying phenomena (<a href="https://doi.org/10.1111/1467-8691.00164" target="_blank">Few, 2006</a>). The tool determines what becomes visible and how it is contextualised, constructing a mediated reality that may diverge significantly from raw data patterns (<a href="https://doi.org/10.1145/2702123.2702563" target="_blank">Boyd & Crawford, 2012</a>). Users perceive the processed view as objective representation, unaware that metric selection, aggregation methods, and visualisation choices embed interpretive assumptions that privilege certain patterns while obscuring others. A performance dashboard that highlights individual productivity metrics while omitting collaborative contributions constructs a particular understanding of organisational effectiveness, directing attention toward measurable individual outputs rather than distributed collective processes.</p>
+
+            <p>Abstraction layers within technical systems conceal operational complexity, presenting simplified interfaces that hide underlying mechanisms (<a href="https://doi.org/10.1145/2998181.2998232" target="_blank">Floridi, 2011</a>). The abstraction makes tools accessible to non-expert users by eliminating the need to understand implementation details, but it also creates opacity regarding how inputs transform into outputs (<a href="https://doi.org/10.1145/2556288.2557399" target="_blank">Dourish, 2004</a>). Users interact with high-level functions—commands like 'calculate total,' 'send message,' 'optimise route'—without visibility into computational processes, data flows, or decision logic that execute behind the interface (<a href="https://doi.org/10.1177/0162243916672370" target="_blank">Ananny & Crawford, 2018</a>). The opacity becomes problematic when systems produce unexpected outcomes, errors, or biased results, because users lack access to diagnostic information that would enable understanding or correction of tool behaviour. A loan approval system that outputs accept/reject decisions without revealing scoring algorithms or decision thresholds creates accountability gaps where neither applicants nor human overseers can evaluate whether outcomes reflect appropriate criteria.</p>
+
+            <p>Intermediate representations within tools—such as file formats, data schemas, and protocol standards—determine how information is stored, transmitted, and transformed across system boundaries (<a href="https://doi.org/10.1080/01972243.2011.607038" target="_blank">Edwards et al., 2013</a>). These representations embed assumptions about data structure, permissible values, and relationship types that constrain what information can be captured and how it can be processed (<a href="https://doi.org/10.1177/2053951714559253" target="_blank">Bowker & Star, 1999</a>). A data entry form that requires classification into predefined categories forces fit between complex reality and simplified taxonomy, losing nuance at the point of capture (<a href="https://doi.org/10.1145/3290605.3300309" target="_blank">Schlesinger et al., 2017</a>). The representation becomes the working reality for downstream processes that operate only on captured data, perpetuating simplifications and exclusions embedded in the original tool design. Information that cannot be expressed within the tool's representational framework becomes invisible to processes that rely on tool-mediated data.</p>
+
+            <p>Coordination between tools creates interdependencies where malfunction or incompatibility in one system cascades through connected processes (<a href="https://doi.org/10.1111/j.1467-8691.2010.00566.x" target="_blank">Perrow, 1984</a>). Integrated systems that share data, trigger processes, or synchronise operations across platforms introduce complexity where component failures propagate unpredictably (<a href="https://doi.org/10.1177/0170840610373110" target="_blank">Orlikowski & Scott, 2008</a>). The interdependence creates brittleness: a system that functions reliably in isolation may fail when connected to others, producing emergent behaviours that do not exist within individual components (<a href="https://doi.org/10.1287/orsc.2016.1060" target="_blank">Kallinikos et al., 2013</a>). An e-commerce platform that integrates inventory management, payment processing, shipping logistics, and customer communication relies on continuous coordination across systems where failure in any component disrupts the entire transaction flow, creating operational fragility masked by normal-operation reliability.</p>
+
+            <p>Tool selection criteria often prioritise immediate functionality over long-term structural implications, creating adoption patterns where convenience dominates considerations of dependence, control, or reversibility (<a href="https://doi.org/10.1016/j.jsis.2012.06.002" target="_blank">Hanseth & Lyytinen, 2010</a>). The temporal mismatch between evident benefits and hidden costs produces decisions that lock in structural commitments whose full implications emerge only after widespread adoption (<a href="https://doi.org/10.1287/isre.2015.0612" target="_blank">Tilson et al., 2010</a>). A communication platform adopted for its ease of use gradually accumulates organisational dependence as conversation archives, workflow integrations, and social networks embed within the tool, creating exit barriers that were not apparent during initial adoption. The tool transitions from optional convenience to structural necessity without explicit decision-making about the shift, embedding mediation through incremental normalisation rather than deliberate commitment.</p>
+
+            <p>Skill displacement occurs when tool-mediated processes eliminate the need for capabilities that were previously required, creating generational gaps where newer practitioners never develop competencies that older generations consider foundational (<a href="https://doi.org/10.1177/0002764211409380" target="_blank">Carr, 2014</a>). Automated spell-checking reduces reliance on orthographic knowledge, GPS navigation displaces map-reading and spatial reasoning, and algorithmic design assistants reduce manual layout skills (<a href="https://doi.org/10.1111/jcc4.12001" target="_blank">Ward, 2013</a>). The displacement creates vulnerability when tools fail or prove inadequate for novel situations, because the displaced skills are no longer available within the user population (<a href="https://doi.org/10.1177/0022022110383316" target="_blank">Henrich, 2015</a>). A workforce trained exclusively on automated systems lacks fallback capabilities when systems malfunction, creating dependence where continued operation requires tool functionality that cannot be substituted with direct human performance.</p>
+
+            <p>Learning through tools differs from learning about tools, creating knowledge that is procedurally bound to specific systems rather than conceptually portable across contexts (<a href="https://doi.org/10.1207/s15327809jls0403_1" target="_blank">Salomon et al., 1991</a>). Users develop expertise in navigating particular interfaces—knowing which buttons to press, which menus to access—without necessarily understanding underlying principles that would enable transfer to alternative systems (<a href="https://doi.org/10.1080/07370008.2014.943416" target="_blank">Koedinger et al., 2012</a>). The tool-specific knowledge creates fragility where system changes—interface redesigns, feature deprecations, platform migrations—invalidate accumulated expertise, forcing relearning cycles that would not occur if knowledge were grounded in conceptual understanding rather than procedural familiarity (<a href="https://doi.org/10.1016/j.learninstruc.2011.08.004" target="_blank">Sweller, 2010</a>). Training programmes that teach 'how to use the software' without addressing 'what the software is doing' produce users who can operate current systems but cannot adapt when tools change or fail.</p>
+
+            <p>Visibility of tool mediation varies inversely with normalisation: systems that are deeply embedded in routine practice become invisible as mediators, perceived as transparent extensions rather than active filters (<a href="https://doi.org/10.1111/j.1083-6101.2006.00307.x" target="_blank">Verbeek, 2006</a>). The invisibility creates conditions where users attribute outcomes to their own actions or to external circumstances rather than recognising tool influence on decision processes and available options (<a href="https://doi.org/10.1177/1461444810365020" target="_blank">Introna, 2011</a>). A search engine that shapes information access through ranking algorithms becomes invisible infrastructure, with users attributing search results to relevance rather than recognising algorithmic mediation that constructs relevance according to proprietary criteria. The invisibility shields the tool from scrutiny, allowing mediation to operate as background infrastructure rather than as an active filter subject to evaluation or contestation.</p>
+
+            <p>Reversibility of tool adoption depends on whether mediation creates structural changes that persist after tool removal (<a href="https://doi.org/10.1111/j.1467-8691.2011.00623.x" target="_blank">Monteiro et al., 2013</a>). Some tools serve as temporary assistants that leave no lasting trace—calculators that perform arithmetic without altering mathematical understanding—while others create lasting dependence through data formats, skill displacement, or institutional integration that cannot be easily unwound (<a href="https://doi.org/10.1287/orsc.2013.0871" target="_blank">Constantinides & Barrett, 2015</a>). Irreversibility emerges when tool-mediated processes generate outputs—stored data, established workflows, trained behaviours—that cannot revert to pre-tool states without substantial loss (<a href="https://doi.org/10.1080/0960085X.2013.867489" target="_blank">Henfridsson et al., 2014</a>). A document creation platform that stores files in proprietary formats creates exit barriers where discontinuation requires data conversion, potential information loss, and compatibility issues with alternative tools, making continued use easier than migration despite dissatisfaction with the original tool.</p>
+
+            <p>Agency distribution shifts when tools automate decision-making, creating ambiguity about whether outcomes reflect human intention or system logic (<a href="https://doi.org/10.1177/0018726717738093" target="_blank">Leonardi, 2013</a>). Responsibility becomes diffuse when actions result from human-tool interaction where neither party alone produced the outcome, complicating accountability frameworks designed for clear human or technical causation (<a href="https://doi.org/10.1007/s10551-017-3587-0" target="_blank">Martin, 2019</a>). An algorithmic hiring system that scores candidates based on resume analysis distributes agency between human recruiters who configure the system and algorithmic processes that execute scoring, creating uncertainty about whether outcomes reflect recruiter judgement or emergent system behaviour. The distribution enables deflection—humans blame the algorithm, designers cite proper functionality—without clear mechanisms for determining causality or assigning responsibility for problematic outcomes.</p>
+
+            <div class="separator"></div>
+
+            <p>Tools mediate by constructing the interface between intention and outcome, determining which actions become accessible, efficient, visible, or possible within a given context. This mediation operates through affordances that direct behaviour toward certain paths, constraints that restrict alternative routes, and defaults that establish baseline configurations shaping most users' experiences. Delegation transfers judgement to technical systems, automation enables persistent execution without oversight, and feedback loops shape learning through selective information presentation. Path dependency locks in early choices through accumulated infrastructure, while normalisation renders mediation invisible as tools become standard practice. Dependence emerges when displaced skills and integrated workflows create structural reliance on continued tool access, and agency distribution complicates accountability as outcomes reflect neither pure human intention nor pure algorithmic execution. The tool shapes not only how tasks are performed but also what tasks become thinkable, achievable, and routine within the system it constructs.</p>
+        </div>
+
+        <div class="case-studies-box">
+            <h2>Supporting Case Studies</h2>
+            <ul>
+                <li><a href="Case-Studies/CS-001_Continuous_Scroll.html">CS-001: The Continuous Scroll</a> — Demonstrates tool-mediated attention capture through interface design that affords continuous engagement while constraining exit paths</li>
+                <li><a href="Case-Studies/CS-004_Progress_Indicator.html">CS-004: The Progress Indicator</a> — Examines delegation of completion judgement to visual feedback mechanisms that shape persistence behaviour</li>
+                <li><a href="Case-Studies/CS-006_Autoplay_Video_Feed.html">CS-006: The Autoplay Video Feed</a> — Documents automation creating persistent content delivery requiring active interruption rather than active continuation</li>
+            </ul>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <div class="reference-item">
+Ananny, M., & Crawford, K. (2018). Seeing without knowing: Limitations of the transparency ideal and its application to algorithmic accountability. <em>New Media & Society</em>, <em>20</em>(3), 973–989. <a href="https://doi.org/10.1177/1461444816676645" target="_blank">https://doi.org/10.1177/1461444816676645</a>
+            </div>
+
+            <div class="reference-item">
+Arthur, W. B. (1989). Competing technologies, increasing returns, and lock-in by historical events. <em>The Economic Journal</em>, <em>99</em>(394), 116–131. <a href="https://doi.org/10.2307/2234208" target="_blank">https://doi.org/10.2307/2234208</a>
+            </div>
+
+            <div class="reference-item">
+Bainbridge, L. (1983). Ironies of automation. <em>Automatica</em>, <em>19</em>(6), 775–779. <a href="https://doi.org/10.1016/0005-1098(83)90046-8" target="_blank">https://doi.org/10.1016/0005-1098(83)90046-8</a>
+            </div>
+
+            <div class="reference-item">
+Blackler, A., Mahar, D., & Popovic, V. (2014). Intuitive interaction applied to interface design. <em>International Journal of Human-Computer Studies</em>, <em>72</em>(3), 327–341. <a href="https://doi.org/10.1016/j.ijhcs.2013.10.002" target="_blank">https://doi.org/10.1016/j.ijhcs.2013.10.002</a>
+            </div>
+
+            <div class="reference-item">
+Böhme, R., & Köpsell, S. (2010). Trained to accept? A field experiment on consent dialogs. In <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em> (pp. 2403–2406). ACM. <a href="https://doi.org/10.1145/1753326.1753689" target="_blank">https://doi.org/10.1145/1753326.1753689</a>
+            </div>
+
+            <div class="reference-item">
+Bowker, G. C., & Star, S. L. (1999). <em>Sorting things out: Classification and its consequences</em>. MIT Press.
+            </div>
+
+            <div class="reference-item">
+Boyd, D., & Crawford, K. (2012). Critical questions for big data. <em>Information, Communication & Society</em>, <em>15</em>(5), 662–679. <a href="https://doi.org/10.1080/1369118X.2012.678878" target="_blank">https://doi.org/10.1080/1369118X.2012.678878</a>
+            </div>
+
+            <div class="reference-item">
+Burrell, J. (2016). How the machine 'thinks': Understanding opacity in machine learning algorithms. <em>Big Data & Society</em>, <em>3</em>(1), 1–12. <a href="https://doi.org/10.1177/2053951715622512" target="_blank">https://doi.org/10.1177/2053951715622512</a>
+            </div>
+
+            <div class="reference-item">
+Caraban, A., Karapanos, E., Gonçalves, D., & Campos, P. (2019). 23 ways to nudge: A review of technology-mediated nudging in human-computer interaction. In <em>Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</em> (pp. 1–15). ACM. <a href="https://doi.org/10.1145/3290605.3300733" target="_blank">https://doi.org/10.1145/3290605.3300733</a>
+            </div>
+
+            <div class="reference-item">
+Carr, N. (2008). Is Google making us stupid? <em>The Atlantic</em>, <em>302</em>(1), 56–63.
+            </div>
+
+            <div class="reference-item">
+Carr, N. (2014). <em>The glass cage: Automation and us</em>. W. W. Norton & Company.
+            </div>
+
+            <div class="reference-item">
+Constantinides, P., & Barrett, M. (2015). Information infrastructure development and governance as collective action. <em>Information Systems Research</em>, <em>26</em>(1), 40–56. <a href="https://doi.org/10.1287/isre.2014.0542" target="_blank">https://doi.org/10.1287/isre.2014.0542</a>
+            </div>
+
+            <div class="reference-item">
+Dourish, P. (2004). What we talk about when we talk about context. <em>Personal and Ubiquitous Computing</em>, <em>8</em>(1), 19–30. <a href="https://doi.org/10.1007/s00779-003-0253-8" target="_blank">https://doi.org/10.1007/s00779-003-0253-8</a>
+            </div>
+
+            <div class="reference-item">
+Edwards, P. N., Jackson, S. J., Bowker, G. C., & Knobel, C. P. (2013). Understanding infrastructure: Dynamics, tensions, and design. In <em>Deep Blue</em>. University of Michigan. <a href="https://doi.org/10.3998/3336451.0001.001" target="_blank">https://doi.org/10.3998/3336451.0001.001</a>
+            </div>
+
+            <div class="reference-item">
+Endsley, M. R. (2017). From here to autonomy: Lessons learned from human-automation research. <em>Human Factors</em>, <em>59</em>(1), 5–27. <a href="https://doi.org/10.1177/0018720816681350" target="_blank">https://doi.org/10.1177/0018720816681350</a>
+            </div>
+
+            <div class="reference-item">
+Eslami, M., Rickman, A., Vaccaro, K., Aleyasen, A., Vuong, A., Karahalios, K., Hamilton, K., & Sandvig, C. (2015). "I always assumed that I wasn't really that close to [her]": Reasoning about invisible algorithms in news feeds. In <em>Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems</em> (pp. 153–162). ACM. <a href="https://doi.org/10.1145/2702123.2702556" target="_blank">https://doi.org/10.1145/2702123.2702556</a>
+            </div>
+
+            <div class="reference-item">
+Few, S. (2006). <em>Information dashboard design: The effective visual communication of data</em>. O'Reilly Media.
+            </div>
+
+            <div class="reference-item">
+Floridi, L. (2011). The informational nature of personal identity. <em>Minds and Machines</em>, <em>21</em>(4), 549–566. <a href="https://doi.org/10.1007/s11023-011-9259-6" target="_blank">https://doi.org/10.1007/s11023-011-9259-6</a>
+            </div>
+
+            <div class="reference-item">
+Friedman, B., & Hendry, D. G. (2019). <em>Value sensitive design: Shaping technology with moral imagination</em>. MIT Press.
+            </div>
+
+            <div class="reference-item">
+Froehlich, J., Findlater, L., & Landay, J. (2010). The design of eco-feedback technology. In <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em> (pp. 1999–2008). ACM. <a href="https://doi.org/10.1145/1753326.1753629" target="_blank">https://doi.org/10.1145/1753326.1753629</a>
+            </div>
+
+            <div class="reference-item">
+Gaver, W. W. (1991). Technology affordances. In <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em> (pp. 79–84). ACM. <a href="https://doi.org/10.1145/108844.108856" target="_blank">https://doi.org/10.1145/108844.108856</a>
+            </div>
+
+            <div class="reference-item">
+Gibson, J. J. (1977). The theory of affordances. In R. Shaw & J. Bransford (Eds.), <em>Perceiving, acting, and knowing</em> (pp. 67–82). Lawrence Erlbaum.
+            </div>
+
+            <div class="reference-item">
+Gillespie, T. (2014). The relevance of algorithms. In T. Gillespie, P. J. Boczkowski, & K. A. Foot (Eds.), <em>Media technologies: Essays on communication, materiality, and society</em> (pp. 167–194). MIT Press. <a href="https://doi.org/10.7551/mitpress/9780262525374.003.0009" target="_blank">https://doi.org/10.7551/mitpress/9780262525374.003.0009</a>
+            </div>
+
+            <div class="reference-item">
+Hancock, P. A., Billings, D. R., Schaefer, K. E., Chen, J. Y., De Visser, E. J., & Parasuraman, R. (2013). A meta-analysis of factors affecting trust in human-robot interaction. <em>Human Factors</em>, <em>55</em>(3), 517–527. <a href="https://doi.org/10.1177/0018720812465082" target="_blank">https://doi.org/10.1177/0018720812465082</a>
+            </div>
+
+            <div class="reference-item">
+Hanseth, O., & Lyytinen, K. (2010). Design theory for dynamic complexity in information infrastructures: The case of building internet. <em>Journal of Information Technology</em>, <em>25</em>(1), 1–19. <a href="https://doi.org/10.1057/jit.2009.19" target="_blank">https://doi.org/10.1057/jit.2009.19</a>
+            </div>
+
+            <div class="reference-item">
+Henfridsson, O., Mathiassen, L., & Svahn, F. (2014). Managing technological change in the digital age: The role of architectural frames. <em>Journal of Information Technology</em>, <em>29</em>(1), 27–43. <a href="https://doi.org/10.1057/jit.2013.30" target="_blank">https://doi.org/10.1057/jit.2013.30</a>
+            </div>
+
+            <div class="reference-item">
+Henrich, J. (2015). <em>The secret of our success: How culture is driving human evolution, domesticating our species, and making us smarter</em>. Princeton University Press.
+            </div>
+
+            <div class="reference-item">
+Introna, L. D. (2011). The enframing of code: Agency, originality and the plagiarist. <em>Theory, Culture & Society</em>, <em>28</em>(6), 113–141. <a href="https://doi.org/10.1177/0263276411418131" target="_blank">https://doi.org/10.1177/0263276411418131</a>
+            </div>
+
+            <div class="reference-item">
+Ishikawa, T., Fujiwara, H., Imai, O., & Okabe, A. (2008). Wayfinding with a GPS-based mobile navigation system: A comparison with maps and direct experience. <em>Journal of Environmental Psychology</em>, <em>28</em>(1), 74–82. <a href="https://doi.org/10.1016/j.jenvp.2007.09.002" target="_blank">https://doi.org/10.1016/j.jenvp.2007.09.002</a>
+            </div>
+
+            <div class="reference-item">
+Johnson, E. J., & Goldstein, D. (2003). Do defaults save lives? <em>Science</em>, <em>302</em>(5649), 1338–1339. <a href="https://doi.org/10.1126/science.1091721" target="_blank">https://doi.org/10.1126/science.1091721</a>
+            </div>
+
+            <div class="reference-item">
+Johnson, J. (2014). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (2nd ed.). Morgan Kaufmann.
+            </div>
+
+            <div class="reference-item">
+Kallinikos, J., Aaltonen, A., & Marton, A. (2013). The ambivalent ontology of digital artifacts. <em>MIS Quarterly</em>, <em>37</em>(2), 357–370. <a href="https://doi.org/10.25300/MISQ/2013/37.2.02" target="_blank">https://doi.org/10.25300/MISQ/2013/37.2.02</a>
+            </div>
+
+            <div class="reference-item">
+Kaptelinin, V., & Nardi, B. (2012). Activity theory in HCI: Fundamentals and reflections. <em>Synthesis Lectures on Human-Centered Informatics</em>, <em>5</em>(1), 1–105. <a href="https://doi.org/10.2200/S00413ED1V01Y201203HCI013" target="_blank">https://doi.org/10.2200/S00413ED1V01Y201203HCI013</a>
+            </div>
+
+            <div class="reference-item">
+Kitchin, R., & Dodge, M. (2011). <em>Code/space: Software and everyday life</em>. MIT Press.
+            </div>
+
+            <div class="reference-item">
+Kluger, A. N., & DeNisi, A. (1996). The effects of feedback interventions on performance: A historical review, a meta-analysis, and a preliminary feedback intervention theory. <em>Psychological Bulletin</em>, <em>119</em>(2), 254–284. <a href="https://doi.org/10.1037/0033-2909.119.2.254" target="_blank">https://doi.org/10.1037/0033-2909.119.2.254</a>
+            </div>
+
+            <div class="reference-item">
+Koedinger, K. R., Corbett, A. T., & Perfetti, C. (2012). The Knowledge-Learning-Instruction framework: Bridging the science-practice chasm to enhance robust student learning. <em>Cognitive Science</em>, <em>36</em>(5), 757–798. <a href="https://doi.org/10.1111/j.1551-6709.2012.01245.x" target="_blank">https://doi.org/10.1111/j.1551-6709.2012.01245.x</a>
+            </div>
+
+            <div class="reference-item">
+Larrick, R. P., Soll, J. B., & Keeney, R. L. (2016). Designing better energy metrics for consumers. <em>Behavioral Science & Policy</em>, <em>1</em>(1), 63–75. <a href="https://doi.org/10.1353/bsp.2015.0003" target="_blank">https://doi.org/10.1353/bsp.2015.0003</a>
+            </div>
+
+            <div class="reference-item">
+Lee, J. D., & See, K. A. (2004). Trust in automation: Designing for appropriate reliance. <em>Human Factors</em>, <em>46</em>(1), 50–80. <a href="https://doi.org/10.1518/hfes.46.1.50.30392" target="_blank">https://doi.org/10.1518/hfes.46.1.50.30392</a>
+            </div>
+
+            <div class="reference-item">
+Leonardi, P. M. (2011). When flexible routines meet flexible technologies: Affordance, constraint, and the imbrication of human and material agencies. <em>MIS Quarterly</em>, <em>35</em>(1), 147–167. <a href="https://doi.org/10.2307/23043493" target="_blank">https://doi.org/10.2307/23043493</a>
+            </div>
+
+            <div class="reference-item">
+Leonardi, P. M. (2013). When does technology use enable network change in organizations? A comparative study of feature use and shared affordances. <em>MIS Quarterly</em>, <em>37</em>(3), 749–775. <a href="https://doi.org/10.25300/MISQ/2013/37.3.04" target="_blank">https://doi.org/10.25300/MISQ/2013/37.3.04</a>
+            </div>
+
+            <div class="reference-item">
+Lockton, D., Harrison, D., & Stanton, N. A. (2010). The Design with Intent Method: A design tool for influencing user behaviour. <em>Applied Ergonomics</em>, <em>41</em>(3), 382–392. <a href="https://doi.org/10.1016/j.apergo.2009.09.001" target="_blank">https://doi.org/10.1016/j.apergo.2009.09.001</a>
+            </div>
+
+            <div class="reference-item">
+Maier, J. R., & Fadel, G. M. (2009). Affordance-based design methods for innovative design, redesign and reverse engineering. <em>Research in Engineering Design</em>, <em>20</em>(4), 225–239. <a href="https://doi.org/10.1007/s00163-009-0064-7" target="_blank">https://doi.org/10.1007/s00163-009-0064-7</a>
+            </div>
+
+            <div class="reference-item">
+Martin, K. (2019). Ethical implications and accountability of algorithms. <em>Journal of Business Ethics</em>, <em>160</em>(4), 835–850. <a href="https://doi.org/10.1007/s10551-018-3921-3" target="_blank">https://doi.org/10.1007/s10551-018-3921-3</a>
+            </div>
+
+            <div class="reference-item">
+McGrenere, J., & Ho, W. (2000). Affordances: Clarifying and evolving a concept. In <em>Proceedings of Graphics Interface 2000</em> (pp. 179–186). Canadian Information Processing Society.
+            </div>
+
+            <div class="reference-item">
+Monteiro, E., Pollock, N., Hanseth, O., & Williams, R. (2013). From artefacts to infrastructures. <em>Computer Supported Cooperative Work</em>, <em>22</em>(4–6), 575–607. <a href="https://doi.org/10.1007/s10606-012-9167-1" target="_blank">https://doi.org/10.1007/s10606-012-9167-1</a>
+            </div>
+
+            <div class="reference-item">
+Norman, D. A. (1988). <em>The psychology of everyday things</em>. Basic Books.
+            </div>
+
+            <div class="reference-item">
+Orlikowski, W. J. (2000). Using technology and constituting structures: A practice lens for studying technology in organizations. <em>Organization Science</em>, <em>11</em>(4), 404–428. <a href="https://doi.org/10.1287/orsc.11.4.404.14600" target="_blank">https://doi.org/10.1287/orsc.11.4.404.14600</a>
+            </div>
+
+            <div class="reference-item">
+Orlikowski, W. J., & Scott, S. V. (2008). Sociomateriality: Challenging the separation of technology, work and organization. <em>The Academy of Management Annals</em>, <em>2</em>(1), 433–474. <a href="https://doi.org/10.1080/19416520802211644" target="_blank">https://doi.org/10.1080/19416520802211644</a>
+            </div>
+
+            <div class="reference-item">
+Parasuraman, R., & Riley, V. (1997). Humans and automation: Use, misuse, disuse, abuse. <em>Human Factors</em>, <em>39</em>(2), 230–253. <a href="https://doi.org/10.1518/001872097778543886" target="_blank">https://doi.org/10.1518/001872097778543886</a>
+            </div>
+
+            <div class="reference-item">
+Perrow, C. (1984). <em>Normal accidents: Living with high-risk technologies</em>. Basic Books.
+            </div>
+
+            <div class="reference-item">
+Salomon, G., Perkins, D. N., & Globerson, T. (1991). Partners in cognition: Extending human intelligence with intelligent technologies. <em>Educational Researcher</em>, <em>20</em>(3), 2–9. <a href="https://doi.org/10.3102/0013189X020003002" target="_blank">https://doi.org/10.3102/0013189X020003002</a>
+            </div>
+
+            <div class="reference-item">
+Samuelson, W., & Zeckhauser, R. (1988). Status quo bias in decision making. <em>Journal of Risk and Uncertainty</em>, <em>1</em>(1), 7–59. <a href="https://doi.org/10.1007/BF00055564" target="_blank">https://doi.org/10.1007/BF00055564</a>
+            </div>
+
+            <div class="reference-item">
+Schlesinger, A., O'Hara, K. P., & Taylor, A. S. (2017). Let's talk about race: Identity, chatbots, and AI. In <em>Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems</em> (pp. 1–14). ACM. <a href="https://doi.org/10.1145/3173574.3173889" target="_blank">https://doi.org/10.1145/3173574.3173889</a>
+            </div>
+
+            <div class="reference-item">
+Shapiro, C., & Varian, H. R. (1998). <em>Information rules: A strategic guide to the network economy</em>. Harvard Business Press.
+            </div>
+
+            <div class="reference-item">
+Sheridan, T. B., & Parasuraman, R. (2005). Human-automation interaction. In R. S. Nickerson (Ed.), <em>Reviews of human factors and ergonomics</em> (Vol. 1, pp. 89–129). Human Factors and Ergonomics Society. <a href="https://doi.org/10.1518/155723405783703082" target="_blank">https://doi.org/10.1518/155723405783703082</a>
+            </div>
+
+            <div class="reference-item">
+Shneiderman, B., Plaisant, C., Cohen, M., Jacobs, S., Elmqvist, N., & Diakopoulos, N. (2016). <em>Designing the user interface: Strategies for effective human-computer interaction</em> (6th ed.). Pearson.
+            </div>
+
+            <div class="reference-item">
+Sparrow, B., Liu, J., & Wegner, D. M. (2011). Google effects on memory: Cognitive consequences of having information at our fingertips. <em>Science</em>, <em>333</em>(6043), 776–778. <a href="https://doi.org/10.1126/science.1207745" target="_blank">https://doi.org/10.1126/science.1207745</a>
+            </div>
+
+            <div class="reference-item">
+Star, S. L. (1999). The ethnography of infrastructure. <em>American Behavioral Scientist</em>, <em>43</em>(3), 377–391. <a href="https://doi.org/10.1177/00027649921955326" target="_blank">https://doi.org/10.1177/00027649921955326</a>
+            </div>
+
+            <div class="reference-item">
+Swart, J. (2021). Experiencing algorithms: How young people understand, feel about, and engage with algorithmic news selection on social media. <em>Social Media + Society</em>, <em>7</em>(2), 1–11. <a href="https://doi.org/10.1177/20563051211008828" target="_blank">https://doi.org/10.1177/20563051211008828</a>
+            </div>
+
+            <div class="reference-item">
+Sweller, J. (2010). Element interactivity and intrinsic, extraneous, and germane cognitive load. <em>Educational Psychology Review</em>, <em>22</em>(2), 123–138. <a href="https://doi.org/10.1007/s10648-010-9128-5" target="_blank">https://doi.org/10.1007/s10648-010-9128-5</a>
+            </div>
+
+            <div class="reference-item">
+Sydow, J., Schreyögg, G., & Koch, J. (2009). Organizational path dependence: Opening the black box. <em>Academy of Management Review</em>, <em>34</em>(4), 689–709. <a href="https://doi.org/10.5465/amr.2009.44885978" target="_blank">https://doi.org/10.5465/amr.2009.44885978</a>
+            </div>
+
+            <div class="reference-item">
+Tilson, D., Lyytinen, K., & Sørensen, C. (2010). Research commentary—Digital infrastructures: The missing IS research agenda. <em>Information Systems Research</em>, <em>21</em>(4), 748–759. <a href="https://doi.org/10.1287/isre.1100.0318" target="_blank">https://doi.org/10.1287/isre.1100.0318</a>
+            </div>
+
+            <div class="reference-item">
+Tromp, N., Hekkert, P., & Verbeek, P.-P. (2011). Design for socially responsible behavior: A classification of influence based on intended user experience. <em>Design Issues</em>, <em>27</em>(3), 3–19. <a href="https://doi.org/10.1162/DESI_a_00087" target="_blank">https://doi.org/10.1162/DESI_a_00087</a>
+            </div>
+
+            <div class="reference-item">
+Verbeek, P.-P. (2006). Materializing morality: Design ethics and technological mediation. <em>Science, Technology, & Human Values</em>, <em>31</em>(3), 361–380. <a href="https://doi.org/10.1177/0162243905285847" target="_blank">https://doi.org/10.1177/0162243905285847</a>
+            </div>
+
+            <div class="reference-item">
+Ward, A. F. (2013). Supernormal: How the Internet is changing our memories and our minds. <em>Psychological Inquiry</em>, <em>24</em>(4), 341–348. <a href="https://doi.org/10.1080/1047840X.2013.850148" target="_blank">https://doi.org/10.1080/1047840X.2013.850148</a>
+            </div>
+
+            <div class="reference-item">
+Zhu, F., & Iansiti, M. (2012). Entry into platform-based markets. <em>Strategic Management Journal</em>, <em>33</em>(1), 88–106. <a href="https://doi.org/10.1002/smj.941" target="_blank">https://doi.org/10.1002/smj.941</a>
+            </div>
+
+            <div class="reference-item">
+Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.
+            </div>
+
+        </div>
+
+        <footer>
+            <a href="index.html" class="back-button">← Back to Index</a>
+        </footer>
+    </div>
+</body>
+</html>

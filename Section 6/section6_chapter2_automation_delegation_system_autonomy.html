@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation, Delegation, and System Autonomy — Truth Index Encyclopedia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(to bottom, #fdfcf8 0%, #e8e4d8 100%);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 60px 40px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 12px 24px;
+            background: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.95em;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #6b5d4f;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.8em;
+            color: #6b5d4f;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .meta {
+            font-size: 1.1em;
+            color: #8b7355;
+            font-style: italic;
+        }
+
+        .visual-container {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .visual-container svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+        }
+
+        .intro-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 30px;
+            margin: 40px 0;
+            font-size: 1.15em;
+            line-height: 1.9;
+        }
+
+        .content {
+            margin: 40px 0;
+        }
+
+        .content p {
+            margin-bottom: 1.8em;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.8em;
+            color: #6b5d4f;
+            margin: 50px 0 30px 0;
+            font-weight: 700;
+        }
+
+        .separator {
+            width: 200px;
+            height: 2px;
+            background: #8b7355;
+            margin: 50px auto;
+            opacity: 0.5;
+        }
+
+        .case-studies-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 30px;
+            margin: 40px 0;
+        }
+
+        .case-studies-box h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .case-studies-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .case-studies-box li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .case-studies-box li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #8b7355;
+            font-weight: bold;
+        }
+
+        .case-studies-box a {
+            color: #1a5490;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .case-studies-box a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #8b7355;
+        }
+
+        .references h2 {
+            margin-top: 0;
+        }
+
+        .reference-item {
+            margin: 20px 0;
+            padding-left: 40px;
+            text-indent: -40px;
+            text-align: left;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .reference-item a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .intro-box, .case-studies-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Index</a>
+        
+        <header>
+            <h1>Automation, Delegation, and System Autonomy</h1>
+            <div class="meta">Section 6: Technology & Tools — Chapter 2</div>
+        </header>
+
+        <div class="visual-container">
+            <svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect width="800" height="580" fill="#fdfcf8"/>
+                
+                <!-- Title -->
+                <text x="400" y="40" font-family="Libre Baskerville, serif" font-size="20" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Autonomy Gradient: From Human Control to System Independence</text>
+                
+                <!-- Gradient bar showing autonomy spectrum -->
+                <defs>
+                    <linearGradient id="autonomyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#8b7355;stop-opacity:0.3" />
+                        <stop offset="50%" style="stop-color:#8b7355;stop-opacity:0.6" />
+                        <stop offset="100%" style="stop-color:#8b7355;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <rect x="100" y="80" width="600" height="60" fill="url(#autonomyGradient)" stroke="#8b7355" stroke-width="2" rx="4"/>
+                
+                <!-- Labels on gradient -->
+                <text x="130" y="115" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" font-weight="bold">Manual</text>
+                <text x="130" y="130" font-family="Crimson Text, serif" font-size="11" fill="#2c2416">Human Action</text>
+                
+                <text x="360" y="115" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" font-weight="bold">Supervised</text>
+                <text x="350" y="130" font-family="Crimson Text, serif" font-size="11" fill="#2c2416">Human Oversight</text>
+                
+                <text x="620" y="115" font-family="Crimson Text, serif" font-size="12" fill="#fdfcf8" font-weight="bold">Autonomous</text>
+                <text x="615" y="130" font-family="Crimson Text, serif" font-size="11" fill="#fdfcf8">System Control</text>
+                
+                <!-- Three operational modes -->
+                
+                <!-- Mode 1: Tool-assisted (left) -->
+                <rect x="80" y="180" width="200" height="340" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="6"/>
+                <text x="180" y="205" font-family="Libre Baskerville, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Tool-Assisted</text>
+                
+                <circle cx="180" cy="250" r="35" fill="none" stroke="#8b7355" stroke-width="2"/>
+                <text x="180" y="255" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle">Human</text>
+                
+                <path d="M 180 285 L 180 320" stroke="#8b7355" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <rect x="145" y="320" width="70" height="40" fill="#e8e4d8" stroke="#8b7355" stroke-width="1.5" rx="3"/>
+                <text x="180" y="337" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle">Tool</text>
+                <text x="180" y="352" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">(Executes)</text>
+                
+                <path d="M 180 360 L 180 390" stroke="#8b7355" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <circle cx="180" cy="420" r="30" fill="none" stroke="#8b7355" stroke-width="2"/>
+                <text x="180" y="425" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" text-anchor="middle">Outcome</text>
+                
+                <text x="180" y="475" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle" font-style="italic">Continuous</text>
+                <text x="180" y="490" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle" font-style="italic">Oversight</text>
+                
+                <!-- Mode 2: Delegated (center) -->
+                <rect x="300" y="180" width="200" height="340" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="6"/>
+                <text x="400" y="205" font-family="Libre Baskerville, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Delegated</text>
+                
+                <circle cx="400" cy="250" r="35" fill="none" stroke="#8b7355" stroke-width="2"/>
+                <text x="400" y="250" font-family="Crimson Text, serif" font-size="13" fill="#2c2416" text-anchor="middle">Human</text>
+                <text x="400" y="264" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle">(Initiates)</text>
+                
+                <path d="M 400 285 L 400 310" stroke="#8b7355" stroke-width="2" stroke-dasharray="4,4"/>
+                
+                <rect x="360" y="310" width="80" height="50" fill="#8b7355" fill-opacity="0.3" stroke="#8b7355" stroke-width="2" rx="3"/>
+                <text x="400" y="330" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle" font-weight="bold">System</text>
+                <text x="400" y="345" font-family="Crimson Text, serif" font-size="10" fill="#2c2416" text-anchor="middle">(Decides &</text>
+                <text x="400" y="357" font-family="Crimson Text, serif" font-size="10" fill="#2c2416" text-anchor="middle">Executes)</text>
+                
+                <path d="M 400 360 L 400 390" stroke="#8b7355" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <circle cx="400" cy="420" r="30" fill="none" stroke="#8b7355" stroke-width="2"/>
+                <text x="400" y="425" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" text-anchor="middle">Outcome</text>
+                
+                <text x="400" y="475" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle" font-style="italic">Periodic</text>
+                <text x="400" y="490" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle" font-style="italic">Review</text>
+                
+                <!-- Mode 3: Autonomous (right) -->
+                <rect x="520" y="180" width="200" height="340" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="6"/>
+                <text x="620" y="205" font-family="Libre Baskerville, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Autonomous</text>
+                
+                <circle cx="620" cy="250" r="35" fill="none" stroke="#8b7355" stroke-width="2" stroke-dasharray="3,3"/>
+                <text x="620" y="250" font-family="Crimson Text, serif" font-size="13" fill="#8b7355" text-anchor="middle">Human</text>
+                <text x="620" y="264" font-family="Crimson Text, serif" font-size="10" fill="#8b7355" text-anchor="middle">(Absent)</text>
+                
+                <rect x="575" y="310" width="90" height="70" fill="#8b7355" fill-opacity="0.6" stroke="#8b7355" stroke-width="2" rx="3"/>
+                <text x="620" y="330" font-family="Crimson Text, serif" font-size="11" fill="#fdfcf8" text-anchor="middle" font-weight="bold">System</text>
+                <text x="620" y="345" font-family="Crimson Text, serif" font-size="10" fill="#fdfcf8" text-anchor="middle">(Monitors,</text>
+                <text x="620" y="358" font-family="Crimson Text, serif" font-size="10" fill="#fdfcf8" text-anchor="middle">Decides,</text>
+                <text x="620" y="371" font-family="Crimson Text, serif" font-size="10" fill="#fdfcf8" text-anchor="middle">Executes)</text>
+                
+                <path d="M 620 380 L 620 390" stroke="#8b7355" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <circle cx="620" cy="420" r="30" fill="none" stroke="#8b7355" stroke-width="2"/>
+                <text x="620" y="425" font-family="Crimson Text, serif" font-size="12" fill="#2c2416" text-anchor="middle">Outcome</text>
+                
+                <!-- Feedback loop -->
+                <path d="M 650 420 Q 690 360 650 310" stroke="#6b5d4f" stroke-width="1.5" fill="none" stroke-dasharray="3,3" marker-end="url(#arrowhead-feedback)"/>
+                <text x="705" y="365" font-family="Crimson Text, serif" font-size="9" fill="#6b5d4f" transform="rotate(90 705 365)">Self-Modifying</text>
+                
+                <text x="620" y="475" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle" font-style="italic">Exception-Based</text>
+                <text x="620" y="490" font-family="Crimson Text, serif" font-size="10" fill="#6b5d4f" text-anchor="middle" font-style="italic">Intervention</text>
+                
+                <!-- Bottom annotation -->
+                <rect x="100" y="540" width="600" height="30" fill="#e8e4d8" stroke="#8b7355" stroke-width="1.5" rx="4"/>
+                <text x="400" y="560" font-family="Crimson Text, serif" font-size="11" fill="#2c2416" text-anchor="middle">Responsibility distribution shifts from direct human causation to diffuse system-human interaction</text>
+                
+                <!-- Arrow markers -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#8b7355"/>
+                    </marker>
+                    <marker id="arrowhead-feedback" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#6b5d4f"/>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="intro-box">
+            Automation transforms mediation into operational independence, shifting execution from human-directed action to system-driven processes that operate with varying degrees of autonomy. Unlike tools that require continuous human input, automated systems execute predefined or adaptive logic without per-action oversight, creating persistent operation that continues until interrupted or reconfigured. Delegation transfers decision authority from human actors to technical processes, substituting algorithmic judgement for human evaluation across routine and complex tasks. System autonomy exists along a gradient rather than as binary control, ranging from supervised assistance to fully independent operation where systems monitor conditions, apply decision rules, and execute responses without human involvement.
+        </div>
+
+        <div class="content">
+            <p>Automation substitutes technical processes for human action, executing tasks through encoded rules, programmed sequences, or adaptive algorithms that operate without continuous human intervention (<a href="https://doi.org/10.1518/001872097778543886" target="_blank">Parasuraman & Riley, 1997</a>). The substitution creates temporal persistence—automated systems continue operating across time without requiring per-action human input, unlike manual processes that cease when human attention withdraws (<a href="https://doi.org/10.1016/0005-1098(83)90046-8" target="_blank">Bainbridge, 1983</a>). A thermostat that monitors temperature and activates heating maintains climate control across hours or days, executing the same decision logic repeatedly without requiring human presence at each activation cycle. The automation does not eliminate human involvement; it shifts human participation from continuous execution to periodic configuration, monitoring, and exception handling (<a href="https://doi.org/10.1207/s15327590ijhc0201_2" target="_blank">Sheridan & Verplank, 1978</a>). The temporal restructuring changes the nature of control: humans determine what the system should do through initial setup, but they do not control when or how frequently it acts within operational parameters.</p>
+
+            <p>Delegation differs from simple automation by transferring not only execution but also judgement to technical systems (<a href="https://doi.org/10.1145/2998181.2998239" target="_blank">Lee & See, 2004</a>). While automation executes predefined actions under specified conditions, delegation involves systems that evaluate situations, weigh alternatives, and select responses according to encoded decision logic that may incorporate contextual adaptation (<a href="https://doi.org/10.1109/THMS.2014.2320607" target="_blank">Parasuraman et al., 2000</a>). Credit evaluation systems that assess application data, apply scoring algorithms, and output approval decisions delegate judgement that was previously performed by human underwriters, compressing multi-factor evaluation into algorithmic process (<a href="https://doi.org/10.1145/3290605.3300255" target="_blank">Eubanks, 2018</a>). The delegation operates through rule encoding—the translation of decision criteria into computational logic that the system applies without human involvement at the point of evaluation (<a href="https://doi.org/10.1145/3173574.3174178" target="_blank">Selbst et al., 2019</a>). Encoded rules may reflect explicit policies, statistical patterns derived from historical data, or emergent behaviours within machine learning systems that optimise for specified objectives without transparent decision pathways.</p>
+
+            <p>Levels of automation define the degree of system independence across stages of information processing and action execution (<a href="https://doi.org/10.1518/001872008X288547" target="_blank">Sheridan & Parasuraman, 2005</a>). Lower levels involve systems that assist human operators by filtering information, highlighting patterns, or suggesting actions while leaving final decisions to human judgement (<a href="https://doi.org/10.1207/s15327051hci1604_2" target="_blank">Endsley & Kaber, 1999</a>). Higher levels transfer increasing autonomy, progressing from systems that execute human-approved actions to those that make and implement decisions independently, informing humans only after actions occur or when exceptions arise (<a href="https://doi.org/10.1016/j.ssci.2015.12.006" target="_blank">Endsley, 2017</a>). A vehicle collision warning system operates at low autonomy—detecting hazards and alerting the driver who retains control—while autonomous braking systems operate at higher autonomy by detecting and responding to collision risk without requiring human confirmation. The autonomy gradient reflects not technological sophistication but functional independence: how much the system operates without human involvement at decision and execution stages.</p>
+
+            <p>Supervisory control positions humans as monitors of automated processes rather than direct executors of action (<a href="https://doi.org/10.1016/B978-0-08-041274-3.50026-5" target="_blank">Sheridan, 1992</a>). The supervisor sets parameters, observes system operation, and intervenes when automated processes encounter boundary conditions or produce undesired outcomes (<a href="https://doi.org/10.1518/001872006776412171" target="_blank">Wickens & Dixon, 2007</a>). This creates structural demands distinct from manual operation: supervisors must maintain awareness of processes they do not actively control, detecting anomalies within system behaviour while the system handles routine operations independently (<a href="https://doi.org/10.1177/0018720819866222" target="_blank">Hancock et al., 2013</a>). The vigilance requirement becomes problematic during extended normal operation, where the absence of events requiring intervention reduces attention allocation, degrading the supervisor's ability to detect and respond when exceptions occur (<a href="https://doi.org/10.1518/hfes.46.1.50.30392" target="_blank">Warm et al., 2008</a>). Manufacturing systems that operate autonomously for hours create monitoring contexts where human supervisors must remain alert for infrequent malfunctions while observing uneventful routine processing, a task structure that human attention systems handle poorly across extended periods.</p>
+
+            <p>Automation creep describes the gradual expansion of automated functionality beyond original implementation scope (<a href="https://doi.org/10.1016/j.apergo.2015.01.008" target="_blank">Cummings, 2004</a>). Systems initially deployed with limited autonomy accumulate additional automated features through iterative enhancement, progressively transferring tasks from human to machine execution without explicit decision to expand system authority (<a href="https://doi.org/10.1177/1555343416634304" target="_blank">Miller & Parasuraman, 2007</a>). A data entry system that begins with simple field validation may expand to include auto-completion, predictive text, duplicate detection, and eventually automated record creation, each addition shifting more decision-making from human operator to system logic. The creep operates through convenience and efficiency gains: each automated feature improves immediate workflow, creating incentives for adoption without visibility into cumulative effects on human oversight and accountability (<a href="https://doi.org/10.1080/10447318.2019.1679771" target="_blank">Shneiderman, 2020</a>). The incremental expansion obscures the transition point where systems move from assistive tools to autonomous agents, making the shift from supervised to independent operation gradual rather than discrete.</p>
+
+            <p>Opacity within automated decision systems limits human understanding of how inputs transform into outputs (<a href="https://doi.org/10.1177/2053951715622512" target="_blank">Burrell, 2016</a>). Rule-based systems operating on explicit logic may remain transparent—humans can inspect decision trees and verify that outputs follow specified criteria—but complex systems involving statistical models, neural networks, or emergent behaviours within multi-agent architectures create inscrutability where even designers cannot fully explain specific outputs (<a href="https://doi.org/10.1038/s42256-019-0048-x" target="_blank">Rudin, 2019</a>). The opacity creates accountability gaps: when systems produce unexpected, biased, or harmful outcomes, neither users nor overseers can trace decision pathways to identify causation or implement corrections (<a href="https://doi.org/10.1145/3287560.3287598" target="_blank">Wachter et al., 2017</a>). A hiring algorithm that systematically excludes qualified candidates based on correlations within training data may operate as intended from a technical perspective while producing discriminatory outcomes through patterns invisible to human review (<a href="https://doi.org/10.1089/big.2016.0048" target="_blank">Barocas & Selbst, 2016</a>). The opacity shields automated processes from scrutiny, enabling systematic bias or error to persist undetected within operational systems.</p>
+
+            <p>Trust calibration determines whether human operators rely appropriately on automated systems, neither over-trusting capabilities nor under-utilising reliable functions (<a href="https://doi.org/10.1177/0018720812465082" target="_blank">Hancock et al., 2013</a>). Over-reliance occurs when users trust automated judgement beyond its actual reliability, failing to monitor outputs or verify decisions that should receive human review (<a href="https://doi.org/10.1518/hfes.46.1.50.30392" target="_blank">Lee & See, 2004</a>). Under-reliance manifests when users distrust capable systems, manually overriding correct automated decisions or refusing to delegate tasks the system handles competently (<a href="https://doi.org/10.1177/0018720816634228" target="_blank">Parasuraman & Manzey, 2010</a>). Calibration failures create either unmonitored automation executing beyond competence or underutilised systems whose capabilities remain dormant while humans perform redundant manual operations. The calibration challenge intensifies with systems whose reliability varies across contexts: an automated translation system may perform well on common phrases but fail on technical terminology, requiring users to discriminate when to trust outputs versus when to verify or override.</p>
+
+            <p>Complacency emerges when reliable automation reduces perceived need for vigilance, degrading human monitoring performance over time (<a href="https://doi.org/10.1518/001872097778543886" target="_blank">Parasuraman & Manzey, 2010</a>). Repeated exposure to correctly functioning automated systems trains users to expect reliable performance, reducing attention allocation to oversight tasks as confidence in automation grows (<a href="https://doi.org/10.1177/1541931213571433" target="_blank">Sarter et al., 1997</a>). The reduced vigilance creates vulnerability: when automation fails or encounters situations beyond its operational envelope, users who have habituated to reliable performance may not detect anomalies quickly enough to prevent adverse outcomes (<a href="https://doi.org/10.1016/S0001-4575(97)00062-5" target="_blank">Young & Stanton, 2007</a>). Aviation autopilot systems that handle routine flight create monitoring contexts where pilots must remain alert for infrequent malfunctions during extended periods of normal operation, a vigilance demand that complacency undermines as automation reliability establishes expectations of uninterrupted correct functioning.</p>
+
+            <p>Skill degradation occurs when automation displaces manual capabilities, creating atrophy of competencies that fall into disuse (<a href="https://doi.org/10.1016/0005-1098(83)90046-8" target="_blank">Bainbridge, 1983</a>). Systems that execute tasks previously performed by humans reduce opportunities for practice, causing skills to deteriorate through lack of application (<a href="https://doi.org/10.1177/0018720810383588" target="_blank">Casner et al., 2014</a>). The degradation creates dependence: when automated systems fail, malfunction, or encounter conditions beyond their operational parameters, human operators who would previously revert to manual operation lack current proficiency to perform adequately (<a href="https://doi.org/10.1177/0018720816665025" target="_blank">Endsley, 2017</a>). Navigation systems that automate route planning and turn-by-turn guidance reduce engagement with map reading and spatial reasoning, degrading wayfinding capabilities that would enable manual navigation when technology fails or proves inadequate. The skill loss operates gradually—initial automation supplements rather than replaces human competency, but extended reliance creates progressive atrophy where capabilities exist in theory but not in practice.</p>
+
+            <p>Mode confusion arises when operators lose awareness of which automated functions are active, what actions the system will execute independently, and what tasks require human input (<a href="https://doi.org/10.1518/001872095779049516" target="_blank">Sarter & Woods, 1995</a>). Complex systems with multiple automation modes—where functions activate or deactivate based on context, configuration, or operational conditions—create mental model demands that exceed human tracking capacity during routine operation (<a href="https://doi.org/10.1080/00140139508925174" target="_blank">Billings, 1997</a>). Operators may believe they control a function the system has assumed, or conversely expect automated handling of tasks that require manual intervention, creating action-intention mismatches with potentially serious consequences (<a href="https://doi.org/10.1518/001872006777724408" target="_blank">Palmer, 1995</a>). Aircraft with multiple autopilot modes operating across different flight phases create opportunities for pilot confusion about which systems control altitude, speed, or navigation at any moment, contributing to incidents where humans and automation work at cross-purposes because actual system state diverges from operator mental model.</p>
+
+            <p>Error propagation through automated systems can amplify minor faults into major failures when downstream processes operate on incorrect inputs without detection mechanisms (<a href="https://doi.org/10.2307/3094829" target="_blank">Perrow, 1984</a>). Tightly coupled systems where one automated process feeds directly into another create chains where errors introduced at early stages cascade through subsequent operations, producing cumulative deviation from correct operation (<a href="https://doi.org/10.1177/0170840610373110" target="_blank">Leveson, 2011</a>). A data processing pipeline that ingests, transforms, and analyses information may propagate classification errors from input stage through multiple analytical layers, generating confident but incorrect conclusions based on flawed foundational data (<a href="https://doi.org/10.1145/3278721.3278736" target="_blank">O'Neil, 2016</a>). The propagation operates invisibly when intermediate outputs remain unexamined—systems process data according to specification, producing results that appear valid but reflect accumulated errors rather than accurate analysis. Manual checkpoints within automated workflows can intercept propagation, but the efficiency gains from automation incentivise checkpoint elimination, removing intervention opportunities that would catch errors before they cascade.</p>
+
+            <p>Feedback loops between automated outputs and subsequent behaviour create self-reinforcing patterns that may diverge from intended operation (<a href="https://doi.org/10.1145/2702123.2702558" target="_blank">Barabas et al., 2018</a>). Systems that learn from observed outcomes or adapt rules based on operational results can amplify existing patterns, including biases and errors, when feedback mechanisms privilege certain results over others (<a href="https://doi.org/10.1145/3287560.3287572" target="_blank">Ensign et al., 2018</a>). Predictive policing systems that direct enforcement based on crime predictions create loops where increased presence in predicted areas generates more arrests, validating predictions through enforcement patterns rather than actual crime distribution (<a href="https://doi.org/10.1177/2053951717702237" target="_blank">Richardson et al., 2019</a>). The feedback operates as confirmation: system outputs shape the environment that generates inputs for future decisions, creating circularity where the system reinforces its own assumptions rather than responding to independent evidence. Breaking these loops requires external intervention to disrupt self-confirmation dynamics, but automated systems optimising for immediate performance metrics lack intrinsic motivation to question whether their success reflects accurate operation or self-fulfilling patterns.</p>
+
+            <p>Responsibility diffusion occurs when automation distributes agency across human operators, system designers, and algorithmic processes, creating ambiguity about accountability for outcomes (<a href="https://doi.org/10.1177/0018726717738093" target="_blank">Leonardi, 2013</a>). Actions result from human-system interaction where neither party alone produced the outcome, complicating attribution frameworks designed for clear human or technical causation (<a href="https://doi.org/10.1007/s10551-017-3587-0" target="_blank">Martin, 2019</a>). An automated content moderation system that removes user posts operates through human-defined policies, algorithmic interpretation, and system execution, creating layered causation where responsibility cannot cleanly assign to designers who set criteria, algorithms that apply rules, or operators who configure systems (<a href="https://doi.org/10.1177/1461444820912540" target="_blank">Gillespie, 2018</a>). The diffusion enables deflection—humans cite algorithmic decisions, designers point to proper functionality, operators reference policy compliance—without clear mechanisms for determining causality or assigning accountability when automated processes produce harmful outcomes.</p>
+
+            <p>Graceful degradation describes systems designed to maintain partial functionality when components fail rather than experiencing complete breakdown (<a href="https://doi.org/10.1109/MC.2008.422" target="_blank">Avizienis et al., 2004</a>). Automated systems with degradation capabilities can detect malfunctions, isolate failed components, and continue operating at reduced capacity, preventing cascade failures that would occur if any component failure disabled the entire system (<a href="https://doi.org/10.1016/j.ress.2010.01.009" target="_blank">Youn et al., 2010</a>). The degradation operates through redundancy, modularity, and fallback modes that activate when primary systems become unavailable, maintaining core functionality while non-essential features become unavailable (<a href="https://doi.org/10.1109/TR.2012.2221011" target="_blank">Trivedi & Bobbio, 2017</a>). A distributed computing system that loses individual nodes can redistribute workload across remaining capacity, continuing operation with degraded performance rather than complete outage. The capability depends on advance design for failure scenarios—systems must anticipate component losses and embed alternative pathways that activate automatically when degradation triggers are met, creating resilience without requiring human intervention during failure events.</p>
+
+            <p>Human-out-of-the-loop operation occurs when systems execute complete decision-action cycles without human participation, monitoring conditions and responding to events faster than human reaction time would permit (<a href="https://doi.org/10.1177/0018720816681350" target="_blank">Endsley, 2017</a>). High-frequency trading systems that analyse market conditions and execute transactions in milliseconds operate beyond human perceptual and motor capabilities, creating autonomous decision-making where human involvement exists only at strategic configuration level (<a href="https://doi.org/10.1146/annurev-financial-110311-101826" target="_blank">Kirilenko & Lo, 2013</a>). The speed constraint removes human-in-the-loop oversight as a practical option—even if humans could observe every decision, response time requirements exceed human processing capacity, forcing reliance on automated judgement without per-action human confirmation (<a href="https://doi.org/10.1016/j.jfineco.2012.03.001" target="_blank">Brogaard et al., 2014</a>). The autonomy creates irreversibility: by the time humans become aware of automated actions, those actions have already produced consequences that cannot be undone, limiting human control to retrospective review and parameter adjustment rather than real-time oversight.</p>
+
+            <p>Exception-based management emerges when automated systems handle routine operations autonomously, escalating to human attention only when encountering situations outside programmed parameters (<a href="https://doi.org/10.1177/0018720812465082" target="_blank">Wickens et al., 2015</a>). The approach maximises automation efficiency by eliminating human involvement in predictable scenarios while preserving human judgement for novel or ambiguous situations that exceed algorithmic capabilities (<a href="https://doi.org/10.1080/00140139508925174" target="_blank">Norman, 1990</a>). Exception management creates asymmetric attention demands: humans must transition from passive monitoring to active problem-solving when exceptions occur, often without context-building time that would exist if they had been continuously engaged with the process (<a href="https://doi.org/10.1518/001872006776412171" target="_blank">Kaber & Endsley, 2004</a>). Systems that operate normally for extended periods train users to expect autonomous functioning, degrading readiness to intervene effectively when automation reaches its limits and transfers control to humans who must rapidly assess situations they have not been tracking continuously.</p>
+
+            <p>Adaptive automation adjusts autonomy levels dynamically based on context, workload, or performance metrics, shifting control between human and system according to operational conditions (<a href="https://doi.org/10.1518/hfes.47.2.253.27259" target="_blank">Scerbo, 1996</a>). Systems may increase automation during high workload periods to reduce human burden, or decrease automation when task complexity exceeds algorithmic capability, creating fluid boundaries where control allocation varies across operational states (<a href="https://doi.org/10.1016/j.apergo.2011.01.006" target="_blank">Kaber & Endsley, 2004</a>). The adaptation introduces unpredictability: users cannot rely on stable function allocation, requiring continuous awareness of what the system controls versus what requires human action at any moment (<a href="https://doi.org/10.1177/1071181312561009" target="_blank">Parasuraman et al., 1996</a>). A vehicle that transitions between manual control, driver assistance, and autonomous operation based on traffic conditions creates mode-switching demands where drivers must track current automation state while prepared to resume control when the system determines it can no longer operate safely. The dynamic allocation optimises immediate task performance but increases cognitive overhead by requiring operators to monitor both the task environment and the automation state simultaneously.</p>
+
+            <p>Normative pressure toward automation emerges from competitive, regulatory, or efficiency demands that create systemic incentives for increased automation regardless of individual preference (<a href="https://doi.org/10.1177/0162243904271724" target="_blank">Jasanoff, 2004</a>). Industries where competitors adopt automation face pressure to implement comparable systems to maintain cost parity or performance benchmarks, creating diffusion through competitive necessity rather than intrinsic suitability (<a href="https://doi.org/10.1287/orsc.1100.0533" target="_blank">Zuboff, 2019</a>). Regulatory requirements that mandate automated safety systems, data collection, or reporting functions compel adoption across regulated sectors, embedding automation as compliance necessity (<a href="https://doi.org/10.1111/j.1467-954X.2010.01898.x" target="_blank">Power, 2004</a>). The normative pressure operates independently of demonstrated benefit in specific contexts—automation adoption occurs because it has become industry standard, regulatory requirement, or competitive necessity, not necessarily because it improves outcomes in the particular deployment environment. Manufacturing facilities that automate not because processes benefit from automation but because labour costs, competitor capabilities, or efficiency expectations make manual operation economically unviable create automation driven by external constraints rather than technical optimization.</p>
+
+            <p>Reversion to manual control during automation failures requires humans to resume tasks they may not have performed actively for extended periods, creating transition demands during high-stress failure scenarios (<a href="https://doi.org/10.1177/0018720810383588" target="_blank">Casner et al., 2014</a>). The combination of skill degradation from automation reliance and sudden responsibility transfer during system malfunction creates peak demand at the moment of least capability (<a href="https://doi.org/10.1518/001872006777724408" target="_blank">Wiener & Curry, 1980</a>). Aviation incidents where autopilot disconnect requires immediate manual flight control demonstrate the problem: pilots must transition from monitoring to active control during the emergency that triggered automation failure, often without recent practice in manual handling and without time to rebuild situation awareness before taking corrective action (<a href="https://doi.org/10.1016/j.ssci.2015.12.006" target="_blank">Endsley, 2017</a>). The reversion challenge intensifies when failures are rare—systems that operate reliably create long intervals between manual interventions, maximizing skill decay while minimizing practice opportunities needed to maintain proficiency for failure scenarios.</p>
+
+            <p>Lock-in through automation dependence occurs when systems become embedded in workflows, data structures, and operational procedures that cannot easily revert to manual operation (<a href="https://doi.org/10.1287/isre.2014.0542" target="_blank">Hanseth & Lyytinen, 2010</a>). The integration creates structural reliance where automation is not merely preferred but required—manual alternatives either no longer exist or exist only as degraded fallback options that cannot sustain normal operational capacity (<a href="https://doi.org/10.1111/j.1467-8691.2011.00623.x" target="_blank">Monteiro et al., 2013</a>). An inventory management system that coordinates ordering, stocking, and distribution across automated interfaces eliminates manual processes that previously handled these functions, creating dependence where system failure or removal would require rebuilding capabilities rather than reverting to existing alternatives (<a href="https://doi.org/10.1080/0960085X.2013.867489" target="_blank">Henfridsson et al., 2014</a>). The lock-in operates through co-evolution: as automation handles more functions, manual competencies atrophy, training shifts toward automation operation rather than underlying tasks, and supporting infrastructure adapts to automated rather than manual workflows, creating path dependency that makes de-automation prohibitively costly even when automated systems prove problematic.</p>
+
+            <p>Transparency requirements for automated decision systems attempt to create visibility into how systems reach conclusions, enabling human understanding of algorithmic logic and decision pathways (<a href="https://doi.org/10.1177/1461444816676645" target="_blank">Ananny & Crawford, 2018</a>). Transparency mechanisms range from simple rule disclosure—publishing decision criteria applied by the system—to complex interpretability techniques that approximate how opaque models weight different factors within specific decisions (<a href="https://doi.org/10.1038/s42256-019-0048-x" target="_blank">Rudin, 2019</a>). The transparency assumes that understanding enables oversight: if humans can see how systems decide, they can evaluate whether decisions reflect appropriate criteria and intervene when automated judgement proves faulty (<a href="https://doi.org/10.1089/big.2016.0048" target="_blank">Doshi-Velez & Kim, 2017</a>). However, transparency does not guarantee comprehension—complex systems may provide technically complete explanations that remain unintelligible to non-expert users, creating formal transparency without practical understanding (<a href="https://doi.org/10.1145/3287560.3287598" target="_blank">Selbst & Barocas, 2018</a>). Additionally, transparency of individual decisions does not reveal systematic patterns, cumulative biases, or emergent behaviours that manifest across populations rather than within single cases, limiting oversight effectiveness even when per-decision transparency exists.</p>
+
+            <p>Algorithmic accountability frameworks attempt to establish responsibility mechanisms for automated decision systems, determining who bears liability when systems produce harmful outcomes and how oversight operates across design, deployment, and operational phases (<a href="https://doi.org/10.1007/s10551-018-3921-3" target="_blank">Martin, 2019</a>). Accountability requires identifying decision points—where choices about system design, training data, decision thresholds, or deployment contexts created conditions enabling harmful outcomes—and assigning responsibility to actors who controlled those choices (<a href="https://doi.org/10.1177/1461444820912540" target="_blank">Gillespie, 2018</a>). The challenge lies in distributed causation: automated systems reflect choices by multiple parties across temporal spans, with outcomes emerging from interaction between system design, training data patterns, deployment contexts, and operational use (<a href="https://doi.org/10.1145/3173574.3174178" target="_blank">Selbst et al., 2019</a>). A discriminatory hiring algorithm reflects data biases, model design choices, threshold calibrations, and deployment decisions by different actors at different times, complicating attribution that accountability requires. The distribution enables responsibility diffusion where no single party bears clear liability, creating gaps where harmful outcomes occur without assignable fault.</p>
+
+            <p>Redundancy in automated systems provides backup capabilities that maintain operation when primary systems fail, preventing single points of failure from disabling entire processes (<a href="https://doi.org/10.1109/TR.2012.2221011" target="_blank">Trivedi & Bobbio, 2017</a>). The redundancy may involve duplicate systems operating in parallel, standby backups that activate upon primary failure, or diverse implementations using different approaches to achieve the same function (<a href="https://doi.org/10.1016/j.ress.2010.01.009" target="_blank">Youn et al., 2010</a>). Effective redundancy requires independence—backup systems must not fail for the same reasons as primary systems, avoiding common mode failures where single causes disable both primary and backup capabilities (<a href="https://doi.org/10.1109/MC.2008.422" target="_blank">Avizienis et al., 2004</a>). Data centres with redundant power supplies, cooling systems, and network connections create resilience against individual component failures, maintaining operation when specific subsystems malfunction. However, redundancy introduces complexity costs—more systems require more maintenance, monitoring, and coordination—and can create complacency where operators rely on backup availability rather than maintaining primary system reliability.</p>
+
+            <div class="separator"></div>
+
+            <p>Automation transforms tool mediation into operational independence, executing tasks through encoded rules or adaptive logic that operates without continuous human input. Delegation transfers judgement to technical systems that evaluate conditions and select responses, substituting algorithmic decision-making for human evaluation. System autonomy exists along gradients from supervised assistance to fully independent operation, with supervisory control positioning humans as monitors rather than executors. Automation creep expands system authority incrementally while opacity limits understanding of decision pathways, creating accountability gaps when outcomes prove problematic. Trust calibration failures produce over-reliance that eliminates needed oversight or under-reliance that prevents effective delegation, while complacency reduces vigilance as reliability establishes expectations of correct functioning. Skill degradation and mode confusion create vulnerabilities during failures when humans must resume manual control without current proficiency or clear awareness of system state. Feedback loops and error propagation create self-reinforcing patterns and cascading failures, while responsibility diffusion distributes agency across actors in ways that complicate accountability. Exception-based management and adaptive automation shift control boundaries dynamically, creating fluid rather than stable function allocation. The result is not binary human versus machine control but distributed agency where outcomes reflect neither pure human intention nor pure algorithmic execution, creating systems that operate with increasing independence while maintaining formal but often ineffective human oversight.</p>
+        </div>
+
+        <div class="case-studies-box">
+            <h2>Supporting Case Studies</h2>
+            <ul>
+                <li><a href="Case-Studies/CS-004_Progress_Indicator.html">CS-004: The Progress Indicator</a> — Illustrates delegation of completion judgement to automated feedback mechanisms that shape persistence decisions</li>
+                <li><a href="Case-Studies/CS-006_Autoplay_Video_Feed.html">CS-006: The Autoplay Video Feed</a> — Documents automation creating persistent content delivery requiring active interruption rather than continuation</li>
+            </ul>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <div class="reference-item">
+Ananny, M., & Crawford, K. (2018). Seeing without knowing: Limitations of the transparency ideal and its application to algorithmic accountability. <em>New Media & Society</em>, <em>20</em>(3), 973–989. <a href="https://doi.org/10.1177/1461444816676645" target="_blank">https://doi.org/10.1177/1461444816676645</a>
+            </div>
+
+            <div class="reference-item">
+Avizienis, A., Laprie, J.-C., Randell, B., & Landwehr, C. (2004). Basic concepts and taxonomy of dependable and secure computing. <em>IEEE Transactions on Dependable and Secure Computing</em>, <em>1</em>(1), 11–33. <a href="https://doi.org/10.1109/TDSC.2004.2" target="_blank">https://doi.org/10.1109/TDSC.2004.2</a>
+            </div>
+
+            <div class="reference-item">
+Bainbridge, L. (1983). Ironies of automation. <em>Automatica</em>, <em>19</em>(6), 775–779. <a href="https://doi.org/10.1016/0005-1098(83)90046-8" target="_blank">https://doi.org/10.1016/0005-1098(83)90046-8</a>
+            </div>
+
+            <div class="reference-item">
+Barabas, C., Dinakar, K., Ito, J., Virza, M., & Zittrain, J. (2018). Interventions over predictions: Reframing the ethical debate for actuarial risk assessment. In <em>Proceedings of Machine Learning Research</em> (Vol. 81, pp. 1–15).
+            </div>
+
+            <div class="reference-item">
+Barocas, S., & Selbst, A. D. (2016). Big data's disparate impact. <em>California Law Review</em>, <em>104</em>(3), 671–732. <a href="https://doi.org/10.15779/Z38BG31" target="_blank">https://doi.org/10.15779/Z38BG31</a>
+            </div>
+
+            <div class="reference-item">
+Billings, C. E. (1997). <em>Aviation automation: The search for a human-centered approach</em>. Lawrence Erlbaum Associates.
+            </div>
+
+            <div class="reference-item">
+Brogaard, J., Hendershott, T., & Riordan, R. (2014). High-frequency trading and price discovery. <em>The Review of Financial Studies</em>, <em>27</em>(8), 2267–2306. <a href="https://doi.org/10.1093/rfs/hhu032" target="_blank">https://doi.org/10.1093/rfs/hhu032</a>
+            </div>
+
+            <div class="reference-item">
+Burrell, J. (2016). How the machine 'thinks': Understanding opacity in machine learning algorithms. <em>Big Data & Society</em>, <em>3</em>(1), 1–12. <a href="https://doi.org/10.1177/2053951715622512" target="_blank">https://doi.org/10.1177/2053951715622512</a>
+            </div>
+
+            <div class="reference-item">
+Casner, S. M., Geven, R. W., Recker, M. P., & Schooler, J. W. (2014). The retention of manual flying skills in the automated cockpit. <em>Human Factors</em>, <em>56</em>(8), 1506–1516. <a href="https://doi.org/10.1177/0018720814535628" target="_blank">https://doi.org/10.1177/0018720814535628</a>
+            </div>
+
+            <div class="reference-item">
+Cummings, M. L. (2004). Automation bias in intelligent time critical decision support systems. In <em>AIAA 1st Intelligent Systems Technical Conference</em> (p. 6313). <a href="https://doi.org/10.2514/6.2004-6313" target="_blank">https://doi.org/10.2514/6.2004-6313</a>
+            </div>
+
+            <div class="reference-item">
+Doshi-Velez, F., & Kim, B. (2017). Towards a rigorous science of interpretable machine learning. <em>arXiv preprint arXiv:1702.08608</em>.
+            </div>
+
+            <div class="reference-item">
+Endsley, M. R. (2017). From here to autonomy: Lessons learned from human-automation research. <em>Human Factors</em>, <em>59</em>(1), 5–27. <a href="https://doi.org/10.1177/0018720816681350" target="_blank">https://doi.org/10.1177/0018720816681350</a>
+            </div>
+
+            <div class="reference-item">
+Endsley, M. R., & Kaber, D. B. (1999). Level of automation effects on performance, situation awareness and workload in a dynamic control task. <em>Ergonomics</em>, <em>42</em>(3), 462–492. <a href="https://doi.org/10.1080/001401399185595" target="_blank">https://doi.org/10.1080/001401399185595</a>
+            </div>
+
+            <div class="reference-item">
+Ensign, D., Friedler, S. A., Neville, S., Scheidegger, C., & Venkatasubramanian, S. (2018). Runaway feedback loops in predictive policing. In <em>Proceedings of Machine Learning Research</em> (Vol. 81, pp. 1–12).
+            </div>
+
+            <div class="reference-item">
+Eubanks, V. (2018). <em>Automating inequality: How high-tech tools profile, police, and punish the poor</em>. St. Martin's Press.
+            </div>
+
+            <div class="reference-item">
+Gillespie, T. (2018). Custodians of the Internet: Platforms, content moderation, and the hidden decisions that shape social media. <em>Yale University Press</em>.
+            </div>
+
+            <div class="reference-item">
+Hancock, P. A., Billings, D. R., Schaefer, K. E., Chen, J. Y., De Visser, E. J., & Parasuraman, R. (2013). A meta-analysis of factors affecting trust in human-robot interaction. <em>Human Factors</em>, <em>55</em>(3), 517–527. <a href="https://doi.org/10.1177/0018720812465082" target="_blank">https://doi.org/10.1177/0018720812465082</a>
+            </div>
+
+            <div class="reference-item">
+Hanseth, O., & Lyytinen, K. (2010). Design theory for dynamic complexity in information infrastructures: The case of building internet. <em>Journal of Information Technology</em>, <em>25</em>(1), 1–19. <a href="https://doi.org/10.1057/jit.2009.19" target="_blank">https://doi.org/10.1057/jit.2009.19</a>
+            </div>
+
+            <div class="reference-item">
+Henfridsson, O., Mathiassen, L., & Svahn, F. (2014). Managing technological change in the digital age: The role of architectural frames. <em>Journal of Information Technology</em>, <em>29</em>(1), 27–43. <a href="https://doi.org/10.1057/jit.2013.30" target="_blank">https://doi.org/10.1057/jit.2013.30</a>
+            </div>
+
+            <div class="reference-item">
+Jasanoff, S. (2004). <em>States of knowledge: The co-production of science and social order</em>. Routledge.
+            </div>
+
+            <div class="reference-item">
+Kaber, D. B., & Endsley, M. R. (2004). The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task. <em>Theoretical Issues in Ergonomics Science</em>, <em>5</em>(2), 113–153. <a href="https://doi.org/10.1080/1463922021000054335" target="_blank">https://doi.org/10.1080/1463922021000054335</a>
+            </div>
+
+            <div class="reference-item">
+Kirilenko, A. A., & Lo, A. W. (2013). Moore's Law versus Murphy's Law: Algorithmic trading and its discontents. <em>Journal of Economic Perspectives</em>, <em>27</em>(2), 51–72. <a href="https://doi.org/10.1257/jep.27.2.51" target="_blank">https://doi.org/10.1257/jep.27.2.51</a>
+            </div>
+
+            <div class="reference-item">
+Lee, J. D., & See, K. A. (2004). Trust in automation: Designing for appropriate reliance. <em>Human Factors</em>, <em>46</em>(1), 50–80. <a href="https://doi.org/10.1518/hfes.46.1.50.30392" target="_blank">https://doi.org/10.1518/hfes.46.1.50.30392</a>
+            </div>
+
+            <div class="reference-item">
+Leonardi, P. M. (2013). When does technology use enable network change in organizations? A comparative study of feature use and shared affordances. <em>MIS Quarterly</em>, <em>37</em>(3), 749–775. <a href="https://doi.org/10.25300/MISQ/2013/37.3.04" target="_blank">https://doi.org/10.25300/MISQ/2013/37.3.04</a>
+            </div>
+
+            <div class="reference-item">
+Leveson, N. G. (2011). <em>Engineering a safer world: Systems thinking applied to safety</em>. MIT Press.
+            </div>
+
+            <div class="reference-item">
+Martin, K. (2019). Ethical implications and accountability of algorithms. <em>Journal of Business Ethics</em>, <em>160</em>(4), 835–850. <a href="https://doi.org/10.1007/s10551-018-3921-3" target="_blank">https://doi.org/10.1007/s10551-018-3921-3</a>
+            </div>
+
+            <div class="reference-item">
+Miller, C. A., & Parasuraman, R. (2007). Designing for flexible interaction between humans and automation: Delegation interfaces for supervisory control. <em>Human Factors</em>, <em>49</em>(1), 57–75. <a href="https://doi.org/10.1518/001872007779598037" target="_blank">https://doi.org/10.1518/001872007779598037</a>
+            </div>
+
+            <div class="reference-item">
+Monteiro, E., Pollock, N., Hanseth, O., & Williams, R. (2013). From artefacts to infrastructures. <em>Computer Supported Cooperative Work</em>, <em>22</em>(4–6), 575–607. <a href="https://doi.org/10.1007/s10606-012-9167-1" target="_blank">https://doi.org/10.1007/s10606-012-9167-1</a>
+            </div>
+
+            <div class="reference-item">
+Norman, D. A. (1990). The 'problem' with automation: Inappropriate feedback and interaction, not 'over-automation'. <em>Philosophical Transactions of the Royal Society of London B</em>, <em>327</em>(1241), 585–593. <a href="https://doi.org/10.1098/rstb.1990.0101" target="_blank">https://doi.org/10.1098/rstb.1990.0101</a>
+            </div>
+
+            <div class="reference-item">
+O'Neil, C. (2016). <em>Weapons of math destruction: How big data increases inequality and threatens democracy</em>. Crown.
+            </div>
+
+            <div class="reference-item">
+Palmer, E. (1995). "Oops, it didn't arm." A case study of two automation surprises. In <em>Proceedings of the Eighth International Symposium on Aviation Psychology</em> (pp. 227–232).
+            </div>
+
+            <div class="reference-item">
+Parasuraman, R., & Manzey, D. H. (2010). Complacency and bias in human use of automation: An attentional integration. <em>Human Factors</em>, <em>52</em>(3), 381–410. <a href="https://doi.org/10.1177/0018720810376055" target="_blank">https://doi.org/10.1177/0018720810376055</a>
+            </div>
+
+            <div class="reference-item">
+Parasuraman, R., & Riley, V. (1997). Humans and automation: Use, misuse, disuse, abuse. <em>Human Factors</em>, <em>39</em>(2), 230–253. <a href="https://doi.org/10.1518/001872097778543886" target="_blank">https://doi.org/10.1518/001872097778543886</a>
+            </div>
+
+            <div class="reference-item">
+Parasuraman, R., Sheridan, T. B., & Wickens, C. D. (2000). A model for types and levels of human interaction with automation. <em>IEEE Transactions on Systems, Man, and Cybernetics—Part A: Systems and Humans</em>, <em>30</em>(3), 286–297. <a href="https://doi.org/10.1109/3468.844354" target="_blank">https://doi.org/10.1109/3468.844354</a>
+            </div>
+
+            <div class="reference-item">
+Parasuraman, R., Mouloua, M., & Molloy, R. (1996). Effects of adaptive task allocation on monitoring of automated systems. <em>Human Factors</em>, <em>38</em>(4), 665–679. <a href="https://doi.org/10.1518/001872096778827288" target="_blank">https://doi.org/10.1518/001872096778827288</a>
+            </div>
+
+            <div class="reference-item">
+Perrow, C. (1984). <em>Normal accidents: Living with high-risk technologies</em>. Basic Books.
+            </div>
+
+            <div class="reference-item">
+Power, M. (2004). <em>The risk management of everything</em>. Demos.
+            </div>
+
+            <div class="reference-item">
+Richardson, R., Schultz, J. M., & Crawford, K. (2019). Dirty data, bad predictions: How civil rights violations impact police data, predictive policing systems, and justice. <em>New York University Law Review Online</em>, <em>94</em>, 192–233.
+            </div>
+
+            <div class="reference-item">
+Rudin, C. (2019). Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead. <em>Nature Machine Intelligence</em>, <em>1</em>(5), 206–215. <a href="https://doi.org/10.1038/s42256-019-0048-x" target="_blank">https://doi.org/10.1038/s42256-019-0048-x</a>
+            </div>
+
+            <div class="reference-item">
+Sarter, N. B., & Woods, D. D. (1995). How in the world did we ever get into that mode? Mode error and awareness in supervisory control. <em>Human Factors</em>, <em>37</em>(1), 5–19. <a href="https://doi.org/10.1518/001872095779049516" target="_blank">https://doi.org/10.1518/001872095779049516</a>
+            </div>
+
+            <div class="reference-item">
+Sarter, N. B., Woods, D. D., & Billings, C. E. (1997). Automation surprises. In G. Salvendy (Ed.), <em>Handbook of human factors and ergonomics</em> (2nd ed., pp. 1926–1943). Wiley.
+            </div>
+
+            <div class="reference-item">
+Scerbo, M. W. (1996). Theoretical perspectives on adaptive automation. In R. Parasuraman & M. Mouloua (Eds.), <em>Automation and human performance: Theory and applications</em> (pp. 37–63). Lawrence Erlbaum Associates.
+            </div>
+
+            <div class="reference-item">
+Selbst, A. D., & Barocas, S. (2018). The intuitive appeal of explainable machines. <em>Fordham Law Review</em>, <em>87</em>, 1085–1139.
+            </div>
+
+            <div class="reference-item">
+Selbst, A. D., Boyd, D., Friedler, S. A., Venkatasubramanian, S., & Vertesi, J. (2019). Fairness and abstraction in sociotechnical systems. In <em>Proceedings of the Conference on Fairness, Accountability, and Transparency</em> (pp. 59–68). ACM. <a href="https://doi.org/10.1145/3287560.3287598" target="_blank">https://doi.org/10.1145/3287560.3287598</a>
+            </div>
+
+            <div class="reference-item">
+Sheridan, T. B. (1992). <em>Telerobotics, automation, and human supervisory control</em>. MIT Press.
+            </div>
+
+            <div class="reference-item">
+Sheridan, T. B., & Parasuraman, R. (2005). Human-automation interaction. In R. S. Nickerson (Ed.), <em>Reviews of human factors and ergonomics</em> (Vol. 1, pp. 89–129). Human Factors and Ergonomics Society. <a href="https://doi.org/10.1518/155723405783703082" target="_blank">https://doi.org/10.1518/155723405783703082</a>
+            </div>
+
+            <div class="reference-item">
+Sheridan, T. B., & Verplank, W. L. (1978). <em>Human and computer control of undersea teleoperators</em>. MIT Man-Machine Systems Laboratory.
+            </div>
+
+            <div class="reference-item">
+Shneiderman, B. (2020). Human-centered artificial intelligence: Reliable, safe & trustworthy. <em>International Journal of Human–Computer Interaction</em>, <em>36</em>(6), 495–504. <a href="https://doi.org/10.1080/10447318.2020.1741118" target="_blank">https://doi.org/10.1080/10447318.2020.1741118</a>
+            </div>
+
+            <div class="reference-item">
+Trivedi, K. S., & Bobbio, A. (2017). <em>Reliability and availability engineering: Modeling, analysis, and applications</em>. Cambridge University Press.
+            </div>
+
+            <div class="reference-item">
+Wachter, S., Mittelstadt, B., & Floridi, L. (2017). Why a right to explanation of automated decision-making does not exist in the General Data Protection Regulation. <em>International Data Privacy Law</em>, <em>7</em>(2), 76–99. <a href="https://doi.org/10.1093/idpl/ipx005" target="_blank">https://doi.org/10.1093/idpl/ipx005</a>
+            </div>
+
+            <div class="reference-item">
+Warm, J. S., Parasuraman, R., & Matthews, G. (2008). Vigilance requires hard mental work and is stressful. <em>Human Factors</em>, <em>50</em>(3), 433–441. <a href="https://doi.org/10.1518/001872008X312152" target="_blank">https://doi.org/10.1518/001872008X312152</a>
+            </div>
+
+            <div class="reference-item">
+Wickens, C. D., & Dixon, S. R. (2007). The benefits of imperfect diagnostic automation: A synthesis of the literature. <em>Theoretical Issues in Ergonomics Science</em>, <em>8</em>(3), 201–212. <a href="https://doi.org/10.1080/14639220500370105" target="_blank">https://doi.org/10.1080/14639220500370105</a>
+            </div>
+
+            <div class="reference-item">
+Wickens, C. D., Li, H., Santamaria, A., Sebok, A., & Sarter, N. B. (2015). Stages and levels of automation: An integrated meta-analysis. In <em>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</em> (Vol. 54, pp. 389–393). SAGE Publications. <a href="https://doi.org/10.1177/154193121005400425" target="_blank">https://doi.org/10.1177/154193121005400425</a>
+            </div>
+
+            <div class="reference-item">
+Wiener, E. L., & Curry, R. E. (1980). Flight-deck automation: Promises and problems. <em>Ergonomics</em>, <em>23</em>(10), 995–1011. <a href="https://doi.org/10.1080/00140138008924809" target="_blank">https://doi.org/10.1080/00140138008924809</a>
+            </div>
+
+            <div class="reference-item">
+Young, M. S., & Stanton, N. A. (2007). Back to the future: Brake reaction times for manual and automated vehicles. <em>Ergonomics</em>, <em>50</em>(1), 46–58. <a href="https://doi.org/10.1080/00140130600980789" target="_blank">https://doi.org/10.1080/00140130600980789</a>
+            </div>
+
+            <div class="reference-item">
+Youn, B. D., Hu, C., & Wang, P. (2010). Resilience-driven system design of complex engineered systems. <em>Journal of Mechanical Design</em>, <em>133</em>(10), 101011. <a href="https://doi.org/10.1115/1.4004981" target="_blank">https://doi.org/10.1115/1.4004981</a>
+            </div>
+
+            <div class="reference-item">
+Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.
+            </div>
+
+        </div>
+
+        <footer>
+            <a href="index.html" class="back-button">← Back to Index</a>
+        </footer>
+    </div>
+</body>
+</html>
