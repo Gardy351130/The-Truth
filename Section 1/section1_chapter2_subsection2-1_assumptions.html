@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 1, Chapter 2, Subsection 2.1: ASSUMPTIONS PEOPLE HOLD | Truth Index Encyclopedia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Text', 'Georgia', serif;
+            background: linear-gradient(to bottom, #f4f1e8 0%, #e8e4d8 100%);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fdfcf8;
+            padding: 60px;
+            box-shadow: 
+                0 0 0 1px rgba(139, 115, 85, 0.1),
+                0 2px 4px rgba(139, 115, 85, 0.1),
+                0 8px 16px rgba(139, 115, 85, 0.1),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            border-radius: 2px;
+        }
+        
+        /* Header Styling */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px double #8b7355;
+        }
+        
+        .encyclopedia-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #6b5d4f;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        
+        .breadcrumb {
+            font-size: 12px;
+            color: #8b7355;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .main-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: #2c2416;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #6b5d4f;
+            font-style: italic;
+            margin-top: 15px;
+        }
+        
+        /* Hollow Face Illusion Container */
+        .illusion-container {
+            margin: 50px 0;
+            padding: 30px;
+            background: #f8f6f0;
+            border: 2px solid #d4c4a8;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .illusion-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c2416;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .illusion-image-box {
+            background: #ffffff;
+            padding: 30px;
+            border: 1px solid #d4c4a8;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .illusion-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+        }
+        
+        .illusion-caption {
+            font-size: 14px;
+            color: #6b5d4f;
+            margin-top: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Content Sections */
+        .section {
+            margin: 40px 0;
+        }
+        
+        .section-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c2416;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d4c4a8;
+        }
+        
+        .subsection-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #3d3327;
+            margin: 30px 0 15px 0;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 17px;
+        }
+        
+        .intro-text {
+            font-size: 18px;
+            color: #3d3327;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+        }
+        
+        /* Lists */
+        ul {
+            margin: 20px 0 20px 40px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+        
+        /* References Section */
+        .references {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 3px double #8b7355;
+        }
+        
+        .reference-item {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            text-indent: -30px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+        }
+        
+        .reference-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Emphasis */
+        em {
+            font-style: italic;
+            color: #3d3327;
+        }
+        
+        strong {
+            font-weight: 700;
+            color: #2c2416;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 16px;
+            background-color: #f8f6f0;
+            border: 1px solid #d4c4a8;
+            color: #6b5d4f;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Libre Baskerville', serif;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #8b7355;
+            color: #fdfcf8;
+            border-color: #8b7355;
+        }
+
+        /* Supporting Case Studies Section */
+        .case-studies-section {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+        }
+
+        .case-studies-section h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            color: #2c2416;
+            margin-bottom: 15px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .case-studies-section p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .case-studies-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .case-studies-section li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .case-studies-section a {
+            color: #1a5490;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .case-studies-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="encyclopedia-title">Truth Index Encyclopedia</div>
+            <div class="breadcrumb">Section 1 • Chapter 2 • Subsection 2.1</div>
+            <h1 class="main-title">ASSUMPTIONS PEOPLE HOLD</h1>
+            <div class="subtitle">How Unexamined Beliefs Shape Reality Construction</div>
+        </div>
+
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <!-- Hollow Face Illusion -->
+        <div class="illusion-container">
+            <div class="illusion-title">Visual Demonstration: The Hollow Face Illusion</div>
+            <div class="illusion-image-box">
+                <svg class="illusion-image" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left side: Convex (Normal) Face -->
+                    <g id="convex-face">
+                        <!-- Background -->
+                        <rect x="0" y="0" width="400" height="400" fill="#f5f5f5"/>
+                        <text x="200" y="30" font-family="Georgia, serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">CONVEX (Normal Face)</text>
+                        
+                        <!-- Face outline with lighting -->
+                        <ellipse cx="200" cy="220" rx="110" ry="140" fill="url(#convexGrad)" stroke="#666" stroke-width="2"/>
+                        
+                        <!-- Shadow side (right) -->
+                        <ellipse cx="220" cy="220" rx="90" ry="135" fill="rgba(0,0,0,0.15)"/>
+                        
+                        <!-- Nose - protruding forward -->
+                        <path d="M 200 190 Q 210 220 200 240" fill="url(#noseConvex)" stroke="#555" stroke-width="1.5"/>
+                        <ellipse cx="197" cy="235" rx="3" ry="4" fill="#444"/>
+                        <ellipse cx="203" cy="235" rx="3" ry="4" fill="#444"/>
+                        
+                        <!-- Eyes -->
+                        <ellipse cx="170" cy="190" rx="18" ry="22" fill="white" stroke="#555" stroke-width="1.5"/>
+                        <ellipse cx="230" cy="190" rx="18" ry="22" fill="white" stroke="#555" stroke-width="1.5"/>
+                        <circle cx="168" cy="192" r="8" fill="#2c5f77"/>
+                        <circle cx="228" cy="192" r="8" fill="#2c5f77"/>
+                        <circle cx="170" cy="190" r="3" fill="black"/>
+                        <circle cx="230" cy="190" r="3" fill="black"/>
+                        
+                        <!-- Eyebrows -->
+                        <path d="M 155 172 Q 170 168 185 172" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M 215 172 Q 230 168 245 172" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                        
+                        <!-- Mouth -->
+                        <path d="M 170 280 Q 200 295 230 280" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+                        
+                        <!-- Highlight on nose (convex) -->
+                        <ellipse cx="205" cy="210" rx="4" ry="15" fill="rgba(255,255,255,0.6)"/>
+                        
+                        <!-- Annotation -->
+                        <text x="200" y="370" font-family="Georgia, serif" font-size="14" fill="#666" text-anchor="middle" font-style="italic">Light from left → Nose projects forward</text>
+                    </g>
+                    
+                    <!-- Right side: Concave (Hollow) Face -->
+                    <g id="concave-face">
+                        <!-- Background -->
+                        <rect x="400" y="0" width="400" height="400" fill="#f5f5f5"/>
+                        <text x="600" y="30" font-family="Georgia, serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">CONCAVE (Hollow Face)</text>
+                        
+                        <!-- Face outline with inverse lighting -->
+                        <ellipse cx="600" cy="220" rx="110" ry="140" fill="url(#concaveGrad)" stroke="#666" stroke-width="2"/>
+                        
+                        <!-- Shadow side (left - opposite to convex) -->
+                        <ellipse cx="580" cy="220" rx="90" ry="135" fill="rgba(0,0,0,0.15)"/>
+                        
+                        <!-- Nose - appears to protrude but actually recessed -->
+                        <path d="M 600 190 Q 590 220 600 240" fill="url(#noseConcave)" stroke="#555" stroke-width="1.5"/>
+                        <ellipse cx="597" cy="235" rx="3" ry="4" fill="#444"/>
+                        <ellipse cx="603" cy="235" rx="3" ry="4" fill="#444"/>
+                        
+                        <!-- Eyes -->
+                        <ellipse cx="570" cy="190" rx="18" ry="22" fill="white" stroke="#555" stroke-width="1.5"/>
+                        <ellipse cx="630" cy="190" rx="18" ry="22" fill="white" stroke="#555" stroke-width="1.5"/>
+                        <circle cx="572" cy="192" r="8" fill="#2c5f77"/>
+                        <circle cx="632" cy="192" r="8" fill="#2c5f77"/>
+                        <circle cx="570" cy="190" r="3" fill="black"/>
+                        <circle cx="630" cy="190" r="3" fill="black"/>
+                        
+                        <!-- Eyebrows -->
+                        <path d="M 555 172 Q 570 168 585 172" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M 615 172 Q 630 168 645 172" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                        
+                        <!-- Mouth -->
+                        <path d="M 570 280 Q 600 295 630 280" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+                        
+                        <!-- Highlight on nose (appears convex but is concave) -->
+                        <ellipse cx="595" cy="210" rx="4" ry="15" fill="rgba(255,255,255,0.6)"/>
+                        
+                        <!-- Annotation -->
+                        <text x="600" y="370" font-family="Georgia, serif" font-size="14" fill="#666" text-anchor="middle" font-style="italic">Same light → Brain assumes nose still projects forward</text>
+                    </g>
+                    
+                    <!-- Gradients for lighting effects -->
+                    <defs>
+                        <radialGradient id="convexGrad" cx="45%" cy="45%">
+                            <stop offset="0%" style="stop-color:#f0d5b8;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#d4a574;stop-opacity:1" />
+                        </radialGradient>
+                        <radialGradient id="concaveGrad" cx="55%" cy="45%">
+                            <stop offset="0%" style="stop-color:#f0d5b8;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#d4a574;stop-opacity:1" />
+                        </radialGradient>
+                        <linearGradient id="noseConvex" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#e8c9a8;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#f0d5b8;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#d4a574;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="noseConcave" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#f0d5b8;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e8c9a8;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <p class="illusion-caption">
+                The Hollow Face Illusion reveals how deeply assumptions govern perception. Even when viewing a concave (hollow) face mask from the inside, the brain automatically assumes the nose projects outward—because faces <em>always</em> work that way. This assumption is so powerful that it overrides contradictory sensory evidence, demonstrating how unexamined beliefs shape what we "see" as reality.
+            </p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="intro-text">
+            Human cognition operates on a vast network of assumptions—unexamined beliefs that guide perception, judgment, and action. These cognitive shortcuts allow rapid processing of complex information, but they also systematically distort understanding when reality deviates from expected patterns. This subsection examines six fundamental categories of assumptions that shape human thought, revealing how these implicit beliefs create predictable errors in reasoning about the world, other people, and social systems.
+        </div>
+
+        <!-- Type 1 -->
+        <div class="section">
+            <h2 class="section-title">1. Default World-State Assumptions</h2>
+            
+            <p>The human mind constructs models of how the world "normally" operates, then treats these models as baseline reality. When economists developed rational choice theory in the mid-20th century, they assumed humans naturally act as utility-maximizing agents who make optimal decisions when given complete information. This assumption—that people are fundamentally rational actors—shaped economic policy for decades despite mounting evidence of systematic deviations from rational behavior (Kahneman, 2011).</p>
+            
+            <p>Research in behavioral economics has documented how people consistently violate the assumptions of rational actor theory. Kahneman and Tversky's (1979) prospect theory demonstrated that individuals evaluate potential losses and gains asymmetrically, exhibiting loss aversion that contradicts expected utility theory. People routinely make choices influenced by how options are framed rather than their objective value, accept sunk costs as justifications for continued investment, and discount future rewards hyperbolically rather than exponentially (Thaler, 2015).</p>
+            
+            <p>Neurobiological research reveals why these deviations occur. The brain's reward and decision-making systems evolved to solve ancestral problems, not to maximize abstract utility. The ventromedial prefrontal cortex, which integrates emotional and cognitive information during decision-making, shows activation patterns consistent with heuristic-based rather than optimal choice strategies (Camerer, Loewenstein, & Prelec, 2005). These default assumptions about rationality persist not because they accurately describe human behavior, but because they simplify an otherwise impossibly complex decision space.</p>
+        </div>
+
+        <!-- Type 2 -->
+        <div class="section">
+            <h2 class="section-title">2. Human Behavior Assumptions</h2>
+            
+            <p>People automatically construct explanations for others' behavior, but these explanations systematically over-emphasize internal dispositions while under-weighting situational factors. This pattern, termed the fundamental attribution error by Ross (1977), represents one of the most robust findings in social psychology. When observing another person's actions, individuals tend to attribute behavior to stable personality traits rather than to temporary circumstances or environmental pressures.</p>
+            
+            <p>Classic research by Jones and Harris (1967) demonstrated this bias experimentally. Participants read essays either supporting or opposing Fidel Castro, knowing the essayist's position had been randomly assigned. Despite this knowledge, participants still rated essay writers as having attitudes consistent with their essays' positions. Even when explicitly told that situational factors determined behavior, observers continued attributing actions to the actor's disposition (Gilbert & Malone, 1995).</p>
+            
+            <p>The neural basis of attribution reflects the brain's theory of mind system. The temporoparietal junction and medial prefrontal cortex, regions implicated in mental state attribution, show differential activation when people make dispositional versus situational attributions (Moran, Jolly, & Mitchell, 2012). Importantly, this system appears to default to dispositional inference unless corrective situational information is deliberately processed—a cognitively demanding task that often fails under time pressure or cognitive load (Gilbert, Pelham, & Krull, 1988).</p>
+            
+            <p>Cultural factors modulate but do not eliminate this bias. While Western individualistic cultures show stronger dispositional attribution than East Asian collectivist cultures, both patterns reflect assumptions about what causes behavior. The difference lies in which default model—individual agency or social context—takes precedence (Morris & Peng, 1994).</p>
+        </div>
+
+        <!-- Type 3 -->
+        <div class="section">
+            <h2 class="section-title">3. Stability & Continuity Assumptions</h2>
+            
+            <p>The human cognitive system strongly biases toward perceiving continuity and stability, even in the face of change. This manifests most clearly in status quo bias—the tendency to prefer current states of affairs over alternative options, independent of their objective merits. Samuelson and Zeckhauser (1988) found that decision-makers systematically favor existing conditions over changes, with this preference strengthening as the number of alternatives increases.</p>
+            
+            <p>Neurobiological evidence links this bias to the brain's prediction error system. The basal ganglia and anterior cingulate cortex respond differentially to expected versus unexpected outcomes, with unexpected changes generating stronger neural responses than confirmations of existing patterns (Dunne & O'Doherty, 2013). This architecture creates an implicit penalty for deviation from established baselines, effectively assuming that current states represent "correct" or "natural" conditions.</p>
+            
+            <p>The assumption of stability extends beyond preference to perception. When tracking objects or events over time, people automatically fill gaps with continuity assumptions. If an object briefly disappears behind an occluder, observers assume it continues existing in the same state rather than transforming or ceasing to exist (Scholl & Leslie, 1999). These assumptions serve useful purposes in stable environments but generate systematic errors when confronting genuine discontinuities or regime changes.</p>
+        </div>
+
+        <!-- Type 4 -->
+        <div class="section">
+            <h2 class="section-title">4. Context Transfer Assumptions</h2>
+            
+            <p>People automatically generalize knowledge from familiar contexts to novel situations, often failing to recognize when contextual differences invalidate such transfers. This challenge—termed the problem of domain generalization in machine learning—also afflicts human cognition. Austerweil, Sanborn, and Griffiths (2019) demonstrated that people learn not just specific facts but also abstract principles about how to generalize, with these meta-level assumptions strongly influenced by prior experience.</p>
+            
+            <p>The difficulty lies in determining which aspects of knowledge should transfer across contexts. When people learn a concept in one domain—for example, that taxonomic similarity predicts shared properties in biology—they may inappropriately apply this principle to domains where different organizational structures prevail (Heit & Rubinstein, 1994). The brain must balance between overgeneralizing (applying learning too broadly) and undergeneralizing (failing to recognize relevant similarities across contexts).</p>
+            
+            <p>Neurocognitive research on semantic cognition reveals how the anterior temporal lobe acts as a hub that integrates modality-specific information into generalizable concepts (Ralph, Jefferies, Patterson, & Rogers, 2017). This system enables abstraction but also creates vulnerability: once a generalization pattern is established, it tends to be applied automatically unless explicit contextual cues signal its inappropriateness. The assumption that knowledge structures transfer across contexts is computationally efficient but produces systematic errors in novel environments.</p>
+        </div>
+
+        <!-- Type 5 -->
+        <div class="section">
+            <h2 class="section-title">5. Social & Consensus Assumptions</h2>
+            
+            <p>The human drive for social cohesion creates powerful assumptions about group consensus and collective wisdom. Janis (1972) identified groupthink as a mode of thinking where group members prioritize harmony and consensus over critical evaluation of alternatives. In analyzing historical policy failures—including the Bay of Pigs invasion and escalation of the Vietnam War—Janis found that cohesive groups systematically suppressed dissent, stereotyped outsiders, and maintained illusions of unanimity.</p>
+            
+            <p>The psychological mechanisms underlying groupthink reflect deep-seated social cognitive biases. Conformity research by Asch (1951) demonstrated that approximately 75% of participants conformed to obviously incorrect group judgments at least once, with conformity pressure intensifying in cohesive groups facing ambiguous situations. This conformity stems not merely from conscious compliance but from genuine perception shifts: when group members agree on a position, individuals often come to actually perceive it as more valid (Moscovici & Personnaz, 1980).</p>
+            
+            <p>Brain imaging studies reveal that social conformity modulates activity in perceptual and decision-making regions. When individuals receive feedback that contradicts group consensus, increased activation appears in the rostral cingulate zone and ventral striatum—regions associated with error processing and social reward (Klucharev, Hytönen, Rijpkema, Smidts, & Fernández, 2009). This neural architecture creates an automatic assumption that group consensus reflects truth, with deviation from consensus experienced as aversive even when the group is demonstrably wrong.</p>
+            
+            <p>The assumption that social consensus indicates correctness becomes particularly problematic when combined with selective information processing. Groups experiencing groupthink engage in biased search for information that confirms their preferred position while dismissing contradictory evidence (Hart, 1998). The circular logic—"we agree, therefore we must be right, therefore we should continue agreeing"—proves remarkably resistant to correction once established.</p>
+        </div>
+
+        <!-- Type 6 -->
+        <div class="section">
+            <h2 class="section-title">6. Authority & Legitimacy Assumptions</h2>
+            
+            <p>Perhaps no psychological research has more dramatically revealed the power of authority assumptions than Milgram's (1974) obedience experiments. When instructed by a scientist in a laboratory coat to administer increasingly severe electric shocks to another person, 65% of participants continued to the maximum 450-volt level despite the "victim's" screams of pain. Milgram's systematic variations demonstrated that obedience stemmed not from sadism or unusual personality traits, but from assumptions about legitimate authority.</p>
+            
+            <p>Meta-analysis of Milgram's 21 experimental conditions revealed which factors most strongly predicted obedience. Contrary to popular interpretation, the prestige of the setting (Yale University versus a commercial office) had minimal effect. Instead, three factors proved crucial: the experimenter's directiveness (clear commands increased obedience), physical proximity (nearby authority figures increased compliance), and the presence of dissenting peers (other participants refusing increased disobedience) (Burger, 2009; Haslam, Loughnan, & Perry, 2014).</p>
+            
+            <p>These findings reveal an automatic assumption about authority: that legitimate authorities have the right to command and that obedience represents appropriate behavior. Participants in Milgram's studies entered what he termed an "agentic state"—a psychological condition in which individuals view themselves as instruments carrying out another person's wishes rather than as autonomous moral agents responsible for their own actions (Milgram, 1974). The assumption that authority confers legitimacy proved so powerful that it overrode participants' own moral objections to harming an innocent person.</p>
+            
+            <p>Recent replications confirm the persistence of these patterns. Burger's (2009) partial replication found 70% of participants willing to continue beyond the 150-volt level (the point where the "learner" first protests), while a French television replication found 81% compliance—exceeding Milgram's original rates (Beauvois, Courbet, & Oberlé, 2012). Neuroscientific investigation using virtual reality versions of the paradigm reveals that obedient actions reduce empathic neural responses, suggesting that the agentic state actively suppresses moral processing systems (Cheetham, Pedroni, Antley, Slater, & Jäncke, 2009).</p>
+            
+            <p>The assumption of authority legitimacy extends beyond experimental settings into everyday institutional life. People routinely accept that doctors, police officers, judges, and scientific experts possess special knowledge and decision-making rights in their domains. While often functionally appropriate, this assumption becomes dangerous when it prevents critical evaluation of authority directives, particularly when those directives conflict with ethical principles or empirical evidence.</p>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="section">
+            <h2 class="section-title">Implications for Understanding Truth</h2>
+            
+            <p>These six categories of assumptions—about world states, human behavior, stability, context transfer, social consensus, and authority—form the invisible architecture of human thought. They enable rapid cognitive processing by providing default interpretations of ambiguous information, but they also create systematic blind spots. When reality deviates from these implicit models, people often distort perception to maintain consistency with their assumptions rather than updating the assumptions to match observed evidence.</p>
+            
+            <p>Understanding these assumption patterns is crucial for evaluating truth claims. Assertions that align with default assumptions receive less critical scrutiny than those that contradict them, independent of their actual validity. Recognition of one's own assumption patterns—and the willingness to examine them explicitly when evaluating new information—represents a fundamental skill in truth-seeking. The human mind's assumption-driven architecture cannot be eliminated, but it can be recognized and deliberately counteracted through sustained intellectual effort.</p>
+        </div>
+
+        <!-- Supporting Case Studies -->
+        <div class="case-studies-section">
+            <h2>Supporting Case Studies</h2>
+            <p>The following documented cases provide real-world examples of these assumption patterns in operation:</p>
+            <ul>
+                <li><a href="CS-001_Endless_Scroll_Funnel.html">CS-001: The Endless Scroll Funnel</a> — Demonstrates how "effort implies value" and "length implies legitimacy" assumptions function in practice</li>
+                <li><a href="CS-002_Assessment_Questionnaire.html">CS-002: The Assessment Questionnaire</a> — Shows how "questions imply assessment" and "length implies accuracy" operate in questionnaire structures</li>
+                <li><a href="CS-003_Entry_Path_Framing.html">CS-003: Entry Path Framing & Attention-Based Pricing</a> — Documents how different entry paths create different assumptions about value and seriousness</li>
+            </ul>
+        </div>
+
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <!-- References -->
+        <div class="references">
+            <h2 class="section-title">References</h2>
+            
+            <div class="reference-item">
+                Asch, S. E. (1951). Effects of group pressure upon the modification and distortion of judgments. In H. Guetzkow (Ed.), <em>Groups, leadership and men</em> (pp. 177-190). Carnegie Press.
+            </div>
+            
+            <div class="reference-item">
+                Austerweil, J. L., Sanborn, S., & Griffiths, T. L. (2019). Learning how to generalize. <em>Cognitive Science, 43</em>(8), e12777. <a href="https://doi.org/10.1111/cogs.12777" target="_blank">https://doi.org/10.1111/cogs.12777</a>
+            </div>
+            
+            <div class="reference-item">
+                Beauvois, J.-L., Courbet, D., & Oberlé, D. (2012). The prescriptive power of the television host: A transposition of Milgram's obedience paradigm to the context of TV game show. <em>European Review of Applied Psychology, 62</em>(3), 111-119. <a href="https://doi.org/10.1016/j.erap.2012.02.001" target="_blank">https://doi.org/10.1016/j.erap.2012.02.001</a>
+            </div>
+            
+            <div class="reference-item">
+                Burger, J. M. (2009). Replicating Milgram: Would people still obey today? <em>American Psychologist, 64</em>(1), 1-11. <a href="https://doi.org/10.1037/a0010932" target="_blank">https://doi.org/10.1037/a0010932</a>
+            </div>
+            
+            <div class="reference-item">
+                Camerer, C., Loewenstein, G., & Prelec, D. (2005). Neuroeconomics: How neuroscience can inform economics. <em>Journal of Economic Literature, 43</em>(1), 9-64. <a href="https://doi.org/10.1257/0022051053737843" target="_blank">https://doi.org/10.1257/0022051053737843</a>
+            </div>
+            
+            <div class="reference-item">
+                Cheetham, M., Pedroni, A. F., Antley, A., Slater, M., & Jäncke, L. (2009). Virtual milgram: Empathic concern or personal distress? Evidence from functional MRI and dispositional measures. <em>Frontiers in Human Neuroscience, 3</em>, 29. <a href="https://doi.org/10.3389/neuro.09.029.2009" target="_blank">https://doi.org/10.3389/neuro.09.029.2009</a>
+            </div>
+            
+            <div class="reference-item">
+                Dunne, S., & O'Doherty, J. P. (2013). Insights from the application of computational neuroimaging to social neuroscience. <em>Current Opinion in Neurobiology, 23</em>(3), 387-392. <a href="https://doi.org/10.1016/j.conb.2013.02.007" target="_blank">https://doi.org/10.1016/j.conb.2013.02.007</a>
+            </div>
+            
+            <div class="reference-item">
+                Gilbert, D. T., & Malone, P. S. (1995). The correspondence bias. <em>Psychological Bulletin, 117</em>(1), 21-38. <a href="https://doi.org/10.1037/0033-2909.117.1.21" target="_blank">https://doi.org/10.1037/0033-2909.117.1.21</a>
+            </div>
+            
+            <div class="reference-item">
+                Gilbert, D. T., Pelham, B. W., & Krull, D. S. (1988). On cognitive busyness: When person perceivers meet persons perceived. <em>Journal of Personality and Social Psychology, 54</em>(5), 733-740. <a href="https://doi.org/10.1037/0022-3514.54.5.733" target="_blank">https://doi.org/10.1037/0022-3514.54.5.733</a>
+            </div>
+            
+            <div class="reference-item">
+                Hart, P. T. (1998). Preventing groupthink revisited: Evaluating and reforming groups in government. <em>Organizational Behavior and Human Decision Processes, 73</em>(2-3), 306-326. <a href="https://doi.org/10.1006/obhd.1998.2762" target="_blank">https://doi.org/10.1006/obhd.1998.2762</a>
+            </div>
+            
+            <div class="reference-item">
+                Haslam, S. A., Loughnan, S., & Perry, G. (2014). Meta-Milgram: An empirical synthesis of the obedience experiments. <em>PLoS ONE, 9</em>(4), e93927. <a href="https://doi.org/10.1371/journal.pone.0093927" target="_blank">https://doi.org/10.1371/journal.pone.0093927</a>
+            </div>
+            
+            <div class="reference-item">
+                Heit, E., & Rubinstein, J. (1994). Similarity and property effects in inductive reasoning. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition, 20</em>(2), 411-422. <a href="https://doi.org/10.1037/0278-7393.20.2.411" target="_blank">https://doi.org/10.1037/0278-7393.20.2.411</a>
+            </div>
+            
+            <div class="reference-item">
+                Janis, I. L. (1972). <em>Victims of groupthink: A psychological study of foreign-policy decisions and fiascoes</em>. Houghton Mifflin.
+            </div>
+            
+            <div class="reference-item">
+                Jones, E. E., & Harris, V. A. (1967). The attribution of attitudes. <em>Journal of Experimental Social Psychology, 3</em>(1), 1-24. <a href="https://doi.org/10.1016/0022-1031(67)90034-0" target="_blank">https://doi.org/10.1016/0022-1031(67)90034-0</a>
+            </div>
+            
+            <div class="reference-item">
+                Kahneman, D. (2011). <em>Thinking, fast and slow</em>. Farrar, Straus and Giroux.
+            </div>
+            
+            <div class="reference-item">
+                Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. <em>Econometrica, 47</em>(2), 263-291. <a href="https://doi.org/10.2307/1914185" target="_blank">https://doi.org/10.2307/1914185</a>
+            </div>
+            
+            <div class="reference-item">
+                Klucharev, V., Hytönen, K., Rijpkema, M., Smidts, A., & Fernández, G. (2009). Reinforcement learning signal predicts social conformity. <em>Neuron, 61</em>(1), 140-151. <a href="https://doi.org/10.1016/j.neuron.2008.11.027" target="_blank">https://doi.org/10.1016/j.neuron.2008.11.027</a>
+            </div>
+            
+            <div class="reference-item">
+                Milgram, S. (1974). <em>Obedience to authority: An experimental view</em>. Harper & Row.
+            </div>
+            
+            <div class="reference-item">
+                Moran, J. M., Jolly, E., & Mitchell, J. P. (2012). Social-cognitive deficits in normal aging. <em>Journal of Neuroscience, 32</em>(16), 5553-5561. <a href="https://doi.org/10.1523/JNEUROSCI.5511-11.2012" target="_blank">https://doi.org/10.1523/JNEUROSCI.5511-11.2012</a>
+            </div>
+            
+            <div class="reference-item">
+                Morris, M. W., & Peng, K. (1994). Culture and cause: American and Chinese attributions for social and physical events. <em>Journal of Personality and Social Psychology, 67</em>(6), 949-971. <a href="https://doi.org/10.1037/0022-3514.67.6.949" target="_blank">https://doi.org/10.1037/0022-3514.67.6.949</a>
+            </div>
+            
+            <div class="reference-item">
+                Moscovici, S., & Personnaz, B. (1980). Studies in social influence: V. Minority influence and conversion behavior in a perceptual task. <em>Journal of Experimental Social Psychology, 16</em>(3), 270-282. <a href="https://doi.org/10.1016/0022-1031(80)90070-0" target="_blank">https://doi.org/10.1016/0022-1031(80)90070-0</a>
+            </div>
+            
+            <div class="reference-item">
+                Ralph, M. A. L., Jefferies, E., Patterson, K., & Rogers, T. T. (2017). The neural and computational bases of semantic cognition. <em>Nature Reviews Neuroscience, 18</em>(1), 42-55. <a href="https://doi.org/10.1038/nrn.2016.150" target="_blank">https://doi.org/10.1038/nrn.2016.150</a>
+            </div>
+            
+            <div class="reference-item">
+                Ross, L. (1977). The intuitive psychologist and his shortcomings: Distortions in the attribution process. In L. Berkowitz (Ed.), <em>Advances in experimental social psychology</em> (Vol. 10, pp. 173-220). Academic Press. <a href="https://doi.org/10.1016/S0065-2601(08)60357-3" target="_blank">https://doi.org/10.1016/S0065-2601(08)60357-3</a>
+            </div>
+            
+            <div class="reference-item">
+                Samuelson, W., & Zeckhauser, R. (1988). Status quo bias in decision making. <em>Journal of Risk and Uncertainty, 1</em>(1), 7-59. <a href="https://doi.org/10.1007/BF00055564" target="_blank">https://doi.org/10.1007/BF00055564</a>
+            </div>
+            
+            <div class="reference-item">
+                Scholl, B. J., & Leslie, A. M. (1999). Modularity, development and 'theory of mind'. <em>Mind & Language, 14</em>(1), 131-153. <a href="https://doi.org/10.1111/1468-0017.00106" target="_blank">https://doi.org/10.1111/1468-0017.00106</a>
+            </div>
+            
+            <div class="reference-item">
+                Thaler, R. H. (2015). <em>Misbehaving: The making of behavioral economics</em>. W. W. Norton & Company.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
