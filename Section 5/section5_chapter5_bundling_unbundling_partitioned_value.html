@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundling, Unbundling, and Partitioned Value — Truth Index Encyclopedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(to bottom, #fdfcf8 0%, #e8e4d8 100%);
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 60px 40px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: transparent;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: #6b5d4f;
+        }
+        
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-family: 'Crimson Text', serif;
+            font-size: 20px;
+            color: #8b7355;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .visual-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        .caption {
+            font-size: 15px;
+            color: #6b5d4f;
+            font-style: italic;
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .intro-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 18px;
+        }
+        
+        .separator {
+            width: 200px;
+            height: 2px;
+            background: #8b7355;
+            margin: 50px auto;
+            opacity: 0.5;
+        }
+        
+        .case-studies-box {
+            background: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px 30px;
+            margin: 40px 0;
+        }
+        
+        .case-studies-box h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 24px;
+            color: #6b5d4f;
+            margin-bottom: 15px;
+        }
+        
+        .case-studies-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .case-studies-box li {
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+        
+        .case-studies-box a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        
+        .case-studies-box a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+        
+        .references {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #d4cdb8;
+        }
+        
+        .references h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 28px;
+            color: #6b5d4f;
+            margin-bottom: 25px;
+        }
+        
+        .reference-item {
+            margin-bottom: 18px;
+            padding-left: 30px;
+            text-indent: -30px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .reference-item a {
+            color: #1a5490;
+            text-decoration: none;
+        }
+        
+        .reference-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="javascript:history.back()" class="back-button">← Back to Index</a>
+        
+        <h1>Bundling, Unbundling, and Partitioned Value</h1>
+        <p class="subtitle">Section 5, Chapter 5 — Financial Mechanisms</p>
+        
+        <div class="visual-container">
+            <svg viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background -->
+                <rect width="800" height="580" fill="#fdfcf8"/>
+                
+                <!-- Unbundled components (left side - separated) -->
+                <g transform="translate(80, 120)">
+                    <text x="80" y="-15" font-family="Libre Baskerville, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Unbundled</text>
+                    
+                    <rect x="10" y="0" width="140" height="50" fill="#e8e4d8" stroke="#8b7355" stroke-width="2" rx="4"/>
+                    <text x="80" y="30" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle">Item A: $40</text>
+                    
+                    <rect x="10" y="60" width="140" height="50" fill="#e8e4d8" stroke="#8b7355" stroke-width="2" rx="4"/>
+                    <text x="80" y="90" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle">Item B: $30</text>
+                    
+                    <rect x="10" y="120" width="140" height="50" fill="#e8e4d8" stroke="#8b7355" stroke-width="2" rx="4"/>
+                    <text x="80" y="150" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle">Item C: $25</text>
+                    
+                    <line x1="10" y1="185" x2="150" y2="185" stroke="#8b7355" stroke-width="2"/>
+                    <text x="80" y="210" font-family="Libre Baskerville, serif" font-size="16" fill="#6b5d4f" text-anchor="middle">Total: $95</text>
+                    
+                    <text x="80" y="240" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">High perceived cost</text>
+                    <text x="80" y="256" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">Individual evaluation</text>
+                </g>
+                
+                <!-- Arrow showing transformation -->
+                <path d="M 260 220 L 340 220" stroke="#6b5d4f" stroke-width="3" marker-end="url(#arrowhead)"/>
+                <text x="300" y="210" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle" font-style="italic">Bundling</text>
+                
+                <!-- Bundled package (center) -->
+                <g transform="translate(350, 120)">
+                    <text x="90" y="-15" font-family="Libre Baskerville, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Bundled</text>
+                    
+                    <rect x="0" y="0" width="180" height="170" fill="#8b7355" stroke="#6b5d4f" stroke-width="3" rx="6"/>
+                    <text x="90" y="35" font-family="Crimson Text, serif" font-size="13" fill="#fdfcf8" text-anchor="middle">Complete Package</text>
+                    <text x="90" y="58" font-family="Crimson Text, serif" font-size="12" fill="#fdfcf8" text-anchor="middle">• Item A</text>
+                    <text x="90" y="78" font-family="Crimson Text, serif" font-size="12" fill="#fdfcf8" text-anchor="middle">• Item B</text>
+                    <text x="90" y="98" font-family="Crimson Text, serif" font-size="12" fill="#fdfcf8" text-anchor="middle">• Item C</text>
+                    
+                    <line x1="20" y1="115" x2="160" y2="115" stroke="#fdfcf8" stroke-width="2"/>
+                    <text x="90" y="145" font-family="Libre Baskerville, serif" font-size="22" fill="#fdfcf8" text-anchor="middle" font-weight="bold">$79</text>
+                    
+                    <text x="90" y="200" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">Lower perceived cost</text>
+                    <text x="90" y="216" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">Holistic evaluation</text>
+                    <text x="90" y="232" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">"Savings" from discount</text>
+                </g>
+                
+                <!-- Arrow showing reverse transformation -->
+                <path d="M 540 280 L 620 280" stroke="#6b5d4f" stroke-width="3" marker-end="url(#arrowhead)"/>
+                <text x="580" y="270" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle" font-style="italic">Unbundling</text>
+                
+                <!-- Partitioned pricing (right side) -->
+                <g transform="translate(630, 120)">
+                    <text x="70" y="-15" font-family="Libre Baskerville, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Partitioned</text>
+                    
+                    <rect x="0" y="0" width="140" height="60" fill="#8b7355" stroke="#6b5d4f" stroke-width="3" rx="4"/>
+                    <text x="70" y="25" font-family="Crimson Text, serif" font-size="11" fill="#fdfcf8" text-anchor="middle">Base Price</text>
+                    <text x="70" y="45" font-family="Libre Baskerville, serif" font-size="18" fill="#fdfcf8" text-anchor="middle" font-weight="bold">$59</text>
+                    
+                    <text x="70" y="80" font-family="Crimson Text, serif" font-size="13" fill="#6b5d4f" text-anchor="middle">+</text>
+                    
+                    <rect x="20" y="90" width="100" height="30" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="3"/>
+                    <text x="70" y="110" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Add-on: $12</text>
+                    
+                    <rect x="20" y="125" width="100" height="30" fill="#d4cdb8" stroke="#8b7355" stroke-width="1" rx="3"/>
+                    <text x="70" y="145" font-family="Crimson Text, serif" font-size="11" fill="#6b5d4f" text-anchor="middle">Fee: $8</text>
+                    
+                    <line x1="20" y1="170" x2="120" y2="170" stroke="#8b7355" stroke-width="2"/>
+                    <text x="70" y="190" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">Total: $79</text>
+                    
+                    <text x="70" y="220" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">Base price salient</text>
+                    <text x="70" y="236" font-family="Crimson Text, serif" font-size="12" fill="#8b7355" text-anchor="middle" font-style="italic">Surcharges minimized</text>
+                </g>
+                
+                <!-- Mental accounting illustration (bottom) -->
+                <g transform="translate(150, 420)">
+                    <text x="250" y="-10" font-family="Libre Baskerville, serif" font-size="14" fill="#6b5d4f" text-anchor="middle" font-weight="bold">Mental Accounting Effects</text>
+                    
+                    <rect x="0" y="10" width="160" height="70" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="4"/>
+                    <text x="80" y="35" font-family="Crimson Text, serif" font-size="13" fill="#6b5d4f" text-anchor="middle">Bundle discount</text>
+                    <text x="80" y="52" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">perceived as</text>
+                    <text x="80" y="69" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">"gain"</text>
+                    
+                    <rect x="175" y="10" width="160" height="70" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="4"/>
+                    <text x="255" y="35" font-family="Crimson Text, serif" font-size="13" fill="#6b5d4f" text-anchor="middle">Partitioned fees</text>
+                    <text x="255" y="52" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">evaluated</text>
+                    <text x="255" y="69" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">separately</text>
+                    
+                    <rect x="350" y="10" width="160" height="70" fill="#f8f6f0" stroke="#8b7355" stroke-width="2" rx="4"/>
+                    <text x="430" y="35" font-family="Crimson Text, serif" font-size="13" fill="#6b5d4f" text-anchor="middle">Attention shifts</text>
+                    <text x="430" y="52" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">between total</text>
+                    <text x="430" y="69" font-family="Crimson Text, serif" font-size="12" fill="#6b5d4f" text-anchor="middle">and components</text>
+                </g>
+                
+                <!-- Arrow marker definition -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#6b5d4f"/>
+                    </marker>
+                </defs>
+                
+                <!-- Bottom labels -->
+                <text x="400" y="540" font-family="Libre Baskerville, serif" font-size="16" fill="#8b7355" text-anchor="middle" font-style="italic">Bundling and Partitioned Value Architecture</text>
+                <text x="400" y="565" font-family="Crimson Text, serif" font-size="14" fill="#6b5d4f" text-anchor="middle">Value grouping and separation reshaping perceived worth through mental accounting and attention allocation</text>
+            </svg>
+            <p class="caption">Structural representation of bundling, unbundling, and partitioned value mechanisms, illustrating how component grouping and separation alter perceived cost, savings, and evaluation patterns through mental accounting effects.</p>
+        </div>
+        
+        <div class="intro-box">
+            Bundling, unbundling, and partitioned value describe mechanisms through which components of exchange are grouped, separated, or presented in configurations that reshape perceived worth independent of total cost or actual content. Bundling combines multiple elements into unified offerings, creating conditions where aggregate value perception differs from sum-of-parts assessment and where discounting from hypothetical separate purchases generates perceived savings. Unbundling separates previously integrated components, enabling individual pricing and evaluation that may reveal or obscure total costs depending on how separation is structured. Partitioned pricing presents total costs as combinations of base prices and supplementary charges, creating salience asymmetries where prominent elements dominate attention while surcharges integrate inadequately into valuation. These mechanisms operate through mental accounting, attention allocation, and cognitive efficiency, creating conditions where identical economic exchanges generate divergent value perceptions based solely on how components are grouped or separated within presentation architecture.
+        </div>
+        
+        <p>Bundled versus unbundled value presentation establishes fundamental distinctions in how multi-component exchanges are encountered and evaluated. Bundled presentations combine elements into packages priced as unified offerings, obscuring individual component valuations while emphasizing aggregate worth and potential savings from combined purchase (Adams & Yellen, 1976). Unbundled structures separate components into individually priced elements, making component-level costs visible while potentially obscuring total expenditure across complete sets (Stremersch & Tellis, 2002). The distinction matters because evaluation processes differ systematically between configurations; bundled offerings receive holistic assessment where total package value dominates consideration, while unbundled structures invite component-by-component evaluation that may lead to different purchase patterns and value judgments (Yadav, 1994). Research demonstrates that identical content generates divergent willingness-to-pay estimates depending on bundling configuration, with bundled versions often commanding lower absolute prices but higher adoption rates due to reduced perceived expense and simplified decision-making (Guiltinan, 1987).</p>
+
+        <p>Mental accounting across bundled components operates through cognitive categorization that creates separate evaluative frames for different cost elements. Bundled components are assigned to unified mental accounts where total package cost is evaluated as single expense, reducing pain of payment relative to multiple discrete transactions (Thaler, 1985). This aggregation creates hedonic editing opportunities; multiple losses feel more burdensome when encountered separately than when combined into single totals, making bundled pricing psychologically preferable even when economic equivalence holds (Thaler, 1999). Conversely, multiple gains feel more valuable when experienced as separate positive events rather than aggregated into unified sums, creating conditions where unbundling benefits while bundling costs generates greatest perceived value (Thaler & Johnson, 1990). Mental accounting also operates through categorization that assigns different components to distinct budget categories, with willingness to pay varying based on which mental account is activated by framing (Heath & Soll, 1996). These accounting effects demonstrate that component grouping reshapes economic interpretation through cognitive organization rather than through changes in actual content or total cost.</p>
+
+        <p>Cost partitioning and salience manipulation emerge when total prices are separated into base amounts and supplementary charges that receive differential attention and weighting. Partitioned pricing presents costs as combinations of prominent base prices plus less-salient surcharges, creating conditions where base figures anchor valuation while additional fees integrate inadequately into total assessment (Morwitz, Greenleaf, & Johnson, 1998). This separation exploits bounded attention; individuals focus disproportionately on large, prominently displayed elements while underweighting smaller or less-visible charges despite potentially significant aggregate contribution (Chetty, Looney, & Kroft, 2009). Format manipulation enhances salience asymmetries through visual emphasis, positioning, or temporal sequencing that makes certain costs more prominent than others, shaping which elements dominate evaluation and which receive inadequate consideration (Bertrand et al., 2010). The structural consequence is that partitioning enables total costs to appear lower than unified presentations would suggest, with perceived expense biased toward salient base prices while surcharges contribute minimally to valuation despite comprising substantial portions of total outlay (Hossain & Morgan, 2006).</p>
+
+        <p>Perceived savings versus actual cost composition illustrates divergence between subjective value judgments and objective economic analysis. Bundle discounts create perceived savings by comparing package prices to hypothetical costs of purchasing components separately, generating gain frames that make bundled offerings appear advantageous relative to constructed alternatives (Yadav & Monroe, 1993). These savings perceptions persist even when separate purchase scenarios are unrealistic or when bundle discounts merely reflect reduced willingness-to-pay for unwanted components forced into packages (Bakos & Brynjolfsson, 1999). Actual cost composition may differ substantially from perceived savings; bundles containing low-value components alongside desired items inflate total costs while creating appearance of discount through comparison with inflated reference prices for separate purchases (Gaeth et al., 1990). The psychological mechanism involves anchoring on reference prices plus framing effects; discounts from high anchors feel like gains even when final prices equal or exceed what individuals would pay absent bundle framing (Urbany, Bearden, & Weilbaker, 1988). This divergence creates conditions where perceived value increases through bundling despite unchanged or increased actual expenditure.</p>
+
+        <p>Cognitive effects of grouping on evaluation operate through simplification that reduces processing demands while introducing systematic biases. Bundled presentations reduce cognitive load by eliminating need for component-level evaluation, enabling holistic assessments that require less deliberation than unbundled alternatives demanding multiple discrete judgments (Shugan, 1980). This simplification creates efficiency-accuracy trade-offs; bundled evaluation is faster and easier but may miss component-level considerations that would influence decisions under more granular analysis (Johnson et al., 2012). Grouping also affects comparability across alternatives; bundles are easier to compare when configurations match but harder when component mixes differ, creating conditions where bundling can obscure direct comparison that would reveal one option's dominance (Simonson, Carmon, & O'Curry, 1994). The structural implication is that component grouping shapes evaluation depth and comparison patterns independent of content, with cognitive efficiency motivating acceptance of simplified bundled assessments even when more thorough unbundled analysis would generate different conclusions (Shah & Oppenheimer, 2008).</p>
+
+        <p>Shifts in attention between total value and individual components demonstrate how presentation architecture directs cognitive focus toward specific evaluative dimensions. Bundled presentations direct attention toward total package worth, encouraging holistic valuation that integrates multiple elements into unified assessment while minimizing component-level scrutiny (Yadav, 1994). Unbundled structures shift attention toward individual components, enabling detailed evaluation of each element but potentially obscuring total cost or aggregate value across complete sets (Gaeth et al., 1990). Partitioned pricing creates attention asymmetries where base prices receive sustained focus while surcharges are processed peripherally, generating evaluations dominated by salient elements despite incomplete information integration (Morwitz et al., 1998). These attentional shifts operate through salience, sequencing, and formatting that guide which aspects of offers become focal points for evaluation, creating conditions where presentation architecture rather than intrinsic attributes determines which value dimensions dominate decision-making (Bordalo, Gennaioli, & Shleifer, 2013).</p>
+
+        <p>Recombination of components into single value judgments requires integration processes that may systematically bias evaluation. When encountering partitioned prices, individuals must aggregate base costs and surcharges to assess total expenditure, a process complicated by presentation formats that obscure easy summation (Greenleaf et al., 2016). Integration failure occurs when individuals focus on base prices while inadequately incorporating additional charges, resulting in total cost underestimation despite complete information availability (Gabaix & Laibson, 2006). Bundle evaluation requires reverse integration, inferring component values from package prices, a process subject to systematic biases where allocated component worth diverges from standalone valuations (Johnson, Herrmann, & Bauer, 1999). These recombination challenges create conditions where evaluation outcomes depend not merely on information provided but on cognitive capacity and motivation to perform integration operations that presentation architecture complicates (Payne, Bettman, & Johnson, 1993). The structural consequence is that component separation or grouping shapes value perception through control over integration difficulty, with complex recombination requirements enabling perception-reality gaps that favour certain configurations over others.</p>
+
+        <p>Perceived fairness effects of disaggregated pricing demonstrate how partitioning influences judgments of appropriate cost levels beyond objective economic considerations. Partitioned pricing can enhance perceived fairness by making cost structures transparent, revealing component-level charges that unified pricing obscures (Xia, Monroe, & Cox, 2004). Conversely, partitioning can reduce perceived fairness when surcharges appear as opportunistic additions to advertised base prices, creating feelings of being misled about true costs (Campbell, 1999). Fairness perceptions depend on framing; charges presented as necessary costs for genuine services feel fair, while identical amounts framed as fees or surcharges generate unfairness perceptions (Bolton, Warlop, & Alba, 2003). Category labels influence fairness judgments; costs called "taxes" are evaluated differently than "fees" despite economic equivalence, demonstrating that linguistic framing shapes normative evaluation independent of actual burden (Sussman & Olivola, 2011). These fairness effects operate through attributions regarding appropriateness, transparency, and seller motivations, creating conditions where partitioning structure rather than total cost determines whether pricing is perceived as reasonable or exploitative (Kahneman, Knetsch, & Thaler, 1986).</p>
+
+        <p>Trade-offs between simplicity and transparency operate when bundling decisions balance cognitive ease against information revelation. Bundled pricing offers simplicity through unified prices that eliminate need for component-level evaluation, reducing decision complexity and cognitive burden (Stremersch & Tellis, 2002). This simplicity comes at transparency cost; bundled structures obscure component-level values, making it difficult to assess whether individual elements justify their contribution to total package price (Eppen, Hanson, & Martin, 1991). Unbundled pricing enhances transparency by revealing individual costs, enabling evaluation of whether each component delivers value proportional to expense (Stigler, 1968). This transparency increases complexity by creating multiple decision points and requiring component-level deliberation that bundled alternatives eliminate (Soman & Gourville, 2001). The structural tension is that configurations maximizing simplicity minimize transparency while those maximizing transparency minimize simplicity, creating inherent trade-offs where optimization on one dimension necessarily compromises the other (Johnson et al., 2012). These trade-offs matter because individuals vary in preference for simplicity versus transparency, with different segments responding divergently to identical bundling configurations based on cognitive capacity, involvement level, and decision context.</p>
+
+        <p>Pure bundling versus mixed bundling strategies demonstrate different approaches to component availability and pricing structure. Pure bundling offers components only as packages, eliminating option for separate purchase and forcing take-it-or-leave-it decisions on complete bundles (Adams & Yellen, 1976). Mixed bundling provides both package and individual component options, allowing choice between bundled and unbundled purchase while typically pricing bundles at discounts relative to separate component totals (Schmalensee, 1984). Pure bundling extracts value from heterogeneous preferences by combining components valued differently across individuals, enabling sales to customers who would not purchase all items separately at standalone prices (McAfee, McMillan, & Whinston, 1989). Mixed bundling provides flexibility that accommodates diverse preferences while using bundle discounts to encourage package adoption among fence-sitters who might otherwise purchase subsets (Venkatesh & Kamakura, 2003). These strategic variations demonstrate that bundling serves not merely as presentation format but as mechanism for managing heterogeneous valuations and extracting willingness-to-pay across diverse customer segments (Bakos & Brynjolfsson, 1999).</p>
+
+        <p>The interaction between bundling and anchoring mechanisms examined in prior chapters reveals how package pricing establishes reference points that bias subsequent evaluation. Bundle prices function as anchors that establish baselines for total expenditure, with component-level valuations adjusted from package totals rather than determined independently (Yadav & Monroe, 1993). Discount framing creates anchors through comparison between bundle prices and inflated separate purchase costs, making bundled offerings appear advantageous relative to constructed reference points (Grewal, Monroe, & Krishnan, 1998). These anchor effects persist even when individuals recognize that separate purchase scenarios are unrealistic or when bundle composition includes unwanted components, demonstrating that anchor influence operates somewhat independently of rational assessment (Ariely, Loewenstein, & Prelec, 2003). The structural implication is that bundling configuration shapes valuation not merely through content grouping but through anchor establishment that constrains subsequent price judgments and comparison processes.</p>
+
+        <p>Bundling intersects with transaction costs documented in earlier sections through friction reduction that bundled structures can provide. Bundled offerings eliminate multiple decision and transaction points, reducing cognitive costs associated with evaluating, selecting, and purchasing components separately (Stremersch & Tellis, 2002). This friction reduction operates through simplification; single bundled decisions require less effort than multiple discrete choices, making bundles attractive even when component-level analysis might suggest alternative configurations (Shugan, 1980). However, bundling can also increase friction when packages include unwanted components that create perception of waste or when bundle complexity obscures understanding of what is included (Hanson & Martin, 1990). The net friction effect depends on whether simplification gains exceed potential waste costs and whether package structure reduces or increases cognitive demands through clarity or complexity of component description (Johnson et al., 2012). These friction-bundling interactions demonstrate that packaging decisions shape not merely value perception but also decision ease and completion probability through their effects on processing demands.</p>
+
+        <p>Partitioned pricing interacts with temporal pressure through sequencing effects where base prices are revealed early while surcharges emerge later under time constraints. Early base price exposure establishes anchors and initiates commitment processes before total costs become clear, with temporal pressure reducing likelihood of abandonment despite higher-than-expected totals (Courty & Pagliero, 2012). Urgency cues combined with partitioned pricing create conditions where time constraints amplify underweighting of surcharges, as individuals focus on completing transactions quickly rather than deliberating over additional fees revealed late in decision sequences (Inman, Peter, & Raghubir, 1997). These temporal-partitioning interactions exploit commitment bias; after investing time in product selection and initial decision-making, individuals exhibit increased willingness to accept unexpected surcharges rather than abandon progress under time pressure (Soman, 2004). The structural consequence is that partitioning effects intensify under temporal constraints, with time pressure magnifying salience asymmetries and reducing integration of obscured costs into total valuation.</p>
+
+        <p>Bundling combines with authority signals when credentialed sources recommend specific package configurations or endorse bundle structures. Expert recommendations of bundled offerings transfer credibility to package composition, reducing questioning of whether all components deliver proportional value (Cialdini, 2009). Professional service bundles leverage positional authority, with expertise-based recommendations justifying package structures that might face resistance absent authoritative endorsement (Darke et al., 2010). This authority-bundling intersection creates conditions where package acceptance relies more on source credibility than on substantive component-level evaluation, enabling bundle configurations that benefit from expert validation despite potentially containing low-value elements or inflated pricing (Kirmani & Rao, 2000). The structural implication is that authority signals reduce scrutiny of bundle composition, making package structures more acceptable through credibility transfer than they would be absent authoritative framing.</p>
+
+        <p>Narrative framing interacts with bundling through explanatory stories that justify package structures and component combinations. Value narratives position bundles as carefully curated collections where component selection reflects expertise, creating frames where packages appear as optimal combinations rather than arbitrary groupings (Adaval & Wyer, 1998). Completeness stories suggest bundles provide comprehensive solutions, framing packages as delivering everything needed and making component-level evaluation unnecessary (Shiv & Fedorikhin, 1999). Discount narratives explain price reductions through economies of package purchase, creating stories where savings appear genuine rather than constructed through inflated reference prices (Thaler, 1985). These narrative-bundling interactions demonstrate that framing shapes how packages are perceived, with compelling stories making bundle structures appear valuable, convenient, or economical through interpretive contexts that emphasize certain attributes while minimizing others (Escalas, 2007).</p>
+
+        <div class="separator"></div>
+
+        <p>Bundling combines components into unified packages that generate holistic evaluation and perceived savings through comparison with hypothetical separate purchases, while unbundling reveals component-level costs that enable detailed assessment at expense of total cost clarity. Partitioned pricing creates salience asymmetries where base prices dominate attention while surcharges integrate inadequately into valuation, systematically biasing perceived expense toward salient elements. Mental accounting effects demonstrate that component grouping reshapes economic interpretation through cognitive categorization independent of actual content changes, with bundled costs evaluated differently than unbundled equivalents despite economic equivalence. Attention shifts between total value and individual components based on presentation architecture, with bundling directing focus toward package worth while unbundling emphasizes component-level evaluation. These mechanisms collectively demonstrate that value grouping and separation function as interfaces controlling information architecture, attention allocation, and integration requirements, creating conditions where perceived worth diverges from actual costs based solely on how exchange components are configured within presentation structures.</p>
+
+        <div class="case-studies-box">
+            <h2>Supporting Case Studies</h2>
+            <p><em>Note: Case studies demonstrating bundling, unbundling, and partitioned value mechanisms will be developed as examples are documented and analysed.</em></p>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <div class="reference-item">
+                Adaval, R., & Wyer, R. S. (1998). The role of narratives in consumer information processing. <em>Journal of Consumer Psychology, 7</em>(3), 207–245. <a href="https://doi.org/10.1207/s15327663jcp0703_01" target="_blank">https://doi.org/10.1207/s15327663jcp0703_01</a>
+            </div>
+            
+            <div class="reference-item">
+                Adams, W. J., & Yellen, J. L. (1976). Commodity bundling and the burden of monopoly. <em>Quarterly Journal of Economics, 90</em>(3), 475–498. <a href="https://doi.org/10.2307/1886045" target="_blank">https://doi.org/10.2307/1886045</a>
+            </div>
+            
+            <div class="reference-item">
+                Ariely, D., Loewenstein, G., & Prelec, D. (2003). "Coherent arbitrariness": Stable demand curves without stable preferences. <em>Quarterly Journal of Economics, 118</em>(1), 73–106. <a href="https://doi.org/10.1162/00335530360535153" target="_blank">https://doi.org/10.1162/00335530360535153</a>
+            </div>
+            
+            <div class="reference-item">
+                Bakos, Y., & Brynjolfsson, E. (1999). Bundling information goods: Pricing, profits, and efficiency. <em>Management Science, 45</em>(12), 1613–1630. <a href="https://doi.org/10.1287/mnsc.45.12.1613" target="_blank">https://doi.org/10.1287/mnsc.45.12.1613</a>
+            </div>
+            
+            <div class="reference-item">
+                Bertrand, M., Karlan, D., Mullainathan, S., Shafir, E., & Zinman, J. (2010). What's advertising content worth? Evidence from a consumer credit marketing field experiment. <em>Quarterly Journal of Economics, 125</em>(1), 263–306. <a href="https://doi.org/10.1162/qjec.2010.125.1.263" target="_blank">https://doi.org/10.1162/qjec.2010.125.1.263</a>
+            </div>
+            
+            <div class="reference-item">
+                Bolton, L. E., Warlop, L., & Alba, J. W. (2003). Consumer perceptions of price (un)fairness. <em>Journal of Consumer Research, 29</em>(4), 474–491. <a href="https://doi.org/10.1086/346244" target="_blank">https://doi.org/10.1086/346244</a>
+            </div>
+            
+            <div class="reference-item">
+                Bordalo, P., Gennaioli, N., & Shleifer, A. (2013). Salience and consumer choice. <em>Journal of Political Economy, 121</em>(5), 803–843. <a href="https://doi.org/10.1086/673885" target="_blank">https://doi.org/10.1086/673885</a>
+            </div>
+            
+            <div class="reference-item">
+                Campbell, M. C. (1999). Perceptions of price unfairness: Antecedents and consequences. <em>Journal of Marketing Research, 36</em>(2), 187–199. <a href="https://doi.org/10.1177/002224379903600204" target="_blank">https://doi.org/10.1177/002224379903600204</a>
+            </div>
+            
+            <div class="reference-item">
+                Chetty, R., Looney, A., & Kroft, K. (2009). Salience and taxation: Theory and evidence. <em>American Economic Review, 99</em>(4), 1145–1177. <a href="https://doi.org/10.1257/aer.99.4.1145" target="_blank">https://doi.org/10.1257/aer.99.4.1145</a>
+            </div>
+            
+            <div class="reference-item">
+                Cialdini, R. B. (2009). <em>Influence: Science and practice</em> (5th ed.). Pearson Education.
+            </div>
+            
+            <div class="reference-item">
+                Courty, P., & Pagliero, M. (2012). The impact of price discrimination on revenue: Evidence from the concert industry. <em>Review of Economics and Statistics, 94</em>(1), 359–369. <a href="https://doi.org/10.1162/REST_a_00179" target="_blank">https://doi.org/10.1162/REST_a_00179</a>
+            </div>
+            
+            <div class="reference-item">
+                Darke, P. R., Ashworth, L., & Main, K. J. (2010). Great expectations and broken promises: Misleading claims, product failure, expectancy disconfirmation and consumer distrust. <em>Journal of the Academy of Marketing Science, 38</em>(3), 347–362. <a href="https://doi.org/10.1007/s11747-009-0168-7" target="_blank">https://doi.org/10.1007/s11747-009-0168-7</a>
+            </div>
+            
+            <div class="reference-item">
+                Eppen, G. D., Hanson, W. A., & Martin, R. K. (1991). Bundling—new products, new markets, low risk. <em>Sloan Management Review, 32</em>(4), 7–14.
+            </div>
+            
+            <div class="reference-item">
+                Escalas, J. E. (2007). Self-referencing and persuasion: Narrative transportation versus analytical elaboration. <em>Journal of Consumer Research, 33</em>(4), 421–429. <a href="https://doi.org/10.1086/510216" target="_blank">https://doi.org/10.1086/510216</a>
+            </div>
+            
+            <div class="reference-item">
+                Gabaix, X., & Laibson, D. (2006). Shrouded attributes, consumer myopia, and information suppression in competitive markets. <em>Quarterly Journal of Economics, 121</em>(2), 505–540. <a href="https://doi.org/10.1162/qjec.2006.121.2.505" target="_blank">https://doi.org/10.1162/qjec.2006.121.2.505</a>
+            </div>
+            
+            <div class="reference-item">
+                Gaeth, G. J., Levin, I. P., Chakraborty, G., & Levin, A. M. (1990). Consumer evaluation of multi-product bundles: An information integration analysis. <em>Marketing Letters, 2</em>(1), 47–57. <a href="https://doi.org/10.1007/BF00435198" target="_blank">https://doi.org/10.1007/BF00435198</a>
+            </div>
+            
+            <div class="reference-item">
+                Greenleaf, E. A., Johnson, E. J., Morwitz, V. G., & Shalev, E. (2016). The price does not include additional taxes, fees, and surcharges: A review of research on partitioned pricing. <em>Journal of Consumer Psychology, 26</em>(1), 105–124. <a href="https://doi.org/10.1016/j.jcps.2015.04.006" target="_blank">https://doi.org/10.1016/j.jcps.2015.04.006</a>
+            </div>
+            
+            <div class="reference-item">
+                Grewal, D., Monroe, K. B., & Krishnan, R. (1998). The effects of price-comparison advertising on buyers' perceptions of acquisition value, transaction value, and behavioral intentions. <em>Journal of Marketing, 62</em>(2), 46–59. <a href="https://doi.org/10.1177/002224299806200204" target="_blank">https://doi.org/10.1177/002224299806200204</a>
+            </div>
+            
+            <div class="reference-item">
+                Guiltinan, J. P. (1987). The price bundling of services: A normative framework. <em>Journal of Marketing, 51</em>(2), 74–85. <a href="https://doi.org/10.1177/002224298705100206" target="_blank">https://doi.org/10.1177/002224298705100206</a>
+            </div>
+            
+            <div class="reference-item">
+                Hanson, W., & Martin, R. K. (1990). Optimal bundle pricing. <em>Management Science, 36</em>(2), 155–174. <a href="https://doi.org/10.1287/mnsc.36.2.155" target="_blank">https://doi.org/10.1287/mnsc.36.2.155</a>
+            </div>
+            
+            <div class="reference-item">
+                Heath, C., & Soll, J. B. (1996). Mental budgeting and consumer decisions. <em>Journal of Consumer Research, 23</em>(1), 40–52. <a href="https://doi.org/10.1086/209465" target="_blank">https://doi.org/10.1086/209465</a>
+            </div>
+            
+            <div class="reference-item">
+                Hossain, T., & Morgan, J. (2006). ...Plus shipping and handling: Revenue (non) equivalence in field experiments on eBay. <em>Advances in Economic Analysis & Policy, 6</em>(2), Article 3. <a href="https://doi.org/10.2202/1538-0637.1429" target="_blank">https://doi.org/10.2202/1538-0637.1429</a>
+            </div>
+            
+            <div class="reference-item">
+                Inman, J. J., Peter, A. C., & Raghubir, P. (1997). Framing the deal: The role of restrictions in accentuating deal value. <em>Journal of Consumer Research, 24</em>(1), 68–79. <a href="https://doi.org/10.1086/209494" target="_blank">https://doi.org/10.1086/209494</a>
+            </div>
+            
+            <div class="reference-item">
+                Johnson, E. J., Shu, S. B., Dellaert, B. G. C., Fox, C., Goldstein, D. G., Häubl, G., Larrick, R. P., Payne, J. W., Peters, E., Schkade, D., Wansink, B., & Weber, E. U. (2012). Beyond nudges: Tools of a choice architecture. <em>Marketing Letters, 23</em>(2), 487–504. <a href="https://doi.org/10.1007/s11002-012-9186-1" target="_blank">https://doi.org/10.1007/s11002-012-9186-1</a>
+            </div>
+            
+            <div class="reference-item">
+                Johnson, M. D., Herrmann, A., & Bauer, H. H. (1999). The effects of price bundling on consumer evaluations of product offerings. <em>International Journal of Research in Marketing, 16</em>(2), 129–142. <a href="https://doi.org/10.1016/S0167-8116(99)00004-X" target="_blank">https://doi.org/10.1016/S0167-8116(99)00004-X</a>
+            </div>
+            
+            <div class="reference-item">
+                Kahneman, D., Knetsch, J. L., & Thaler, R. H. (1986). Fairness and the assumptions of economics. <em>Journal of Business, 59</em>(4, Pt. 2), S285–S300. <a href="https://doi.org/10.1086/296367" target="_blank">https://doi.org/10.1086/296367</a>
+            </div>
+            
+            <div class="reference-item">
+                Kirmani, A., & Rao, A. R. (2000). No pain, no gain: A critical review of the literature on signaling unobservable product quality. <em>Journal of Marketing, 64</em>(2), 66–79. <a href="https://doi.org/10.1509/jmkg.64.2.66.18000" target="_blank">https://doi.org/10.1509/jmkg.64.2.66.18000</a>
+            </div>
+            
+            <div class="reference-item">
+                McAfee, R. P., McMillan, J., & Whinston, M. D. (1989). Multiproduct monopoly, commodity bundling, and correlation of values. <em>Quarterly Journal of Economics, 104</em>(2), 371–383. <a href="https://doi.org/10.2307/2937852" target="_blank">https://doi.org/10.2307/2937852</a>
+            </div>
+            
+            <div class="reference-item">
+                Morwitz, V. G., Greenleaf, E. A., & Johnson, E. J. (1998). Divide and prosper: Consumers' reactions to partitioned prices. <em>Journal of Marketing Research, 35</em>(4), 453–463. <a href="https://doi.org/10.1177/002224379803500404" target="_blank">https://doi.org/10.1177/002224379803500404</a>
+            </div>
+            
+            <div class="reference-item">
+                Payne, J. W., Bettman, J. R., & Johnson, E. J. (1993). <em>The adaptive decision maker</em>. Cambridge University Press.
+            </div>
+            
+            <div class="reference-item">
+                Schmalensee, R. (1984). Gaussian demand and commodity bundling. <em>Journal of Business, 57</em>(1, Pt. 2), S211–S230. <a href="https://doi.org/10.1086/296249" target="_blank">https://doi.org/10.1086/296249</a>
+            </div>
+            
+            <div class="reference-item">
+                Shah, A. K., & Oppenheimer, D. M. (2008). Heuristics made easy: An effort-reduction framework. <em>Psychological Bulletin, 134</em>(2), 207–222. <a href="https://doi.org/10.1037/0033-2909.134.2.207" target="_blank">https://doi.org/10.1037/0033-2909.134.2.207</a>
+            </div>
+            
+            <div class="reference-item">
+                Shiv, B., & Fedorikhin, A. (1999). Heart and mind in conflict: The interplay of affect and cognition in consumer decision making. <em>Journal of Consumer Research, 26</em>(3), 278–292. <a href="https://doi.org/10.1086/209563" target="_blank">https://doi.org/10.1086/209563</a>
+            </div>
+            
+            <div class="reference-item">
+                Shugan, S. M. (1980). The cost of thinking. <em>Journal of Consumer Research, 7</em>(2), 99–111. <a href="https://doi.org/10.1086/208799" target="_blank">https://doi.org/10.1086/208799</a>
+            </div>
+            
+            <div class="reference-item">
+                Simonson, I., Carmon, Z., & O'Curry, S. (1994). Experimental evidence on the negative effect of product features and sales promotions on brand choice. <em>Marketing Science, 13</em>(1), 23–40. <a href="https://doi.org/10.1287/mksc.13.1.23" target="_blank">https://doi.org/10.1287/mksc.13.1.23</a>
+            </div>
+            
+            <div class="reference-item">
+                Soman, D. (2004). The effect of time delay on multi-attribute choice. <em>Journal of Economic Psychology, 25</em>(2), 153–175. <a href="https://doi.org/10.1016/S0167-4870(02)00243-2" target="_blank">https://doi.org/10.1016/S0167-4870(02)00243-2</a>
+            </div>
+            
+            <div class="reference-item">
+                Soman, D., & Gourville, J. T. (2001). Transaction decoupling: How price bundling affects the decision to consume. <em>Journal of Marketing Research, 38</em>(1), 30–44. <a href="https://doi.org/10.1509/jmkr.38.1.30.18828" target="_blank">https://doi.org/10.1509/jmkr.38.1.30.18828</a>
+            </div>
+            
+            <div class="reference-item">
+                Stigler, G. J. (1968). A note on block booking. In G. J. Stigler (Ed.), <em>The organization of industry</em> (pp. 165–170). University of Chicago Press.
+            </div>
+            
+            <div class="reference-item">
+                Stremersch, S., & Tellis, G. J. (2002). Strategic bundling of products and prices: A new synthesis for marketing. <em>Journal of Marketing, 66</em>(1), 55–72. <a href="https://doi.org/10.1509/jmkg.66.1.55.18455" target="_blank">https://doi.org/10.1509/jmkg.66.1.55.18455</a>
+            </div>
+            
+            <div class="reference-item">
+                Sussman, A. B., & Olivola, C. Y. (2011). Axe the tax: Taxes are disliked more than equivalent costs. <em>Journal of Marketing Research, 48</em>(SPL), S91–S101. <a href="https://doi.org/10.1509/jmkr.48.SPL.S91" target="_blank">https://doi.org/10.1509/jmkr.48.SPL.S91</a>
+            </div>
+            
+            <div class="reference-item">
+                Thaler, R. (1985). Mental accounting and consumer choice. <em>Marketing Science, 4</em>(3), 199–214. <a href="https://doi.org/10.1287/mksc.4.3.199" target="_blank">https://doi.org/10.1287/mksc.4.3.199</a>
+            </div>
+            
+            <div class="reference-item">
+                Thaler, R. H. (1999). Mental accounting matters. <em>Journal of Behavioral Decision Making, 12</em>(3), 183–206. <a href="https://doi.org/10.1002/(SICI)1099-0771(199909)12:3<183::AID-BDM318>3.0.CO;2-F" target="_blank">https://doi.org/10.1002/(SICI)1099-0771(199909)12:3<183::AID-BDM318>3.0.CO;2-F</a>
+            </div>
+            
+            <div class="reference-item">
+                Thaler, R. H., & Johnson, E. J. (1990). Gambling with the house money and trying to break even: The effects of prior outcomes on risky choice. <em>Management Science, 36</em>(6), 643–660. <a href="https://doi.org/10.1287/mnsc.36.6.643" target="_blank">https://doi.org/10.1287/mnsc.36.6.643</a>
+            </div>
+            
+            <div class="reference-item">
+                Urbany, J. E., Bearden, W. O., & Weilbaker, D. C. (1988). The effect of plausible and exaggerated reference prices on consumer perceptions and price search. <em>Journal of Consumer Research, 15</em>(1), 95–110. <a href="https://doi.org/10.1086/209145" target="_blank">https://doi.org/10.1086/209145</a>
+            </div>
+            
+            <div class="reference-item">
+                Venkatesh, R., & Kamakura, W. (2003). Optimal bundling and pricing under a monopoly: Contrasting complements and substitutes from independently valued products. <em>Journal of Business, 76</em>(2), 211–231. <a href="https://doi.org/10.1086/367748" target="_blank">https://doi.org/10.1086/367748</a>
+            </div>
+            
+            <div class="reference-item">
+                Xia, L., Monroe, K. B., & Cox, J. L. (2004). The price is unfair! A conceptual framework of price fairness perceptions. <em>Journal of Marketing, 68</em>(4), 1–15. <a href="https://doi.org/10.1509/jmkg.68.4.1.42733" target="_blank">https://doi.org/10.1509/jmkg.68.4.1.42733</a>
+            </div>
+            
+            <div class="reference-item">
+                Yadav, M. S. (1994). How buyers evaluate product bundles: A model of anchoring and adjustment. <em>Journal of Consumer Research, 21</em>(2), 342–353. <a href="https://doi.org/10.1086/209402" target="_blank">https://doi.org/10.1086/209402</a>
+            </div>
+            
+            <div class="reference-item">
+                Yadav, M. S., & Monroe, K. B. (1993). How buyers perceive savings in a bundle price: An examination of a bundle's transaction value. <em>Journal of Marketing Research, 30</em>(3), 350–358. <a href="https://doi.org/10.1177/002224379303000306" target="_blank">https://doi.org/10.1177/002224379303000306</a>
+            </div>
+        </div>
+        
+        <a href="javascript:history.back()" class="back-button">← Back to Index</a>
+    </div>
+</body>
+</html>
