@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Creation & Capture | Truth Index Encyclopedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #fdfcf8;
+            color: #2c2416;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #f4f1e8, #e8e4d8);
+            padding: 60px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            border: 1px solid #d4c4a8;
+        }
+
+        .encyclopedia-header {
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #8b7355;
+            padding-bottom: 10px;
+        }
+
+        .breadcrumb {
+            text-align: center;
+            font-size: 13px;
+            color: #8b7355;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            text-align: center;
+            color: #2c2416;
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: #6b5d4f;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 8px 16px;
+            background-color: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 3px;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .back-button:hover {
+            background-color: #6b5d4f;
+        }
+
+        .visual-demo {
+            margin: 40px 0;
+        }
+
+        .visual-demo h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c2416;
+        }
+
+        .image-box {
+            background-color: #f8f6f0;
+            border: 2px solid #d4c4a8;
+            padding: 30px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #6b5d4f;
+            margin-top: 15px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 15px;
+        }
+
+        .intro-box {
+            background-color: #f8f6f0;
+            padding: 25px;
+            border-left: 4px solid #8b7355;
+            margin: 30px 0;
+            font-size: 17px;
+        }
+
+        h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 28px;
+            color: #2c2416;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #d4c4a8;
+        }
+
+        h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 22px;
+            color: #2c2416;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .separator {
+            border: 0;
+            height: 2px;
+            background-color: #d4c4a8;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .separator::after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #d4c4a8;
+        }
+
+        .case-studies-section {
+            background-color: #f8f6f0;
+            padding: 25px;
+            border-left: 4px solid #8b7355;
+            margin: 40px 0;
+        }
+
+        .case-studies-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 24px;
+        }
+
+        .case-studies-section a {
+            color: #1a5490;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .case-studies-section a:hover {
+            text-decoration: underline;
+        }
+
+        .case-study-description {
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            color: #6b5d4f;
+            font-style: italic;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #d4c4a8;
+        }
+
+        .references h2 {
+            font-size: 24px;
+            margin-top: 0;
+            border-bottom: none;
+        }
+
+        .references p {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            text-indent: -20px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        .references a {
+            color: #1a5490;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="encyclopedia-header">Truth Index Encyclopedia</div>
+        <div class="breadcrumb">Section 2: Constructed Information Environments › Chapter 1</div>
+        
+        <h1>Value Creation & Capture</h1>
+        <div class="subtitle">The separation between producing value and retaining its benefits</div>
+
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="visual-demo">
+            <h3>The Value Flow Diagram</h3>
+            <div class="image-box">
+                <svg width="700" height="400" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background -->
+                    <rect width="700" height="400" fill="#f8f6f0"/>
+                    
+                    <!-- Creation box (left) -->
+                    <rect x="50" y="150" width="140" height="100" fill="#e8e4d8" stroke="#8b7355" stroke-width="2"/>
+                    <text x="120" y="190" font-family="Libre Baskerville" font-size="14" fill="#2c2416" text-anchor="middle">VALUE</text>
+                    <text x="120" y="210" font-family="Libre Baskerville" font-size="14" fill="#2c2416" text-anchor="middle">CREATION</text>
+                    
+                    <!-- Intermediary zone (center) -->
+                    <rect x="250" y="100" width="200" height="200" fill="#fdfcf8" stroke="#8b7355" stroke-width="2" stroke-dasharray="5,5"/>
+                    <text x="350" y="130" font-family="Crimson Text" font-size="13" fill="#6b5d4f" text-anchor="middle" font-style="italic">Intermediary</text>
+                    <text x="350" y="150" font-family="Crimson Text" font-size="13" fill="#6b5d4f" text-anchor="middle" font-style="italic">Mechanisms</text>
+                    
+                    <!-- Multiple paths through intermediary -->
+                    <line x1="350" y1="165" x2="350" y2="185" stroke="#8b7355" stroke-width="1"/>
+                    <text x="350" y="200" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle">• Platform fees</text>
+                    <text x="350" y="220" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle">• Attribution shifts</text>
+                    <text x="350" y="240" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle">• Information asymmetry</text>
+                    <text x="350" y="260" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle">• Timing advantages</text>
+                    
+                    <!-- Capture box (right) -->
+                    <rect x="510" y="150" width="140" height="100" fill="#e8e4d8" stroke="#8b7355" stroke-width="2"/>
+                    <text x="580" y="190" font-family="Libre Baskerville" font-size="14" fill="#2c2416" text-anchor="middle">VALUE</text>
+                    <text x="580" y="210" font-family="Libre Baskerville" font-size="14" fill="#2c2416" text-anchor="middle">CAPTURE</text>
+                    
+                    <!-- Flow arrows -->
+                    <path d="M 190 200 Q 220 200 250 200" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <polygon points="250,200 240,195 240,205" fill="#8b7355"/>
+                    
+                    <path d="M 450 200 Q 480 200 510 200" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <polygon points="510,200 500,195 500,205" fill="#8b7355"/>
+                    
+                    <!-- Decay/leakage arrows (downward) -->
+                    <path d="M 120 250 L 120 320" fill="none" stroke="#8b7355" stroke-width="1" stroke-dasharray="3,3"/>
+                    <text x="120" y="340" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle" font-style="italic">Value created,</text>
+                    <text x="120" y="355" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle" font-style="italic">not captured</text>
+                    
+                    <path d="M 580 250 L 580 320" fill="none" stroke="#8b7355" stroke-width="1" stroke-dasharray="3,3"/>
+                    <text x="580" y="340" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle" font-style="italic">Value captured,</text>
+                    <text x="580" y="355" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle" font-style="italic">not created</text>
+                    
+                    <!-- Title annotations -->
+                    <text x="350" y="30" font-family="Libre Baskerville" font-size="12" fill="#2c2416" text-anchor="middle">The gap between producing value and retaining its benefits</text>
+                    <text x="350" y="380" font-family="Crimson Text" font-size="11" fill="#6b5d4f" text-anchor="middle" font-style="italic">Value flow is rarely direct: intermediaries, timing, and asymmetries determine distribution</text>
+                </svg>
+            </div>
+            <p class="caption">Value creation and value capture operate as separable processes. The entity that produces value and the entity that retains its benefits need not be identical. Intermediary mechanisms, timing effects, and information asymmetries determine how value flows from point of origin to point of retention.</p>
+        </div>
+
+        <div class="intro-box">
+            <p>Value creation refers to the production of something perceived as beneficial by others. Value capture refers to the retention of benefits derived from that production. These processes are frequently assumed to be linked—that creating value naturally results in capturing it—yet empirical observation across entrepreneurial contexts demonstrates consistent separation between the two.</p>
+            
+            <p>This chapter documents how value is created, recognized, transferred, and retained in commercial and entrepreneurial settings, with particular attention to the mechanisms that enable creation without capture, capture without creation, and the intermediary structures that alter value distribution. The analysis proceeds from definitional foundations through structural mechanisms to observable outcomes, maintaining focus on what occurs rather than what ought to occur.</p>
+        </div>
+
+        <h2>Defining Value in Context</h2>
+
+        <p>Value lacks universal definition independent of context. What constitutes value varies across economic models, social frameworks, and temporal periods. In classical economic theory, value derives from utility—the capacity of goods or services to satisfy wants or needs (Smith, 1776/1976). Marginal utility theory refines this, positing that value emerges from the additional satisfaction gained from one more unit of consumption (Jevons, 1871/1965). Labour theory positions value as proportional to labour inputs required for production (Ricardo, 1817/2004).</p>
+
+        <p>Modern economic frameworks acknowledge value as subjective and context-dependent. An item's value to a specific individual at a specific time depends on that individual's preferences, constraints, and available alternatives (Menger, 1871/2007). This subjectivity creates conditions where identical outputs generate different value attributions depending on who evaluates them, when evaluation occurs, and what alternatives exist for comparison.</p>
+
+        <p>In entrepreneurial contexts, value manifests through multiple dimensions simultaneously. Financial value appears through revenue generation or asset appreciation. Strategic value emerges through competitive positioning or capability development. Network value derives from access to relationships or information channels. Reputational value accumulates through demonstrated competence or reliability (Teece, Pisano, & Shuen, 1997). An action may create value along one dimension while diminishing it along another, complicating simple assessments of whether value has been created.</p>
+
+        <h3>Recognition and Attribution</h3>
+
+        <p>Value requires recognition to function as value. An innovation that solves a problem creates potential value, but actual value depends on others recognizing the solution and its relevance to their circumstances (Rogers, 2003). Recognition operates through signalling mechanisms: credentials, testimonials, social proof, demonstrated outcomes, or endorsements from recognized authorities (Spence, 1973).</p>
+
+        <p>Attribution determines who receives credit for value creation. Attribution does not necessarily align with actual creation. Visible contributions receive more attribution than invisible ones. Final-stage contributions often receive disproportionate credit relative to foundational work. Entities with greater communication capacity can shape attribution narratives more effectively than those focused primarily on production (Cialdini, 2009).</p>
+
+        <h2>Creation Without Capture</h2>
+
+        <p>Value creation frequently occurs without corresponding capture by the creator. Open-source software development demonstrates this pattern at scale. Developers create functional code that generates substantial value for users and commercial entities, yet the original creators often capture minimal financial returns (Lerner & Tirole, 2002). The code's value accrues to users who deploy it, companies that build upon it, and platforms that distribute it, while creators receive primarily reputational benefits or satisfaction from contribution.</p>
+
+        <p>Academic research exhibits similar dynamics. Researchers produce knowledge that informs commercial products, policy decisions, and further research. The knowledge itself creates value across multiple domains, yet researchers typically capture only indirect benefits through career advancement or grant funding rather than direct financial returns from the knowledge's application (Stephan, 1996). Pharmaceutical companies, technology firms, and consulting organizations capture financial value from research findings while original creators remain structurally separated from commercial returns.</p>
+
+        <p>Content creation in digital environments provides another illustration. Individuals produce videos, articles, music, or art that generates attention and engagement. Platforms hosting this content capture value through advertising revenue, user data, or subscription fees. Individual creators receive a fraction of generated value, with the majority retained by intermediary platforms that control distribution and monetization mechanisms (Prey, 2020). The structural arrangement ensures that value creation and value capture occur at different points in the system.</p>
+
+        <h3>Structural Causes of Creation-Capture Separation</h3>
+
+        <p>Several mechanisms contribute to the separation of creation from capture. Information asymmetry allows parties with greater knowledge about value or market conditions to extract more favourable terms from creators who lack this information (Akerlof, 1970). A creator uncertain about market value for their work may accept compensation below actual market rates, enabling others to capture the difference.</p>
+
+        <p>Transaction costs favour entities with resources to navigate complex exchange processes. Creators focused on production may lack capacity to handle contracting, marketing, distribution, or legal protections, creating dependency on intermediaries who possess these capabilities (Williamson, 1985). The intermediary's structural advantage in managing transactions enables value capture disproportionate to their contribution to original creation.</p>
+
+        <p>Network effects concentrate value capture in entities controlling access to large user bases. A platform with millions of users provides distribution reach that individual creators cannot replicate independently. This asymmetry allows platforms to impose terms that favour platform capture over creator retention, knowing that creators lack viable alternatives for reaching equivalent audiences (Shapiro & Varian, 1998).</p>
+
+        <p>Temporal advantages enable capture through timing rather than creation. Early movers in a market may capture brand recognition and customer relationships even if later entrants produce superior products. First-mover advantages create conditions where capture derives from positioning rather than ongoing value creation (Lieberman & Montgomery, 1988).</p>
+
+        <h2>Capture Without Creation</h2>
+
+        <p>Value capture can occur independently of value creation. Rent-seeking behaviour involves obtaining economic benefits through manipulation of political or regulatory environments rather than through production of new value (Krueger, 1974). Lobbying for protective legislation, securing monopolistic licenses, or obtaining preferential regulatory treatment generates returns without corresponding value creation.</p>
+
+        <p>Middleman positions enable capture through control of transaction flow rather than production. A party positioned between creators and consumers can extract fees from both sides while contributing minimally to the actual creation process. Real estate agents, ticket resellers, and various platform intermediaries capture value primarily through access control rather than value generation (Hagiu & Wright, 2015).</p>
+
+        <p>Information arbitrage allows capture through knowledge asymmetries. Financial traders profit from information advantages about asset values, market movements, or upcoming events. The trading activity itself creates no underlying value; gains derive from exploiting information gaps between market participants (Grossman & Stiglitz, 1980).</p>
+
+        <p>Brand appropriation demonstrates capture through association rather than creation. Entities can capture value by positioning themselves adjacent to established brands or reputations without contributing to the original brand development. Generic products gain value by resembling name brands; consultants gain credibility by association with prestigious former employers; restaurants capture attention through celebrity chef affiliations even when chefs have minimal operational involvement (Keller, 1993).</p>
+
+        <h3>Mechanisms Enabling Capture Without Creation</h3>
+
+        <p>Property rights structures determine who can legally capture value from assets or innovations. Intellectual property frameworks grant capture rights to patent holders regardless of whether they engage in production or further development. Patent trolls acquire patents solely to extract licensing fees from actual producers, capturing value through legal positioning rather than creation (Bessen & Meurer, 2008).</p>
+
+        <p>Market power allows dominant entities to impose terms that extract value from weaker parties. Monopsony power enables large buyers to suppress prices paid to suppliers below competitive rates. Monopoly power enables sellers to charge prices above competitive levels. In both cases, the powerful party captures value through structural advantage rather than corresponding value contribution (Posner, 1975).</p>
+
+        <p>Regulatory capture occurs when regulated entities influence regulatory bodies to create rules favouring incumbents over new entrants or consumers. The resulting regulatory framework enables value capture through protected market positions rather than superior product or service delivery (Stigler, 1971).</p>
+
+        <h2>Intermediary Effects on Value Transfer</h2>
+
+        <p>Intermediaries alter value flows between creators and end recipients. Platform businesses position themselves between multiple user groups, facilitating exchange while capturing portions of transaction value (Eisenmann, Parker, & Van Alstyne, 2006). Digital marketplaces connect buyers and sellers, service platforms link providers and customers, and social media networks bridge content creators and audiences. In each case, the intermediary extracts value through transaction fees, advertising, or data monetization.</p>
+
+        <p>Aggregation creates value capture opportunities through consolidation. An entity that aggregates multiple creators' outputs gains negotiating power through volume and access. Music streaming services aggregate artists, enabling them to negotiate favourable terms with record labels. The aggregator captures value through its control of distribution channels and user relationships rather than through music creation itself (Hagiu & Rothman, 2016).</p>
+
+        <p>Curation functions as an intermediary mechanism that shapes value perception. Entities that select, organize, or recommend content influence which creators receive attention and, consequently, which capture value. Algorithm-driven recommendation systems, editorial boards, and influencer endorsements all function as curation mechanisms that redistribute value toward highlighted creators and away from those not featured (Gillespie, 2014).</p>
+
+        <h3>Platform Economics and Value Distribution</h3>
+
+        <p>Platform business models systematically separate creation from capture through architectural design. Platforms provide infrastructure while users or third parties provide content, products, or services. The platform captures value through its control of infrastructure and user relationships despite creating only a fraction of the total value generated on the platform (Parker, Van Alstyne, & Choudary, 2016).</p>
+
+        <p>Network effects amplify this dynamic. As platforms grow, they become more valuable to both creators and consumers, creating switching costs that lock in participants. This lock-in enables platforms to adjust value distribution terms progressively in their favour. Early-stage platforms may offer generous terms to creators to attract participation. Once network effects establish the platform as essential infrastructure, terms can shift to capture greater portions of transaction value (Rochet & Tirole, 2003).</p>
+
+        <p>Data asymmetry within platforms creates additional capture mechanisms. Platforms observe all transactions and interactions, accumulating information about user behaviour, preferences, and willingness to pay. This information enables platforms to optimize pricing, recommendation, and matching algorithms to maximize platform capture rather than optimizing for creator or user benefit (Zuboff, 2019).</p>
+
+        <h2>Asymmetries in Value Creation and Capture</h2>
+
+        <p>Information asymmetry creates systematic advantages in value capture. Parties with superior information about value, costs, or alternatives can structure transactions to capture more value than parties lacking this information. Sellers who understand buyer willingness to pay can price accordingly. Buyers who understand production costs can negotiate downward. Intermediaries with visibility into both sides can extract maximum value from both (Akerlof, 1970).</p>
+
+        <p>Resource asymmetry determines capacity to execute on value creation and capture. Entities with greater financial resources can sustain longer development cycles, weather market downturns, acquire competitors, or invest in marketing and distribution. This resource advantage often translates into capture advantage independent of creation quality. Well-funded mediocre products can outcompete superior underfunded alternatives through superior market execution (Christensen, 1997).</p>
+
+        <p>Access asymmetry creates differential capture opportunities. Access to distribution channels, decision-makers, capital sources, or talent pools enables some parties to operate at advantages unavailable to others. Geographic proximity to innovation hubs, membership in relevant networks, or credentials opening institutional doors all function as access asymmetries that influence value capture independent of creation capability (Granovetter, 1973).</p>
+
+        <p>Timing asymmetry allows early movers to establish positions that persist beyond their creation advantages. First entrants can capture customer relationships, brand recognition, or network effects before superior later entrants arrive. Conversely, late movers can capture value by learning from earlier entrants' mistakes or by entering when market infrastructure has matured. In both cases, timing rather than creation quality determines capture (Lieberman & Montgomery, 1998).</p>
+
+        <h2>Value Persistence, Decay, and Collapse</h2>
+
+        <p>Value is not static. Created value can persist, decay gradually, or collapse suddenly depending on contextual factors. Persistent value maintains utility and perception over extended periods. Physical infrastructure, established brands, and foundational knowledge demonstrate persistence. Once created, these forms continue generating value with minimal ongoing creation effort (Barney, 1991).</p>
+
+        <p>Decaying value diminishes gradually through obsolescence, competition, or changing preferences. Technological innovations create value that decays as newer alternatives emerge. Fashion-dependent products lose value as trends shift. Expertise becomes less valuable as knowledge diffuses or as new paradigms supersede existing frameworks. Decay rates vary across domains, but most created value eventually experiences some form of deterioration (Abernathy & Utterback, 1978).</p>
+
+        <p>Collapsing value demonstrates discontinuous loss rather than gradual decay. Market crashes eliminate asset values rapidly. Reputation damage can destroy brand value suddenly. Technological paradigm shifts can render entire product categories obsolete within short timeframes. Regulatory changes can eliminate market value overnight. Collapse represents structural transformation of value context rather than incremental deterioration (Taleb, 2007).</p>
+
+        <h3>Factors Influencing Value Duration</h3>
+
+        <p>Defensibility determines how long created value remains capturable by its creator. Patents, trade secrets, network effects, and brand loyalty function as defensive mechanisms that sustain value capture. Without defensive mechanisms, value dissipates as competitors replicate creation or as alternatives emerge (Porter, 1985).</p>
+
+        <p>Replicability influences value duration. Easily replicated creations generate value briefly before competition erodes capture potential. Difficult-to-replicate creations sustain value capture longer. Complexity, tacit knowledge, relationship dependencies, and resource requirements all reduce replicability and extend value duration (Barney, 1991).</p>
+
+        <p>Market structure affects value persistence. Monopolistic or oligopolistic markets allow value capture to persist through limited competition. Highly competitive markets accelerate value erosion through rapid imitation and price competition. Regulatory environments that protect incumbents sustain value capture; deregulatory shifts accelerate value transfer to new entrants (Schumpeter, 1942).</p>
+
+        <h2>Value Independent of Immediate Exchange</h2>
+
+        <p>Value can exist without immediate exchange or monetization. Option value refers to the benefit of maintaining future opportunities even when those opportunities are not currently exercised. Holding a skill set creates option value regardless of whether that skill is currently deployed. Maintaining relationships creates option value through potential future collaboration. Option value represents latent rather than realized value (Black & Scholes, 1973).</p>
+
+        <p>Reputational value accumulates through demonstrated capability or reliability without requiring immediate transaction. A consultant who delivers quality work builds reputation that facilitates future client acquisition. An employee who consistently performs well creates value through enhanced career mobility. Reputation functions as stored value that can be converted to financial returns or other benefits at later points (Fombrun, 1996).</p>
+
+        <p>Strategic value appears through positioning rather than immediate return. Entering a market early may generate losses initially but creates strategic value through learning, relationships, or market presence that enables future capture. Acquiring capabilities that are currently unprofitable may generate strategic value if market conditions shift. Strategic value requires assessment across extended timeframes rather than immediate profitability (Porter, 1996).</p>
+
+        <p>Network value exists independently of individual transactions. Being embedded in a professional network creates value through information flow, referral potential, and collaboration opportunities regardless of whether any specific transaction occurs. Network position itself constitutes value that can be activated when circumstances warrant (Burt, 1992).</p>
+
+        <hr class="separator">
+
+        <p>Value creation and value capture operate as distinct processes connected through intermediary mechanisms, asymmetries, and structural arrangements. The common assumption that creating value naturally results in capturing value does not align with observed outcomes across entrepreneurial contexts. Understanding this separation requires attention to the mechanisms that enable creation without capture, capture without creation, and the various intermediary structures that redistribute value from points of origin to points of retention. Recognition of these patterns provides foundation for analyzing more complex value dynamics across constructed information environments.</p>
+
+        <div class="case-studies-section">
+            <h2>Supporting Case Studies</h2>
+            <a href="../Section%201/Case-Studies/CS-004_Hedge_Fund_Acquisition_Engine.html">CS-004: The Hedge Fund Acquisition Engine</a>
+            <p class="case-study-description">Demonstrates value capture through intermediary positioning rather than value creation, where the entity facilitating connection extracts disproportionate benefit relative to creators or end users.</p>
+            
+            <a href="../Section%201/Case-Studies/CS-005_The_Confession_Ad.html">CS-005: The Confession Ad</a>
+            <p class="case-study-description">Illustrates how intermediaries shape value attribution by controlling narrative framing, enabling value capture through perception management rather than direct creation.</p>
+        </div>
+
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <p>Abernathy, W. J., & Utterback, J. M. (1978). Patterns of industrial innovation. <em>Technology Review, 80</em>(7), 40-47.</p>
+            
+            <p>Akerlof, G. A. (1970). The market for "lemons": Quality uncertainty and the market mechanism. <em>Quarterly Journal of Economics, 84</em>(3), 488-500. <a href="https://doi.org/10.2307/1879431" target="_blank">https://doi.org/10.2307/1879431</a></p>
+            
+            <p>Barney, J. (1991). Firm resources and sustained competitive advantage. <em>Journal of Management, 17</em>(1), 99-120. <a href="https://doi.org/10.1177/014920639101700108" target="_blank">https://doi.org/10.1177/014920639101700108</a></p>
+            
+            <p>Bessen, J., & Meurer, M. J. (2008). <em>Patent failure: How judges, bureaucrats, and lawyers put innovators at risk.</em> Princeton University Press.</p>
+            
+            <p>Black, F., & Scholes, M. (1973). The pricing of options and corporate liabilities. <em>Journal of Political Economy, 81</em>(3), 637-654. <a href="https://doi.org/10.1086/260062" target="_blank">https://doi.org/10.1086/260062</a></p>
+            
+            <p>Burt, R. S. (1992). <em>Structural holes: The social structure of competition.</em> Harvard University Press.</p>
+            
+            <p>Christensen, C. M. (1997). <em>The innovator's dilemma: When new technologies cause great firms to fail.</em> Harvard Business Review Press.</p>
+            
+            <p>Cialdini, R. B. (2009). <em>Influence: Science and practice</em> (5th ed.). Pearson Education.</p>
+            
+            <p>Eisenmann, T., Parker, G., & Van Alstyne, M. W. (2006). Strategies for two-sided markets. <em>Harvard Business Review, 84</em>(10), 92-101.</p>
+            
+            <p>Fombrun, C. J. (1996). <em>Reputation: Realizing value from the corporate image.</em> Harvard Business School Press.</p>
+            
+            <p>Gillespie, T. (2014). The relevance of algorithms. In T. Gillespie, P. J. Boczkowski, & K. A. Foot (Eds.), <em>Media technologies: Essays on communication, materiality, and society</em> (pp. 167-194). MIT Press.</p>
+            
+            <p>Granovetter, M. S. (1973). The strength of weak ties. <em>American Journal of Sociology, 78</em>(6), 1360-1380. <a href="https://doi.org/10.1086/225469" target="_blank">https://doi.org/10.1086/225469</a></p>
+            
+            <p>Grossman, S. J., & Stiglitz, J. E. (1980). On the impossibility of informationally efficient markets. <em>American Economic Review, 70</em>(3), 393-408.</p>
+            
+            <p>Hagiu, A., & Rothman, S. (2016). Network effects aren't enough. <em>Harvard Business Review, 94</em>(4), 65-71.</p>
+            
+            <p>Hagiu, A., & Wright, J. (2015). Multi-sided platforms. <em>International Journal of Industrial Organization, 43</em>, 162-174. <a href="https://doi.org/10.1016/j.ijindorg.2015.03.003" target="_blank">https://doi.org/10.1016/j.ijindorg.2015.03.003</a></p>
+            
+            <p>Jevons, W. S. (1965). <em>The theory of political economy.</em> Augustus M. Kelley. (Original work published 1871)</p>
+            
+            <p>Keller, K. L. (1993). Conceptualizing, measuring, and managing customer-based brand equity. <em>Journal of Marketing, 57</em>(1), 1-22. <a href="https://doi.org/10.2307/1252054" target="_blank">https://doi.org/10.2307/1252054</a></p>
+            
+            <p>Krueger, A. O. (1974). The political economy of the rent-seeking society. <em>American Economic Review, 64</em>(3), 291-303.</p>
+            
+            <p>Lerner, J., & Tirole, J. (2002). Some simple economics of open source. <em>Journal of Industrial Economics, 50</em>(2), 197-234. <a href="https://doi.org/10.1111/1467-6451.00174" target="_blank">https://doi.org/10.1111/1467-6451.00174</a></p>
+            
+            <p>Lieberman, M. B., & Montgomery, D. B. (1988). First-mover advantages. <em>Strategic Management Journal, 9</em>(S1), 41-58. <a href="https://doi.org/10.1002/smj.4250090706" target="_blank">https://doi.org/10.1002/smj.4250090706</a></p>
+            
+            <p>Lieberman, M. B., & Montgomery, D. B. (1998). First-mover (dis)advantages: Retrospective and link with the resource-based view. <em>Strategic Management Journal, 19</em>(12), 1111-1125.</p>
+            
+            <p>Menger, C. (2007). <em>Principles of economics.</em> Ludwig von Mises Institute. (Original work published 1871)</p>
+            
+            <p>Parker, G. G., Van Alstyne, M. W., & Choudary, S. P. (2016). <em>Platform revolution: How networked markets are transforming the economy and how to make them work for you.</em> W. W. Norton & Company.</p>
+            
+            <p>Porter, M. E. (1985). <em>Competitive advantage: Creating and sustaining superior performance.</em> Free Press.</p>
+            
+            <p>Porter, M. E. (1996). What is strategy? <em>Harvard Business Review, 74</em>(6), 61-78.</p>
+            
+            <p>Posner, R. A. (1975). The social costs of monopoly and regulation. <em>Journal of Political Economy, 83</em>(4), 807-827. <a href="https://doi.org/10.1086/260357" target="_blank">https://doi.org/10.1086/260357</a></p>
+            
+            <p>Prey, R. (2020). Locating power in platformization: Music streaming playlists and curatorial power. <em>Social Media + Society, 6</em>(3), 1-11. <a href="https://doi.org/10.1177/2056305120933291" target="_blank">https://doi.org/10.1177/2056305120933291</a></p>
+            
+            <p>Ricardo, D. (2004). <em>The principles of political economy and taxation.</em> Dover Publications. (Original work published 1817)</p>
+            
+            <p>Rochet, J. C., & Tirole, J. (2003). Platform competition in two-sided markets. <em>Journal of the European Economic Association, 1</em>(4), 990-1029. <a href="https://doi.org/10.1162/154247603322493212" target="_blank">https://doi.org/10.1162/154247603322493212</a></p>
+            
+            <p>Rogers, E. M. (2003). <em>Diffusion of innovations</em> (5th ed.). Free Press.</p>
+            
+            <p>Schumpeter, J. A. (1942). <em>Capitalism, socialism and democracy.</em> Harper & Brothers.</p>
+            
+            <p>Shapiro, C., & Varian, H. R. (1998). <em>Information rules: A strategic guide to the network economy.</em> Harvard Business School Press.</p>
+            
+            <p>Smith, A. (1976). <em>An inquiry into the nature and causes of the wealth of nations.</em> University of Chicago Press. (Original work published 1776)</p>
+            
+            <p>Spence, M. (1973). Job market signaling. <em>Quarterly Journal of Economics, 87</em>(3), 355-374. <a href="https://doi.org/10.2307/1882010" target="_blank">https://doi.org/10.2307/1882010</a></p>
+            
+            <p>Stephan, P. E. (1996). The economics of science. <em>Journal of Economic Literature, 34</em>(3), 1199-1235.</p>
+            
+            <p>Stigler, G. J. (1971). The theory of economic regulation. <em>Bell Journal of Economics and Management Science, 2</em>(1), 3-21. <a href="https://doi.org/10.2307/3003160" target="_blank">https://doi.org/10.2307/3003160</a></p>
+            
+            <p>Taleb, N. N. (2007). <em>The black swan: The impact of the highly improbable.</em> Random House.</p>
+            
+            <p>Teece, D. J., Pisano, G., & Shuen, A. (1997). Dynamic capabilities and strategic management. <em>Strategic Management Journal, 18</em>(7), 509-533. <a href="https://doi.org/10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z" target="_blank">https://doi.org/10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z</a></p>
+            
+            <p>Williamson, O. E. (1985). <em>The economic institutions of capitalism.</em> Free Press.</p>
+            
+            <p>Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power.</em> PublicAffairs.</p>
+        </div>
+    </div>
+</body>
+</html>
