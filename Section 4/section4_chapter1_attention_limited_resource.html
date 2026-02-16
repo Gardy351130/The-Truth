@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention as a Limited Resource - Truth Index Encyclopedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #fdfcf8;
+            color: #2c2416;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            background: linear-gradient(to bottom, #f4f1e8, #e8e4d8);
+            box-shadow: 0 0 60px rgba(0,0,0,0.15);
+            min-height: 100vh;
+        }
+
+        .encyclopedia-header {
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #6b5d4f;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .breadcrumb {
+            text-align: center;
+            font-size: 14px;
+            color: #8b7355;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c2416;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: #6b5d4f;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #8b7355;
+            color: #fdfcf8;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 40px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #6b5d4f;
+        }
+
+        .visual-demonstration {
+            margin: 50px 0;
+        }
+
+        .visual-demonstration h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #2c2416;
+            font-style: italic;
+        }
+
+        .image-box {
+            background-color: #f8f6f0;
+            border: 2px solid #d4c4a8;
+            padding: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .image-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #6b5d4f;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        .intro-box {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        .intro-box p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .intro-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .separator {
+            border: none;
+            border-top: 2px solid #d4c4a8;
+            margin: 50px 0;
+        }
+
+        .case-studies-section {
+            background-color: #f8f6f0;
+            border-left: 4px solid #8b7355;
+            padding: 25px;
+            margin: 40px 0;
+        }
+
+        .case-studies-section h3 {
+            margin-top: 0;
+            font-size: 22px;
+            font-family: 'Libre Baskerville', serif;
+            font-style: italic;
+        }
+
+        .case-studies-section a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .case-studies-section a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .case-studies-section p {
+            margin-bottom: 15px;
+        }
+
+        .references {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #d4c4a8;
+        }
+
+        .references h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #2c2416;
+        }
+
+        .references p {
+            text-align: left;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            text-indent: -30px;
+        }
+
+        .references a {
+            color: #1a5490;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .references a:hover {
+            border-bottom: 1px solid #1a5490;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="encyclopedia-header">Truth Index Encyclopedia</div>
+        <div class="breadcrumb">Section 4: Attention, Communication & Trust Interfaces › Chapter 1</div>
+        
+        <h1>Attention as a Limited Resource</h1>
+        <p class="subtitle">Structural constraints, saturation, and depletion at information interfaces</p>
+        
+        <a href="javascript:history.back()" class="back-button">← Back</a>
+
+        <div class="visual-demonstration">
+            <h3>Visual Demonstration</h3>
+            <div class="image-box">
+                <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background -->
+                    <rect width="800" height="520" fill="#f8f6f0"/>
+                    
+                    <!-- Title -->
+                    <text x="400" y="35" font-family="serif" font-size="18" fill="#2c2416" text-anchor="middle" font-weight="bold">
+                        Attention Capacity and Signal Competition
+                    </text>
+                    
+                    <!-- Fixed capacity container -->
+                    <rect x="100" y="80" width="600" height="160" fill="none" stroke="#8b7355" stroke-width="3"/>
+                    <text x="400" y="105" font-family="serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="bold">
+                        Fixed Attention Capacity
+                    </text>
+                    
+                    <!-- Temporal constraint indicator -->
+                    <line x1="100" y1="260" x2="700" y2="260" stroke="#d4c4a8" stroke-width="2"/>
+                    <text x="100" y="280" font-family="serif" font-size="11" fill="#6b5d4f" text-anchor="start">Time</text>
+                    <polygon points="695,255 700,260 695,265" fill="#d4c4a8"/>
+                    
+                    <!-- Low competition scenario -->
+                    <text x="200" y="130" font-family="serif" font-size="13" fill="#2c2416" text-anchor="middle" font-style="italic">
+                        Low Signal Density
+                    </text>
+                    
+                    <circle cx="150" cy="160" r="20" fill="#8b7355" fill-opacity="0.3" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="200" cy="160" r="20" fill="#8b7355" fill-opacity="0.3" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="250" cy="160" r="20" fill="#8b7355" fill-opacity="0.3" stroke="#8b7355" stroke-width="2"/>
+                    
+                    <text x="200" y="205" font-family="serif" font-size="11" fill="#6b5d4f" text-anchor="middle">
+                        Sufficient processing
+                    </text>
+                    <text x="200" y="220" font-family="serif" font-size="11" fill="#6b5d4f" text-anchor="middle">
+                        capacity available
+                    </text>
+                    
+                    <!-- High competition scenario -->
+                    <text x="550" y="130" font-family="serif" font-size="13" fill="#2c2416" text-anchor="middle" font-style="italic">
+                        High Signal Density
+                    </text>
+                    
+                    <circle cx="420" cy="150" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="460" cy="150" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="500" cy="150" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="540" cy="150" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="580" cy="150" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="620" cy="150" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="660" cy="150" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    
+                    <circle cx="440" cy="180" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="480" cy="180" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="520" cy="180" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="560" cy="180" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="600" cy="180" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="640" cy="180" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    
+                    <circle cx="460" cy="210" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="500" cy="210" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="540" cy="210" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="580" cy="210" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="620" cy="210" r="15" fill="#8b7355" fill-opacity="0.5" stroke="#8b7355" stroke-width="1.5"/>
+                    
+                    <text x="540" y="235" font-family="serif" font-size="11" fill="#6b5d4f" text-anchor="middle">
+                        Capacity exceeded,
+                    </text>
+                    <text x="540" y="250" font-family="serif" font-size="11" fill="#6b5d4f" text-anchor="middle">
+                        fragmentation occurs
+                    </text>
+                    
+                    <!-- Depletion curve -->
+                    <text x="400" y="310" font-family="serif" font-size="14" fill="#2c2416" text-anchor="middle" font-weight="bold">
+                        Attention Depletion Over Time
+                    </text>
+                    
+                    <rect x="100" y="330" width="600" height="120" fill="#fdfcf8" stroke="#d4c4a8" stroke-width="1"/>
+                    
+                    <!-- Capacity line -->
+                    <line x1="130" y1="350" x2="670" y2="350" stroke="#8b7355" stroke-width="2" stroke-dasharray="5,3"/>
+                    <text x="680" y="355" font-family="serif" font-size="10" fill="#6b5d4f">Maximum</text>
+                    
+                    <!-- Depletion curve -->
+                    <path d="M 130 350 Q 250 360 350 380 Q 450 400 550 415 Q 620 425 670 430" 
+                          fill="none" stroke="#6b5d4f" stroke-width="2.5"/>
+                    
+                    <!-- Time markers on depletion -->
+                    <line x1="130" y1="330" x2="130" y2="450" stroke="#d4c4a8" stroke-width="1"/>
+                    <text x="130" y="465" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Start</text>
+                    
+                    <line x1="350" y1="330" x2="350" y2="450" stroke="#d4c4a8" stroke-width="1"/>
+                    <text x="350" y="465" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Continued</text>
+                    <text x="350" y="477" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">exposure</text>
+                    
+                    <line x1="550" y1="330" x2="550" y2="450" stroke="#d4c4a8" stroke-width="1"/>
+                    <text x="550" y="465" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Saturation</text>
+                    
+                    <line x1="670" y1="330" x2="670" y2="450" stroke="#d4c4a8" stroke-width="1"/>
+                    <text x="670" y="465" font-family="serif" font-size="10" fill="#6b5d4f" text-anchor="middle">Depletion</text>
+                    
+                    <!-- Key observations -->
+                    <text x="130" y="500" font-family="serif" font-size="11" fill="#2c2416">
+                        • Attention operates under fixed capacity constraints independent of signal volume
+                    </text>
+                    <text x="130" y="517" font-family="serif" font-size="11" fill="#2c2416">
+                        • Competing signals create saturation when demand exceeds available processing capacity
+                    </text>
+                </svg>
+            </div>
+            <p class="caption">
+                Attention functions as a limited resource constrained by cognitive processing capacity and temporal availability. The diagram illustrates how fixed attention capacity responds to varying signal density. Under low signal competition, available capacity exceeds processing demands, allowing sustained engagement. Under high signal density, competing information streams exceed processing capacity, producing fragmentation where partial attention distributes across multiple sources without complete processing of any individual signal. The depletion curve demonstrates how sustained exposure reduces available attention over time through cognitive fatigue, regardless of signal quality or relevance. These constraints operate as system properties at information interfaces, independent of individual intention or effort.
+            </p>
+        </div>
+
+        <div class="intro-box">
+            <p>Attention operates as a finite resource constrained by cognitive processing limits, temporal scarcity, and environmental competition for limited perceptual bandwidth. These constraints function as structural properties of information interfaces rather than individual deficiencies or strategic failures. When signal volume exceeds processing capacity, attention fragments, saturates, or withdraws through mechanisms independent of content quality, source credibility, or recipient motivation.</p>
+            
+            <p>This chapter documents attention as a bounded system property subject to depletion, saturation, and competitive allocation dynamics. The focus remains on interface-level mechanisms—how communication channels, media environments, and information architectures interact with fixed attention constraints—rather than psychological processes or optimization strategies. Understanding attention scarcity as structural condition rather than manageable variable reveals why information abundance creates systematic processing failures independent of individual capability or effort.</p>
+        </div>
+
+        <p>Attention represents a fundamental bottleneck in information processing, constrained by neurological architecture that limits simultaneous processing capacity (Broadbent, 1958; Kahneman, 1973). This limitation operates independently of information volume, creating fixed capacity constraints that determine how much information can be actively processed at any given moment. Unlike storage capacity, which can expand through external systems, active attention remains bounded by biological processing constraints that resist augmentation through technology or training (Pashler, 1998; Marois & Ivanoff, 2005).</p>
+
+        <p>The temporal dimension of attention creates additional constraints, as processing requires time that cannot be compressed beyond physiological limits (Card et al., 1983). Reading comprehension, visual recognition, and deliberative reasoning each demand minimum processing durations determined by cognitive architecture rather than individual capability (Rayner, 1998). When information arrives faster than minimum processing times allow, attention must allocate partially, skip content, or queue information beyond immediate capacity—creating inevitable trade-offs between breadth and depth of engagement (Wickens, 2002).</p>
+
+        <p>Attention operates selectively, processing small subsets of available sensory input while filtering or ignoring the remainder (Posner & Petersen, 1990). This selectivity emerges from capacity constraints rather than strategic choice, as simultaneous processing of all available information would exceed neurological limits (Lavie, 2005). Environmental information density regularly surpasses attention capacity, making selective allocation a necessary rather than optimal response to information abundance (Driver, 2001).</p>
+
+        <p>Cognitive load theory demonstrates how different information types and presentation formats consume attention capacity at varying rates (Sweller, 1988; Sweller et al., 2011). Complex information requiring integration across sources, novel material lacking existing mental schemas, and poorly structured presentations all impose higher cognitive demands than simple, familiar, or well-organized information (Paas et al., 2003). These differential demands mean attention capacity depletes faster under certain information conditions independent of total information volume.</p>
+
+        <p>Divided attention performance deteriorates when multiple concurrent tasks compete for limited processing resources (Pashler, 1994). Even when tasks require different sensory modalities or cognitive systems, interference occurs when central processing demands exceed available capacity (Wickens, 2008). This interference manifests as slower processing, reduced accuracy, or complete failure to register information when attention divides beyond sustainable thresholds (Strayer & Johnston, 2001).</p>
+
+        <p>Environmental factors impose additional attention constraints through distraction, interruption, and ambient information competition (Nass & Yen, 2010). Physical environments containing multiple information sources—advertising, notifications, background media, concurrent conversations—create perceptual demands that fragment attention across competing stimuli (Ophir et al., 2009). High-density information environments reduce available attention for any individual signal by distributing processing capacity across the full sensory field (Wolfe, 1998).</p>
+
+        <p>Attention saturation occurs when information volume exceeds processing capacity over sustained periods, degrading engagement quality across all competing signals (Eppler & Mengis, 2004). Unlike temporary overload that resolves when information influx slows, saturation represents persistent imbalance between information supply and processing capacity that cannot be resolved through allocation strategies alone (Bawden & Robinson, 2009). Saturated attention produces shallow processing where information receives minimal consideration before displacement by subsequent inputs (Carr, 2010).</p>
+
+        <p>Media multitasking distributes attention across multiple information streams simultaneously, reducing depth of engagement with each individual stream (Ophir et al., 2009; Uncapher et al., 2016). This distributed processing mode produces fragmented attention where partial awareness of multiple sources substitutes for sustained focus on singular content (Courage et al., 2015). Performance on individual tasks deteriorates under multitasking conditions despite subjective impressions of maintained effectiveness (Sanbonmatsu et al., 2013).</p>
+
+        <p>Attention depletion emerges through sustained cognitive effort, reducing available processing capacity over time independent of information characteristics (Muraven & Baumeister, 2000). Prolonged exposure to information-dense environments, extended decision-making demands, or continuous filtering of irrelevant information all contribute to progressive attention degradation (Hagger et al., 2010). This depletion creates temporal limits on sustained attention allocation that cannot be overcome through motivation or perceived importance alone (Baumeister et al., 2007).</p>
+
+        <p>Information architecture affects attention allocation through presentation structure, navigation requirements, and accessibility friction (Rosenfeld & Morville, 2002). Poorly organized information imposes search costs that consume attention capacity before content processing begins, leaving reduced resources for comprehension and evaluation (Krug, 2014). Navigation complexity, unclear hierarchies, and presentation inconsistency all increase cognitive load independent of information content quality (Nielsen & Loranger, 2006).</p>
+
+        <p>Signal-to-noise ratios in communication channels determine how much attention filtering requires before relevant information extraction occurs (Shannon, 1948). High noise environments force attention allocation toward discrimination and filtering activities rather than content processing, reducing effective capacity for information comprehension (Daft & Lengel, 1986). Degraded signal quality—whether through technical interference, presentation clutter, or irrelevant content mixing—increases processing demands per unit of relevant information received (Goodman & Darr, 1998).</p>
+
+        <p>Attention residue persists when switching between tasks or information sources, as cognitive resources remain partially allocated to previous content despite physical shift to new material (Leroy, 2009). This residual allocation reduces available capacity for current information processing, creating transition costs that accumulate with switching frequency (Mark et al., 2008). Rapid context switching produces efficiency losses through attention fragmentation across temporal segments rather than spatial distribution across concurrent sources (González & Mark, 2004).</p>
+
+        <p>Notification systems create interruption patterns that disrupt sustained attention allocation by imposing context switches at intervals determined by external systems rather than processing requirements (Iqbal & Horvitz, 2007). Each interruption fragments ongoing attention allocation, requiring reorientation and task resumption that consumes additional cognitive resources beyond the interruption content itself (Bailey & Konstan, 2006). High-frequency interruption environments prevent sustained focus by maintaining attention in perpetual reorientation states (Mark et al., 2014).</p>
+
+        <p>Visual clutter increases attention demands by expanding the perceptual field requiring filtering before relevant information identification (Henderson & Hollingworth, 1999). Dense visual environments distribute attention across larger information spaces, reducing processing depth per element and increasing likelihood of relevant information overlooking (Wolfe, 1998). Interface design choices that maximize information density paradoxically reduce effective information transfer by exceeding visual attention capacity (Tufte, 2001).</p>
+
+        <p>Temporal compression in media presentation increases information arrival rates beyond comfortable processing speeds, creating pressure for superficial engagement or selective skipping (Rosa, 2013). Accelerated speech, rapid visual transitions, and compressed content durations all reduce available processing time per information unit, forcing trade-offs between comprehension completeness and keeping pace with presentation flow (Hassan, 2009). These temporal pressures shift attention toward tracking over understanding, maintaining positional awareness at the expense of substantive engagement (Wajcman, 2015).</p>
+
+        <p>Attention allocation under scarcity creates zero-sum competition where attending to one signal necessitates neglecting alternatives (Kahneman, 1973). This competitive dynamic means information abundance produces systematic attention poverty, as fixed processing capacity distributes across expanding information supply (Simon, 1971). The resulting attention scarcity affects all competing signals regardless of individual quality or importance, making visibility a function of competitive position rather than inherent value (Goldhaber, 1997).</p>
+
+        <p>Withdrawal mechanisms emerge when attention demands persistently exceed available capacity, producing disengagement from information sources, selective ignorance of entire channels, or systematic avoidance of information-dense environments (Toff & Nielsen, 2018). This withdrawal operates as adaptive response to unsustainable attention demands rather than apathy or disinterest, representing rational allocation decisions under conditions of permanent information excess (Shenk, 1997). Selective disengagement becomes necessary coping mechanism when comprehensive engagement proves impossible given structural attention constraints.</p>
+
+        <hr class="separator">
+
+        <p>Attention operates as limited resource constrained by fixed cognitive processing capacity, irreducible temporal requirements, and environmental competition for perceptual bandwidth. These structural limits create saturation when information supply exceeds processing capacity, fragmentation when concurrent demands divide available attention, and depletion when sustained processing exhausts cognitive resources. Information interfaces that disregard attention constraints—through high signal density, poor organization, excessive interruption, or temporal compression—produce systematic processing failures independent of content quality or user capability. Understanding attention scarcity as structural property rather than individual limitation reveals why information abundance creates predictable engagement degradation, shallow processing, and protective withdrawal mechanisms that operate across information systems regardless of optimization efforts.</p>
+
+        <div class="case-studies-section">
+            <h3>Supporting Case Studies</h3>
+            <p><a href="../Section%201/Case-Studies/CS-001_Endless_Scroll_Funnel.html">CS-001: The Endless Scroll Funnel</a> — Demonstrates attention saturation through continuous content presentation that exceeds processing capacity, producing shallow engagement patterns where information consumption accelerates while comprehension depth deteriorates through sustained exposure to high-density information streams.</p>
+            <p><a href="../Section%201/Case-Studies/CS-007_Timed_Purchase_Popup.html">CS-007: The Timed Purchase Pop-Up</a> — Illustrates attention fragmentation through interruption mechanisms that divide processing capacity between primary content and imposed temporal demands, demonstrating how interface-level interventions consume attention resources independent of user intention or information relevance.</p>
+        </div>
+
+        <div class="button-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+        </div>
+
+        <div class="references">
+            <h2>References</h2>
+            
+            <p>Bailey, B. P., & Konstan, J. A. (2006). On the need for attention-aware systems: Measuring effects of interruption on task performance, error rate, and affective state. <em>Computers in Human Behavior, 22</em>(4), 685-708. <a href="https://doi.org/10.1016/j.chb.2005.12.009">https://doi.org/10.1016/j.chb.2005.12.009</a></p>
+            
+            <p>Baumeister, R. F., Vohs, K. D., & Tice, D. M. (2007). The strength model of self-control. <em>Current Directions in Psychological Science, 16</em>(6), 351-355. <a href="https://doi.org/10.1111/j.1467-8721.2007.00534.x">https://doi.org/10.1111/j.1467-8721.2007.00534.x</a></p>
+            
+            <p>Bawden, D., & Robinson, L. (2009). The dark side of information: Overload, anxiety and other paradoxes and pathologies. <em>Journal of Information Science, 35</em>(2), 180-191. <a href="https://doi.org/10.1177/0165551508095781">https://doi.org/10.1177/0165551508095781</a></p>
+            
+            <p>Broadbent, D. E. (1958). <em>Perception and communication</em>. Pergamon Press.</p>
+            
+            <p>Card, S. K., Moran, T. P., & Newell, A. (1983). <em>The psychology of human-computer interaction</em>. Lawrence Erlbaum Associates.</p>
+            
+            <p>Carr, N. (2010). <em>The shallows: What the Internet is doing to our brains</em>. W. W. Norton & Company.</p>
+            
+            <p>Courage, M. L., Bakhtiar, A., Fitzpatrick, C., Kenny, S., & Brandeau, K. (2015). Growing up multitasking: The costs and benefits for cognitive development. <em>Developmental Review, 35</em>, 5-41. <a href="https://doi.org/10.1016/j.dr.2014.12.002">https://doi.org/10.1016/j.dr.2014.12.002</a></p>
+            
+            <p>Daft, R. L., & Lengel, R. H. (1986). Organizational information requirements, media richness and structural design. <em>Management Science, 32</em>(5), 554-571. <a href="https://doi.org/10.1287/mnsc.32.5.554">https://doi.org/10.1287/mnsc.32.5.554</a></p>
+            
+            <p>Driver, J. (2001). A selective review of selective attention research from the past century. <em>British Journal of Psychology, 92</em>(1), 53-78. <a href="https://doi.org/10.1348/000712601162103">https://doi.org/10.1348/000712601162103</a></p>
+            
+            <p>Eppler, M. J., & Mengis, J. (2004). The concept of information overload: A review of literature from organization science, accounting, marketing, MIS, and related disciplines. <em>The Information Society, 20</em>(5), 325-344. <a href="https://doi.org/10.1080/01972240490507974">https://doi.org/10.1080/01972240490507974</a></p>
+            
+            <p>Goldhaber, M. H. (1997). The attention economy and the Net. <em>First Monday, 2</em>(4). <a href="https://doi.org/10.5210/fm.v2i4.519">https://doi.org/10.5210/fm.v2i4.519</a></p>
+            
+            <p>González, V. M., & Mark, G. (2004). "Constant, constant, multi-tasking craziness": Managing multiple working spheres. <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em>, 113-120. <a href="https://doi.org/10.1145/985692.985707">https://doi.org/10.1145/985692.985707</a></p>
+            
+            <p>Goodman, P. S., & Darr, E. D. (1998). Computer-aided systems and communities: Mechanisms for organizational learning in distributed environments. <em>MIS Quarterly, 22</em>(4), 417-440. <a href="https://doi.org/10.2307/249550">https://doi.org/10.2307/249550</a></p>
+            
+            <p>Hagger, M. S., Wood, C., Stiff, C., & Chatzisarantis, N. L. (2010). Ego depletion and the strength model of self-control: A meta-analysis. <em>Psychological Bulletin, 136</em>(4), 495-525. <a href="https://doi.org/10.1037/a0019486">https://doi.org/10.1037/a0019486</a></p>
+            
+            <p>Hassan, R. (2009). <em>Empires of speed: Time and the acceleration of politics and society</em>. Brill.</p>
+            
+            <p>Henderson, J. M., & Hollingworth, A. (1999). High-level scene perception. <em>Annual Review of Psychology, 50</em>, 243-271. <a href="https://doi.org/10.1146/annurev.psych.50.1.243">https://doi.org/10.1146/annurev.psych.50.1.243</a></p>
+            
+            <p>Iqbal, S. T., & Horvitz, E. (2007). Disruption and recovery of computing tasks: Field study, analysis, and directions. <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em>, 677-686. <a href="https://doi.org/10.1145/1240624.1240730">https://doi.org/10.1145/1240624.1240730</a></p>
+            
+            <p>Kahneman, D. (1973). <em>Attention and effort</em>. Prentice-Hall.</p>
+            
+            <p>Krug, S. (2014). <em>Don't make me think, revisited: A common sense approach to web usability</em> (3rd ed.). New Riders.</p>
+            
+            <p>Lavie, N. (2005). Distracted and confused?: Selective attention under load. <em>Trends in Cognitive Sciences, 9</em>(2), 75-82. <a href="https://doi.org/10.1016/j.tics.2004.12.004">https://doi.org/10.1016/j.tics.2004.12.004</a></p>
+            
+            <p>Leroy, S. (2009). Why is it so hard to do my work? The challenge of attention residue when switching between work tasks. <em>Organizational Behavior and Human Decision Processes, 109</em>(2), 168-181. <a href="https://doi.org/10.1016/j.obhdp.2009.04.002">https://doi.org/10.1016/j.obhdp.2009.04.002</a></p>
+            
+            <p>Mark, G., Gudith, D., & Klocke, U. (2008). The cost of interrupted work: More speed and stress. <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em>, 107-110. <a href="https://doi.org/10.1145/1357054.1357072">https://doi.org/10.1145/1357054.1357072</a></p>
+            
+            <p>Mark, G., Voida, S., & Cardello, A. (2014). "A pace not dictated by electrons": An empirical study of work without email. <em>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em>, 555-564. <a href="https://doi.org/10.1145/2556288.2557013">https://doi.org/10.1145/2556288.2557013</a></p>
+            
+            <p>Marois, R., & Ivanoff, J. (2005). Capacity limits of information processing in the brain. <em>Trends in Cognitive Sciences, 9</em>(6), 296-305. <a href="https://doi.org/10.1016/j.tics.2005.04.010">https://doi.org/10.1016/j.tics.2005.04.010</a></p>
+            
+            <p>Muraven, M., & Baumeister, R. F. (2000). Self-regulation and depletion of limited resources: Does self-control resemble a muscle? <em>Psychological Bulletin, 126</em>(2), 247-259. <a href="https://doi.org/10.1037/0033-2909.126.2.247">https://doi.org/10.1037/0033-2909.126.2.247</a></p>
+            
+            <p>Nass, C., & Yen, C. (2010). <em>The man who lied to his laptop: What machines teach us about human relationships</em>. Current.</p>
+            
+            <p>Nielsen, J., & Loranger, H. (2006). <em>Prioritizing web usability</em>. New Riders.</p>
+            
+            <p>Ophir, E., Nass, C., & Wagner, A. D. (2009). Cognitive control in media multitaskers. <em>Proceedings of the National Academy of Sciences, 106</em>(37), 15583-15587. <a href="https://doi.org/10.1073/pnas.0903620106">https://doi.org/10.1073/pnas.0903620106</a></p>
+            
+            <p>Paas, F., Renkl, A., & Sweller, J. (2003). Cognitive load theory and instructional design: Recent developments. <em>Educational Psychologist, 38</em>(1), 1-4. <a href="https://doi.org/10.1207/S15326985EP3801_1">https://doi.org/10.1207/S15326985EP3801_1</a></p>
+            
+            <p>Pashler, H. (1994). Dual-task interference in simple tasks: Data and theory. <em>Psychological Bulletin, 116</em>(2), 220-244. <a href="https://doi.org/10.1037/0033-2909.116.2.220">https://doi.org/10.1037/0033-2909.116.2.220</a></p>
+            
+            <p>Pashler, H. E. (1998). <em>The psychology of attention</em>. MIT Press.</p>
+            
+            <p>Posner, M. I., & Petersen, S. E. (1990). The attention system of the human brain. <em>Annual Review of Neuroscience, 13</em>, 25-42. <a href="https://doi.org/10.1146/annurev.ne.13.030190.000325">https://doi.org/10.1146/annurev.ne.13.030190.000325</a></p>
+            
+            <p>Rayner, K. (1998). Eye movements in reading and information processing: 20 years of research. <em>Psychological Bulletin, 124</em>(3), 372-422. <a href="https://doi.org/10.1037/0033-2909.124.3.372">https://doi.org/10.1037/0033-2909.124.3.372</a></p>
+            
+            <p>Rosa, H. (2013). <em>Social acceleration: A new theory of modernity</em>. Columbia University Press.</p>
+            
+            <p>Rosenfeld, L., & Morville, P. (2002). <em>Information architecture for the World Wide Web</em> (2nd ed.). O'Reilly Media.</p>
+            
+            <p>Sanbonmatsu, D. M., Strayer, D. L., Medeiros-Ward, N., & Watson, J. M. (2013). Who multi-tasks and why? Multi-tasking ability, perceived multi-tasking ability, impulsivity, and sensation seeking. <em>PLoS ONE, 8</em>(1), e54402. <a href="https://doi.org/10.1371/journal.pone.0054402">https://doi.org/10.1371/journal.pone.0054402</a></p>
+            
+            <p>Shannon, C. E. (1948). A mathematical theory of communication. <em>Bell System Technical Journal, 27</em>(3), 379-423. <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</a></p>
+            
+            <p>Shenk, D. (1997). <em>Data smog: Surviving the information glut</em>. HarperEdge.</p>
+            
+            <p>Simon, H. A. (1971). Designing organizations for an information-rich world. In M. Greenberger (Ed.), <em>Computers, communication, and the public interest</em> (pp. 37-72). Johns Hopkins Press.</p>
+            
+            <p>Strayer, D. L., & Johnston, W. A. (2001). Driven to distraction: Dual-task studies of simulated driving and conversing on a cellular telephone. <em>Psychological Science, 12</em>(6), 462-466. <a href="https://doi.org/10.1111/1467-9280.00386">https://doi.org/10.1111/1467-9280.00386</a></p>
+            
+            <p>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <em>Cognitive Science, 12</em>(2), 257-285. <a href="https://doi.org/10.1207/s15516709cog1202_4">https://doi.org/10.1207/s15516709cog1202_4</a></p>
+            
+            <p>Sweller, J., Ayres, P., & Kalyuga, S. (2011). <em>Cognitive load theory</em>. Springer.</p>
+            
+            <p>Toff, B., & Nielsen, R. K. (2018). "I just Google it": Folk theories of distributed discovery. <em>Journal of Communication, 68</em>(3), 636-657. <a href="https://doi.org/10.1093/joc/jqy009">https://doi.org/10.1093/joc/jqy009</a></p>
+            
+            <p>Tufte, E. R. (2001). <em>The visual display of quantitative information</em> (2nd ed.). Graphics Press.</p>
+            
+            <p>Uncapher, M. R., Thieu, M. K., & Wagner, A. D. (2016). Media multitasking and memory: Differences in working memory and long-term memory. <em>Psychonomic Bulletin & Review, 23</em>(2), 483-490. <a href="https://doi.org/10.3758/s13423-015-0907-3">https://doi.org/10.3758/s13423-015-0907-3</a></p>
+            
+            <p>Wajcman, J. (2015). <em>Pressed for time: The acceleration of life in digital capitalism</em>. University of Chicago Press.</p>
+            
+            <p>Wickens, C. D. (2002). Multiple resources and performance prediction. <em>Theoretical Issues in Ergonomics Science, 3</em>(2), 159-177. <a href="https://doi.org/10.1080/14639220210123806">https://doi.org/10.1080/14639220210123806</a></p>
+            
+            <p>Wickens, C. D. (2008). Multiple resources and mental workload. <em>Human Factors, 50</em>(3), 449-455. <a href="https://doi.org/10.1518/001872008X288394">https://doi.org/10.1518/001872008X288394</a></p>
+            
+            <p>Wolfe, J. M. (1998). Visual search. In H. Pashler (Ed.), <em>Attention</em> (pp. 13-73). Psychology Press.</p>
+        </div>
+    </div>
+</body>
+</html>
